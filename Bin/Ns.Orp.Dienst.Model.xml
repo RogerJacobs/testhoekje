@@ -1,0 +1,1041 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Ns.Orp.Dienst.Model</name>
+    </assembly>
+    <members>
+        <member name="T:Ns.Orp.Dienst.Model.ActiviteitContext">
+            <summary>
+            ActiviteitContext
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Dienst.Model.ActiviteitContext.VorigeTweeActiviteitIndex">
+            <summary>
+            VorigeTweeActiviteitIndex
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Dienst.Model.ActiviteitContext.VorigeEenActiviteitIndex">
+            <summary>
+            VorigeEenActiviteitIndex
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Dienst.Model.ActiviteitContext.GeplandeActiviteitIndex">
+            <summary>
+            GeplandeActiviteitIndex
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Dienst.Model.ActiviteitContext.VolgendeEenActiviteitIndex">
+            <summary>
+            VolgendeEenActiviteitIndex
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Dienst.Model.ActiviteitContext.VolgendeTweeActiviteitIndex">
+            <summary>
+            VolgendeTweeActiviteitIndex
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Model.ActiviteitContext.GetEnumerator">
+            <summary>
+            Returns an enumerator that iterates through the collection.
+            </summary>
+            <returns>
+            A <see cref="T:System.Collections.Generic.IEnumerator`1" /> that can be used to iterate through the collection.
+            </returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Model.ActiviteitContext.System#Collections#IEnumerable#GetEnumerator">
+            <summary>
+            Returns an enumerator that iterates through a collection.
+            </summary>
+            <returns>
+            An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.
+            </returns>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.ActiviteitContext.Dienst">
+            <summary>
+            Dienst
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.ActiviteitContext.DienstType">
+            <summary>
+            Gets or sets the type of the dienst.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.ActiviteitContext.Item(System.Int32)">
+            <summary>
+            Gets the <see cref="T:Ns.Orp.Dienst.Model.Activiteit"/> at the specified index.
+            </summary>
+            <value>
+            The <see cref="T:Ns.Orp.Dienst.Model.Activiteit"/>.
+            </value>
+            <param name="index">The index.</param>
+            <returns></returns>
+            <exception cref="T:System.IndexOutOfRangeException"></exception>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.ActiviteitContext.VorigeTweeActiviteit">
+            <summary>
+            ActueleActiviteitMinTwee
+            This property is always null on the client
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.ActiviteitContext.VorigeEenActiviteit">
+            <summary>
+            ActueleActiviteitMinEen
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.ActiviteitContext.GeplandeActiviteit">
+            <summary>
+            ActueleActiviteit
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.ActiviteitContext.VolgendeEenActiviteit">
+            <summary>
+            ActueleActiviteitPlusEen
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.ActiviteitContext.VolgendeTweeActiviteit">
+            <summary>
+            ActueleActiviteitPlusTwee
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.ActiviteitContext.Melding">
+            <summary>
+            Melding
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Model.ActiviteitContext.ContextEnumerator.Reset">
+            <summary>
+            Sets the enumerator to its initial position, which is before the first element in the collection.
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Model.ActiviteitContext.ContextEnumerator.MoveNext">
+            <summary>
+            Advances the enumerator to the next element of the collection.
+            </summary>
+            <returns>
+            true if the enumerator was successfully advanced to the next element; false if the enumerator has passed the end of the collection.
+            </returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Model.ActiviteitContext.ContextEnumerator.Dispose">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.ActiviteitContext.ContextEnumerator.System#Collections#Generic#IEnumerator{Ns#Orp#Dienst#Model#Activiteit}#Current">
+            <summary>
+            Gets the element in the collection at the current position of the enumerator.
+            </summary>
+            <returns>The element in the collection at the current position of the enumerator.</returns>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.ActiviteitContext.ContextEnumerator.Current">
+            <summary>
+            Gets the element in the collection at the current position of the enumerator.
+            </summary>
+            <returns>The element in the collection at the current position of the enumerator.</returns>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Model.Activiteit">
+            <summary>
+            Activiteit
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.Activiteit.Vertreklocatie">
+            <summary>
+            Vertrekplaats
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.Activiteit.Aankomstlocatie">
+            <summary>
+            Aankomstplaats
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.Activiteit.Begintijd">
+            <summary>
+            Begintijd
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.Activiteit.Eindtijd">
+            <summary>
+            Begintijd
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.Activiteit.Subtype">
+            <summary>
+            Het sub type .
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Model.ITreinritActiviteit">
+            <summary>
+            Implemented by activiteiten with a treinnummer
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.ITreinritActiviteit.Treinnummer">
+            <summary>
+            Treinnummer
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Model.NatijdActiviteit">
+            <summary>
+            Natijd
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Model.OverigeActiviteit">
+            <summary>
+            OverigeActiviteit
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.OverigeActiviteit.Omschrijving">
+            <summary>
+            Omschrijving
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.OverigeActiviteit.Treinnummer">
+            <summary>
+            treinnummer
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Model.PauzeActiviteit">
+            <summary>
+            PauzeActiviteit
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Model.TaxiritActiviteit">
+            <summary>
+            TaxiActiviteit
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Model.TreinritActiviteit">
+            <summary>
+            TreinritActiviteit
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.TreinritActiviteit.PersoonWerkzaamheid">
+            <summary>
+            PersoonWerkzaamheid
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.TreinritActiviteit.Treinnummer">
+            <summary>
+            treinnummer
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.TreinritActiviteit.SoortMaterieel">
+            <summary>
+            SoortMaterieel
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.TreinritActiviteit.Details">
+            <summary>
+            Activiteiten
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Model.Aankomstlocatie">
+            <summary>
+            Aankomstlocatie
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Model.TreinritActiviteitDetail">
+            <summary>
+            TreinritActiviteitDetail
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Model.IActiviteitDetail">
+            <summary>
+            IActiviteitDetail
+            </summary>
+            <remarks>
+            Container class om het mogelijk te maken details te maken voor alle activiteiten
+            </remarks>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.TreinritActiviteitDetail.Regelpunt">
+            <summary>
+            Regelpunt
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.TreinritActiviteitDetail.Subtype">
+            <summary>
+            The sub type.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.Aankomstlocatie.Aankomsttijd">
+            <summary>
+            Aankomsttijd
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Model.Doorgang">
+            <summary>
+            Doorgang
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.Doorgang.Doorgangstijd">
+            <summary>
+            Doorgangstijd
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Model.KorteStop">
+            <summary>
+            KorteStop
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.KorteStop.Aankomsttijd">
+            <summary>
+            Aankomsttijd
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Model.LangeStop">
+            <summary>
+            LangeStop
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.LangeStop.Aankomsttijd">
+            <summary>
+            Aankomsttijd
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.LangeStop.Vertrektijd">
+            <summary>
+            Vertrektijd
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Model.Vertreklocatie">
+            <summary>
+            Vertreklocatie
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.Vertreklocatie.Vertrektijd">
+            <summary>
+            Vertrektijd
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Model.VoortijdActiviteit">
+            <summary>
+            Voortijd
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Model.AdkInformatie">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.AdkInformatie.PlanFase">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.AdkInformatie.Begin">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.AdkInformatie.Eind">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.AdkInformatie.Activiteiten">
+            <summary>
+            Activiteiten
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Model.Bijsturing">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.Bijsturing.OntvangstDatumTijd">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.Bijsturing.Tijdstempel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Model.BijsturingActiviteitStatus">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Dienst.Model.BijsturingActiviteitStatus.Geen">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Dienst.Model.BijsturingActiviteitStatus.Nieuw">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Dienst.Model.BijsturingActiviteitStatus.Gewijzigd">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Dienst.Model.BijsturingActiviteitStatus.Vervallen">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Model.BijsturingNotificatie">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.BijsturingNotificatie.Personeelsnummer">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.BijsturingNotificatie.Dienstnummer">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.BijsturingNotificatie.Tijdstempel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Model.BijsturingNummer">
+            <summary>
+            BijsturingNummer
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.BijsturingNummer.Functie">
+            <summary>
+            Functie
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.BijsturingNummer.Standplaats">
+            <summary>
+            Standplaats
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.BijsturingNummer.Telefoonnummer">
+            <summary>
+            Telefoonnummer
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Model.BijsturingResponse">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Model.BijsturingResponse.#ctor(System.Collections.Generic.ICollection{Ns.Orp.Dienst.Model.Activiteit},System.Collections.Generic.ICollection{Ns.Orp.Dienst.Model.Activiteit})">
+            <summary>
+            
+            </summary>
+            <param name="huidigeActiviteiten"></param>
+            <param name="bijgestuurdeActiviteiten"></param>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.BijsturingResponse.HuidigeActiviteiten">
+            <summary>
+            Activiteiten
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.BijsturingResponse.BijgestuurdeActiviteiten">
+            <summary>
+            Activiteiten
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Model.CreateOrpDienstRequest">
+            <summary>
+            Defines the parameters for creating an Orp Dienst.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.CreateOrpDienstRequest.Treinnummer">
+            <summary>
+            Treinnummer
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.CreateOrpDienstRequest.Begintijd">
+            <summary>
+            Begin tijd
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.CreateOrpDienstRequest.Beginlocatie">
+            <summary>
+            Begin locatie (station)
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.CreateOrpDienstRequest.Eindtijd">
+            <summary>
+            Eind tijd
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.CreateOrpDienstRequest.Eindlocatie">
+            <summary>
+            Eind locatie (station)
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Model.Dienst">
+            <summary>
+            Container class voor informatie mbt een opgehaalde dienst
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.Dienst.Personeelsnummer">
+            <summary>
+            Personeelsnummer
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.Dienst.Dienstnummer">
+            <summary>
+            Nummer van deze dienst
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.Dienst.Dienstkaartstandplaats">
+            <summary>
+            Standplaats gebruikt omtrend communicatie voor dienstkaart
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.Dienst.Herkomst">
+            <summary>
+            Herkomst (PlanFase) van het dienstkaartje
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.Dienst.Dienstomschrijving">
+            <summary>
+            De Dienstomschrijving
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.Dienst.Begintijd">
+            <summary>
+            Aanvang dienst
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.Dienst.Eindtijd">
+            <summary>
+            Einde dienst
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.Dienst.Sleutel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.Dienst.Functie">
+            <summary>
+            Functie van deze inzet
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.Dienst.Soort">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.Dienst.Status">
+            <summary>
+            Status in PIUS
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.Dienst.Actie">
+            <summary>
+            Toegestane actie
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.Dienst.TelefoonnummerBijsturingRegio">
+            <summary>
+            Telefoonnummer voor de bijsturing van deze dienst
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.Dienst.DienstCode">
+            <summary>
+            The Dienst from PIUS
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.Dienst.DienstCodeOmschrijving">
+            <summary>
+            The Dienst from PIUS
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.Dienst.IsReguliereDienst">
+            <summary>
+            IsReguliereDienst
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.Dienst.Bijsturing">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.Dienst.Berichten">
+            <summary>
+            Berichten voor de medewerker
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.Dienst.Activiteiten">
+            <summary>
+            Activiteiten
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Model.DienstNotificatie">
+            <summary>
+            This message is send when an event occurs in the Dienst service.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.DienstNotificatie.NotificatieType">
+            <summary>
+            The type of the event.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.DienstNotificatie.Personeelsnummer">
+            <summary>
+            Personeelsnummer
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.DienstNotificatie.Dienst">
+            <summary>
+            The actual Dienst.
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Model.DienstNotificatieType">
+            <summary>
+            Notification type.
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Dienst.Model.DienstNotificatieType.InDienst">
+            <summary>
+            Medewerker is in dienst gemeld.
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Dienst.Model.DienstNotificatieType.UitDienst">
+            <summary>
+            Medewerker is uit dienst gemeld.
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Dienst.Model.DienstNotificatieType.Bijgestuurd">
+            <summary>
+            Medewerker is bijgestuurd.
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Dienst.Model.DienstNotificatieType.Ververst">
+            <summary>
+            Medewerker heeft een nieuwe versie van de dienst ontvangen.
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Dienst.Model.DienstNotificatieType.Verwijderd">
+            <summary>
+            De dienst van de medewerker is verwijderd uit de Azure opslag.
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Dienst.Model.DienstNotificatieType.Donderdagseweek">
+            <summary>
+            Er is een nieuwe donderdagseweek beschikbaar voor de medewerker.
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Model.DienstSoort">
+            <summary>
+            DienstType
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Dienst.Model.DienstSoort.Pius">
+            <summary>
+            Indicates a PIUS dienst type
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Dienst.Model.DienstSoort.Orp">
+            <summary>
+            Indicates an Orp dienst type (a.k.a. none PIUS type)
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Model.Donderdagseweek">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.Donderdagseweek.Personeelsnummer">
+            <summary>
+            Personeelsnummer voor wie de donderdagseweek is
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.Donderdagseweek.Weeknummer">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.Donderdagseweek.OntvangstDatum">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.Donderdagseweek.Volgnummer">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.Donderdagseweek.VersieDatum">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.Donderdagseweek.Weekdagen">
+            <summary>
+            Weekdagen
+            </summary>
+            <remarks>
+            Bevat minimaal 1 tot maximaal 7 dagen
+            </remarks>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Model.Functie">
+            <summary>
+            Mogelijke functies voor een medewerker
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Dienst.Model.Functie.Conducteur">
+            <summary>
+            Functie conducteur
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Dienst.Model.Functie.Machinist">
+            <summary>
+            Functie machinist
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Dienst.Model.Functie.Geen">
+            <summary>
+            Functie geen
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Model.FunctieExtensions">
+            <summary>
+            Extension to format enum
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Model.FunctieExtensions.ToFriendlyString(Ns.Orp.Dienst.Model.Functie)">
+            <summary>
+            Gives a ns friendly string of the enum
+            </summary>
+            <param name="me">InzetFunctie to format</param>
+            <returns>Ns friendly string</returns>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Model.Locatie">
+            <summary>
+            Locatie
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Model.Locatie.ToString">
+            <summary>
+            Custom to string implementation
+            </summary>
+            <returns>Omschrijving</returns>
+            <remarks>
+            UI tests depends on this implementation
+            </remarks>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.Locatie.Stationsafkorting">
+            <summary>
+            Stationsafkorting
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.Locatie.Omschrijving">
+            <summary>
+            Omschrijving
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Model.MedewerkerDienstActie">
+            <summary>
+            Toegestane acties voor wijzigen van dienststatus
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Dienst.Model.MedewerkerDienstActie.None">
+            <summary>
+            Geen acties toegestaan.
+            None als eerste entry maakt het een veilige default value...
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Dienst.Model.MedewerkerDienstActie.MeldInDienst">
+            <summary>
+            In dienst melden toegestaan
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Dienst.Model.MedewerkerDienstActie.MeldUitDienst">
+            <summary>
+            Uit dienst melden toegestaan
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Model.MedewerkerDienstStatus">
+            <summary>
+            Mogelijke statussen van een dienst
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Dienst.Model.MedewerkerDienstStatus.InDienst">
+            <summary>
+            Status in dienst
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Dienst.Model.MedewerkerDienstStatus.UitDienst">
+            <summary>
+            status uit dienst
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Model.DienstParameters">
+            <summary>
+            Container class voor het raadplegen of wijzigen van een dienst
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.DienstParameters.InzetKey">
+            <summary>
+            InzetKey
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Model.PiusInformatie">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.PiusInformatie.Actie">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.PiusInformatie.Status">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.PiusInformatie.DienstkaartjeStandplaats">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.PiusInformatie.Berichten">
+            <summary>
+            Berichten voor de medewerker
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.PiusInformatie.Inzet">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Model.PiusInzet">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.PiusInzet.Sleutel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.PiusInzet.Dienstkaartstandplaats">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.PiusInzet.Dienstnummer">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.PiusInzet.DienstCode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.PiusInzet.Begintijd">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.PiusInzet.Eindtijd">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.PiusInzet.Functie">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.PiusInzet.Personeelsnummer">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.PiusInzet.Dienst">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Model.Station">
+            <summary>
+            
+            </summary>
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Model.Station.GetOmschrijving(System.String)">
+            <summary>
+            Maps an abbreviation to a full name.
+            </summary>
+            <param name="afkorting">The abbreviation.</param>
+            <returns>The full name.</returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Model.Station.GetLocatie(System.String)">
+            <summary>
+            Returns a Locatie object.
+            </summary>
+            <param name="afkorting"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Model.Station.ToLocatie">
+            <summary>
+            Casts Station to Locatie which is a subset of Station.
+            </summary>
+            <returns>A new Locatie object initialized with values from Station.</returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Model.Station.op_Implicit(Ns.Orp.Dienst.Model.Station)~Ns.Orp.Dienst.Model.Locatie">
+            <summary>
+            Casts Station to Locatie which is a subset of Station.
+            </summary>
+            <param name="station">The Station to cast.</param>
+            <returns>A new Locatie object initialized with values from Station.</returns>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.Station.Afkorting">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.Station.Omschrijving">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.Station.Land">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.Station.Fecode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.Station.RdcX">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.Station.RdcY">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.Station.StationType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.Station.Straal1">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.Station.Straal2">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.Station.Straal3">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.Station.Vanaf">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.Station.VanafIam">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.Station.Positie">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.Station.Knoop">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.Station.Stations">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Model.Weekdag">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.Weekdag.Datum">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.Weekdag.Standplaats">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.Weekdag.Dienstnummer">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.Weekdag.DisysDienstomschrijving">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.Weekdag.DienstFunctie">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.Weekdag.AanvangDienst">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.Weekdag.EindeDienst">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.Weekdag.EerstePauzeBegin">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.Weekdag.EerstePauzeEind">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.Weekdag.TweedePauzeBegin">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.Weekdag.TweedePauzeEind">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.Weekdag.Omschrijving">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Model.Weekdag.IsReguliereDienst">
+            <summary>
+            
+            </summary>
+        </member>
+    </members>
+</doc>

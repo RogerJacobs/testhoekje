@@ -1,0 +1,570 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Ns.Orp.Treinrit.Model</name>
+    </assembly>
+    <members>
+        <member name="T:Ns.Orp.Treinrit.Model.AfwijkendeInformatie">
+            <summary>
+            Afwijkendeinformatie
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Model.AfwijkendeInformatie.AankomstperronAfwijking">
+            <summary>
+            AankomstPerronAfwijking
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Model.AfwijkendeInformatie.Aankomstvertraging">
+            <summary>
+            AankomstVertraging
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Model.AfwijkendeInformatie.VertrekperronAfwijking">
+            <summary>
+            VertrekPerronAfwijking
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Model.AfwijkendeInformatie.Vertrekvertraging">
+            <summary>
+            VertrekVertraging
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Model.DintInformatie">
+            <summary>
+            Representatie van de "Dienst in tienden van minuten" informatie.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Model.DintInformatie.Aankomsttijd">
+            <summary>
+            AankomstTijd
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Model.DintInformatie.Vertrektijd">
+            <summary>
+            AankomstTijd
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Model.DintInformatie.KaleRijtijdMinuten">
+            <summary>
+            Minuten kale rijtijd.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Model.DintInformatie.KaleRijtijdSeconden">
+            <summary>
+            Seconden kale rijtijd.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Model.DintInformatie.RijtijdspelingMinuten">
+            <summary>
+            Minuten rijtijd speling.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Model.DintInformatie.RijtijdspelingSeconden">
+            <summary>
+            Seconden rijtijd speling.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Model.DintInformatie.HalteertijdMinuten">
+            <summary>
+            Minuten halteer tijd.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Model.DintInformatie.HalteertijdSeconden">
+            <summary>
+            Seconden halteer tijd.
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Model.ExtraTreinInformatie">
+            <summary>
+            ExtraTreinInformatie
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Model.ExtraTreinInformatie.Treinnummer">
+            <summary>
+            Gets or sets the treinnummer.
+            </summary>
+            <value>
+            The treinnummer.
+            </value>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Model.ExtraTreinInformatie.VptStationscode">
+            <summary>
+            Gets or sets the VPT stationscode.
+            </summary>
+            <value>
+            The VPT stationscode.
+            </value>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Model.ExtraTreinInformatie.SpecifiekeDag">
+            <summary>
+            Gets or sets the specifieke dag.
+            </summary>
+            <value>
+            The specifieke dag.
+            </value>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Model.ExtraTreinInformatie.DagenVanToepassing">
+            <summary>
+            Gets or sets the dagen van toepassing.
+            </summary>
+            <value>
+            The dagen van toepassing.
+            </value>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Model.ExtraTreinInformatie.Reden">
+            <summary>
+            Gets or sets the reden.
+            </summary>
+            <value>
+            The reden.
+            </value>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Model.PintRichting">
+            <summary>
+            Represents de richting waarvoor Pint informatie geldt.
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Treinrit.Model.PintRichting.Even">
+            <summary>
+            Even richting (even treinritnummer)
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Treinrit.Model.PintRichting.Oneven">
+            <summary>
+            Oneven richting (oneven treinritnummer)
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Model.SoortTreinstop">
+            <summary>
+            SoortTreinStop
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Treinrit.Model.SoortTreinstop.VertrekPunt">
+            <summary>
+            VertrekPunt
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Treinrit.Model.SoortTreinstop.AankomstPunt">
+            <summary>
+            AankomstPunt
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Treinrit.Model.SoortTreinstop.Doorgang">
+            <summary>
+            Doorgang
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Treinrit.Model.SoortTreinstop.Stop">
+            <summary>
+            Stop
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Model.StopType">
+            <summary>
+            StopType
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Treinrit.Model.StopType.CanceledStop">
+            <summary>
+            CanceledStop
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Treinrit.Model.StopType.DivertedStop">
+            <summary>
+            DivertedStop
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Treinrit.Model.StopType.SplitStop">
+            <summary>
+            SplitStop
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Model.Treinrit">
+            <summary>
+            Treinrit
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Model.Treinrit.Vervoersmaatschappij">
+            <summary>
+            Vervoersmaatschappij
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Model.Treinrit.Treinnummer">
+            <summary>
+            treinnummer
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Model.Treinrit.Vervoermiddel">
+            <summary>
+            Vervoermiddel
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Model.Treinrit.TreinType">
+            <summary>
+            TreinType
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Model.Treinrit.Datum">
+            <summary>
+            Datum
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Model.Treinrit.TreinritinformatieVerdacht">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Model.Treinrit.GeplandeVertrektijd">
+            <summary>
+            GeplandeVertrektijd of the FirstStop
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Model.Treinrit.Vertrektijd">
+            <summary>
+            Aankomsttijd of the FirstStop
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Model.Treinrit.GeplandeAankomsttijd">
+            <summary>
+            GeplandeAankomsttijd
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Model.Treinrit.Aankomsttijd">
+            <summary>
+            Aankomsttijd of the LastStop
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Model.Treinrit.Stops">
+            <summary>
+            Stops
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Model.TreinritContext">
+            <summary>
+            ServiceInfo
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Model.TreinritContext.Dienstomschrijving">
+            <summary>
+            Gets or sets the dienstomschrijving.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Model.TreinritContext.DienstType">
+            <summary>
+            Gets or sets the type of the dienst.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Model.TreinritContext.Activiteiten">
+            <summary>
+            Gets or sets the activiteiten.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Model.TreinritContext.Treinritten">
+            <summary>
+            Gets or sets the treinritten.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Model.TreinritContext.Melding">
+            <summary>
+            Ingeval van fouten die optreden bij externe systemen die gecommuniceerd moeten worden
+            gebeurt dat via deze property
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Model.TreinritNotificatie">
+            <summary>
+            This message is send when an event occurs in the Treinrit service.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Model.TreinritNotificatie.NotificatieType">
+            <summary>
+            The type of the event.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Model.TreinritNotificatie.Personeelsnummer">
+            <summary>
+            Personeelsnummer
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Model.TreinritNotificatie.Treinrit">
+            <summary>
+            The actual Dienst.
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Model.TreinritNotificatieType">
+            <summary>
+            Notification type.
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Treinrit.Model.TreinritNotificatieType.Ververst">
+            <summary>
+            Medewerker heeft een nieuwe versie van de treinrit ontvangen.
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Model.TreinritType">
+            <summary>
+            TreinritType
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Treinrit.Model.TreinritType.NormalService">
+            <summary>
+            NormalService
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Treinrit.Model.TreinritType.NewService">
+            <summary>
+            NewService
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Treinrit.Model.TreinritType.CanceledService">
+            <summary>
+            CanceledService
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Treinrit.Model.TreinritType.DivertedService">
+            <summary>
+            DivertedService
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Treinrit.Model.TreinritType.ExtendedService">
+            <summary>
+            ExtendedService
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Treinrit.Model.TreinritType.ScheduleChangedService">
+            <summary>
+            ScheduleChangedService
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Treinrit.Model.TreinritType.SplitService">
+            <summary>
+            SplitService
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Model.TreinritValidationInfo">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Model.TreinritValidationInfo.TreinritInDienst">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Model.TreinritValidationInfo.Message">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Model.Treinstop">
+            <summary>
+            Treinstop
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Model.Treinstop.DetermineAndSetWerkzaamheidMatch(Ns.Orp.Treinrit.Model.Werkzaamheid,System.Collections.Generic.ICollection{Ns.Orp.Treinrit.Model.Treinstop})">
+            <summary>
+            Determines the level of applicability of <paramref name="wts"/> on this stop
+            This is done by determining a match by perron (e.g. 3) and fase (e.g. 3A)
+            also is determined whether the richting has a match.
+            The determined matches are stored in the wts
+            </summary>
+            <param name="wts"></param>
+            <param name="stops"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Model.Treinstop.GetHashCode">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Model.Treinstop.TryExtractIntFromString(System.String,System.Int32@)">
+            <summary>
+            Tries to extract the first occurrence of an int from the string.
+            </summary>
+            <param name="s">The s.</param>
+            <param name="number">The number.</param>
+            <returns></returns>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Model.Treinstop.TreinstopSoort">
+             <summary>
+             SoortStop
+             </summary>
+             <remarks>
+             Dit attribuut heeft logischer wijze een relatie met de inheritance structuur van TreinritActiviteitDetail. Het onderscheid tussen een korte en lange stop is echter niet direct zichtbaar binnen een treinrit en op dit moment niet relevant (zou afgeleid kunnen worden obv vertrek / aankomsttijd.
+            Vertrekpunt: Vertrektijd gevuld en Aankomsttijd leeg
+            Aankomstpunt: Aankomsttijd gevuld en vertrektijd leeg
+            Doorgang: Aankomst- en Vertrektijd beide leeg
+            Stop: Aankomst- en Vertrektijd beide gevuld
+            </remarks>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Model.Treinstop.StopServiceCode">
+            <summary>
+            StopServiceCode
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Model.Treinstop.StopType">
+            <summary>
+            StopType
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Model.Treinstop.Aankomstperron">
+            <summary>
+            AankomstPerron
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Model.Treinstop.GeplandeAankomsttijd">
+            <summary>
+            AankomstTijd
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Model.Treinstop.Vertrekperron">
+            <summary>
+            Contains the planned Vertrekperron
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Model.Treinstop.GeplandeVertrektijd">
+            <summary>
+            VertrekTijd
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Model.Treinstop.StopCode">
+            <summary>
+            Dienstregelpunt
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Model.Treinstop.AfwijkendeInformatie">
+            <summary>
+            AfwijkendeInformatie
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Model.Treinstop.StopIsBinnen">
+            <summary>
+            StopIsBinnen
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Model.Treinstop.Aankomsttijd">
+            <summary>
+            Bevat de aankomsttijd inclusief de vertraging mits aanwezig
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Model.Treinstop.Vertrektijd">
+            <summary>
+            Bevat de vertrektijd inclusief de vertraging mits aanwezig
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Model.Treinstop.HuidigVertrekperron">
+            <summary>
+            Returns the current applicable Vertrekperron.
+            </summary>
+            <returns>VertrekperronAfwijking if exists, otherwise Vertrekperron</returns>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Model.Treinstop.HuidigAankomstperron">
+            <summary>
+            Returns the current applicable Aankomstperron.
+            </summary>
+            <returns>AankomstperronAfwijking if exists, otherwise Aankomstperron</returns>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Model.Treinstop.ExtraTreinInformatie">
+            <summary>
+            Gets the extra trein informaties that are applicable to this stop
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Model.Treinstop.Wts">
+            <summary>
+            Gets the WTS.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Model.Treinstop.DintInformatie">
+            <summary>
+            Gets the Dienst in tienden van minuten that are applicable to this stop
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Model.VertrekseinlichtAanwezig">
+            <summary>
+            Indicatie aanwezigheid vertrekseinlicht
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Treinrit.Model.VertrekseinlichtAanwezig.Nee">
+            <summary>
+            Geen vertrekseinlicht aanwezig
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Treinrit.Model.VertrekseinlichtAanwezig.Ja">
+            <summary>
+            vertrekseinlicht aanwezig
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Treinrit.Model.VertrekseinlichtAanwezig.Dubbelzijdig">
+            <summary>
+            Dubbelzijdig vertrekseinlicht aanwezig
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Model.Werkzaamheid">
+            <summary>
+            Werkzaamheden Treinpersoneel Stations
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Model.Werkzaamheid.Copy">
+            <summary>
+            Kopieert de eigenschappen van de werkzaamheid naar een nieuw object. 
+            Alleen RichtingMatch en MatchType worden niet mee genomen
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Model.Werkzaamheid.Station">
+            <summary>
+            Gets or sets the station for which this is applicable
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Model.Werkzaamheid.Perron">
+            <summary>
+            Gets or sets the spoor for which this is applicable
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Model.Werkzaamheid.Richting">
+            <summary>
+            Gets or sets the richting for which this is applicable
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Model.Werkzaamheid.Vertrekseinlicht">
+            <summary>
+            Gets or sets the presence of vlicht.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Model.Werkzaamheid.Boog">
+            <summary>
+            Gets or sets a value indicating whether Boog is applicable.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Model.Werkzaamheid.MedewerkerkastAanwezig">
+            <summary>
+            Gets or sets a value indicating whether medewerker kast is present at the station.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Model.Werkzaamheid.RichtingMatch">
+            <summary>
+             Indicates whether a match was made with the corresponding stop based on richting
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Model.Werkzaamheid.MatchType">
+            <summary>
+             Indicates match type (perron or (perron and fase))
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Model.WerkzaamheidMatchType">
+            <summary>
+            WerkzaamheidMatchType
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Treinrit.Model.WerkzaamheidMatchType.Perron">
+            <summary>
+            Indicates that a match was made on Perron
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Treinrit.Model.WerkzaamheidMatchType.PerronAndFase">
+            <summary>
+            /// Indicates that a match was made on Fase
+            </summary>
+        </member>
+    </members>
+</doc>

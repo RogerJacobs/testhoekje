@@ -1,0 +1,2004 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Ns.Orp.Shared.Model</name>
+    </assembly>
+    <members>
+        <member name="T:Ns.Orp.Shared.Model.AfwijkendeInformatie">
+            <summary>
+            Afwijkendeinformatie
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.AfwijkendeInformatie.AankomstperronAfwijking">
+            <summary>
+            AankomstPerronAfwijking
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.AfwijkendeInformatie.Aankomstvertraging">
+            <summary>
+            AankomstVertraging
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.AfwijkendeInformatie.VertrekperronAfwijking">
+            <summary>
+            VertrekPerronAfwijking
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.AfwijkendeInformatie.Vertrekvertraging">
+            <summary>
+            VertrekVertraging
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Shared.Model.Baanvak">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Baanvak.BaanvakCode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Baanvak.BaanvakOmschrijving">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Baanvak.IAMElementen">
+            <summary>
+            IAMElementen
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Shared.Model.Bekendheid.Bekendheid`1">
+            <summary>
+            Bekendheid
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Bekendheid.Bekendheid`1.VersieDatumTijd">
+            <summary>
+            VersieDatumTijd
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Bekendheid.Bekendheid`1.Items">
+            <summary>
+            Bekendheid items
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Shared.Model.Bekendheid.BekendheidItem">
+            <summary>
+            BekendheidItem
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Bekendheid.BekendheidItem.Code">
+            <summary>
+            De code van het bekendheid item
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Bekendheid.BekendheidItem.GeldigTot">
+            <summary>
+            Geldigheid van de bekendheid
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Bekendheid.BekendheidItem.Geldigheid">
+            <summary>
+            Geldigheid ten tijde van opvragen van de bekendheid
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Shared.Model.Bekendheid.GeldigheidBekendheid">
+            <summary>
+            Indicatie van de geldigheid van de bekendheid
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Shared.Model.Bekendheid.GeldigheidBekendheid.Geldig">
+            <summary>
+            Bekendheid is geldig op het moment van ophalen
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Shared.Model.Bekendheid.GeldigheidBekendheid.Aflopend">
+            <summary>
+            Bekendheid is aflopend op het moment van ophalen binnen een bepaalde tijd
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Shared.Model.Bekendheid.GeldigheidBekendheid.Ongeldig">
+            <summary>
+            Bekendheid is ongeldig op het moment van ophalen
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Shared.Model.Bekendheid.Wegbekendheid">
+            <summary>
+            Materieelbekendheid
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Shared.Model.Bekendheid.WegbekendheidItem">
+            <summary>
+            WegbekendheidItem
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Bekendheid.WegbekendheidItem.Traject">
+            <summary>
+            De omschrijving van het traject behorend bij de Code
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Shared.Model.Bekendheid.Materieelbekendheid">
+            <summary>
+            Materieelbekendheid
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Shared.Model.BordVerplaatsing">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Shared.Model.BordVerplaatsing.Achteruit">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Shared.Model.BordVerplaatsing.Vooruit">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Shared.Model.Contacten.Belregio">
+            <summary>
+            Belregio
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Contacten.Belregio.Id">
+            <summary>
+            Identiefier
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Contacten.Belregio.Naam">
+            <summary>
+            Naam
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Contacten.Belregio.Servicekanalen">
+            <summary>
+            ServiceKanalen
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Shared.Model.Contacten.BijsturingNummer">
+            <summary>
+            BijsturingNummer
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Contacten.BijsturingNummer.Functie">
+            <summary>
+            Functie
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Contacten.BijsturingNummer.Standplaats">
+            <summary>
+            Standplaats
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Contacten.BijsturingNummer.Telefoonnummer">
+            <summary>
+            Telefoonnummer
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Shared.Model.Contacten.ContactenImportResult">
+            <summary>
+            Container class to check the result of the Contact Import process
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Shared.Model.Contacten.ContactenImportResult.Flatten">
+            <summary>
+            Flattens the object, and returns all data in a single, human readable string.
+            </summary>
+            <returns>All data in a single, human readable string</returns>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Contacten.ContactenImportResult.Successful">
+            <summary>
+            Determines whether the import was successful
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Contacten.ContactenImportResult.NumberOfContactsInFile">
+            <summary>
+            The amount of contacts found in the file
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Contacten.ContactenImportResult.NumberOfSuccessfulImports">
+            <summary>
+            The amount of successful imports
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Contacten.ContactenImportResult.SkippedImports">
+            <summary>
+            When an contact is skipped during import, the Stationscode can be found in this list.
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Shared.Model.Contacten.Locatie">
+            <summary>
+            Locatie
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Shared.Model.Contacten.Locatie.ToString">
+            <summary>
+            Omschrijving terug geven voor automatische test
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Contacten.Locatie.Stationsafkorting">
+            <summary>
+            Stationsafkorting
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Contacten.Locatie.Omschrijving">
+            <summary>
+            Omschrijving
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Contacten.Locatie.OmschrijvingTrimmed">
+            <summary>
+            Get's omschrijving without 's- or 't
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Contacten.Locatie.OmschrijvingTrimmedLowercase">
+            <summary>
+            Get's omschrijving without 's- or 't
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Contacten.Locatie.OmschrijvingLowercase">
+            <summary>
+            Gets the omschrijving lower case.
+            </summary>
+            <value>The omschrijving lower case.</value>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Contacten.Locatie.Belregios">
+            <summary>
+            Belregios
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Contacten.Locatie.Servicekanalen">
+            <summary>
+            Servicekanalen
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Contacten.Locatie.AllServicekanalen">
+            <summary>
+            Ignore it because it is derived
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Shared.Model.Contacten.NSContacten">
+            <summary>
+            Container class that represents all the type of NS Contacten that are available
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Shared.Model.RemoteFile">
+            <summary>
+            Base class for all files that are remotely retrieved (for example: FTP)
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.RemoteFile.LastModified">
+            <summary>
+            LastModified 
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Contacten.NSContacten.ETag">
+            <summary>
+            Passes along the ETag of this configuration
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Contacten.NSContacten.VersieDatumTijd">
+            <summary>
+            VersieDatumTijd
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Contacten.NSContacten.Locaties">
+            <summary>
+            Locaties
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Contacten.NSContacten.Servicekanalen">
+            <summary>
+            Servicekanalen
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Contacten.NSContacten.Bijsturing">
+            <summary>
+            Bijsturing
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Shared.Model.Contacten.Organisatie">
+            <summary>
+            Organisatie
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Shared.Model.Contacten.Organisatie.Landelijk">
+            <summary>
+            Landelijk
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Shared.Model.Contacten.Organisatie.Internationaal">
+            <summary>
+            Internationaal
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Shared.Model.Contacten.OriginType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Shared.Model.Contacten.OriginType.Locatie">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Shared.Model.Contacten.OriginType.Belregio">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Shared.Model.Hoofdbaanvak">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Hoofdbaanvak.HoofdbaanvakCode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Hoofdbaanvak.HoofdbaanvakOmschrijving">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Hoofdbaanvak.Baanvakken">
+            <summary>
+            Baanvakken
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Shared.Model.IAM">
+            <summary>
+            Bevat de IAM (Informatie aan machinist) informatie.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.IAM.AanmaakDatumTijd">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.IAM.GeldigheidStartDatumTijd">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.IAM.GeldigheidEindDatumTijd">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.IAM.Hoofdbaanvakken">
+            <summary>
+            Hoofdbaanvakken
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Shared.Model.IAMDto">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.IAMDto.Dienstnummer">
+            <summary>
+            Dienstnummer
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.IAMDto.DienstStandplaats">
+            <summary>
+            Dienststandplaats
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.IAMDto.DataAanwezig">
+            <summary>
+            Indicator whether Data was aanwezig or not
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.IAMDto.BeginGeldigheidIAM">
+            <summary>
+            Indicator whether Data was aanwezig or not
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.IAMDto.EindGeldigheidIAM">
+            <summary>
+            Indicator whether Data was aanwezig or not
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.IAMDto.DienstGerelateerd">
+            <summary>
+            Indicatie of de IAM beschikbaar was en TSB of Rayon informatie bevatte 
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.IAMDto.BevestigingDatumTijd">
+            <summary>
+            Gets or sets datumtijd of when the bevestiging was created.
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Shared.Model.IAMElement">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.IAMElement.GeldigheidsDatumTijdVan">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.IAMElement.GeldigheidsDatumTijdTotEnMet">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.IAMElement.DienstregelpuntVan">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.IAMElement.DienstregelpuntTot">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.IAMElement.Reden1">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.IAMElement.Reden2">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.IAMElement.Reden3">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.IAMElement.Reden4">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.IAMElement.Reden5">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.IAMElement.Subtype">
+            <summary>
+            Het sub type .
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Shared.Model.Kanzi.SurveyExtensions">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Shared.Model.Kanzi.SurveyExtensions.EqualToInfo(Kanzi.Model.Survey,Kanzi.Model.SurveyInfo)">
+            <summary>
+            
+            </summary>
+            <param name="survey"></param>
+            <param name="surveyInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Shared.Model.Kanzi.SurveyExtensions.EqualToInfo(Kanzi.Model.Survey,Kanzi.Model.Survey)">
+            <summary>
+            
+            </summary>
+            <param name="surveyOne"></param>
+            <param name="surveyTwo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Shared.Model.Kanzi.SurveyExtensions.EqualToInfo(Kanzi.Model.SurveyInfo,Kanzi.Model.SurveyInfo)">
+            <summary>
+            
+            </summary>
+            <param name="surveyInfoOne"></param>
+            <param name="surveyInfoTwo"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Ns.Orp.Shared.Model.Kanzi.SurveyToProcess">
+            <summary>
+            Message for topic to process surveys over
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Kanzi.SurveyToProcess.Survey">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Kanzi.SurveyToProcess.Personeelsnummer">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Shared.Model.Kanzi.SurveyWrapper">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Kanzi.SurveyWrapper.Status">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Kanzi.SurveyWrapper.Info">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Kanzi.SurveyWrapper.Survey">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Shared.Model.Kanzi.SurveyStatus">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Shared.Model.Kanzi.SurveyStatus.Nieuw">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Shared.Model.Kanzi.SurveyStatus.NieuwVersie">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Shared.Model.Kanzi.SurveyStatus.Actueel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Shared.Model.Kanzi.SurveyStatus.Verwijderd">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Shared.Model.LAEInformatie">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.LAEInformatie.BordAanduiding">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.LAEInformatie.BordVerplaatsing">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.LAEInformatie.BordVerplaatsingAfstand">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.LAEInformatie.AfstandAanvangEinde">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Shared.Model.Materieelagenda.MaterieelitemToProcess">
+            <summary>
+            Materieelitem for processing in Azure Topic
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Materieelagenda.MaterieelitemToProcess.Materieelitem">
+            <summary>
+            Materieelitem
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Materieelagenda.MaterieelitemToProcess.Personeelsnummer">
+            <summary>
+            Personeelsnummer
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Shared.Model.Materieelagenda.HuidigMaterieel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Materieelagenda.HuidigMaterieel.Nummer">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Materieelagenda.HuidigMaterieel.Omschrijving">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Materieelagenda.HuidigMaterieel.Eigenaar">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Materieelagenda.HuidigMaterieel.Status">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Materieelagenda.HuidigMaterieel.MaterieelType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Shared.Model.Materieelagenda.LastModifiedList`1">
+            <summary>
+            List welke een hash of lastmodified bevat.
+            </summary>
+            <typeparam name="T">The type of elements in the list</typeparam>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Materieelagenda.LastModifiedList`1.Hash">
+            <summary>
+            Hash value for the Items
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Materieelagenda.LastModifiedList`1.LastModified">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Materieelagenda.LastModifiedList`1.Items">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Shared.Model.Bekendheid.MaterieelbekendheidItem">
+            <summary>
+            MaterieelbekendheidItem
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Bekendheid.MaterieelbekendheidItem.Materieel">
+            <summary>
+            De omschrijving van het materieel behorend bij de Code
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Shared.Model.MonitoringEvent">
+            <summary>
+            Represents information used for Ketenmonitoring.
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Shared.Model.MonitoringEvent.#ctor">
+            <summary>
+            Creates an instance of the MonitoringEvent class.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.MonitoringEvent.EventId">
+            <summary>
+            Gets or sets the event identifier.
+            </summary>
+            <value>
+            The event id.
+            </value>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.MonitoringEvent.EventDate">
+            <summary>
+            Gets or sets the event date.
+            </summary>
+            <value>
+            The event date.
+            </value>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.MonitoringEvent.Keywords">
+            <summary>
+            Gets or sets the keywords for the event.
+            </summary>
+            <value>
+            The keywords.
+            </value>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.MonitoringEvent.ProviderId">
+            <summary>
+            Gets or sets the unique identifier for the provider.
+            </summary>
+            <value>
+            The provider ID.
+            </value>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.MonitoringEvent.ProviderName">
+            <summary>
+            Gets or sets the friendly name of the class that is derived from the event source.
+            </summary>
+            <value>
+            The name of the event source.
+            </value>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.MonitoringEvent.Level">
+            <summary>
+            Gets or sets the level of the event.
+            </summary>
+            <value>
+            The level.
+            </value>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.MonitoringEvent.Message">
+            <summary>
+            Gets or sets the message for the event.
+            </summary>
+            <value>
+            The message.
+            </value>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.MonitoringEvent.Opcode">
+            <summary>
+            Gets or sets the operation code for the event.
+            </summary>
+            <value>
+            The operation code.
+            </value>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.MonitoringEvent.Task">
+            <summary>
+            Gets or sets the task for the event.
+            </summary>
+            <value>
+            The task code.
+            </value>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.MonitoringEvent.Version">
+            <summary>
+            Gets or sets the version of the event.
+            </summary>
+            <value>
+            The version.
+            </value>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.MonitoringEvent.ProcessId">
+            <summary>
+            Gets or sets the process id.
+            </summary>
+            <value>The process id.</value>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.MonitoringEvent.ThreadId">
+            <summary>
+            Gets or sets the thread id.
+            </summary>
+            <value>The thread id.</value>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.MonitoringEvent.ActivityId">
+            <summary>
+            Gets or sets the activity id for the event.
+            </summary>
+            <value>
+            The activity id.
+            </value>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.MonitoringEvent.RelatedActivityId">
+            <summary>
+            Gets or sets the related activity id for the event.
+            </summary>
+            <value>
+            The related activity id.
+            </value>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.MonitoringEvent.InstanceName">
+            <summary>
+            Gets or sets the instance name where the entries are generated from.
+            </summary>
+            <value>
+            The name of the instance.
+            </value>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.MonitoringEvent.Payload">
+            <summary>
+            Gets or sets the payload for the event.
+            </summary>
+            <value>
+            The payload.
+            </value>
+        </member>
+        <member name="T:Ns.Orp.Shared.Model.Overstapstaat">
+            <summary>
+            Overstapstaat
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Overstapstaat.AanmaakDatumTijd">
+            <summary>
+            AanmaakDatumTijd
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Overstapstaat.OverstapTreinritten">
+            <summary>
+            OverstapTreinRitten
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Shared.Model.OverstapTreinrit">
+            <summary>
+            OverstapTreinrit
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.OverstapTreinrit.Treinnummer">
+            <summary>
+            Ritnummer
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.OverstapTreinrit.GeplandeVertrektijd">
+            <summary>
+            Vertrektijd
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.OverstapTreinrit.Vertrektijd">
+            <summary>
+            Bevat de vertrektijd inclusief de vertraging mits aanwezig
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.OverstapTreinrit.Vertrekvertraging">
+            <summary>
+            VertrekVertraging
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.OverstapTreinrit.Bestemming">
+            <summary>
+            Bestemming
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.OverstapTreinrit.AfwijkendVertrekperron">
+            <summary>
+            AfwijkendVertrekperron
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.OverstapTreinrit.Vertrekperron">
+            <summary>
+            Vertrekperron
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.OverstapTreinrit.Vervoersoort">
+            <summary>
+            Vervoersoort
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.OverstapTreinrit.Via">
+            <summary>
+            Via
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.OverstapTreinrit.Tip">
+            <summary>
+            Tip
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.OverstapTreinrit.VervoersmaatschappijNaam">
+            <summary>
+            VervoersmaatschappijNaam
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.OverstapTreinrit.VervoersmaatschappijCode">
+            <summary>
+            Vervoersmaatschappij
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.OverstapTreinrit.TreinritNaam">
+            <summary>
+            TreinritNaam
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Shared.Model.RayonInfo">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Shared.Model.Contacten.Servicekanaal">
+            <summary>
+            Servicekanaal
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Contacten.Servicekanaal.Id">
+            <summary>
+            Identifier
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Contacten.Servicekanaal.Organisatie">
+            <summary>
+            Organisatie
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Contacten.Servicekanaal.Servicerol">
+            <summary>
+            Servicerol
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Contacten.Servicekanaal.Telefoonnummer">
+            <summary>
+            Telefoonnummer
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Contacten.Servicekanaal.Origine">
+            <summary>
+            Omchrijving 
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Contacten.Servicekanaal.OrigineType">
+            <summary>
+            Type van het origine item 
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Contacten.Servicekanaal.OrigineId">
+            <summary>
+            Identifier van het origine item 
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Shared.Model.Contacten.Servicerol">
+            <summary>
+            Servicerol
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Contacten.Servicerol.Naam">
+            <summary>
+            Naam
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Shared.Model.ExtraTreinInformatie">
+            <summary>
+            ExtraTreinInformatie
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.ExtraTreinInformatie.Treinnummer">
+            <summary>
+            Gets or sets the treinnummer.
+            </summary>
+            <value>
+            The treinnummer.
+            </value>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.ExtraTreinInformatie.VptStationscode">
+            <summary>
+            Gets or sets the VPT stationscode.
+            </summary>
+            <value>
+            The VPT stationscode.
+            </value>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.ExtraTreinInformatie.SpecifiekeDag">
+            <summary>
+            Gets or sets the specifieke dag.
+            </summary>
+            <value>
+            The specifieke dag.
+            </value>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.ExtraTreinInformatie.DagenVanToepassing">
+            <summary>
+            Gets or sets the dagen van toepassing.
+            </summary>
+            <value>
+            The dagen van toepassing.
+            </value>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.ExtraTreinInformatie.Reden">
+            <summary>
+            Gets or sets the reden.
+            </summary>
+            <value>
+            The reden.
+            </value>
+        </member>
+        <member name="T:Ns.Orp.Shared.Model.Materieelagenda.Materieel">
+            <summary>
+            MaterieelAgenda
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Shared.Model.Materieelagenda.Materieel.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Shared.Model.Materieelagenda.Materieel.#ctor(System.String,System.Collections.Generic.List{Ns.Orp.Shared.Model.Materieelagenda.Materieelmelding},System.Collections.Generic.List{Ns.Orp.Shared.Model.Materieelagenda.Materieelcontrole},System.Collections.Generic.List{Ns.Orp.Shared.Model.Materieelagenda.Materieelbeperking},System.Collections.Generic.List{Ns.Orp.ServiceLibrary.Shared.Model.ErrorDetails})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ns.Orp.Shared.Model.Materieelagenda.Materieel"/> class.
+            </summary>
+            <param name="materieelnummer">Materieelnummer.</param>
+            <param name="materieelmeldingen">Materieelmeldingen.</param>
+            <param name="materieelcontroles">Materieelcontroles.</param>
+            <param name="beperkingen"></param>
+            <param name="errorMeldingen"></param>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Materieelagenda.Materieel.Nummer">
+            <summary>
+            Gets or sets the nummer.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Materieelagenda.Materieel.Beperkingen">
+            <summary>
+            Gets or sets the beperkingen.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Materieelagenda.Materieel.Controles">
+            <summary>
+            Gets or sets the controles.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Materieelagenda.Materieel.Meldingen">
+            <summary>
+            Gets or sets the meldingen.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Materieelagenda.Materieel.ErrorMeldingen">
+            <summary>
+            Ingeval van fouten die optreden bij externe systemen die gecommuniceerd moeten worden gebeurt dat via deze property
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Shared.Model.Materieelagenda.Materieelbeperking">
+            <summary>
+            Materieelbeperking
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Shared.Model.Materieelagenda.Materieelitem">
+            <summary>
+            Materieelitem
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Materieelagenda.Materieelitem.Materieelnummer">
+            <summary>
+            Gets or sets materieelnummer.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Materieelagenda.Materieelitem.Omschrijving">
+            <summary>
+            Gets or sets the omschrijving.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Materieelagenda.Materieelitem.LokaalOpgevoerd">
+            <summary>
+            Of het item lokaal is opgevoerd.
+            </summary>
+            <remarks>
+            Sturen we niet over de lijn gezien dit iets is wat alleen in de app gebruikt word
+            </remarks>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Materieelagenda.Materieelitem.Subtype">
+            <summary>
+            Het sub type .
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Shared.Model.Materieelagenda.Materieelbeperking.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Shared.Model.Materieelagenda.Materieelbeperking.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ns.Orp.Shared.Model.Materieelagenda.Materieelbeperking"/> class.
+            </summary>
+            <param name="materieelnummer">The materieelnummer.</param>
+        </member>
+        <member name="M:Ns.Orp.Shared.Model.Materieelagenda.Materieelbeperking.#ctor(System.String,Ns.Orp.Shared.Model.Materieelagenda.MaterieelmeldingOpmerking)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ns.Orp.Shared.Model.Materieelagenda.Materieelbeperking"/> class.
+            </summary>
+            <param name="materieelnummer">The materieelnummer.</param>
+            <param name="opmerking">The opmerking.</param>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Materieelagenda.Materieelbeperking.Code">
+            <summary>
+            Gets or sets the code.
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Shared.Model.Materieelagenda.MaterieelbeperkingComparer">
+            <summary>
+            MaterieelbeperkingComparer
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Shared.Model.Materieelagenda.MaterieelbeperkingComparer.Equals(Ns.Orp.Shared.Model.Materieelagenda.Materieelbeperking,Ns.Orp.Shared.Model.Materieelagenda.Materieelbeperking)">
+            <summary>
+            Determines whether the specified objects are equal.
+            Equality is based on case insensitive comparison of code and omschrijving
+            </summary>
+            <param name="x">The first object of type <paramref name="x"/> to compare.</param>
+            <param name="y">The second object of type <paramref name="y" /> to compare.</param>
+            <returns>
+            true if the specified objects are equal; otherwise, false.
+            </returns>
+        </member>
+        <member name="M:Ns.Orp.Shared.Model.Materieelagenda.MaterieelbeperkingComparer.GetHashCode(Ns.Orp.Shared.Model.Materieelagenda.Materieelbeperking)">
+            <summary>
+            Returns a hash code for this instance.
+            </summary>
+            <param name="obj">The object.</param>
+            <returns>
+            A hash code for this instance, suitable for use in hashing algorithms and data structures like a hash table. 
+            </returns>
+        </member>
+        <member name="T:Ns.Orp.Shared.Model.Materieelagenda.Materieelcode">
+            <summary>
+            Een materieelcode
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Materieelagenda.Materieelcode.Code">
+            <summary>
+            Code
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Materieelagenda.Materieelcode.SoortCode">
+            <summary>
+            SoortCode
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Materieelagenda.Materieelcode.Omschrijving">
+            <summary>
+            Omschrijving
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Shared.Model.Materieelagenda.MaterieelcodeType">
+            <summary>
+            MaterieelCodeType
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Shared.Model.Materieelagenda.MaterieelcodeType.Unknown">
+            <summary>
+            Unknown
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Shared.Model.Materieelagenda.MaterieelcodeType.InspectionCode">
+            <summary>
+            InspectionCode
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Shared.Model.Materieelagenda.MaterieelcodeType.DefectLocationCode">
+            <summary>
+            DefectLocationCode
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Shared.Model.Materieelagenda.MaterieelcodeType.SystemCodeSdm">
+            <summary>
+            SystemCodeSDM
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Shared.Model.Materieelagenda.Materieelcontrole">
+            <summary>
+            Materieelcontrole
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Shared.Model.Materieelagenda.Materieelcontrole.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Shared.Model.Materieelagenda.Materieelcontrole.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ns.Orp.Shared.Model.Materieelagenda.Materieelcontrole"/> class.
+            </summary>
+            <param name="materieelnummer">The materieelnummer.</param>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Materieelagenda.Materieelcontrole.Code">
+            <summary>
+            Code die het soort controle aangeeft
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Materieelagenda.Materieelcontrole.UitvoerDatumTijd">
+            <summary>
+            De datum en tijd waarop de controle gedaan is
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Shared.Model.Materieelagenda.Materieelmelding">
+            <summary>
+            Materieelmelding
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Shared.Model.Materieelagenda.Materieelmelding.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Shared.Model.Materieelagenda.Materieelmelding.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ns.Orp.Shared.Model.Materieelagenda.Materieelmelding"/> class.
+            </summary>
+            <param name="materieelnummer">The materieelnummer.</param>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Materieelagenda.Materieelmelding.MeldingDatumTijd">
+            <summary>
+            De datum en tijd waarop de melding gedaan is
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Materieelagenda.Materieelmelding.Locatiecode">
+            <summary>
+            De code van de plaats in de trein van de storing.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Materieelagenda.Materieelmelding.SdmCode">
+            <summary>
+            Code die het soort melding aangeeft. Bepaald door de keuzes van de gebruiker bij het invoeren van de melding
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Materieelagenda.Materieelmelding.Prioriteit">
+            <summary>
+            De urgentie van de melding. Zal de waarde 3 hebben voor meldingen die via de operatie “CreateMaterialNotification” van Maximo zijn opgevoerd.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Materieelagenda.Materieelmelding.Opmerkingen">
+            <summary>
+            to be added
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Materieelagenda.Materieelmelding.Locatieomschrijving">
+            <summary>
+            Gets or sets the locatie omschrijving.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Materieelagenda.Materieelmelding.SdmOmschrijving">
+            <summary>
+            Gets or sets the SDM omschrijving.
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Shared.Model.Materieelagenda.MaterieelmeldingOpmerking">
+            <summary>
+            Opmerking
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Materieelagenda.MaterieelmeldingOpmerking.Code">
+            <summary>
+            De code van de opmerking
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Materieelagenda.MaterieelmeldingOpmerking.Omschrijving">
+            <summary>
+            De tekst van de opmerking (behorende bij opmerking code)
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Materieelagenda.MaterieelmeldingOpmerking.Beperking">
+            <summary>
+            Indicatie die aangeeft of de opmerking een beperking is => true anders false
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Shared.Model.Materieelsamenstelling.ActueelMaterieel">
+            <summary>
+            Materieel
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Shared.Model.Materieelsamenstelling.Materieel">
+            <summary>
+            Materieel
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Materieelsamenstelling.Materieel.Soort">
+            <summary>
+            MaterieelSoort
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Materieelsamenstelling.Materieel.AantalBakken">
+            <summary>
+            Aantal bakken dat het materieel bevat
+            </summary>
+            <remarks>
+            Null als het niet bepaald kan worden
+            </remarks>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Materieelsamenstelling.ActueelMaterieel.VoorafgaandeTreinrit">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Materieelsamenstelling.ActueelMaterieel.OpvolgendeTreinrit">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Materieelsamenstelling.ActueelMaterieel.ActueelMaterieelnummer">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Materieelsamenstelling.ActueelMaterieel.Status">
+            <summary>
+            Status
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Shared.Model.Materieelsamenstelling.GeplandMaterieel">
+            <summary>
+            Materieel
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Shared.Model.Materieelsamenstelling.MaterieelSectieBijzonderheden">
+            <summary>
+            MaterieeldeelActie
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Shared.Model.Materieelsamenstelling.MaterieelSectieBijzonderheden.None">
+            <summary>
+            Unknown
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Shared.Model.Materieelsamenstelling.MaterieelSectieBijzonderheden.Kopmaken">
+            <summary>
+            Kopmaken
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Shared.Model.Materieelsamenstelling.MaterieelSectieBijzonderheden.MeerMaterieel">
+            <summary>
+            Koppelen
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Shared.Model.Materieelsamenstelling.MaterieelSectieBijzonderheden.MinderMaterieel">
+            <summary>
+            Ontkoppelen
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Shared.Model.Materieelsamenstelling.MaterieelSoort">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Materieelsamenstelling.MaterieelSoort.MaterieelType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Materieelsamenstelling.MaterieelSoort.MaterieelTypeIndicatie">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Shared.Model.Materieelsamenstelling.MaterieelStatus">
+            <summary>
+            MaterieelStatus
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Shared.Model.Materieelsamenstelling.MaterieelStatus.Stabiel">
+            <summary>
+            Unknown
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Shared.Model.Materieelsamenstelling.MaterieelStatus.Nieuw">
+            <summary>
+            Toegevoegd
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Shared.Model.Materieelsamenstelling.MaterieelStatus.BlijftAchter">
+            <summary>
+            Ontkoppeld
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Shared.Model.Materieelsamenstelling.TreinritMaterieelStop">
+            <summary>
+            TreinritMaterieelSectie
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Materieelsamenstelling.TreinritMaterieelStop.StopCode">
+            <summary>
+            StopCode
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Materieelsamenstelling.TreinritMaterieelStop.ActueleBijzonderheden">
+            <summary>
+            ActueleBijzonderheden
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Materieelsamenstelling.TreinritMaterieelStop.TotaalAantalActueleBakken">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Materieelsamenstelling.TreinritMaterieelStop.TotaalAantalGeplandeBakken">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Materieelsamenstelling.TreinritMaterieelStop.ActueelMaterieel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Materieelsamenstelling.TreinritMaterieelStop.GeplandMaterieel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Shared.Model.Context.TreinritContext">
+            <summary>
+            ServiceInfo
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Context.TreinritContext.Dienstomschrijving">
+            <summary>
+            Gets or sets the dienstomschrijving.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Context.TreinritContext.DienstType">
+            <summary>
+            Gets or sets the type of the dienst.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Context.TreinritContext.Activiteiten">
+            <summary>
+            Gets or sets the activiteiten.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Context.TreinritContext.Treinritten">
+            <summary>
+            Gets or sets the treinritten.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Context.TreinritContext.Melding">
+            <summary>
+            Ingeval van fouten die optreden bij externe systemen die gecommuniceerd moeten worden
+            gebeurt dat via deze property
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Shared.Model.ServiceInformatie">
+            <summary>
+            ServiceInformatie
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.ServiceInformatie.AanmaakDatumTijd">
+            <summary>
+            AanmaakDatumTijd
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.ServiceInformatie.ServiceInformatieElementen">
+            <summary>
+            ServiceInformatieElementen
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Shared.Model.ServiceInformatieCategorie">
+            <summary>
+            ServiceInformatieCategorie
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Shared.Model.ServiceInformatieCategorie.Verstoringen">
+            <summary>
+            Verstoringen
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Shared.Model.ServiceInformatieCategorie.Werkzaamheden">
+            <summary>
+            Werkzaamheden
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Shared.Model.ServiceInformatieElement">
+            <summary>
+            ServiceInformatieElement
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.ServiceInformatieElement.Indentificatie">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.ServiceInformatieElement.Categorie">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.ServiceInformatieElement.Prioriteit">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.ServiceInformatieElement.OorsprongDatumTijd">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.ServiceInformatieElement.Kopregel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.ServiceInformatieElement.SubKopregel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.ServiceInformatieElement.Body">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Shared.Model.SoortTreinstop">
+            <summary>
+            SoortTreinStop
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Shared.Model.SoortTreinstop.VertrekPunt">
+            <summary>
+            VertrekPunt
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Shared.Model.SoortTreinstop.AankomstPunt">
+            <summary>
+            AankomstPunt
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Shared.Model.SoortTreinstop.Doorgang">
+            <summary>
+            Doorgang
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Shared.Model.SoortTreinstop.Stop">
+            <summary>
+            Stop
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Shared.Model.StopType">
+            <summary>
+            StopType
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Shared.Model.StopType.CanceledStop">
+            <summary>
+            CanceledStop
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Shared.Model.StopType.DivertedStop">
+            <summary>
+            DivertedStop
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Shared.Model.StopType.SplitStop">
+            <summary>
+            SplitStop
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Shared.Model.Treinrit">
+            <summary>
+            Treinrit
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Treinrit.Vervoersmaatschappij">
+            <summary>
+            Vervoersmaatschappij
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Treinrit.Treinnummer">
+            <summary>
+            treinnummer
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Treinrit.Vervoermiddel">
+            <summary>
+            Vervoermiddel
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Treinrit.TreinType">
+            <summary>
+            TreinType
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Treinrit.Datum">
+            <summary>
+            Datum
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Treinrit.TreinritinformatieVerdacht">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Treinrit.GeplandeVertrektijd">
+            <summary>
+            GeplandeVertrektijd of the FirstStop
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Treinrit.Vertrektijd">
+            <summary>
+            Aankomsttijd of the FirstStop
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Treinrit.GeplandeAankomsttijd">
+            <summary>
+            GeplandeAankomsttijd
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Treinrit.Aankomsttijd">
+            <summary>
+            Aankomsttijd of the LastStop
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Treinrit.Stops">
+            <summary>
+            Stops
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Shared.Model.TreinritType">
+            <summary>
+            TreinritType
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Shared.Model.TreinritType.NormalService">
+            <summary>
+            NormalService
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Shared.Model.TreinritType.NewService">
+            <summary>
+            NewService
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Shared.Model.TreinritType.CanceledService">
+            <summary>
+            CanceledService
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Shared.Model.TreinritType.DivertedService">
+            <summary>
+            DivertedService
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Shared.Model.TreinritType.ExtendedService">
+            <summary>
+            ExtendedService
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Shared.Model.TreinritType.ScheduleChangedService">
+            <summary>
+            ScheduleChangedService
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Shared.Model.TreinritType.SplitService">
+            <summary>
+            SplitService
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Shared.Model.TreinritValidationInfo">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.TreinritValidationInfo.TreinritInDienst">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.TreinritValidationInfo.Message">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Shared.Model.Treinstop">
+            <summary>
+            Treinstop
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Shared.Model.Treinstop.DetermineAndSetWerkzaamheidMatch(Ns.Orp.Shared.Model.Werkzaamheid,System.Collections.Generic.ICollection{Ns.Orp.Shared.Model.Treinstop})">
+            <summary>
+            Determines the level of applicability of <paramref name="wts"/> on this stop
+            This is done by determining a match by perron (e.g. 3) and fase (e.g. 3A)
+            also is determined whether the richting has a match.
+            The determined matches are stored in the wts
+            </summary>
+            <param name="wts"></param>
+            <param name="stops"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Shared.Model.Treinstop.GetHashCode">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Shared.Model.Treinstop.TryExtractIntFromString(System.String,System.Int32@)">
+            <summary>
+            Tries to extract the first occurrence of an int from the string.
+            </summary>
+            <param name="s">The s.</param>
+            <param name="number">The number.</param>
+            <returns></returns>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Treinstop.TreinstopSoort">
+             <summary>
+             SoortStop
+             </summary>
+             <remarks>
+             Dit attribuut heeft logischer wijze een relatie met de inheritance structuur van TreinritActiviteitDetail. Het onderscheid tussen een korte en lange stop is echter niet direct zichtbaar binnen een treinrit en op dit moment niet relevant (zou afgeleid kunnen worden obv vertrek / aankomsttijd.
+            Vertrekpunt: Vertrektijd gevuld en Aankomsttijd leeg
+            Aankomstpunt: Aankomsttijd gevuld en vertrektijd leeg
+            Doorgang: Aankomst- en Vertrektijd beide leeg
+            Stop: Aankomst- en Vertrektijd beide gevuld
+            </remarks>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Treinstop.StopServiceCode">
+            <summary>
+            StopServiceCode
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Treinstop.StopType">
+            <summary>
+            StopType
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Treinstop.Aankomstperron">
+            <summary>
+            AankomstPerron
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Treinstop.GeplandeAankomsttijd">
+            <summary>
+            AankomstTijd
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Treinstop.Vertrekperron">
+            <summary>
+            Contains the planned Vertrekperron
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Treinstop.GeplandeVertrektijd">
+            <summary>
+            VertrekTijd
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Treinstop.StopCode">
+            <summary>
+            Dienstregelpunt
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Treinstop.AfwijkendeInformatie">
+            <summary>
+            AfwijkendeInformatie
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Treinstop.StopIsBinnen">
+            <summary>
+            StopIsBinnen
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Treinstop.Aankomsttijd">
+            <summary>
+            Bevat de aankomsttijd inclusief de vertraging mits aanwezig
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Treinstop.Vertrektijd">
+            <summary>
+            Bevat de vertrektijd inclusief de vertraging mits aanwezig
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Treinstop.HuidigVertrekperron">
+            <summary>
+            Returns the current applicable Vertrekperron.
+            </summary>
+            <returns>VertrekperronAfwijking if exists, otherwise Vertrekperron</returns>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Treinstop.HuidigAankomstperron">
+            <summary>
+            Returns the current applicable Aankomstperron.
+            </summary>
+            <returns>AankomstperronAfwijking if exists, otherwise Aankomstperron</returns>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Treinstop.ExtraTreinInformatie">
+            <summary>
+            Gets the extra trein informaties that are applicable to this stop
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Treinstop.Wts">
+            <summary>
+            Gets the WTS.
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Shared.Model.TSB">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.TSB.Richting">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.TSB.PublicatieDatumTijdVan">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.TSB.PublicatieDatumTijdTotEnMet">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.TSB.Spooraanduiding1">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.TSB.Spooraanduiding2">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.TSB.Spooraanduiding3">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.TSB.PlaatsaanduidingVan">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.TSB.PlaatsaanduidingTot">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.TSB.MaxSnelheidReiziger">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.TSB.MaxSnelheidGoederen">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.TSB.LAEInformatie">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Shared.Model.TSBRichting">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Shared.Model.TSBRichting.Tegengesteld">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Shared.Model.TSBRichting.Aangegeven">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Shared.Model.VertrekseinlichtAanwezig">
+            <summary>
+            Indicatie aanwezigheid vertrekseinlicht
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Shared.Model.VertrekseinlichtAanwezig.Nee">
+            <summary>
+            Geen vertrekseinlicht aanwezig
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Shared.Model.VertrekseinlichtAanwezig.Ja">
+            <summary>
+            vertrekseinlicht aanwezig
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Shared.Model.VertrekseinlichtAanwezig.Dubbelzijdig">
+            <summary>
+            Dubbelzijdig vertrekseinlicht aanwezig
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Shared.Model.Vervoersmaatschappij">
+            <summary>
+            Vervoersmaatschappij
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Shared.Model.Vervoersmaatschappij.Onbekend">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Shared.Model.Vervoersmaatschappij.Ns">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Shared.Model.Vervoersmaatschappij.DB">
+            <summary>
+            Duitse vervoerder
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Shared.Model.Vervoersmaatschappij.Keolis">
+            <summary>
+            Duitse vervoerder
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Shared.Model.Vervoersmaatschappij.NsInternational">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Shared.Model.Vervoersmaatschappij.Arriva">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Shared.Model.Vervoersmaatschappij.Breng">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Shared.Model.Vervoersmaatschappij.Syntus">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Shared.Model.Vervoersmaatschappij.Valleilijn">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Shared.Model.Vervoersmaatschappij.Veolia">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Shared.Model.Vervoersmaatschappij.NMBS">
+            <summary>
+            Nationale Maatschappij der Belgische Spoorwegen
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Shared.Model.WegwijzerBericht">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Shared.Model.Werkzaamheid">
+            <summary>
+            Werkzaamheden Treinpersoneel Stations
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Shared.Model.Werkzaamheid.Copy">
+            <summary>
+            Kopieert de eigenschappen van de werkzaamheid naar een nieuw object. 
+            Alleen RichtingMatch en MatchType worden niet mee genomen
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Werkzaamheid.Station">
+            <summary>
+            Gets or sets the station for which this is applicable
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Werkzaamheid.Perron">
+            <summary>
+            Gets or sets the spoor for which this is applicable
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Werkzaamheid.Richting">
+            <summary>
+            Gets or sets the richting for which this is applicable
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Werkzaamheid.Vertrekseinlicht">
+            <summary>
+            Gets or sets the presence of vlicht.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Werkzaamheid.Boog">
+            <summary>
+            Gets or sets a value indicating whether Boog is applicable.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Werkzaamheid.MedewerkerkastAanwezig">
+            <summary>
+            Gets or sets a value indicating whether medewerker kast is present at the station.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Werkzaamheid.RichtingMatch">
+            <summary>
+             Indicates whether a match was made with the corresponding stop based on richting
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Shared.Model.Werkzaamheid.MatchType">
+            <summary>
+             Indicates match type (perron or (perron and fase))
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Shared.Model.WerkzaamheidMatchType">
+            <summary>
+            WerkzaamheidMatchType
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Shared.Model.WerkzaamheidMatchType.Perron">
+            <summary>
+            Indicates that a match was made on Perron
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Shared.Model.WerkzaamheidMatchType.PerronAndFase">
+            <summary>
+            /// Indicates that a match was made on Fase
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,38 @@
+﻿<Testresultaten>
+  <MijnBiljetten>
+    <reslutaat>
+      <Moment></Moment>
+      <totalenResultaat></totalenResultaat>
+      <Scenarios>
+        <scnario>
+          <scenarioNaam></scenarioNaam>
+          <totalenScenario></totalenScenario>
+          <steps>
+            <step>
+              <StepNaam></StepNaam>
+              <totalenStep></totalenStep>
+              <screenshots>
+                <screenshot>
+                  <screenshotValidatie></screenshotValidatie>
+                  <screenshotNaam></screenshotNaam>
+                  <screenshotResultaat></screenshotResultaat>
+                  <screenshotVerwacht></screenshotVerwacht>
+                  <screenshotDiff></screenshotDiff>
+                </screenshot>
+                <screenshot>
+                  <screenshotValidatie></screenshotValidatie>
+                  <screenshotNaam></screenshotNaam>
+                  <screenshotResultaat></screenshotResultaat>
+                  <screenshotVerwacht></screenshotVerwacht>
+                  <screenshotDiff></screenshotDiff>
+                </screenshot>
+              </screenshots>
+            </step>
+          </steps>
+        </scnario>
+      </Scenarios>
+      
+      
+    </reslutaat>    
+  </MijnBiljetten>
+</Testresultaten>

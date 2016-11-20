@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<versies>
+  <versie>
+    <omgeving>Acceptatie</omgeving>
+    <release>r25</release>
+    <versieRouter>3.7.3149.0</versieRouter>
+    <appapi>3.7.3166.0</appapi>
+    <configuratie>3.11.3.0</configuratie>
+    <internal>De externe naam kan niet worden omgezet: 'nsorp-internal-p.cloud.ns.nl'</internal>
+    <loggingsportaal>3.9.1.0</loggingsportaal>
+    <berichtenbackend>3.7.3149.0</berichtenbackend>
+    <dienstbackend>3.7.3149.0</dienstbackend>
+    <treinritbackend>3.7.3149.0</treinritbackend>
+    <laatsteupdate>2016-10-11  15:59:40</laatsteupdate>
+  </versie>
+  <versie>
+    <omgeving>Test</omgeving>
+    <release>r26</release>
+    <versieRouter>3.7.3255.0</versieRouter>
+    <appapi>3.7.3255.0</appapi>
+    <configuratie>3.12.1.0</configuratie>
+    <internal>hold</internal>
+    <loggingsportaal>3.10.1.0</loggingsportaal>
+    <berichtenbackend>3.7.3255.0</berichtenbackend>
+    <dienstbackend>3.7.3248.0</dienstbackend>
+    <treinritbackend>3.11.1.0</treinritbackend>
+    <laatsteupdate>2016-09-13  08:41:41</laatsteupdate>
+  </versie>
+  <versie>
+    <omgeving>Test</omgeving>
+    <release>r26</release>
+    <versieRouter>3.7.3255.0</versieRouter>
+    <appapi>3.7.3255.0</appapi>
+    <configuratie>3.12.1.0</configuratie>
+    <internal>hold</internal>
+    <loggingsportaal>3.10.1.0</loggingsportaal>
+    <berichtenbackend>3.7.3255.0</berichtenbackend>
+    <dienstbackend>3.7.3248.0</dienstbackend>
+    <treinritbackend>3.11.1.0</treinritbackend>
+    <laatsteupdate>2016-09-13  06:39:58</laatsteupdate>
+  </versie>
+</versies>

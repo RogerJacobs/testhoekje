@@ -1,0 +1,892 @@
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><ns8:lookupDienstkaartResponse xmlns:ns8="http://www.ns.nl/dienstkaart/ws/dienstkaart">
+  <ns5:dienst xmlns:ns5="http://www.ns.nl/dienstkaart/dienstkaart">
+      <id xmlns="http://www.ns.nl/dienstkaart/model/dienst">
+         <nummer>2</nummer>
+         <uitvoering>2016-03-02</uitvoering>
+         <ns2:code xmlns:ns2="http://www.ns.nl/dienstkaart/model/standplaats">asd</ns2:code>
+         <functiecode>M</functiecode>
+      </id>
+      <ns9:mutatie xmlns:ns9="http://www.ns.nl/dienstkaart/model/dienst-meta">2014-09-09T01:02:28</ns9:mutatie>
+      <begin xmlns="http://www.ns.nl/dienstkaart/model/dienst">2016-03-02T18:34:00</begin>
+      <eind xmlns="http://www.ns.nl/dienstkaart/model/dienst">2016-03-03T02:31:00</eind>
+      <planfase xmlns="http://www.ns.nl/dienstkaart/model/dienst">D</planfase>
+      <ns5:activiteit>
+         <ns3:soort xmlns:ns3="http://www.ns.nl/dienstkaart/model/activiteit"/>
+         <ns5:trein>
+            <ns4:id xmlns:ns4="http://www.ns.nl/dienstkaart/model/treindienst">
+               <ns4:nummer>271</ns4:nummer>
+               <ns4:datum>2014-09-09</ns4:datum>
+            </ns4:id>
+            <ns4:materieelcode xmlns:ns4="http://www.ns.nl/dienstkaart/model/treindienst">SGMM</ns4:materieelcode>
+         </ns5:trein>
+         <ns3:vertrek xmlns:ns3="http://www.ns.nl/dienstkaart/model/activiteit">2016-03-02T18:34:00</ns3:vertrek>
+         <ns3:aankomst xmlns:ns3="http://www.ns.nl/dienstkaart/model/activiteit">2016-03-02T19:05:00</ns3:aankomst>
+         <ns3:regelpuntVertrek xmlns:ns3="http://www.ns.nl/dienstkaart/model/activiteit">Rtd</ns3:regelpuntVertrek>
+         <ns3:regelpuntAankomst xmlns:ns3="http://www.ns.nl/dienstkaart/model/activiteit">Gvc</ns3:regelpuntAankomst>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Rtd</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-02T18:34:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">V</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">120</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Dhsa</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-02T18:36:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">D</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">120</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Dhs</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-02T18:37:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">D</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">120</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Rmoa</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-02T18:37:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">D</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">120</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Sdm</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-02T18:39:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">K</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">120</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Dtz</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-02T18:45:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">K</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">120</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Dt</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-02T18:48:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">K</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">120</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Ngsfa</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-02T18:48:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">D</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">120</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Dta</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-02T18:50:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">D</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">120</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Rsw</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-02T18:52:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">K</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">120</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Gvmw</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-02T18:55:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">K</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">120</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Gv</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-02T18:58:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">A</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">120</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Gv</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-02T19:00:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">V</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">120</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Gvc</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-02T19:05:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">A</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">120</ns6:adviessnelheid>
+         </ns5:detail>
+      </ns5:activiteit>
+      <ns5:activiteit>
+         <ns3:soort xmlns:ns3="http://www.ns.nl/dienstkaart/model/activiteit"/>
+         <ns5:trein>
+            <ns4:id xmlns:ns4="http://www.ns.nl/dienstkaart/model/treindienst">
+               <ns4:nummer>272</ns4:nummer>
+               <ns4:datum>2014-09-09</ns4:datum>
+            </ns4:id>
+            <ns4:materieelcode xmlns:ns4="http://www.ns.nl/dienstkaart/model/treindienst">1700</ns4:materieelcode>
+         </ns5:trein>
+         <ns3:vertrek xmlns:ns3="http://www.ns.nl/dienstkaart/model/activiteit">2016-03-02T19:26:00</ns3:vertrek>
+         <ns3:aankomst xmlns:ns3="http://www.ns.nl/dienstkaart/model/activiteit">2016-03-02T20:04:00</ns3:aankomst>
+         <ns3:regelpuntVertrek xmlns:ns3="http://www.ns.nl/dienstkaart/model/activiteit">Gvc</ns3:regelpuntVertrek>
+         <ns3:regelpuntAankomst xmlns:ns3="http://www.ns.nl/dienstkaart/model/activiteit">Ut</ns3:regelpuntAankomst>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Gvc</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-02T19:26:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">V</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">140</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Bkh</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-02T19:28:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">D</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">140</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Vb</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-02T19:29:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">D</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">140</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Ypb</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-02T19:30:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">D</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">140</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Ztm</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-02T19:33:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">D</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">140</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Ztmo</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-02T19:34:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">D</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">140</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Mdaz</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-02T19:39:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">D</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">140</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Hgwbr</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-02T19:41:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">D</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">140</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Gd</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-02T19:43:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">A</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">140</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Gd</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-02T19:44:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">V</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">140</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Gdg</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-02T19:46:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">D</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">140</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Odw</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-02T19:48:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">D</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">140</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Odo</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-02T19:49:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">D</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">140</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Wdo</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-02T19:52:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">D</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">140</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Wd</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-02T19:53:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">D</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">140</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Hmla</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-02T19:55:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">D</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">140</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Hmlva</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-02T19:56:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">D</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">140</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Vtn</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-02T19:57:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">D</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">140</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Utt</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-02T19:58:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">D</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">140</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Utlr</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-02T19:59:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">D</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">140</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Utwaw</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-02T20:00:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">D</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">140</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Ut</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-02T20:04:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">A</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">140</ns6:adviessnelheid>
+         </ns5:detail>
+      </ns5:activiteit>
+      <ns5:activiteit>
+         <ns3:soort xmlns:ns3="http://www.ns.nl/dienstkaart/model/activiteit">*</ns3:soort>
+         <ns5:trein>
+            <ns4:id xmlns:ns4="http://www.ns.nl/dienstkaart/model/treindienst">
+               <ns4:nummer>273</ns4:nummer>
+               <ns4:datum>1858-11-17</ns4:datum>
+            </ns4:id>
+            <ns4:materieelcode xsi:nil="true" xmlns:ns4="http://www.ns.nl/dienstkaart/model/treindienst" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+         </ns5:trein>
+         <ns3:vertrek xmlns:ns3="http://www.ns.nl/dienstkaart/model/activiteit">2016-03-02T20:06:00</ns3:vertrek>
+         <ns3:aankomst xmlns:ns3="http://www.ns.nl/dienstkaart/model/activiteit">2016-03-02T20:26:00</ns3:aankomst>
+         <ns3:regelpuntVertrek xmlns:ns3="http://www.ns.nl/dienstkaart/model/activiteit">wgmrba</ns3:regelpuntVertrek>
+         <ns3:regelpuntAankomst xmlns:ns3="http://www.ns.nl/dienstkaart/model/activiteit">wgmrba</ns3:regelpuntAankomst>
+      </ns5:activiteit>
+      <ns5:activiteit>
+         <ns3:soort xmlns:ns3="http://www.ns.nl/dienstkaart/model/activiteit">+REG</ns3:soort>
+         <ns5:trein>
+            <ns4:id xmlns:ns4="http://www.ns.nl/dienstkaart/model/treindienst">
+               <ns4:nummer>274</ns4:nummer>
+               <ns4:datum>2014-09-09</ns4:datum>
+            </ns4:id>
+            <ns4:materieelcode xmlns:ns4="http://www.ns.nl/dienstkaart/model/treindienst">IRM</ns4:materieelcode>
+         </ns5:trein>
+         <ns3:vertrek xmlns:ns3="http://www.ns.nl/dienstkaart/model/activiteit">2016-03-02T20:27:00</ns3:vertrek>
+         <ns3:aankomst xmlns:ns3="http://www.ns.nl/dienstkaart/model/activiteit">2016-03-02T21:35:00</ns3:aankomst>
+         <ns3:regelpuntVertrek xmlns:ns3="http://www.ns.nl/dienstkaart/model/activiteit">Ut</ns3:regelpuntVertrek>
+         <ns3:regelpuntAankomst xmlns:ns3="http://www.ns.nl/dienstkaart/model/activiteit">Amr</ns3:regelpuntAankomst>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Ut</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-02T20:27:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">V</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">140</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Utma</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-02T20:28:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">D</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">140</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Utzl</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-02T20:29:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">D</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">140</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Mas</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-02T20:31:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">D</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">140</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Bkla</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-02T20:32:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">D</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">140</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Bkl</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-02T20:33:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">D</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">140</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Aco</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-02T20:37:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">D</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">140</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Ac</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-02T20:38:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">D</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">140</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Ashd</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-02T20:39:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">D</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">140</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Asb</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-02T20:40:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">D</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">140</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Dvaz</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-02T20:41:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">D</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">140</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Dvd</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-02T20:42:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">D</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">140</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Asa</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-02T20:45:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">K</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">140</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Asdm</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-02T20:47:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">D</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">140</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Asdma</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-02T20:48:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">D</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">140</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Dgrw</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-02T20:50:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">D</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">140</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Ods</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-02T20:51:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">D</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">140</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Asd</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-02T20:54:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">A</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">140</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Asd</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-02T20:59:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">V</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">140</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Sgbr</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-02T21:01:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">D</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">140</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Sgra</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-02T21:02:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">D</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">140</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Obpa</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-02T21:03:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">D</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">140</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Ass</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-02T21:05:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">K</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">140</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Rdwa</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-02T21:06:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">D</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">140</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Hmta</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-02T21:07:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">D</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">140</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Zd</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-02T21:11:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">A</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">140</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Zd</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-02T21:12:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">V</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">140</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Kbw</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-02T21:14:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">D</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">140</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Kzd</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-02T21:14:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">D</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">140</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Wm</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-02T21:16:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">D</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">140</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Kma</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-02T21:18:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">D</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">140</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Utg</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-02T21:21:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">D</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">140</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Cas</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-02T21:24:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">K</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">140</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Olv</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-02T21:28:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">D</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">140</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Hlo</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-02T21:30:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">D</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">140</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Amr</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-02T21:35:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">A</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">140</ns6:adviessnelheid>
+         </ns5:detail>
+      </ns5:activiteit>
+      <ns5:activiteit>
+         <ns3:soort xmlns:ns3="http://www.ns.nl/dienstkaart/model/activiteit">C</ns3:soort>
+         <ns5:trein>
+            <ns4:id xmlns:ns4="http://www.ns.nl/dienstkaart/model/treindienst">
+               <ns4:nummer>3418</ns4:nummer>
+               <ns4:datum>2014-09-09</ns4:datum>
+            </ns4:id>
+            <ns4:materieelcode xmlns:ns4="http://www.ns.nl/dienstkaart/model/treindienst">TRAXX</ns4:materieelcode>
+         </ns5:trein>
+         <ns3:vertrek xmlns:ns3="http://www.ns.nl/dienstkaart/model/activiteit">2016-03-02T22:02:00</ns3:vertrek>
+         <ns3:aankomst xmlns:ns3="http://www.ns.nl/dienstkaart/model/activiteit">2016-03-02T22:26:00</ns3:aankomst>
+         <ns3:regelpuntVertrek xmlns:ns3="http://www.ns.nl/dienstkaart/model/activiteit">Amr</ns3:regelpuntVertrek>
+         <ns3:regelpuntAankomst xmlns:ns3="http://www.ns.nl/dienstkaart/model/activiteit">Hn</ns3:regelpuntAankomst>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Amr</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-02T22:02:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">V</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">140</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Nhkbr</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-02T22:03:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">D</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">140</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Amrn</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-02T22:05:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">K</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">140</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Bol</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-02T22:07:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">D</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">140</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Hwd</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-02T22:10:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">K</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">140</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Obd</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-02T22:16:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">A</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">140</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Obd</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-02T22:17:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">V</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">140</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Hna</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-02T22:24:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">D</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">140</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Hn</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-02T22:26:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">A</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">140</ns6:adviessnelheid>
+         </ns5:detail>
+      </ns5:activiteit>
+      <ns5:activiteit>
+         <ns3:soort xmlns:ns3="http://www.ns.nl/dienstkaart/model/activiteit">TAXI</ns3:soort>
+         <ns5:trein xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+         <ns3:vertrek xmlns:ns3="http://www.ns.nl/dienstkaart/model/activiteit">2016-03-02T22:37:00</ns3:vertrek>
+         <ns3:aankomst xmlns:ns3="http://www.ns.nl/dienstkaart/model/activiteit">2016-03-02T23:35:00</ns3:aankomst>
+         <ns3:regelpuntVertrek xmlns:ns3="http://www.ns.nl/dienstkaart/model/activiteit">Hn</ns3:regelpuntVertrek>
+         <ns3:regelpuntAankomst xmlns:ns3="http://www.ns.nl/dienstkaart/model/activiteit">Hlm</ns3:regelpuntAankomst>
+      </ns5:activiteit>
+      <ns5:activiteit>
+         <ns3:soort xmlns:ns3="http://www.ns.nl/dienstkaart/model/activiteit">*</ns3:soort>
+         <ns5:trein xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+         <ns3:vertrek xmlns:ns3="http://www.ns.nl/dienstkaart/model/activiteit">2016-03-02T23:35:00</ns3:vertrek>
+         <ns3:aankomst xmlns:ns3="http://www.ns.nl/dienstkaart/model/activiteit">2016-03-03T00:19:00</ns3:aankomst>
+         <ns3:regelpuntVertrek xmlns:ns3="http://www.ns.nl/dienstkaart/model/activiteit">Hlm</ns3:regelpuntVertrek>
+         <ns3:regelpuntAankomst xmlns:ns3="http://www.ns.nl/dienstkaart/model/activiteit">Hlm</ns3:regelpuntAankomst>
+      </ns5:activiteit>
+      <ns5:activiteit>
+         <ns3:soort xmlns:ns3="http://www.ns.nl/dienstkaart/model/activiteit"/>
+         <ns5:trein>
+            <ns4:id xmlns:ns4="http://www.ns.nl/dienstkaart/model/treindienst">
+               <ns4:nummer>2228</ns4:nummer>
+               <ns4:datum>2014-09-09</ns4:datum>
+            </ns4:id>
+            <ns4:materieelcode xmlns:ns4="http://www.ns.nl/dienstkaart/model/treindienst">IRM</ns4:materieelcode>
+         </ns5:trein>
+         <ns3:vertrek xmlns:ns3="http://www.ns.nl/dienstkaart/model/activiteit">2016-03-03T00:19:00</ns3:vertrek>
+         <ns3:aankomst xmlns:ns3="http://www.ns.nl/dienstkaart/model/activiteit">2016-03-03T00:34:00</ns3:aankomst>
+         <ns3:regelpuntVertrek xmlns:ns3="http://www.ns.nl/dienstkaart/model/activiteit">Hlm</ns3:regelpuntVertrek>
+         <ns3:regelpuntAankomst xmlns:ns3="http://www.ns.nl/dienstkaart/model/activiteit">Asd</ns3:regelpuntAankomst>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Hlm</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-03T00:19:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">V</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">140</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Spbr</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-03T00:20:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">D</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">140</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Hlms</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-03T00:21:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">D</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">140</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Hw</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-03T00:24:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">D</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">140</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Hwzb</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-03T00:24:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">D</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">140</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Ass</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-03T00:27:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">A</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">140</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Ass</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-03T00:28:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">V</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">140</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Obpa</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-03T00:30:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">D</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">140</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Sgra</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-03T00:31:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">D</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">140</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Sgbr</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-03T00:32:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">D</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">140</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Asd</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-03T00:34:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">A</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">140</ns6:adviessnelheid>
+         </ns5:detail>
+      </ns5:activiteit>
+      <ns5:activiteit>
+         <ns3:soort xmlns:ns3="http://www.ns.nl/dienstkaart/model/activiteit">BUS</ns3:soort>
+         <ns5:trein>
+            <ns4:id xmlns:ns4="http://www.ns.nl/dienstkaart/model/treindienst">
+               <ns4:nummer>0</ns4:nummer>
+               <ns4:datum>1858-11-17</ns4:datum>
+            </ns4:id>
+            <ns4:materieelcode xsi:nil="true" xmlns:ns4="http://www.ns.nl/dienstkaart/model/treindienst" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+         </ns5:trein>
+         <ns3:vertrek xmlns:ns3="http://www.ns.nl/dienstkaart/model/activiteit">2016-03-03T00:34:00</ns3:vertrek>
+         <ns3:aankomst xmlns:ns3="http://www.ns.nl/dienstkaart/model/activiteit">2016-03-03T00:42:00</ns3:aankomst>
+         <ns3:regelpuntVertrek xmlns:ns3="http://www.ns.nl/dienstkaart/model/activiteit">Gvc</ns3:regelpuntVertrek>
+         <ns3:regelpuntAankomst xmlns:ns3="http://www.ns.nl/dienstkaart/model/activiteit">Gvc</ns3:regelpuntAankomst>
+      </ns5:activiteit>
+      <ns5:activiteit>
+         <ns3:soort xmlns:ns3="http://www.ns.nl/dienstkaart/model/activiteit"/>
+         <ns5:trein>
+            <ns4:id xmlns:ns4="http://www.ns.nl/dienstkaart/model/treindienst">
+               <ns4:nummer>1234</ns4:nummer>
+               <ns4:datum>1858-11-17</ns4:datum>
+            </ns4:id>
+            <ns4:materieelcode xsi:nil="true" xmlns:ns4="http://www.ns.nl/dienstkaart/model/treindienst" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+         </ns5:trein>
+         <ns3:vertrek xmlns:ns3="http://www.ns.nl/dienstkaart/model/activiteit">2016-03-03T00:42:00</ns3:vertrek>
+         <ns3:aankomst xmlns:ns3="http://www.ns.nl/dienstkaart/model/activiteit">2016-03-03T00:52:00</ns3:aankomst>
+         <ns3:regelpuntVertrek xmlns:ns3="http://www.ns.nl/dienstkaart/model/activiteit">Gvc</ns3:regelpuntVertrek>
+         <ns3:regelpuntAankomst xmlns:ns3="http://www.ns.nl/dienstkaart/model/activiteit">Gvc</ns3:regelpuntAankomst>
+      </ns5:activiteit>
+      <ns5:activiteit>
+         <ns3:soort xmlns:ns3="http://www.ns.nl/dienstkaart/model/activiteit">RGVT</ns3:soort>
+         <ns5:trein>
+            <ns4:id xmlns:ns4="http://www.ns.nl/dienstkaart/model/treindienst">
+               <ns4:nummer>1234</ns4:nummer>
+               <ns4:datum>1858-11-17</ns4:datum>
+            </ns4:id>
+            <ns4:materieelcode xsi:nil="true" xmlns:ns4="http://www.ns.nl/dienstkaart/model/treindienst" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+         </ns5:trein>
+         <ns3:vertrek xmlns:ns3="http://www.ns.nl/dienstkaart/model/activiteit">2016-03-03T00:52:00</ns3:vertrek>
+         <ns3:aankomst xmlns:ns3="http://www.ns.nl/dienstkaart/model/activiteit">2016-03-03T01:04:00</ns3:aankomst>
+         <ns3:regelpuntVertrek xmlns:ns3="http://www.ns.nl/dienstkaart/model/activiteit">Gvc</ns3:regelpuntVertrek>
+         <ns3:regelpuntAankomst xmlns:ns3="http://www.ns.nl/dienstkaart/model/activiteit">Gvc</ns3:regelpuntAankomst>
+      </ns5:activiteit>
+      <ns5:activiteit>
+         <ns3:soort xmlns:ns3="http://www.ns.nl/dienstkaart/model/activiteit"/>
+         <ns5:trein>
+            <ns4:id xmlns:ns4="http://www.ns.nl/dienstkaart/model/treindienst">
+               <ns4:nummer>55</ns4:nummer>
+               <ns4:datum>2014-09-09</ns4:datum>
+            </ns4:id>
+            <ns4:materieelcode xmlns:ns4="http://www.ns.nl/dienstkaart/model/treindienst">SLT</ns4:materieelcode>
+         </ns5:trein>
+         <ns3:vertrek xmlns:ns3="http://www.ns.nl/dienstkaart/model/activiteit">2016-03-03T01:04:00</ns3:vertrek>
+         <ns3:aankomst xmlns:ns3="http://www.ns.nl/dienstkaart/model/activiteit">2016-03-03T02:31:00</ns3:aankomst>
+         <ns3:regelpuntVertrek xmlns:ns3="http://www.ns.nl/dienstkaart/model/activiteit">Asd</ns3:regelpuntVertrek>
+         <ns3:regelpuntAankomst xmlns:ns3="http://www.ns.nl/dienstkaart/model/activiteit">Rtd</ns3:regelpuntAankomst>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Asd</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-03T01:04:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">V</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">120</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Ods</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-03T01:06:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">D</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">120</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Dgrw</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-03T01:07:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">D</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">120</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Asdma</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-03T01:08:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">D</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">120</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Asdm</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-03T01:09:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">K</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">120</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Asa</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-03T01:12:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">K</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">120</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Dvd</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-03T01:16:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">K</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">120</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Dvaz</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-03T01:17:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">D</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">120</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Asb</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-03T01:19:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">A</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">120</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Asb</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-03T01:21:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">V</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">120</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Ashd</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-03T01:24:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">K</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">120</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Ac</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-03T01:27:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">K</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">120</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Aco</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-03T01:28:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">D</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">120</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Bkl</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-03T01:36:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">K</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">120</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Bkla</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-03T01:37:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">D</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">120</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Hmla</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-03T01:41:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">D</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">120</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Wd</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-03T01:44:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">A</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">120</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Wd</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-03T01:45:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">V</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">120</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Wdo</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-03T01:47:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">D</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">120</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Odo</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-03T01:50:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">D</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">120</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Odw</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-03T01:50:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">D</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">120</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Gdg</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-03T01:54:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">K</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">120</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Gd</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-03T01:58:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">A</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">120</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Gd</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-03T01:59:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">V</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">120</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Hgwbr</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-03T02:00:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">D</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">120</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Mda</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-03T02:01:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">D</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">120</ns6:adviessnelheid>
+         </ns5:detail>
+         <ns5:detail>
+            <ns6:regelpuntcode xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">Rtd</ns6:regelpuntcode>
+            <ns6:vertrek xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">2016-03-03T02:02:00</ns6:vertrek>
+            <ns6:soort xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">A</ns6:soort>
+            <ns6:adviessnelheid xmlns:ns6="http://www.ns.nl/dienstkaart/model/activiteitdetail">120</ns6:adviessnelheid>
+         </ns5:detail>
+      </ns5:activiteit>
+      <ns5:activiteit>
+         <ns3:soort xmlns:ns3="http://www.ns.nl/dienstkaart/model/activiteit">NSRDAG</ns3:soort>
+         <ns5:trein xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+         <ns3:vertrek xmlns:ns3="http://www.ns.nl/dienstkaart/model/activiteit">2016-03-03T02:02:00</ns3:vertrek>
+         <ns3:aankomst xmlns:ns3="http://www.ns.nl/dienstkaart/model/activiteit">2016-03-03T02:31:00</ns3:aankomst>
+         <ns3:regelpuntVertrek xmlns:ns3="http://www.ns.nl/dienstkaart/model/activiteit">Asd</ns3:regelpuntVertrek>
+         <ns3:regelpuntAankomst xmlns:ns3="http://www.ns.nl/dienstkaart/model/activiteit">Asd</ns3:regelpuntAankomst>
+      </ns5:activiteit>
+  </ns5:dienst>
+</ns8:lookupDienstkaartResponse></s:Body></s:Envelope>

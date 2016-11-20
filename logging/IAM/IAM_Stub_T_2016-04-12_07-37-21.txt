@@ -1,0 +1,899 @@
+<IAM xmlns="http://tempuri.org/XmlPublicationDataSet.xsd"
+     XMLSchemaVersie="01.10"
+     BeginGeldigheidsDatumtijd="2016-04-11T04:00:00+02:00"
+     EindeGeldigheidsDatumtijd="2016-04-13T17:00:00+02:00">
+
+  <ControleGetallen>
+    <TSB_Aantal>28</TSB_Aantal>
+    <RayonInfoAantal>10</RayonInfoAantal>
+    <WegwijzerAantal>16</WegwijzerAantal>
+  </ControleGetallen>
+  <Hoofdbaanvak>
+    <HoofdBaanvakCode>24</HoofdBaanvakCode>
+    <HoofdBaanvakOmschrijving>Utrecht CS - Blauwkapel - Hilversum</HoofdBaanvakOmschrijving>
+    <Baanvak>
+      <BaanvakCode>24_</BaanvakCode>
+      <BaanvakOmschrijving>Utrecht CS - Bkp - Hilversum</BaanvakOmschrijving>
+      <WegwijzerBericht>
+        <DienstregelpuntVan>UT</DienstregelpuntVan>
+        <DienstregelpuntTot>UT</DienstregelpuntTot>
+        <GeldigheidsDatumTijdVan>2016-03-10T00:00:00+01:00</GeldigheidsDatumTijdVan>
+        <Reden1>Nieuwe wegwijzertekening</Reden1>
+        <Reden2>Ut_WVK_29_Ut Blad 20 versie T001</Reden2>
+        <Reden3>Deze bevat diverse wijzigingen zie wegkennisbank</Reden3>
+        <Reden4>Ingangsdatum 26-03-2016</Reden4>
+      </WegwijzerBericht>
+    </Baanvak>
+  </Hoofdbaanvak>
+  <Hoofdbaanvak>
+    <HoofdBaanvakCode>25</HoofdBaanvakCode>
+    <HoofdBaanvakOmschrijving>Ut (incl Utm) - Dld - Amersfoort / Baarn</HoofdBaanvakOmschrijving>
+    <Baanvak>
+      <BaanvakCode>25a</BaanvakCode>
+      <BaanvakOmschrijving>Utrecht CS - Bkp - Dld - Amersfoort</BaanvakOmschrijving>
+      <WegwijzerBericht>
+        <DienstregelpuntVan>UT</DienstregelpuntVan>
+        <DienstregelpuntTot>UT</DienstregelpuntTot>
+        <GeldigheidsDatumTijdVan>2016-03-10T00:00:00+01:00</GeldigheidsDatumTijdVan>
+        <Reden1>Nieuwe wegwijzertekening</Reden1>
+        <Reden2>Ut_WVK_29_Ut Blad 20 versie T001</Reden2>
+        <Reden3>Deze bevat diverse wijzigingen zie wegkennisbank</Reden3>
+        <Reden4>Ingangsdatum 26-03-2016</Reden4>
+      </WegwijzerBericht>
+    </Baanvak>
+  </Hoofdbaanvak>
+  <Hoofdbaanvak>
+    <HoofdBaanvakCode>28</HoofdBaanvakCode>
+    <HoofdBaanvakOmschrijving>Amsterdam CS - Bkl - Ut / Hmla-Wd</HoofdBaanvakOmschrijving>
+    <Baanvak>
+      <BaanvakCode>28b</BaanvakCode>
+      <BaanvakOmschrijving>Breukelen - Utrecht CS</BaanvakOmschrijving>
+      <WegwijzerBericht>
+        <DienstregelpuntVan>UT</DienstregelpuntVan>
+        <DienstregelpuntTot>UT</DienstregelpuntTot>
+        <GeldigheidsDatumTijdVan>2016-03-10T00:00:00+01:00</GeldigheidsDatumTijdVan>
+        <Reden1>Nieuwe wegwijzertekening</Reden1>
+        <Reden2>Ut_WVK_29_Ut Blad 20 versie T001</Reden2>
+        <Reden3>Deze bevat diverse wijzigingen zie wegkennisbank</Reden3>
+        <Reden4>Ingangsdatum 26-03-2016</Reden4>
+      </WegwijzerBericht>
+      <WegwijzerBericht>
+        <DienstregelpuntVan>Utzl</DienstregelpuntVan>
+        <DienstregelpuntTot>UT</DienstregelpuntTot>
+        <GeldigheidsDatumTijdVan>2016-03-10T00:00:00+01:00</GeldigheidsDatumTijdVan>
+        <Reden1>Nieuwe wegwijzertekening</Reden1>
+        <Reden2>Ut_WVK_28_Mas_Ut Blad 18 versie I001</Reden2>
+        <Reden3>Deze bevat diverse wijzigingen zie wegkennisbank</Reden3>
+        <Reden4>Ingangsdatum 26-03-2016</Reden4>
+      </WegwijzerBericht>
+    </Baanvak>
+  </Hoofdbaanvak>
+  <Hoofdbaanvak>
+    <HoofdBaanvakCode>29</HoofdBaanvakCode>
+    <HoofdBaanvakOmschrijving>Utrecht CS - Har - Arnhem / Rhenen</HoofdBaanvakOmschrijving>
+    <Baanvak>
+      <BaanvakCode>29a</BaanvakCode>
+      <BaanvakOmschrijving>Utrecht CS - Har - Ed - Arnhem</BaanvakOmschrijving>
+      <WegwijzerBericht>
+        <DienstregelpuntVan>UT</DienstregelpuntVan>
+        <DienstregelpuntTot>UT</DienstregelpuntTot>
+        <GeldigheidsDatumTijdVan>2016-03-10T00:00:00+01:00</GeldigheidsDatumTijdVan>
+        <Reden1>Nieuwe wegwijzertekening</Reden1>
+        <Reden2>Ut_WVK_29_Ut Blad 20 versie T001</Reden2>
+        <Reden3>Deze bevat diverse wijzigingen zie wegkennisbank</Reden3>
+        <Reden4>26-03-2016</Reden4>
+      </WegwijzerBericht>
+      <WegwijzerBericht>
+        <DienstregelpuntVan>UT</DienstregelpuntVan>
+        <DienstregelpuntTot>BNK</DienstregelpuntTot>
+        <GeldigheidsDatumTijdVan>2016-03-10T00:00:00+01:00</GeldigheidsDatumTijdVan>
+        <Reden1>Nieuwe wegwijzertekening</Reden1>
+        <Reden2>Ut_WVK_29_Ut_Ln Blad 22 versie J001</Reden2>
+        <Reden3>Deze bevat diverse wijzigingen zie wegkennisbank</Reden3>
+        <Reden4>Ingangsdatum 26-03-2016</Reden4>
+      </WegwijzerBericht>
+      <WegwijzerBericht>
+        <DienstregelpuntVan>LAK</DienstregelpuntVan>
+        <DienstregelpuntTot>MRG</DienstregelpuntTot>
+        <GeldigheidsDatumTijdVan>2016-03-10T00:00:00+01:00</GeldigheidsDatumTijdVan>
+        <Reden1>Nieuwe wegwijzertekening</Reden1>
+        <Reden2>Ut_WVK_29_Ut_Ln_Db Blad 27 versie I001</Reden2>
+        <Reden3>Deze bevat diverse wijzigingen zie wegkennisbank</Reden3>
+        <Reden4>Ingangsdatum 26-03-2016</Reden4>
+      </WegwijzerBericht>
+    </Baanvak>
+  </Hoofdbaanvak>
+  <Hoofdbaanvak>
+    <HoofdBaanvakCode>32</HoofdBaanvakCode>
+    <HoofdBaanvakOmschrijving>Leiden - Gvc/Gv - Rotterdam CS (+Rmo)</HoofdBaanvakOmschrijving>
+    <Baanvak>
+      <BaanvakCode>32a</BaanvakCode>
+      <BaanvakOmschrijving>Leiden - Den Haag HS</BaanvakOmschrijving>
+      <RayonInfo>
+        <DienstregelpuntVan>LEDN</DienstregelpuntVan>
+        <DienstregelpuntTot>LEDN</DienstregelpuntTot>
+        <GeldigheidsDatumTijdVan>2012-04-27T00:00:00+02:00</GeldigheidsDatumTijdVan>
+        <Reden1>Aanvraagnr: 8155</Reden1>
+        <Reden2>Op de kop van het perron spoor 1 en 2  te Leiden dient men 10 km/h te rijden met SGMm.</Reden2>
+      </RayonInfo>
+    </Baanvak>
+    <Baanvak>
+      <BaanvakCode>32e</BaanvakCode>
+      <BaanvakOmschrijving>Den Haag HS - Rotterdam CS</BaanvakOmschrijving>
+      <TijdelijkeSnelheidsBeperking>
+        <GeldigheidsDatumTijdVan>2015-05-14T05:00:00+02:00</GeldigheidsDatumTijdVan>
+        <PublicatieDatumTijdVan>2015-05-14T05:00:00+02:00</PublicatieDatumTijdVan>
+        <DienstregelpuntVan>DTA</DienstregelpuntVan>
+        <DienstregelpuntTot>DTZ</DienstregelpuntTot>
+        <Richting>A</Richting>
+        <Reden1>I.v.m drukgolf treinen tunnel Delft</Reden1>
+        <Reden2>A en E bord zijn links van het spoor geplaatst</Reden2>
+        <Spooraanduiding1>( rechterspoor )</Spooraanduiding1>
+        <PlaatsAanduidingVan>68.2</PlaatsAanduidingVan>
+        <PlaatsAanduidingTot>70.4</PlaatsAanduidingTot>
+        <MaxSnelheidReiziger>80</MaxSnelheidReiziger>
+        <LAE_Informatie>
+          <LAE_BordAanduiding>N</LAE_BordAanduiding>
+        </LAE_Informatie>
+      </TijdelijkeSnelheidsBeperking>
+      <TijdelijkeSnelheidsBeperking>
+        <GeldigheidsDatumTijdVan>2015-05-14T05:00:00+02:00</GeldigheidsDatumTijdVan>
+        <PublicatieDatumTijdVan>2015-05-14T05:00:00+02:00</PublicatieDatumTijdVan>
+        <DienstregelpuntVan>DT</DienstregelpuntVan>
+        <DienstregelpuntTot>DTZ</DienstregelpuntTot>
+        <Richting>A</Richting>
+        <Reden1>I.v.m drukgolf treinen tunnel Delft</Reden1>
+        <Spooraanduiding1>( linkerspoor )</Spooraanduiding1>
+        <PlaatsAanduidingVan>68.2</PlaatsAanduidingVan>
+        <PlaatsAanduidingTot>70.4</PlaatsAanduidingTot>
+        <MaxSnelheidReiziger>80</MaxSnelheidReiziger>
+        <LAE_Informatie>
+          <LAE_BordAanduiding>N</LAE_BordAanduiding>
+        </LAE_Informatie>
+      </TijdelijkeSnelheidsBeperking>
+      <TijdelijkeSnelheidsBeperking>
+        <GeldigheidsDatumTijdVan>2015-05-14T05:00:00+02:00</GeldigheidsDatumTijdVan>
+        <PublicatieDatumTijdVan>2015-05-14T05:00:00+02:00</PublicatieDatumTijdVan>
+        <DienstregelpuntVan>DTZ</DienstregelpuntVan>
+        <DienstregelpuntTot>DTA</DienstregelpuntTot>
+        <Richting>T</Richting>
+        <Reden1>I.v.m drukgolf treinen tunnel Delft</Reden1>
+        <Spooraanduiding1>( linkerspoor )</Spooraanduiding1>
+        <PlaatsAanduidingVan>70.4</PlaatsAanduidingVan>
+        <PlaatsAanduidingTot>68.2</PlaatsAanduidingTot>
+        <MaxSnelheidReiziger>80</MaxSnelheidReiziger>
+        <LAE_Informatie>
+          <LAE_BordAanduiding>N</LAE_BordAanduiding>
+        </LAE_Informatie>
+      </TijdelijkeSnelheidsBeperking>
+      <TijdelijkeSnelheidsBeperking>
+        <GeldigheidsDatumTijdVan>2015-05-14T05:00:00+02:00</GeldigheidsDatumTijdVan>
+        <PublicatieDatumTijdVan>2015-05-14T05:00:00+02:00</PublicatieDatumTijdVan>
+        <DienstregelpuntVan>DTZ</DienstregelpuntVan>
+        <DienstregelpuntTot>DT</DienstregelpuntTot>
+        <Richting>T</Richting>
+        <Reden1>I.v.m drukgolf treinen tunnel Delft</Reden1>
+        <Reden2>A en E bord zijn links van het spoor geplaatst</Reden2>
+        <Spooraanduiding1>( rechterspoor  )</Spooraanduiding1>
+        <PlaatsAanduidingVan>70.4</PlaatsAanduidingVan>
+        <PlaatsAanduidingTot>68.2</PlaatsAanduidingTot>
+        <MaxSnelheidReiziger>80</MaxSnelheidReiziger>
+        <LAE_Informatie>
+          <LAE_BordAanduiding>N</LAE_BordAanduiding>
+        </LAE_Informatie>
+      </TijdelijkeSnelheidsBeperking>
+    </Baanvak>
+  </Hoofdbaanvak>
+  <Hoofdbaanvak>
+    <HoofdBaanvakCode>33</HoofdBaanvakCode>
+    <HoofdBaanvakOmschrijving>Rotterdam CS -Fo/Bd/Otw/Rsd -Awp - Brusz</HoofdBaanvakOmschrijving>
+    <Baanvak>
+      <BaanvakCode>33a</BaanvakCode>
+      <BaanvakOmschrijving>Rotterdam CS - Dordrecht</BaanvakOmschrijving>
+      <TijdelijkeSnelheidsBeperking>
+        <GeldigheidsDatumTijdVan>2015-07-03T04:00:00+02:00</GeldigheidsDatumTijdVan>
+        <PublicatieDatumTijdVan>2015-07-03T04:00:00+02:00</PublicatieDatumTijdVan>
+        <DienstregelpuntVan>DDR</DienstregelpuntVan>
+        <DienstregelpuntTot>DDR</DienstregelpuntTot>
+        <Richting>A</Richting>
+        <Reden1>Slechte spoorligging</Reden1>
+        <Reden2>Deze snelheidsbeperking is in de ATB opgenomen</Reden2>
+        <Spooraanduiding1>Sporen 4A, 5, 6, 7</Spooraanduiding1>
+        <PlaatsAanduidingVan>29.6</PlaatsAanduidingVan>
+        <PlaatsAanduidingTot>30.1</PlaatsAanduidingTot>
+        <MaxSnelheidReiziger>40</MaxSnelheidReiziger>
+        <LAE_Informatie>
+          <LAE_BordAanduiding>N</LAE_BordAanduiding>
+        </LAE_Informatie>
+      </TijdelijkeSnelheidsBeperking>
+      <TijdelijkeSnelheidsBeperking>
+        <GeldigheidsDatumTijdVan>2015-07-03T04:00:00+02:00</GeldigheidsDatumTijdVan>
+        <PublicatieDatumTijdVan>2015-07-03T04:00:00+02:00</PublicatieDatumTijdVan>
+        <DienstregelpuntVan>DDR</DienstregelpuntVan>
+        <DienstregelpuntTot>DDR</DienstregelpuntTot>
+        <Richting>T</Richting>
+        <Reden1>Slechte spoorligging</Reden1>
+        <Reden2>Deze snelheidsbeperking is in de ATB opgenomen</Reden2>
+        <Spooraanduiding1>Sporen 4A, 5, 6, 7</Spooraanduiding1>
+        <PlaatsAanduidingVan>30.1</PlaatsAanduidingVan>
+        <PlaatsAanduidingTot>29.6</PlaatsAanduidingTot>
+        <MaxSnelheidReiziger>40</MaxSnelheidReiziger>
+        <LAE_Informatie>
+          <LAE_BordAanduiding>N</LAE_BordAanduiding>
+        </LAE_Informatie>
+      </TijdelijkeSnelheidsBeperking>
+    </Baanvak>
+    <Baanvak>
+      <BaanvakCode>33d</BaanvakCode>
+      <BaanvakOmschrijving>Lage Zwaluwe - Roosendaal</BaanvakOmschrijving>
+      <RayonInfo>
+        <DienstregelpuntVan>RSD</DienstregelpuntVan>
+        <DienstregelpuntTot>RSD</DienstregelpuntTot>
+        <GeldigheidsDatumTijdVan>2015-10-03T00:00:00+02:00</GeldigheidsDatumTijdVan>
+        <Reden1>Aanvraagnr: 8256</Reden1>
+        <Reden2>De proef "beheerst toelaten" is met onbepaalde tijd verlengd.</Reden2>
+        <Reden3>De snelheid op de sporen 11, 12 en 13 in Roosendaal is teruggebracht naar maximaal 10 Km/h.</Reden3>
+        <Reden4>Deze sporen kunnen middels sein 513 zijn ingekort.</Reden4>
+      </RayonInfo>
+    </Baanvak>
+    <Baanvak>
+      <BaanvakCode>33e</BaanvakCode>
+      <BaanvakOmschrijving>Lage Zwaluwe - Breda</BaanvakOmschrijving>
+      <WegwijzerBericht>
+        <DienstregelpuntVan>BDPB</DienstregelpuntVan>
+        <DienstregelpuntTot>BD</DienstregelpuntTot>
+        <GeldigheidsDatumTijdVan>2016-03-14T00:00:00+01:00</GeldigheidsDatumTijdVan>
+        <Reden1>Nieuwe wegwijzertekening</Reden1>
+        <Reden2>Rsd_WVK_35_Bd_Bda blad 11 versie L001</Reden2>
+        <Reden3>Deze bevat diverse wijzigingen zie wegkennisbank</Reden3>
+        <Reden4>Ingaande 04-04-2016</Reden4>
+      </WegwijzerBericht>
+    </Baanvak>
+    <Baanvak>
+      <BaanvakCode>33h</BaanvakCode>
+      <BaanvakOmschrijving>Roosendaal - Sint Mariaburg</BaanvakOmschrijving>
+      <RayonInfo>
+        <DienstregelpuntVan>RSD</DienstregelpuntVan>
+        <DienstregelpuntTot>RSD</DienstregelpuntTot>
+        <GeldigheidsDatumTijdVan>2015-10-03T00:00:00+02:00</GeldigheidsDatumTijdVan>
+        <Reden1>Aanvraagnr: 8256</Reden1>
+        <Reden2>De proef "beheerst toelaten" is met onbepaalde tijd verlengd.</Reden2>
+        <Reden3>De snelheid op de sporen 11, 12 en 13 in Roosendaal is teruggebracht naar maximaal 10 Km/h.</Reden3>
+        <Reden4>Deze sporen kunnen middels sein 513 zijn ingekort.</Reden4>
+      </RayonInfo>
+    </Baanvak>
+    <Baanvak>
+      <BaanvakCode>33i</BaanvakCode>
+      <BaanvakOmschrijving>Y St Mariaburg - Y Drst</BaanvakOmschrijving>
+      <TijdelijkeSnelheidsBeperking>
+        <GeldigheidsDatumTijdVan>2016-03-05T15:00:00+01:00</GeldigheidsDatumTijdVan>
+        <PublicatieDatumTijdVan>2016-03-05T15:00:00+01:00</PublicatieDatumTijdVan>
+        <DienstregelpuntVan>DRST</DienstregelpuntVan>
+        <DienstregelpuntTot>ATWLB</DienstregelpuntTot>
+        <Richting>A</Richting>
+        <Reden1>B.T.S.-A.R.T. nr. 027A/015/16-01</Reden1>
+        <Reden2>Vernieuwen spoortoestel en houtstukken.</Reden2>
+        <Reden3>Renouvellement appareil de voie et pieces de bois.</Reden3>
+        <Spooraanduiding1>Lijn 27A</Spooraanduiding1>
+        <Spooraanduiding2>Spoor A</Spooraanduiding2>
+        <Spooraanduiding3>Spoor A</Spooraanduiding3>
+        <PlaatsAanduidingVan>54.5</PlaatsAanduidingVan>
+        <PlaatsAanduidingTot>54.3</PlaatsAanduidingTot>
+        <MaxSnelheidReiziger>40</MaxSnelheidReiziger>
+        <LAE_Informatie>
+          <LAE_BordAanduiding>N</LAE_BordAanduiding>
+        </LAE_Informatie>
+      </TijdelijkeSnelheidsBeperking>
+      <TijdelijkeSnelheidsBeperking>
+        <GeldigheidsDatumTijdVan>2016-03-05T15:00:00+01:00</GeldigheidsDatumTijdVan>
+        <PublicatieDatumTijdVan>2016-03-05T15:00:00+01:00</PublicatieDatumTijdVan>
+        <DienstregelpuntVan>DRST</DienstregelpuntVan>
+        <DienstregelpuntTot>ATWLB</DienstregelpuntTot>
+        <Richting>A</Richting>
+        <Reden1>B.T.S.-A.R.T. nr. 027A/015/16-01</Reden1>
+        <Reden2>Vernieuwen spoortoestel en houtstukken.</Reden2>
+        <Reden3>Renouvellement appareil de voie et pieces de bois.</Reden3>
+        <Spooraanduiding1>Lijn 27A</Spooraanduiding1>
+        <Spooraanduiding2>Spoor B</Spooraanduiding2>
+        <Spooraanduiding3>Voie B</Spooraanduiding3>
+        <PlaatsAanduidingVan>54.5</PlaatsAanduidingVan>
+        <PlaatsAanduidingTot>54.3</PlaatsAanduidingTot>
+        <MaxSnelheidReiziger>40</MaxSnelheidReiziger>
+        <LAE_Informatie>
+          <LAE_BordAanduiding>N</LAE_BordAanduiding>
+        </LAE_Informatie>
+      </TijdelijkeSnelheidsBeperking>
+      <TijdelijkeSnelheidsBeperking>
+        <GeldigheidsDatumTijdVan>2016-03-05T15:00:00+01:00</GeldigheidsDatumTijdVan>
+        <PublicatieDatumTijdVan>2016-03-05T15:00:00+01:00</PublicatieDatumTijdVan>
+        <DienstregelpuntVan>ATWLB</DienstregelpuntVan>
+        <DienstregelpuntTot>DRST</DienstregelpuntTot>
+        <Richting>T</Richting>
+        <Reden1>B.T.S.-A.R.T. nr. 027A/015/16-01</Reden1>
+        <Reden2>Vernieuwen spoortoestel en houtstukken.</Reden2>
+        <Reden3>Renouvellement appareil de voie et pieces de bois.</Reden3>
+        <Spooraanduiding1>Lijn 27A</Spooraanduiding1>
+        <Spooraanduiding2>Spoor A</Spooraanduiding2>
+        <Spooraanduiding3>Voie A</Spooraanduiding3>
+        <PlaatsAanduidingVan>54.3</PlaatsAanduidingVan>
+        <PlaatsAanduidingTot>54.5</PlaatsAanduidingTot>
+        <MaxSnelheidReiziger>40</MaxSnelheidReiziger>
+        <LAE_Informatie>
+          <LAE_BordAanduiding>N</LAE_BordAanduiding>
+        </LAE_Informatie>
+      </TijdelijkeSnelheidsBeperking>
+      <TijdelijkeSnelheidsBeperking>
+        <GeldigheidsDatumTijdVan>2016-03-05T15:00:00+01:00</GeldigheidsDatumTijdVan>
+        <PublicatieDatumTijdVan>2016-03-05T15:00:00+01:00</PublicatieDatumTijdVan>
+        <DienstregelpuntVan>ATWLB</DienstregelpuntVan>
+        <DienstregelpuntTot>DRST</DienstregelpuntTot>
+        <Richting>T</Richting>
+        <Reden1>B.T.S.-A.R.T. nr. 027A/015/16-01</Reden1>
+        <Reden2>Vernieuwen spoortoestel en houtstukken.</Reden2>
+        <Reden3>Renouvellement appareil de voie et pieces de bois.</Reden3>
+        <Spooraanduiding1>Lijn 27A</Spooraanduiding1>
+        <Spooraanduiding2>Spoor B</Spooraanduiding2>
+        <Spooraanduiding3>Voie B</Spooraanduiding3>
+        <PlaatsAanduidingVan>54.3</PlaatsAanduidingVan>
+        <PlaatsAanduidingTot>54.5</PlaatsAanduidingTot>
+        <MaxSnelheidReiziger>40</MaxSnelheidReiziger>
+        <LAE_Informatie>
+          <LAE_BordAanduiding>N</LAE_BordAanduiding>
+        </LAE_Informatie>
+      </TijdelijkeSnelheidsBeperking>
+    </Baanvak>
+    <Baanvak>
+      <BaanvakCode>33k</BaanvakCode>
+      <BaanvakOmschrijving>Berchem - Brussel Zuid</BaanvakOmschrijving>
+      <TijdelijkeSnelheidsBeperking>
+        <GeldigheidsDatumTijdVan>2015-08-31T05:00:00+02:00</GeldigheidsDatumTijdVan>
+        <PublicatieDatumTijdVan>2015-08-31T05:00:00+02:00</PublicatieDatumTijdVan>
+        <DienstregelpuntVan>MECH</DienstregelpuntVan>
+        <DienstregelpuntTot>Y. WD</DienstregelpuntTot>
+        <Richting>A</Richting>
+        <Reden1>B.T.S.-A.R.T. nr: 27/029/15-01</Reden1>
+        <Reden2>Vernieuwingswerken</Reden2>
+        <Reden3>Travaux de renouvellement</Reden3>
+        <Spooraanduiding1>L 27</Spooraanduiding1>
+        <Spooraanduiding2>Spoor A</Spooraanduiding2>
+        <Spooraanduiding3>Voie  A</Spooraanduiding3>
+        <PlaatsAanduidingVan>20.3</PlaatsAanduidingVan>
+        <PlaatsAanduidingTot>19.7</PlaatsAanduidingTot>
+        <MaxSnelheidReiziger>60</MaxSnelheidReiziger>
+        <LAE_Informatie>
+          <LAE_BordAanduiding>N</LAE_BordAanduiding>
+        </LAE_Informatie>
+      </TijdelijkeSnelheidsBeperking>
+      <TijdelijkeSnelheidsBeperking>
+        <GeldigheidsDatumTijdVan>2015-08-31T05:00:00+02:00</GeldigheidsDatumTijdVan>
+        <PublicatieDatumTijdVan>2015-08-31T05:00:00+02:00</PublicatieDatumTijdVan>
+        <DienstregelpuntVan>MECH</DienstregelpuntVan>
+        <DienstregelpuntTot>Y. WD</DienstregelpuntTot>
+        <Richting>A</Richting>
+        <Reden1>B.T.S.-A.R.T. nr: 27/029/15-01</Reden1>
+        <Reden2>Vernieuwingswerken</Reden2>
+        <Reden3>Travaux de renouvellement</Reden3>
+        <Spooraanduiding1>L 27</Spooraanduiding1>
+        <Spooraanduiding2>Spoor B</Spooraanduiding2>
+        <Spooraanduiding3>Voie  B</Spooraanduiding3>
+        <PlaatsAanduidingVan>20.3</PlaatsAanduidingVan>
+        <PlaatsAanduidingTot>19.7</PlaatsAanduidingTot>
+        <MaxSnelheidReiziger>60</MaxSnelheidReiziger>
+        <LAE_Informatie>
+          <LAE_BordAanduiding>N</LAE_BordAanduiding>
+        </LAE_Informatie>
+      </TijdelijkeSnelheidsBeperking>
+      <TijdelijkeSnelheidsBeperking>
+        <GeldigheidsDatumTijdVan>2016-01-30T01:00:00+01:00</GeldigheidsDatumTijdVan>
+        <PublicatieDatumTijdVan>2016-01-30T01:00:00+01:00</PublicatieDatumTijdVan>
+        <DienstregelpuntVan>Y. MCH</DienstregelpuntVan>
+        <DienstregelpuntTot>SCHB</DienstregelpuntTot>
+        <Richting>A</Richting>
+        <Reden1>B.T.S.-A.R.T. nr.  036/073/16-02</Reden1>
+        <Reden2>Project Schaarbeek vernieuwing wissels AlbertBrug</Reden2>
+        <Reden3>Projet Schaarbeek renouvellement aiguillages pont Albert</Reden3>
+        <Spooraanduiding1>L27</Spooraanduiding1>
+        <Spooraanduiding2>Spoor A</Spooraanduiding2>
+        <Spooraanduiding3>Voie A</Spooraanduiding3>
+        <PlaatsAanduidingVan>4.0</PlaatsAanduidingVan>
+        <PlaatsAanduidingTot>3.0</PlaatsAanduidingTot>
+        <MaxSnelheidReiziger>60</MaxSnelheidReiziger>
+        <LAE_Informatie>
+          <LAE_BordAanduiding>N</LAE_BordAanduiding>
+        </LAE_Informatie>
+      </TijdelijkeSnelheidsBeperking>
+      <TijdelijkeSnelheidsBeperking>
+        <GeldigheidsDatumTijdVan>2016-01-30T01:00:00+01:00</GeldigheidsDatumTijdVan>
+        <PublicatieDatumTijdVan>2016-01-30T01:00:00+01:00</PublicatieDatumTijdVan>
+        <DienstregelpuntVan>Y. MCH</DienstregelpuntVan>
+        <DienstregelpuntTot>SCHB</DienstregelpuntTot>
+        <Richting>A</Richting>
+        <Reden1>B.T.S.-A.R.T. nr.  036/073/16-02</Reden1>
+        <Reden2>Project Schaarbeek vernieuwing wissels AlbertBrug</Reden2>
+        <Reden3>Projet Schaarbeek renouvellement aiguillages pont Albert</Reden3>
+        <Spooraanduiding1>L27</Spooraanduiding1>
+        <Spooraanduiding2>spoor B</Spooraanduiding2>
+        <Spooraanduiding3>voie B</Spooraanduiding3>
+        <PlaatsAanduidingVan>4.2</PlaatsAanduidingVan>
+        <PlaatsAanduidingTot>3.0</PlaatsAanduidingTot>
+        <MaxSnelheidReiziger>60</MaxSnelheidReiziger>
+        <LAE_Informatie>
+          <LAE_BordAanduiding>N</LAE_BordAanduiding>
+        </LAE_Informatie>
+      </TijdelijkeSnelheidsBeperking>
+      <TijdelijkeSnelheidsBeperking>
+        <GeldigheidsDatumTijdVan>2015-08-31T05:00:00+02:00</GeldigheidsDatumTijdVan>
+        <PublicatieDatumTijdVan>2015-08-31T05:00:00+02:00</PublicatieDatumTijdVan>
+        <DienstregelpuntVan>Y. WD</DienstregelpuntVan>
+        <DienstregelpuntTot>MECH</DienstregelpuntTot>
+        <Richting>T</Richting>
+        <Reden1>B.T.S.-A.R.T. nr: 27/029/15-01</Reden1>
+        <Reden2>Vernieuwingswerken</Reden2>
+        <Reden3>Travaux de renouvellement</Reden3>
+        <Spooraanduiding1>L 27</Spooraanduiding1>
+        <Spooraanduiding2>Spoor A</Spooraanduiding2>
+        <Spooraanduiding3>Voie  A</Spooraanduiding3>
+        <PlaatsAanduidingVan>19.7</PlaatsAanduidingVan>
+        <PlaatsAanduidingTot>20.3</PlaatsAanduidingTot>
+        <MaxSnelheidReiziger>60</MaxSnelheidReiziger>
+        <LAE_Informatie>
+          <LAE_BordAanduiding>N</LAE_BordAanduiding>
+        </LAE_Informatie>
+      </TijdelijkeSnelheidsBeperking>
+      <TijdelijkeSnelheidsBeperking>
+        <GeldigheidsDatumTijdVan>2015-08-31T05:00:00+02:00</GeldigheidsDatumTijdVan>
+        <PublicatieDatumTijdVan>2015-08-31T05:00:00+02:00</PublicatieDatumTijdVan>
+        <DienstregelpuntVan>Y. WD</DienstregelpuntVan>
+        <DienstregelpuntTot>MECH</DienstregelpuntTot>
+        <Richting>T</Richting>
+        <Reden1>B.T.S.-A.R.T. nr: 27/029/15-01</Reden1>
+        <Reden2>Vernieuwingswerken</Reden2>
+        <Reden3>Travaux de renouvellement</Reden3>
+        <Spooraanduiding1>L 27</Spooraanduiding1>
+        <Spooraanduiding2>Spoor B</Spooraanduiding2>
+        <Spooraanduiding3>Voie  B</Spooraanduiding3>
+        <PlaatsAanduidingVan>19.7</PlaatsAanduidingVan>
+        <PlaatsAanduidingTot>20.3</PlaatsAanduidingTot>
+        <MaxSnelheidReiziger>60</MaxSnelheidReiziger>
+        <LAE_Informatie>
+          <LAE_BordAanduiding>N</LAE_BordAanduiding>
+        </LAE_Informatie>
+      </TijdelijkeSnelheidsBeperking>
+      <TijdelijkeSnelheidsBeperking>
+        <GeldigheidsDatumTijdVan>2016-01-30T01:00:00+01:00</GeldigheidsDatumTijdVan>
+        <PublicatieDatumTijdVan>2016-01-30T01:00:00+01:00</PublicatieDatumTijdVan>
+        <DienstregelpuntVan>SCHB</DienstregelpuntVan>
+        <DienstregelpuntTot>Y. MCH</DienstregelpuntTot>
+        <Richting>T</Richting>
+        <Reden1>B.T.S.-A.R.T. nr.  036/073/16-02</Reden1>
+        <Reden2>Project Schaarbeek vernieuwing wissels AlbertBrug</Reden2>
+        <Reden3>Projet Schaarbeek renouvellement aiguillages pont Albert</Reden3>
+        <Spooraanduiding1>L27</Spooraanduiding1>
+        <Spooraanduiding2>Spoor A</Spooraanduiding2>
+        <Spooraanduiding3>Voie A</Spooraanduiding3>
+        <PlaatsAanduidingVan>3.0</PlaatsAanduidingVan>
+        <PlaatsAanduidingTot>4.0</PlaatsAanduidingTot>
+        <MaxSnelheidReiziger>60</MaxSnelheidReiziger>
+        <LAE_Informatie>
+          <LAE_BordAanduiding>N</LAE_BordAanduiding>
+        </LAE_Informatie>
+      </TijdelijkeSnelheidsBeperking>
+      <TijdelijkeSnelheidsBeperking>
+        <GeldigheidsDatumTijdVan>2016-01-30T01:00:00+01:00</GeldigheidsDatumTijdVan>
+        <PublicatieDatumTijdVan>2016-01-30T01:00:00+01:00</PublicatieDatumTijdVan>
+        <DienstregelpuntVan>SCHB</DienstregelpuntVan>
+        <DienstregelpuntTot>Y. MCH</DienstregelpuntTot>
+        <Richting>T</Richting>
+        <Reden1>B.T.S.-A.R.T. nr.  036/073/16-02</Reden1>
+        <Reden2>Project Schaarbeek vernieuwing wissels AlbertBrug</Reden2>
+        <Reden3>Projet Schaarbeek renouvellement aiguillages pont Albert</Reden3>
+        <Spooraanduiding1>L27</Spooraanduiding1>
+        <Spooraanduiding2>spoor B</Spooraanduiding2>
+        <Spooraanduiding3>voie B</Spooraanduiding3>
+        <PlaatsAanduidingVan>3.0</PlaatsAanduidingVan>
+        <PlaatsAanduidingTot>4.2</PlaatsAanduidingTot>
+        <MaxSnelheidReiziger>60</MaxSnelheidReiziger>
+        <LAE_Informatie>
+          <LAE_BordAanduiding>N</LAE_BordAanduiding>
+        </LAE_Informatie>
+      </TijdelijkeSnelheidsBeperking>
+    </Baanvak>
+  </Hoofdbaanvak>
+  <Hoofdbaanvak>
+    <HoofdBaanvakCode>34</HoofdBaanvakCode>
+    <HoofdBaanvakOmschrijving>Vlissingen / Sloe - Ha - Gs - Roosendaal</HoofdBaanvakOmschrijving>
+    <Baanvak>
+      <BaanvakCode>34_</BaanvakCode>
+      <BaanvakOmschrijving>Vlissingen - Roosendaal (incl. Sloe)</BaanvakOmschrijving>
+      <TijdelijkeSnelheidsBeperking>
+        <GeldigheidsDatumTijdVan>2011-11-25T05:50:00+01:00</GeldigheidsDatumTijdVan>
+        <PublicatieDatumTijdVan>2011-11-25T05:50:00+01:00</PublicatieDatumTijdVan>
+        <DienstregelpuntVan>HA</DienstregelpuntVan>
+        <DienstregelpuntTot>KRG</DienstregelpuntTot>
+        <Richting>A</Richting>
+        <Reden1>Beschikking i..v.m. geluidshinder</Reden1>
+        <Spooraanduiding1>( linkerspoor )</Spooraanduiding1>
+        <PlaatsAanduidingVan>49.8</PlaatsAanduidingVan>
+        <PlaatsAanduidingTot>47.1</PlaatsAanduidingTot>
+        <MaxSnelheidReiziger>130</MaxSnelheidReiziger>
+        <MaxSnelheidGoederen>60</MaxSnelheidGoederen>
+        <LAE_Informatie>
+          <LAE_BordAanduiding>N</LAE_BordAanduiding>
+        </LAE_Informatie>
+      </TijdelijkeSnelheidsBeperking>
+      <TijdelijkeSnelheidsBeperking>
+        <GeldigheidsDatumTijdVan>2011-11-25T05:50:00+01:00</GeldigheidsDatumTijdVan>
+        <PublicatieDatumTijdVan>2011-11-25T05:50:00+01:00</PublicatieDatumTijdVan>
+        <DienstregelpuntVan>HA</DienstregelpuntVan>
+        <DienstregelpuntTot>KRG</DienstregelpuntTot>
+        <Richting>A</Richting>
+        <Reden1>Beschikking i..v.m. geluidshinder</Reden1>
+        <Spooraanduiding1>( rechterspoor )</Spooraanduiding1>
+        <PlaatsAanduidingVan>49.8</PlaatsAanduidingVan>
+        <PlaatsAanduidingTot>47.1</PlaatsAanduidingTot>
+        <MaxSnelheidReiziger>130</MaxSnelheidReiziger>
+        <MaxSnelheidGoederen>60</MaxSnelheidGoederen>
+        <LAE_Informatie>
+          <LAE_BordAanduiding>N</LAE_BordAanduiding>
+        </LAE_Informatie>
+      </TijdelijkeSnelheidsBeperking>
+      <TijdelijkeSnelheidsBeperking>
+        <GeldigheidsDatumTijdVan>2011-11-25T05:50:00+01:00</GeldigheidsDatumTijdVan>
+        <PublicatieDatumTijdVan>2011-11-25T05:50:00+01:00</PublicatieDatumTijdVan>
+        <DienstregelpuntVan>KRG</DienstregelpuntVan>
+        <DienstregelpuntTot>HA</DienstregelpuntTot>
+        <Richting>T</Richting>
+        <Reden1>Beschikking i..v.m. geluidshinder</Reden1>
+        <Spooraanduiding1>( rechterspoor )</Spooraanduiding1>
+        <PlaatsAanduidingVan>47.1</PlaatsAanduidingVan>
+        <PlaatsAanduidingTot>49.8</PlaatsAanduidingTot>
+        <MaxSnelheidReiziger>130</MaxSnelheidReiziger>
+        <MaxSnelheidGoederen>60</MaxSnelheidGoederen>
+        <LAE_Informatie>
+          <LAE_BordAanduiding>N</LAE_BordAanduiding>
+        </LAE_Informatie>
+      </TijdelijkeSnelheidsBeperking>
+      <TijdelijkeSnelheidsBeperking>
+        <GeldigheidsDatumTijdVan>2011-11-25T05:50:00+01:00</GeldigheidsDatumTijdVan>
+        <PublicatieDatumTijdVan>2011-11-25T05:50:00+01:00</PublicatieDatumTijdVan>
+        <DienstregelpuntVan>KRG</DienstregelpuntVan>
+        <DienstregelpuntTot>HA</DienstregelpuntTot>
+        <Richting>T</Richting>
+        <Reden1>Beschikking i..v.m. geluidshinder</Reden1>
+        <Spooraanduiding1>( linkerspoor )</Spooraanduiding1>
+        <PlaatsAanduidingVan>47.1</PlaatsAanduidingVan>
+        <PlaatsAanduidingTot>49.8</PlaatsAanduidingTot>
+        <MaxSnelheidReiziger>130</MaxSnelheidReiziger>
+        <MaxSnelheidGoederen>60</MaxSnelheidGoederen>
+        <LAE_Informatie>
+          <LAE_BordAanduiding>N</LAE_BordAanduiding>
+        </LAE_Informatie>
+      </TijdelijkeSnelheidsBeperking>
+      <RayonInfo>
+        <DienstregelpuntVan>RSD</DienstregelpuntVan>
+        <DienstregelpuntTot>RSD</DienstregelpuntTot>
+        <GeldigheidsDatumTijdVan>2015-10-03T00:00:00+02:00</GeldigheidsDatumTijdVan>
+        <Reden1>Aanvraagnr: 8256</Reden1>
+        <Reden2>De proef "beheerst toelaten" is met onbepaalde tijd verlengd.</Reden2>
+        <Reden3>De snelheid op de sporen 11, 12 en 13 in Roosendaal is teruggebracht naar maximaal 10 Km/h.</Reden3>
+        <Reden4>Deze sporen kunnen middels sein 513 zijn ingekort.</Reden4>
+      </RayonInfo>
+    </Baanvak>
+  </Hoofdbaanvak>
+  <Hoofdbaanvak>
+    <HoofdBaanvakCode>35</HoofdBaanvakCode>
+    <HoofdBaanvakOmschrijving>Roosendaal - Bd - Tb - Boxtel/ Den Bosch</HoofdBaanvakOmschrijving>
+    <Baanvak>
+      <BaanvakCode>35a</BaanvakCode>
+      <BaanvakOmschrijving>Roosendaal - Breda</BaanvakOmschrijving>
+      <RayonInfo>
+        <DienstregelpuntVan>RSD</DienstregelpuntVan>
+        <DienstregelpuntTot>RSD</DienstregelpuntTot>
+        <GeldigheidsDatumTijdVan>2015-10-03T00:00:00+02:00</GeldigheidsDatumTijdVan>
+        <Reden1>Aanvraagnr: 8256</Reden1>
+        <Reden2>De proef "beheerst toelaten" is met onbepaalde tijd verlengd.</Reden2>
+        <Reden3>De snelheid op de sporen 11, 12 en 13 in Roosendaal is teruggebracht naar maximaal 10 Km/h.</Reden3>
+        <Reden4>Deze sporen kunnen middels sein 513 zijn ingekort.</Reden4>
+      </RayonInfo>
+      <WegwijzerBericht>
+        <DienstregelpuntVan>ETN</DienstregelpuntVan>
+        <DienstregelpuntTot>BD</DienstregelpuntTot>
+        <GeldigheidsDatumTijdVan>2016-03-14T00:00:00+01:00</GeldigheidsDatumTijdVan>
+        <Reden1>Nieuwe wegwijzertekening</Reden1>
+        <Reden2>Rsd_WVK_35_Bd_Bda blad 11 versie L001</Reden2>
+        <Reden3>Deze bevat diverse wijzigingen zie wegkennisbank</Reden3>
+        <Reden4>Ingaande 04-04-2016</Reden4>
+      </WegwijzerBericht>
+      <WegwijzerBericht>
+        <DienstregelpuntVan>RSD</DienstregelpuntVan>
+        <DienstregelpuntTot>BD</DienstregelpuntTot>
+        <GeldigheidsDatumTijdVan>2016-03-14T00:00:00+01:00</GeldigheidsDatumTijdVan>
+        <Reden1>Nieuwe wegwijzertekening</Reden1>
+        <Reden2>Rsd_WVK_35_Gz_Bd blad 12 versie L001</Reden2>
+        <Reden3>Deze bevat diverse wijzigingen zie wegkennisbank</Reden3>
+        <Reden4>Ingaande 04-04-2016</Reden4>
+      </WegwijzerBericht>
+    </Baanvak>
+    <Baanvak>
+      <BaanvakCode>35b</BaanvakCode>
+      <BaanvakOmschrijving>Breda - Tilburg - Boxtel</BaanvakOmschrijving>
+      <WegwijzerBericht>
+        <DienstregelpuntVan>BD</DienstregelpuntVan>
+        <DienstregelpuntTot>GZ</DienstregelpuntTot>
+        <GeldigheidsDatumTijdVan>2016-03-14T00:00:00+01:00</GeldigheidsDatumTijdVan>
+        <Reden1>Nieuwe wegwijzertekening</Reden1>
+        <Reden2>Rsd_WVK_35_Gz_Bd blad 12 versie L001</Reden2>
+        <Reden3>Deze bevat diverse wijzigingen zie wegkennisbank</Reden3>
+        <Reden4>Ingaande 04-04-2016</Reden4>
+      </WegwijzerBericht>
+    </Baanvak>
+  </Hoofdbaanvak>
+  <Hoofdbaanvak>
+    <HoofdBaanvakCode>36</HoofdBaanvakCode>
+    <HoofdBaanvakOmschrijving>Den Haag CS/Rotterdam CS - Gd - Utrecht</HoofdBaanvakOmschrijving>
+    <Baanvak>
+      <BaanvakCode>36c</BaanvakCode>
+      <BaanvakOmschrijving>Gouda - Utrecht CS</BaanvakOmschrijving>
+      <WegwijzerBericht>
+        <DienstregelpuntVan>UT</DienstregelpuntVan>
+        <DienstregelpuntTot>UT</DienstregelpuntTot>
+        <GeldigheidsDatumTijdVan>2016-03-10T00:00:00+01:00</GeldigheidsDatumTijdVan>
+        <Reden1>Nieuwe wegwijzertekening</Reden1>
+        <Reden2>Ut_WVK_29_Ut Blad 20 versie T001</Reden2>
+        <Reden3>Deze bevat diverse wijzigingen zie wegkennisbank</Reden3>
+        <Reden4>Ingangsdatum 26-03-2016</Reden4>
+      </WegwijzerBericht>
+    </Baanvak>
+  </Hoofdbaanvak>
+  <Hoofdbaanvak>
+    <HoofdBaanvakCode>37</HoofdBaanvakCode>
+    <HoofdBaanvakOmschrijving>Dordrecht - Geldermalsen</HoofdBaanvakOmschrijving>
+    <Baanvak>
+      <BaanvakCode>37_</BaanvakCode>
+      <BaanvakOmschrijving>Dordrecht - Geldermalsen</BaanvakOmschrijving>
+      <TijdelijkeSnelheidsBeperking>
+        <GeldigheidsDatumTijdVan>2011-05-31T14:00:00+02:00</GeldigheidsDatumTijdVan>
+        <PublicatieDatumTijdVan>2011-05-31T14:00:00+02:00</PublicatieDatumTijdVan>
+        <DienstregelpuntVan>GR</DienstregelpuntVan>
+        <DienstregelpuntTot>GR</DienstregelpuntTot>
+        <Richting>A</Richting>
+        <Reden1>Vanwege zichtbeperking oversteken minder validen</Reden1>
+        <Reden2>De borden zijn niet op de voorgeschreven hoogte geplaatst!</Reden2>
+        <Spooraanduiding1>Spoor 821</Spooraanduiding1>
+        <PlaatsAanduidingVan>70.7</PlaatsAanduidingVan>
+        <PlaatsAanduidingTot>70.6</PlaatsAanduidingTot>
+        <MaxSnelheidReiziger>40</MaxSnelheidReiziger>
+        <MaxSnelheidGoederen>40</MaxSnelheidGoederen>
+        <LAE_Informatie>
+          <LAE_BordAanduiding>N</LAE_BordAanduiding>
+        </LAE_Informatie>
+      </TijdelijkeSnelheidsBeperking>
+      <TijdelijkeSnelheidsBeperking>
+        <GeldigheidsDatumTijdVan>2011-05-31T14:00:00+02:00</GeldigheidsDatumTijdVan>
+        <PublicatieDatumTijdVan>2011-05-31T14:00:00+02:00</PublicatieDatumTijdVan>
+        <DienstregelpuntVan>GR</DienstregelpuntVan>
+        <DienstregelpuntTot>GR</DienstregelpuntTot>
+        <Richting>T</Richting>
+        <Reden1>Vanwege zichtbeperking oversteken minder validen</Reden1>
+        <Reden2>De borden zijn niet op de voorgeschreven hoogte geplaatst!</Reden2>
+        <Spooraanduiding1>Spoor 821</Spooraanduiding1>
+        <PlaatsAanduidingVan>70.6</PlaatsAanduidingVan>
+        <PlaatsAanduidingTot>70.7</PlaatsAanduidingTot>
+        <MaxSnelheidReiziger>40</MaxSnelheidReiziger>
+        <MaxSnelheidGoederen>40</MaxSnelheidGoederen>
+        <LAE_Informatie>
+          <LAE_BordAanduiding>N</LAE_BordAanduiding>
+        </LAE_Informatie>
+      </TijdelijkeSnelheidsBeperking>
+    </Baanvak>
+  </Hoofdbaanvak>
+  <Hoofdbaanvak>
+    <HoofdBaanvakCode>38</HoofdBaanvakCode>
+    <HoofdBaanvakOmschrijving>Leiden - Alphen - Woerden / Gouda</HoofdBaanvakOmschrijving>
+    <Baanvak>
+      <BaanvakCode>38a</BaanvakCode>
+      <BaanvakOmschrijving>Leiden - Apn - Woerden</BaanvakOmschrijving>
+      <TijdelijkeSnelheidsBeperking>
+        <GeldigheidsDatumTijdVan>2013-09-06T05:00:00+02:00</GeldigheidsDatumTijdVan>
+        <PublicatieDatumTijdVan>2013-09-06T05:00:00+02:00</PublicatieDatumTijdVan>
+        <DienstregelpuntVan>ZTWO</DienstregelpuntVan>
+        <DienstregelpuntTot>APN</DienstregelpuntTot>
+        <Richting>A</Richting>
+        <Reden1>Toestand spoor</Reden1>
+        <Reden2>De borden zijn niet op de voorgeschreven hoogte geplaatst!</Reden2>
+        <PlaatsAanduidingVan>22.9</PlaatsAanduidingVan>
+        <PlaatsAanduidingTot>22.6</PlaatsAanduidingTot>
+        <MaxSnelheidReiziger>100</MaxSnelheidReiziger>
+        <MaxSnelheidGoederen>100</MaxSnelheidGoederen>
+        <LAE_Informatie>
+          <LAE_BordAanduiding>N</LAE_BordAanduiding>
+        </LAE_Informatie>
+      </TijdelijkeSnelheidsBeperking>
+      <TijdelijkeSnelheidsBeperking>
+        <GeldigheidsDatumTijdVan>2013-09-06T05:00:00+02:00</GeldigheidsDatumTijdVan>
+        <PublicatieDatumTijdVan>2013-09-06T05:00:00+02:00</PublicatieDatumTijdVan>
+        <DienstregelpuntVan>APN</DienstregelpuntVan>
+        <DienstregelpuntTot>ZTWO</DienstregelpuntTot>
+        <Richting>T</Richting>
+        <Reden1>Toestand spoor</Reden1>
+        <Reden2>De borden zijn niet op de voorgeschreven hoogte geplaatst!</Reden2>
+        <PlaatsAanduidingVan>22.6</PlaatsAanduidingVan>
+        <PlaatsAanduidingTot>22.9</PlaatsAanduidingTot>
+        <MaxSnelheidReiziger>100</MaxSnelheidReiziger>
+        <MaxSnelheidGoederen>100</MaxSnelheidGoederen>
+        <LAE_Informatie>
+          <LAE_BordAanduiding>N</LAE_BordAanduiding>
+        </LAE_Informatie>
+      </TijdelijkeSnelheidsBeperking>
+      <RayonInfo>
+        <DienstregelpuntVan>LEDN</DienstregelpuntVan>
+        <DienstregelpuntTot>LEDN</DienstregelpuntTot>
+        <GeldigheidsDatumTijdVan>2012-04-27T00:00:00+02:00</GeldigheidsDatumTijdVan>
+        <Reden1>Aanvraagnr: 8155</Reden1>
+        <Reden2>Op de kop van het perron spoor 1 en 2  te Leiden dient men 10 km/h te rijden met SGMm.</Reden2>
+      </RayonInfo>
+    </Baanvak>
+  </Hoofdbaanvak>
+  <Hoofdbaanvak>
+    <HoofdBaanvakCode>40</HoofdBaanvakCode>
+    <HoofdBaanvakOmschrijving>Utrecht CS - Ht - Btl - Eindhoven/Veghel</HoofdBaanvakOmschrijving>
+    <Baanvak>
+      <BaanvakCode>40a</BaanvakCode>
+      <BaanvakOmschrijving>Utrecht CS - Geldermalsen</BaanvakOmschrijving>
+      <WegwijzerBericht>
+        <DienstregelpuntVan>UT</DienstregelpuntVan>
+        <DienstregelpuntTot>HTN</DienstregelpuntTot>
+        <GeldigheidsDatumTijdVan>2016-03-10T00:00:00+01:00</GeldigheidsDatumTijdVan>
+        <Reden1>Nieuwe wegwijzertekening</Reden1>
+        <Reden2>Ut_WVK_29_Ut_Ln Blad 22 versie J001</Reden2>
+        <Reden3>Deze bevat diverse wijzigingen zie wegkennisbank</Reden3>
+        <Reden4>Ingangsdatum 26-03-2016</Reden4>
+      </WegwijzerBericht>
+      <WegwijzerBericht>
+        <DienstregelpuntVan>UTL</DienstregelpuntVan>
+        <DienstregelpuntTot>CL</DienstregelpuntTot>
+        <GeldigheidsDatumTijdVan>2016-03-10T00:00:00+01:00</GeldigheidsDatumTijdVan>
+        <Reden1>Nieuwe wegwijzertekening</Reden1>
+        <Reden2>Ut_WVK_40_Ln_Lek_Gdm_1 Blad 37A versie H001</Reden2>
+        <Reden3>Deze bevat diverse wijzigingen zie wegkennisbank</Reden3>
+        <Reden4>Ingangsdatum 26-03-2016</Reden4>
+      </WegwijzerBericht>
+      <WegwijzerBericht>
+        <DienstregelpuntVan>HTNC</DienstregelpuntVan>
+        <DienstregelpuntTot>GDMA</DienstregelpuntTot>
+        <GeldigheidsDatumTijdVan>2016-03-10T00:00:00+01:00</GeldigheidsDatumTijdVan>
+        <Reden1>Nieuwe wegwijzertekening</Reden1>
+        <Reden2>Ut_WVK_40_Ln_Lek_Gdm_2 Blad 37B versie E001</Reden2>
+        <Reden3>Deze bevat diverse wijzigingen zie wegkennisbank</Reden3>
+        <Reden4>Ingangsdatum 26-03-2016</Reden4>
+      </WegwijzerBericht>
+    </Baanvak>
+  </Hoofdbaanvak>
+  <Hoofdbaanvak>
+    <HoofdBaanvakCode>43</HoofdBaanvakCode>
+    <HoofdBaanvakOmschrijving>Sittard - Hrl - Kerkrade - Hz -  Ahbf</HoofdBaanvakOmschrijving>
+    <Baanvak>
+      <BaanvakCode>43c</BaanvakCode>
+      <BaanvakOmschrijving>Heerlen - Hz - Aachen Hbf</BaanvakOmschrijving>
+      <RayonInfo>
+        <DienstregelpuntVan>LG</DienstregelpuntVan>
+        <DienstregelpuntTot>HZ</DienstregelpuntTot>
+        <GeldigheidsDatumTijdVan>2013-01-18T00:00:00+01:00</GeldigheidsDatumTijdVan>
+        <Reden1>Aanvraagnr: DB 49</Reden1>
+        <Reden2>Km 27.4 Omschakelpunt voor GSM-R ( D ) Lg -HZ</Reden2>
+        <Reden3>Km 27.4 Umschaltpunt fur GSM-R ( D )      Lg - Hz</Reden3>
+        <Reden4>Km 27.4 Omschakelpunt voor GSM-R ( NL ) Hz - Lg</Reden4>
+        <Reden5>Km 27.4 Umschaltpunt fur GSM-R ( NL )  Hz - Lg</Reden5>
+      </RayonInfo>
+    </Baanvak>
+  </Hoofdbaanvak>
+  <Hoofdbaanvak>
+    <HoofdBaanvakCode>47</HoofdBaanvakCode>
+    <HoofdBaanvakOmschrijving>Eindhoven - Venlo - Kaldenkirchen</HoofdBaanvakOmschrijving>
+    <Baanvak>
+      <BaanvakCode>47b</BaanvakCode>
+      <BaanvakOmschrijving>Venlo - Kaldenkirchen</BaanvakOmschrijving>
+      <RayonInfo>
+        <DienstregelpuntVan>VL</DienstregelpuntVan>
+        <DienstregelpuntTot>KN</DienstregelpuntTot>
+        <GeldigheidsDatumTijdVan>2015-07-17T00:00:00+02:00</GeldigheidsDatumTijdVan>
+        <GeldigheidsDatumTijdTotenMet>2016-12-11T00:00:00+01:00</GeldigheidsDatumTijdTotenMet>
+        <Reden1>Aanvraagnr: DB50</Reden1>
+        <Reden2>Linkerspoor Venlo - Kaldenkirchen bij km. 0.280 nieuw sein Ne 2</Reden2>
+        <Reden3>ingangsdatum: 17 juli 2015 12.00 uur</Reden3>
+        <Reden4>Auf linkem gleis Venlo - Kaldenkirchen km 0.280 neu signal Ne 2</Reden4>
+        <Reden5>in kraft ab 17 juli 2015 12.00 uhr</Reden5>
+      </RayonInfo>
+    </Baanvak>
+  </Hoofdbaanvak>
+  <Hoofdbaanvak>
+    <HoofdBaanvakCode>50</HoofdBaanvakCode>
+    <HoofdBaanvakOmschrijving>Arnhem - Zv - Emmerich</HoofdBaanvakOmschrijving>
+    <Baanvak>
+      <BaanvakCode>50b</BaanvakCode>
+      <BaanvakOmschrijving>Zevenaar - Emmerich</BaanvakOmschrijving>
+      <RayonInfo>
+        <DienstregelpuntVan>ZVG</DienstregelpuntVan>
+        <DienstregelpuntTot>EM</DienstregelpuntTot>
+        <GeldigheidsDatumTijdVan>2012-07-15T00:00:00+02:00</GeldigheidsDatumTijdVan>
+        <Reden1>Aanvraagnr: DB 47</Reden1>
+        <Reden2>Spoor Emmerich - Duitse grens t.h.v. km 71.8</Reden2>
+        <Reden3>omschakeling GSM-R (NL)</Reden3>
+        <Reden4>Ingangsdatum: 16 juli 2012 om  0.00 uur</Reden4>
+      </RayonInfo>
+    </Baanvak>
+  </Hoofdbaanvak>
+  <Hoofdbaanvak>
+    <HoofdBaanvakCode>62</HoofdBaanvakCode>
+    <HoofdBaanvakOmschrijving>Meppel - Leeuwarden</HoofdBaanvakOmschrijving>
+    <Baanvak>
+      <BaanvakCode>62_</BaanvakCode>
+      <BaanvakOmschrijving>Meppel - Leeuwarden</BaanvakOmschrijving>
+      <TijdelijkeSnelheidsBeperking>
+        <GeldigheidsDatumTijdVan>2015-12-07T04:00:00+01:00</GeldigheidsDatumTijdVan>
+        <PublicatieDatumTijdVan>2015-12-07T04:00:00+01:00</PublicatieDatumTijdVan>
+        <DienstregelpuntVan>HR</DienstregelpuntVan>
+        <DienstregelpuntTot>AKM</DienstregelpuntTot>
+        <Richting>A</Richting>
+        <Reden1>Toestand brug</Reden1>
+        <Reden2>Deze snelheidsbeperking is in de ATB opgenomen</Reden2>
+        <Spooraanduiding1>( linkerspoor )</Spooraanduiding1>
+        <PlaatsAanduidingVan>145.3</PlaatsAanduidingVan>
+        <PlaatsAanduidingTot>145.4</PlaatsAanduidingTot>
+        <MaxSnelheidReiziger>40</MaxSnelheidReiziger>
+        <LAE_Informatie>
+          <LAE_BordAanduiding>J</LAE_BordAanduiding>
+          <LAE_BordVerplaatsing>V</LAE_BordVerplaatsing>
+          <LAE_BordVerplaatsingAfstand>500</LAE_BordVerplaatsingAfstand>
+          <Afstand_AanvangEinde>2200</Afstand_AanvangEinde>
+        </LAE_Informatie>
+      </TijdelijkeSnelheidsBeperking>
+      <TijdelijkeSnelheidsBeperking>
+        <GeldigheidsDatumTijdVan>2015-12-07T04:00:00+01:00</GeldigheidsDatumTijdVan>
+        <PublicatieDatumTijdVan>2015-12-07T04:00:00+01:00</PublicatieDatumTijdVan>
+        <DienstregelpuntVan>AKM</DienstregelpuntVan>
+        <DienstregelpuntTot>HR</DienstregelpuntTot>
+        <Richting>T</Richting>
+        <Reden1>Toestand brug</Reden1>
+        <Reden2>Deze snelheidsbeperking is in de ATB opgenomen</Reden2>
+        <Spooraanduiding1>( rechterspoor )</Spooraanduiding1>
+        <PlaatsAanduidingVan>145.4</PlaatsAanduidingVan>
+        <PlaatsAanduidingTot>145.3</PlaatsAanduidingTot>
+        <MaxSnelheidReiziger>40</MaxSnelheidReiziger>
+        <LAE_Informatie>
+          <LAE_BordAanduiding>J</LAE_BordAanduiding>
+          <LAE_BordVerplaatsing>A</LAE_BordVerplaatsing>
+          <LAE_BordVerplaatsingAfstand>500</LAE_BordVerplaatsingAfstand>
+          <Afstand_AanvangEinde>2200</Afstand_AanvangEinde>
+        </LAE_Informatie>
+      </TijdelijkeSnelheidsBeperking>
+      <RayonInfo>
+        <DienstregelpuntVan>HRMK</DienstregelpuntVan>
+        <DienstregelpuntTot>HRMK</DienstregelpuntTot>
+        <GeldigheidsDatumTijdVan>2015-04-02T00:00:00+02:00</GeldigheidsDatumTijdVan>
+        <Reden1>Aanvraagnr: 8241</Reden1>
+        <Reden2>Plaatsing in- en uitschakelenborden op de brug over het Harinxsmakanaal</Reden2>
+        <Reden3>ter voorkoming van schade aan besturing van de brug.</Reden3>
+        <Reden4>Lw-Mp LS en RS  bord SR 306A km 164.850 en bord 307A km 164.600</Reden4>
+      </RayonInfo>
+    </Baanvak>
+  </Hoofdbaanvak>
+  <Hoofdbaanvak>
+    <HoofdBaanvakCode>90</HoofdBaanvakCode>
+    <HoofdBaanvakOmschrijving>HSL</HoofdBaanvakOmschrijving>
+    <Baanvak>
+      <BaanvakCode>90b</BaanvakCode>
+      <BaanvakOmschrijving>HSL zuid</BaanvakOmschrijving>
+      <WegwijzerBericht>
+        <DienstregelpuntVan>BDA</DienstregelpuntVan>
+        <DienstregelpuntTot>Hsbda</DienstregelpuntTot>
+        <GeldigheidsDatumTijdVan>2016-03-14T00:00:00+01:00</GeldigheidsDatumTijdVan>
+        <Reden1>Nieuwe wegwijzertekening</Reden1>
+        <Reden2>Rsd_WVK_35_Bd_Bda blad 11 versie L001</Reden2>
+        <Reden3>Deze bevat diverse wijzigingen zie wegkennisbank</Reden3>
+        <Reden4>Ingaande 04-04-2016</Reden4>
+      </WegwijzerBericht>
+    </Baanvak>
+  </Hoofdbaanvak>
+</IAM>
+

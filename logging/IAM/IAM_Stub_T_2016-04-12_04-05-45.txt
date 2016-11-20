@@ -1,0 +1,8 @@
+<IAM xmlns="http://tempuri.org/XmlPublicationDataSet.xsd" XMLSchemaVersie="01.10" BeginGeldigheidsDatumtijd="2016-04-11T04:00:00+02:00" EindeGeldigheidsDatumtijd="2016-04-13T17:00:00+02:00">
+  <ControleGetallen>
+    <TSB_Aantal>0</TSB_Aantal>
+    <RayonInfoAantal>0</RayonInfoAantal>
+    <WegwijzerAantal>0</WegwijzerAantal>
+  </ControleGetallen>
+
+</IAM>

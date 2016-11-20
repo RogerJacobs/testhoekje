@@ -1,0 +1,519 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Ns.Orp.Berichten.Implementation</name>
+    </assembly>
+    <members>
+        <member name="T:Ns.Orp.Berichten.Implementation.Mappers.BerichtMapper">
+            <summary>
+            BerichtMapper
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Berichten.Implementation.Mappers.BerichtMapper.#cctor">
+            <summary>
+            Initializes the <see cref="T:Ns.Orp.Berichten.Implementation.Mappers.BerichtMapper"/> class.
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Berichten.Implementation.Mappers.BerichtMapper.ToBericht(Ns.Orp.Berichten.Implementation.Data.DbBericht)">
+            <summary>
+            Converts a <see cref="T:Ns.Orp.Berichten.Implementation.Data.DbBericht"/> to a <see cref="T:Ns.Orp.Berichten.Model.Bericht"/>
+            </summary>
+            <param name="dbBericht">The database bericht.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Berichten.Implementation.Mappers.BerichtMapper.ToBerichtDto(Ns.Orp.Berichten.Implementation.Data.DbBericht)">
+            <summary>
+            Converts a <see cref="T:Ns.Orp.Berichten.Implementation.Data.DbBericht"/> to a <see cref="T:Ns.Orp.Berichten.Model.BerichtDto"/>
+            </summary>
+            <param name="dbBericht">The database bericht.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Berichten.Implementation.Mappers.BerichtMapper.ToDbBericht(Ns.Orp.Berichten.Model.Bericht)">
+            <summary>
+            Converts a <see cref="T:Ns.Orp.Berichten.Model.Bericht"/> to a <see cref="T:Ns.Orp.Berichten.Implementation.Data.DbBericht"/>
+            </summary>
+            <param name="bericht">The bericht.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Ns.Orp.Berichten.Implementation.Data.BerichtContext">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Berichten.Implementation.Data.BerichtContext._hack">
+            <summary>
+            Fixed "Provider not loaded" error
+            http://stackoverflow.com/a/18511584/1966061
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Berichten.Implementation.Data.BerichtContext.#ctor">
+            <summary>
+            Test constructor
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Berichten.Implementation.Data.BerichtContext.#ctor(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="connectionString"></param>
+        </member>
+        <member name="M:Ns.Orp.Berichten.Implementation.Data.BerichtContext.OnModelCreating(System.Data.Entity.DbModelBuilder)">
+            <summary>
+            
+            </summary>
+            <param name="modelBuilder"></param>
+        </member>
+        <member name="P:Ns.Orp.Berichten.Implementation.Data.BerichtContext.Berichten">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Berichten.Implementation.Data.BerichtContext.Berichtstatus">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Berichten.Implementation.BerichtenBackEndManager">
+            <summary>
+            BriefingManager
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Berichten.Implementation.IBerichtenBackEndManager">
+            <summary>
+            Interface for berichten backend manager.
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Berichten.Implementation.IBerichtenBackEndManager.ImportBriefingFromFtpAsync(Ns.Orp.Berichten.Model.BerichtCategory)">
+            <summary>
+            Imports briefing info from FTP.
+            </summary>
+            <param name="category"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Berichten.Implementation.IBerichtenBackEndManager.RetrieveRelevanteBerichtenAsync(System.Int32,Ns.Orp.ServiceLibrary.Shared.AuthorizatieRollen,Ns.Orp.Berichten.Model.BerichtFilterCriteria)">
+            <summary>
+            Retrieves the relevante berichten asynchronous.
+            </summary>
+            <param name="personeelsnummer">The personeelsnummer.</param>
+            <param name="rollen">The rollen.</param>
+            <param name="criteria"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Berichten.Implementation.IBerichtenBackEndManager.Update(System.Int32,Ns.Orp.Berichten.Model.BerichtDto)">
+            <summary>
+            Updates a Bericht in the database with specified values from berichtDto
+            </summary>
+            <param name="personeelsnummer">The personeelsnummer.</param>
+            <param name="berichtDto">The bericht dto.</param>
+            <returns>Number of items that were updated</returns>
+            <remarks>Only Bevestigd and Gelezen fields will be updated.</remarks>
+        </member>
+        <member name="M:Ns.Orp.Berichten.Implementation.BerichtenBackEndManager.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ns.Orp.Berichten.Implementation.BerichtenBackEndManager"/> class.
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Berichten.Implementation.BerichtenBackEndManager.#ctor(Ns.Orp.Berichten.Implementation.IBriefingAgent,System.Func{Ns.Orp.Berichten.Implementation.Data.BerichtContext})">
+            <summary>
+            Test constructor
+            </summary>
+            <param name="briefingAgent"></param>
+            <param name="berichtContextFactory"></param>
+        </member>
+        <member name="M:Ns.Orp.Berichten.Implementation.BerichtenBackEndManager.ImportBriefingFromFtpAsync(Ns.Orp.Berichten.Model.BerichtCategory)">
+            <summary>
+            Imports Briefing From Ftp Async
+            </summary>
+            <param name="category"></param>
+        </member>
+        <member name="M:Ns.Orp.Berichten.Implementation.BerichtenBackEndManager.RetrieveRelevanteBerichtenAsync(System.Int32,Ns.Orp.ServiceLibrary.Shared.AuthorizatieRollen,Ns.Orp.Berichten.Model.BerichtFilterCriteria)">
+            <summary>
+            Retrieves the relevante berichten.
+            </summary>
+            <param name="personeelsnummer">The personeelsnummer.</param>
+            <param name="rollen">The rollen.</param>
+            <param name="criteria"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Berichten.Implementation.BerichtenBackEndManager.Update(System.Int32,Ns.Orp.Berichten.Model.BerichtDto)">
+            <summary>
+            Update a bericht, currently only berichtstatus
+            </summary>
+            <param name="personeelsnummer"></param>
+            <param name="berichtDto"></param>
+            <returns>Number of updated berichten</returns>
+        </member>
+        <member name="M:Ns.Orp.Berichten.Implementation.BerichtenBackEndManager.Finalize">
+            <summary>
+            Destuctor, implemented to disposing correctly
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Berichten.Implementation.BerichtenBackEndManager.Dispose">
+            <summary>
+            Disposes the object.
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Berichten.Implementation.BriefingAgent">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Berichten.Implementation.IBriefingAgent">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Berichten.Implementation.IBriefingAgent.RetrieveBriefingAsync(Ns.Orp.Berichten.Model.BerichtCategory)">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Berichten.Implementation.BriefingAgent.#ctor(System.String,System.String,System.String,Ns.Orp.Web.Client.IWebClient)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ns.Orp.Berichten.Implementation.BriefingAgent"/> class.
+            </summary>
+            <param name="handboekenUpdatesBriefingAddress"></param>
+            <param name="informatieberichtenBriefingAddress"></param>
+            <param name="managementBerichtenBriefingAddress"></param>
+            <param name="client">HttpClient to use for requests</param>
+            <exception cref="T:System.ArgumentNullException">address</exception>
+        </member>
+        <member name="M:Ns.Orp.Berichten.Implementation.BriefingAgent.#ctor(System.String,System.String,System.String,System.String)">
+            <summary>
+            Constructor that enables testing
+            </summary>
+            <param name="handboekenUpdatesBriefingAddress"></param>
+            <param name="informatieberichtenBriefingAddress"></param>
+            <param name="managementBerichtenBriefingAddress"></param>
+            <param name="from">The system that initiates the call</param>
+        </member>
+        <member name="M:Ns.Orp.Berichten.Implementation.BriefingAgent.RetrieveBriefingAsync(Ns.Orp.Berichten.Model.BerichtCategory)">
+            <summary>
+            
+            </summary>
+            <param name="category">Category to retrieve</param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Berichten.Implementation.BriefingAgent.Finalize">
+            <summary>
+            Destructor, implemented to dispose correctly
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Berichten.Implementation.BriefingAgent.Dispose">
+            <summary>
+            Disposes the object.
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Berichten.Implementation.Mappers.BriefingMapper">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Berichten.Implementation.Mappers.BriefingMapper.MetaRegularExpression">
+             <summary>
+             Zoekt de volgende tekst:
+             meta name="(groep1)" content="(groep2)"
+            
+             Voorbeelden:
+             meta name="geldigheid" content="01-12-2013-31-05-2014"
+             meta name="functie" content="hc,hct,hci,hcb,hcm,def"
+             meta name="id" content="20131201hbhc"
+             </summary>
+        </member>
+        <member name="F:Ns.Orp.Berichten.Implementation.Mappers.BriefingMapper.GeldigheidRegularExpression">
+            <summary>
+            Controleert de geldigheid datums:
+            (groep1)-(groep2)
+            
+            Voorbeelden
+            01-12-2013-31-05-2014
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Berichten.Implementation.Mappers.BriefingMapper.TitleRegularExpression">
+            <summary>
+            Zoekt de volgende tekst:
+            <title>(groep1)</title>
+            
+            Voorbeelden:
+            <title>Handboek HC wijzigingsblad 1 december 2013</title>
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Berichten.Implementation.Mappers.BriefingMapper.MapToLocal(System.String,Ns.Orp.Berichten.Model.BerichtCategory)">
+            <summary>
+            
+            </summary>
+            <param name="file"></param>
+            <param name="category"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Ns.Orp.Berichten.Implementation.Data.DbBericht">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Berichten.Implementation.Data.DbBericht.Identifier">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Berichten.Implementation.Data.DbBericht.Category">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Berichten.Implementation.Data.DbBericht.Hash">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Berichten.Implementation.Data.DbBericht.Prioriteit">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Berichten.Implementation.Data.DbBericht.OorsprongDatumTijd">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Berichten.Implementation.Data.DbBericht.GeldigheidStartDatumTijd">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Berichten.Implementation.Data.DbBericht.GeldigheidEindDatumTijd">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Berichten.Implementation.Data.DbBericht.Kopregel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Berichten.Implementation.Data.DbBericht.Body">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Berichten.Implementation.Data.DbBericht.Verplicht">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Berichten.Implementation.Data.DbBericht.Bevestigen">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Berichten.Implementation.Data.DbBericht.Notification">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Berichten.Implementation.Data.DbBericht.FunctieDoelgroepen">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Berichten.Implementation.Data.DbBericht.Berichtstatus">
+            <summary>
+            Gets or sets the berichtstatus.
+            </summary>
+            <value>
+            The berichtstatus.
+            </value>
+        </member>
+        <member name="T:Ns.Orp.Berichten.Implementation.Data.DbBerichtstatus">
+            <summary>
+            Keeps track of briefing status for a particular employee
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Berichten.Implementation.Data.DbBerichtstatus.BerichtIdentifier">
+            <summary>
+            The Bericht this status is about
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Berichten.Implementation.Data.DbBerichtstatus.BerichtCategory">
+            <summary>
+            Gets or sets the bericht category.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Berichten.Implementation.Data.DbBerichtstatus.Bericht">
+            <summary>
+            Gets or sets the bericht.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Berichten.Implementation.Data.DbBerichtstatus.Personeelsnummer">
+            <summary>
+            Employee number this status is applicable to
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Berichten.Implementation.Data.DbBerichtstatus.Gelezen">
+            <summary>
+            Indicator whether Bericht is read or not
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Berichten.Implementation.Data.DbBerichtstatus.Bevestigd">
+            <summary>
+            Indicator whether Bericht is confirmed or not
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Berichten.Implementation.Factories.AgentFactory.CreateBriefingAgent(System.String)">
+            <summary>
+            Creates an implementing instance for IBriefingAgent.
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Berichten.Implementation.Factories.ManagerFactory">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Berichten.Implementation.Factories.ManagerFactory.CreateBerichtenBackEndManager">
+            <summary>
+            Creates the berichten back end manager.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Ns.Orp.Berichten.Implementation.Factories.WebClientFactory">
+            <summary>
+            Factory for WebClient
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Berichten.Implementation.Factories.WebClientFactory.CreateWebClient(System.String,System.String)">
+            <summary>
+            Creates an instance of the WebClient
+            </summary>
+            <param name="from">The system the call is orginating.</param>
+            <param name="to">The system to receive the call.</param>
+            <returns>An instance of the WebClient</returns>
+        </member>
+        <member name="T:Ns.Orp.Berichten.Implementation.Factories.SqlContextFactory">
+            <summary>
+            Factory for shared agents
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Berichten.Implementation.Factories.SqlContextFactory.CreateBerichtContext">
+            <summary>
+            Creates an instance of the BerichtContext
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Ns.Orp.Berichten.Implementation.Settings">
+            <summary>
+            Settings class
+            Each property name maps to a setting in the configuration manager
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Berichten.Implementation.Settings.GetValue(System.String)">
+            <summary>
+            Gets a setting from the config file.
+            </summary>
+            <param name="name">The name of the setting.</param>
+            <returns>The value of the setting.</returns>
+        </member>
+        <member name="M:Ns.Orp.Berichten.Implementation.Settings.GetNumericValue(System.String)">
+            <summary>
+            Gets a setting from the config file, as an integer.
+            </summary>
+            <param name="name">The name of the setting.</param>
+            <returns>The value of the setting. Defaults to 0 when not configured or not a valid integer value.</returns>
+        </member>
+        <member name="P:Ns.Orp.Berichten.Implementation.Settings.Version">
+            <summary>
+            The version of the release, should be in the form of rXX. No minor versions, only major.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Berichten.Implementation.Settings.ServiceBusConnectionString">
+            <summary>
+            ServiceBusConnectionString
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Berichten.Implementation.Settings.StorageConnectionString">
+            <summary>
+            StorageConnectionString
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Berichten.Implementation.Settings.SearchConnectionString">
+            <summary>
+            SearchConnectionString
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Berichten.Implementation.Settings.StatementLogTableName">
+            <summary>
+            LogTableName
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Berichten.Implementation.Settings.MessageLogTableName">
+            <summary>
+            LogTableName
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Berichten.Implementation.Settings.LogInstanceName">
+            <summary>
+            LogInstanceName
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Berichten.Implementation.Settings.AppInsightsInstrumentationKey">
+            <summary>
+            Application Insights Instrumentation Key
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Berichten.Implementation.Settings.AppInsightsEnvironmentTag">
+            <summary>
+            Application Insights Environment Tag
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Berichten.Implementation.Settings.AppInsightsEnabled">
+            <summary>
+            Application Insights enabled
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Berichten.Implementation.Settings.MonitoringLogTopicName">
+            <summary>
+            The name of the Topic where Monitoring events will be delivered.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Berichten.Implementation.Settings.LoggingTopicName">
+            <summary>
+            The name of the Topic where logging events will be delivered.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Berichten.Implementation.Settings.HandboekenUpdatesBriefingAddress">
+            <summary>
+            HandboekenUpdatesBriefingAddress
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Berichten.Implementation.Settings.ManagementBerichtenBriefingAddress">
+            <summary>
+            ManagementBerichtenBriefingAddress
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Berichten.Implementation.Settings.InformatieberichtenBriefingAddress">
+            <summary>
+            InformatieberichtenBriefingAddress
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Berichten.Implementation.Settings.SqlServerConnectionString">
+            <summary>
+            SqlServerConnectionString
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Berichten.Implementation.Settings.AadSpoorplazaTenant">
+            <summary>
+            The SpoorPlaza AAD Tenant
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Berichten.Implementation.Settings.AadBerichtenAppId">
+            <summary>
+            The id of the berichten audience
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Berichten.Implementation.Settings.ImportBriefingQueueName">
+            <summary>
+            The storage queue name used to trigger the Import Briefing Web Job
+            </summary>
+        </member>
+    </members>
+</doc>

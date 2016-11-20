@@ -1,0 +1,1292 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Ns.Orp.ServiceLibrary</name>
+    </assembly>
+    <members>
+        <member name="T:Ns.Orp.ServiceLibrary.DocumentDb.DocumentContext`1">
+            <summary>
+            DocumentContext
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.ServiceLibrary.DocumentDb.IDocumentContext`1">
+            <summary>
+            DocumentContext
+            </summary>
+            <typeparam name="TEntity">The entity to store</typeparam>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.DocumentDb.IDocumentContext`1.InsertOrReplaceDocumentAsync(`0)">
+            <summary>
+            Inserts or replaces the document.
+            </summary>
+            <param name="document">The document to insert or replace.</param>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.DocumentDb.IDocumentContext`1.GetEntityByIdAsync(System.String)">
+            <summary>
+            Gets the entity by identifier.
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.DocumentDb.IDocumentContext`1.GetDocumentByIdAsync(System.String)">
+            <summary>
+            Gets the document by identifier.
+            </summary>
+            <param name="id">The document id to select on.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.DocumentDb.IDocumentContext`1.DeleteDocumentsAsync">
+            <summary>
+            Deletes all the documents 
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.DocumentDb.IDocumentContext`1.DeleteDocumentsAsync(System.Collections.Generic.IEnumerable{`0})">
+            <summary>
+            Deletes the documents using the RowKeys of the <paramref name="entities"/>
+            </summary>
+            <param name="entities">The entities to read the rowkey from</param>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.DocumentDb.IDocumentContext`1.DeleteDocumentsAsync(System.Collections.Generic.IEnumerable{System.String})">
+             <summary>
+             Deletes the documents with the given ids
+             </summary>
+            <param name="ids">Ids of the documents to delete</param>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.DocumentDb.IDocumentContext`1.GetDocumentsAsync">
+            <summary>
+            Gets all the documents of <typeparamref name="TEntity"/>
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.DocumentDb.IDocumentContext`1.LastUpdateTime(System.String)">
+            <summary>
+            Gets the last update time of the document
+            </summary>
+            <param name="documentId">The document identifier.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.DocumentDb.IDocumentContext`1.HasData">
+            <summary>
+            Indicates whether there's at least 1 item available in the documentdb collection
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.DocumentDb.DocumentContext`1.#ctor(System.String,System.String,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ns.Orp.ServiceLibrary.DocumentDb.DocumentContext`1"/> class.
+            </summary>
+            <param name="connectionString">The connection string.</param>
+            <param name="collectionName">Name of the collection to use when deviating from the default which is the name of TEntity.</param>
+            <param name="retryCount">Retry count for document queries that consume a lot of Request Units.</param>
+            <exception cref="T:System.ArgumentNullException">connectionString</exception>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.DocumentDb.DocumentContext`1.#ctor(System.String,Newtonsoft.Json.JsonSerializerSettings,System.String,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ns.Orp.ServiceLibrary.DocumentDb.DocumentContext`1"/> class.
+            </summary>
+            <param name="connectionString">The connection string.</param>
+            <param name="settings">The settings.</param>
+            <param name="collectionName">Name of the collection.</param>
+            <param name="retryCount">Retry count for document queries that consume a lot of Request Units.</param>
+            <exception cref="T:System.ArgumentNullException">connectionString</exception>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.DocumentDb.DocumentContext`1.InsertOrReplaceDocumentAsync(`0)">
+            <summary>
+            Inserts or replaces the document.
+            </summary>
+            <param name="document">The document to insert or replace.</param>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.DocumentDb.DocumentContext`1.GetEntityByIdAsync(System.String)">
+            <summary>
+            Gets the entity by identifier.
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.DocumentDb.DocumentContext`1.GetDocumentByIdAsync(System.String)">
+            <summary>
+            Gets the document by identifier.
+            </summary>
+            <param name="id">The document id to select on.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.DocumentDb.DocumentContext`1.DeleteDocumentsAsync">
+            <summary>
+            Deletes all the documents 
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.DocumentDb.DocumentContext`1.DeleteDocumentsAsync(System.Collections.Generic.IEnumerable{`0})">
+            <summary>
+            Deletes the documents using the RowKeys of the <paramref name="entities"/>
+            </summary>
+            <param name="entities">The entities to read the rowkey from</param>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.DocumentDb.DocumentContext`1.DeleteDocumentsAsync(System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            Deletes the documents using the id
+            </summary>
+            <param name="ids">The entities to read the rowkey from</param>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.DocumentDb.DocumentContext`1.GetDocumentsAsync">
+            <summary>
+            Gets all the documents of <typeparamref name="TEntity"/>
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.DocumentDb.DocumentContext`1.Deserialize``1(System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            Deserializes the specified document list.
+            </summary>
+            <typeparam name="TDoc">The type of the document.</typeparam>
+            <param name="docList">The document list.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.DocumentDb.DocumentContext`1.ExecuteQueryAsync(System.String)">
+            <summary>
+            Executes the query.
+            </summary>
+            <param name="sqlExpression">The SQL expression to execute</param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.DocumentDb.DocumentContext`1.ExecuteQueryAsync``1(System.String,System.String)">
+            <summary>
+            Executes the query.
+            </summary>
+            <param name="sqlExpression">The SQL expression to execute</param>
+            <param name="caller">The calling method.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.DocumentDb.DocumentContext`1.ExecuteQueryAsync``1(System.String,Microsoft.Azure.Documents.Client.FeedOptions,System.String)">
+            <summary>
+            Executes the query.
+            </summary>
+            <param name="sqlExpression">The SQL expression to execute</param>
+            <param name="feedOptions"></param>
+            <param name="caller">The calling method.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.DocumentDb.DocumentContext`1.ExecuteScalarAsync(System.String,System.String)">
+            <summary>
+            Executes the query.
+            </summary>
+            <param name="sqlExpression">The SQL expression to execute</param>
+            <param name="caller">The calling method.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.DocumentDb.DocumentContext`1.WrapperListToNormalList``1(System.Collections.Generic.IEnumerable{Ns.Orp.ServiceLibrary.DocumentDb.ItemWrapper{``0}})">
+            <summary>
+            TRanslates a query with a join to object
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="listToTranslate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.DocumentDb.DocumentContext`1.IdWrapperListToNormalList(System.Collections.Generic.IEnumerable{Ns.Orp.ServiceLibrary.DocumentDb.IdItemWrapper})">
+            <summary>
+            TRanslates a query with a join to object
+            </summary>
+            <param name="listToTranslate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.DocumentDb.DocumentContext`1.HasData">
+            <summary>
+            Indicates whether there's at least 1 item available in the documentdb collection
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.DocumentDb.DocumentContext`1.LastUpdateTime(System.String)">
+            <summary>
+            Determines documents last update time 
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.DocumentDb.DocumentContext`1.Dispose(System.Boolean)">
+            <summary>
+            Dispose
+            </summary>
+            <param name="disposing"></param>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.DocumentDb.DocumentContext`1.Finalize">
+            <summary>
+            Destructor
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.DocumentDb.DocumentContext`1.Dispose">
+            <summary>
+            Dispose
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.ServiceLibrary.DocumentDb.DocumentContext`1.SerializerSettings">
+            <summary>
+            The serializer settings to use for JsonConvert
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.ServiceLibrary.DocumentDb.DocumentContext`1.Client">
+            <summary>
+            DocumentClient
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.ServiceLibrary.DocumentDb.DocumentContext`1.Account">
+            <summary>
+            The document db account
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.ServiceLibrary.DocumentDb.DocumentContext`1.CollectionName">
+            <summary>
+            The name of the underlying DocumentDB Collection
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.ServiceLibrary.DocumentDb.DocumentDbAccount">
+            <summary>
+            Helper class for using connection strings for DocumentDb account configuration
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.DocumentDb.DocumentDbAccount.CreateClient">
+            <summary>
+            Creates the client.
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.DocumentDb.DocumentDbAccount.Parse(System.String)">
+            <summary>
+            Parses the specified connection string.
+            </summary>
+            <param name="connectionString">The connection string.</param>
+            <exception cref="T:System.ArgumentException"></exception>
+        </member>
+        <member name="P:Ns.Orp.ServiceLibrary.DocumentDb.DocumentDbAccount.AccountName">
+            <summary>
+            Gets or sets the name of the account.
+            </summary>
+            <value>
+            The name of the account.
+            </value>
+        </member>
+        <member name="P:Ns.Orp.ServiceLibrary.DocumentDb.DocumentDbAccount.AccountKey">
+            <summary>
+            Gets or sets the account key.
+            </summary>
+            <value>
+            The account key.
+            </value>
+        </member>
+        <member name="P:Ns.Orp.ServiceLibrary.DocumentDb.DocumentDbAccount.Database">
+            <summary>
+            Gets or sets the database.
+            </summary>
+            <value>
+            The database.
+            </value>
+        </member>
+        <member name="T:Ns.Orp.ServiceLibrary.DocumentDb.DocumentJsonSerializerSettings">
+            <summary>
+            DocumentJsonSerializerSettings
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.DocumentDb.DocumentJsonSerializerSettings.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ns.Orp.ServiceLibrary.DocumentDb.DocumentJsonSerializerSettings"/> class.
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.ServiceLibrary.DocumentDb.EntityBase">
+            <summary>
+            Acts as a generic Entity that stores and retrieves an object
+            of type TEntity. Derived classes must override the Configure() method and use this method to specify
+            row key(s). The complete instance of TEntity is stored as a JSON DocumentDb Document
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.DocumentDb.EntityBase.Configure">
+            <summary>
+            Use this method to specify the row key(s).
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.ServiceLibrary.DocumentDb.EntityBase.RowKey">
+            <summary>
+            Gets the entity row key.
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.ServiceLibrary.DocumentDb.GenericEntity`1">
+            <summary>
+            
+            </summary>
+            <typeparam name="TEntity">The type of the entity.</typeparam>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.DocumentDb.GenericEntity`1.SetRowKeys(System.Func{`0,System.String}[])">
+            <summary>
+            Specifies which properties of TEntity are used as row key(s).
+            </summary>
+            <param name="rowKeys">One or more accessors used as row key(s)</param>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.DocumentDb.GenericEntity`1.CreateRowKey">
+            <summary>
+            Gets the key a row is retrieved with
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Ns.Orp.ServiceLibrary.DocumentDb.GenericEntity`1.Entity">
+            <summary>
+            The entity instance that is wrapped by this GenericEntity.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.ServiceLibrary.DocumentDb.GenericEntity`1.RowKey">
+            <summary>
+            Gets the entity's row key.
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.ServiceLibrary.DocumentDb.ItemWrapper`1">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.ServiceLibrary.DocumentDb.ItemWrapper`1.ItemName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.ServiceLibrary.DocumentDb.IdItemWrapper">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.ServiceLibrary.DocumentDb.IdItemWrapper.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.ServiceLibrary.Topics.BaseTopicManager`1">
+            <summary>
+            The BaseTopicManager class acts as a wrapper around a Azure Service Bus Topic.
+            </summary>
+            <typeparam name="TBody"></typeparam>
+        </member>
+        <member name="T:Ns.Orp.ServiceLibrary.Topics.ITopicManager`1">
+            <summary>
+            Contains all methods to send a message on the Dienst top a topic.
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Topics.ITopicManager`1.SendAsync(`0)">
+            <summary>
+            Sends a new message to the topic.
+            </summary>
+            <param name="body">The message to send.</param>
+            <returns>A Task. This method is attended to run asynchronously.</returns>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Topics.ITopicManager`1.RetrieveMessages">
+            <summary>
+            Retrieve messages from the topic.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Topics.ITopicManager`1.RetrieveMessages(System.Int32)">
+            <summary>
+            Retrieve messages from the topic limited to max <paramref name="batchCount"/>
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Topics.ITopicManager`1.RetrieveMessagesWithoutTransaction(System.Int32,System.TimeSpan)">
+            <summary>
+            Retrieve messages from the topic limited by <paramref name="batchCount"/> without an transaction.
+            </summary>
+            <param name="batchCount">Batch size</param>
+            <param name="maxWaitTime">Max time to wait for Azure to retrieve the batch</param>
+            <remarks>
+            Should only be used with mode ReceiveAndDelete. Using it with mode Peek will not remove the entries from the topic.</remarks>
+            <returns>Async Task with an enumerable of TBody.</returns>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Topics.ITopicManager`1.CompleteMessages(System.Collections.Generic.IEnumerable{Ns.Orp.ServiceLibrary.Topics.BrokeredMessageWrapper{`0}})">
+            <summary>
+            Mark the specified messages as completed.
+            </summary>
+            <param name="messages">The messages.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Topics.ITopicManager`1.AbandonMessages(System.Collections.Generic.IEnumerable{Ns.Orp.ServiceLibrary.Topics.BrokeredMessageWrapper{`0}})">
+            <summary>
+            Mark the specified messages as abandoned.
+            </summary>
+            <param name="messages">The messages.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Topics.ITopicManager`1.DeadLetterMessages(System.Collections.Generic.IEnumerable{Ns.Orp.ServiceLibrary.Topics.BrokeredMessageWrapper{`0}})">
+            <summary>
+            Mark the specified messages as dead letter.
+            </summary>
+            <param name="messages">The messages.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Topics.ITopicManager`1.CountActiveMessages(System.Boolean)">
+            <summary>
+            Retrieve the amount of messages in the topic
+            </summary>
+            <param name="refresh">Force refresh, or use a cached value.</param>
+            <remarks>Count is based on the subscription. The subscription can be refreshed 
+            to force an up-to-date value. By default a cached value is used.</remarks>
+            <returns>Active messages in the topic, -1 if not supported</returns>
+        </member>
+        <member name="P:Ns.Orp.ServiceLibrary.Topics.ITopicManager`1.RetryCount">
+            <summary>
+            Number of retries are done before a message is deadlettered
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Topics.BaseTopicManager`1.#ctor(System.String,System.String,System.String,System.TimeSpan)">
+            <summary>
+            Creates an instance of the BaseQueueManager class.
+            </summary>
+            <remarks>Receivemode is PeekLock by default.</remarks>
+            <param name="connectionString">The connection string to the Azure Service Bus.</param>
+            <param name="topicName">The name of the topic.</param>
+            <param name="subscriptionName">The name of the subscription.</param>
+            <param name="defaultMessageTimeToLive">The default time to live of the messages.</param>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Topics.BaseTopicManager`1.#ctor(System.String,System.String,System.String,System.TimeSpan,Microsoft.ServiceBus.Messaging.ReceiveMode)">
+            <summary>
+            Creates an instance of the BaseQueueManager class.
+            </summary>
+            <param name="connectionString">The connection string to the Azure Service Bus.</param>
+            <param name="topicName">The name of the topic.</param>
+            <param name="subscriptionName">The name of the subscription.</param>
+            <param name="defaultMessageTimeToLive">The default time to live of the messages.</param>
+            <param name="mode">Topic receive mode (PeekLock or ReceiveAndDelete). PeekLock is the default.</param>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Topics.BaseTopicManager`1.ThrowUnableToLock(System.String,System.String)">
+            <summary>
+            Throw exception that we are unable to lock
+            </summary>
+            <param name="id"></param>
+            <param name="topicName"></param>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Topics.BaseTopicManager`1.SendAsync(`0)">
+            <summary>
+            Sends a new message to the topic.
+            </summary>
+            <param name="body">The message to send to the topic. The object is serialized to JSON.</param>
+            <returns>A Task. This method is attended to run asynchronously.</returns>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Topics.BaseTopicManager`1.CountActiveMessages(System.Boolean)">
+            <summary>
+            Retrieve the amount of messages in the topic
+            </summary>
+            <param name="refresh">Force refresh, or use a cached value.</param>
+            <remarks>Count is based on the subscription. The subscription can be refreshed 
+            to force an up-to-date value. By default a cached value is used.</remarks>
+            <returns>Active messages in the topic, -1 if not supported</returns>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Topics.BaseTopicManager`1.RetrieveMessages">
+            <summary>
+            Retrieve messages from the topic with a default batch size of 25
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Topics.BaseTopicManager`1.RetrieveMessagesWithoutTransaction(System.Int32,System.TimeSpan)">
+            <summary>
+            Retrieve messages from the topic limited by <paramref name="batchCount"/> without an transaction.
+            </summary>
+            <param name="batchCount">Batch size</param>
+            <param name="maxWaitTime">Max time to wait for Azure to retrieve the batch</param>
+            <remarks>
+            Should only be used with mode ReceiveAndDelete. Using it with mode Peek will not remove the entries from the topic.</remarks>
+            <returns>Async Task with an enumerable of TBody.</returns>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Topics.BaseTopicManager`1.RetrieveMessages(System.Int32)">
+            <summary>
+            Retrieve messages from the topic limited by <paramref name="batchCount"/>
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Topics.BaseTopicManager`1.CompleteMessages(System.Collections.Generic.IEnumerable{Ns.Orp.ServiceLibrary.Topics.BrokeredMessageWrapper{`0}})">
+            <summary>
+            
+            </summary>
+            <param name="messages"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Topics.BaseTopicManager`1.AbandonMessages(System.Collections.Generic.IEnumerable{Ns.Orp.ServiceLibrary.Topics.BrokeredMessageWrapper{`0}})">
+            <summary>
+            
+            </summary>
+            <param name="messages"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Topics.BaseTopicManager`1.DeadLetterMessages(System.Collections.Generic.IEnumerable{Ns.Orp.ServiceLibrary.Topics.BrokeredMessageWrapper{`0}})">
+            <summary>
+            
+            </summary>
+            <param name="messages"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Topics.BaseTopicManager`1.Close">
+            <summary>
+            Stops listening for incomming messages.
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Topics.BaseTopicManager`1.Dispose">
+            <summary>
+            Disposes the object.
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Topics.BaseTopicManager`1.Dispose(System.Boolean)">
+            <summary>
+            Disposes the object.
+            </summary>
+            <param name="disposing"><code>true</code> if the method is called from the Dispose method, <code>false</code> if called from the destructor.</param>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Topics.BaseTopicManager`1.OnConfigure">
+            <summary>
+            Fires one time to set configuration options.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.ServiceLibrary.Topics.BaseTopicManager`1.Client">
+            <summary>
+            Topic client
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.ServiceLibrary.Topics.BaseTopicManager`1.SubscriptionClient">
+            <summary>
+            Subscription client
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.ServiceLibrary.Topics.BaseTopicManager`1.SubscriptionNamespaceManager">
+            <summary>
+            Subscription namespace manager
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.ServiceLibrary.Topics.BaseTopicManager`1.RetryCount">
+            <summary>
+            Number of retries are done before a message is deadlettered
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.ServiceLibrary.Topics.BaseTopicManager`1.TopicName">
+            <summary>
+            Name of the topic. This name is used for logging or exceptions
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.ServiceLibrary.Topics.BaseTopicManager`1.SubscriptionName">
+            <summary>
+            Name of the subscription. This name is used for logging or exceptions
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.ServiceLibrary.Notifications.INotificationHub">
+            <summary>
+            Interface for notificationhub
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Notifications.INotificationHub.SendNotificationAsync(System.Object,System.String)">
+            <summary>
+            Sends a notification to the hub. The body object is serialized to JSON and stored in the value property.
+            </summary>
+            <param name="body">The object to serialize.</param>
+            <param name="tag">The destination tag.</param>
+            <returns>A Task that can be awaited.</returns>
+        </member>
+        <member name="T:Ns.Orp.ServiceLibrary.Notifications.NotificationHub">
+            <summary>
+            Used to send notifications to the specified Windows Azure notification hub.
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Notifications.NotificationHub.#ctor(System.String,System.String)">
+            <summary>
+            Creates a new instance.
+            </summary>
+            <param name="serviceBusConnectionString">The connection string to the Azure ServiceBus.</param>
+            <param name="hubPath">The registered notification hub to use.</param>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Notifications.NotificationHub.SendNotificationAsync(System.Object,System.String)">
+            <summary>
+            Sends a notification to the hub. The body object is serialized to JSON and stored in the value property.
+            </summary>
+            <param name="body">The object to serialize.</param>
+            <param name="tag">The destination tag.</param>
+            <returns>A Task that can be awaited.</returns>
+        </member>
+        <member name="T:Ns.Orp.ServiceLibrary.Search.FacetableAttribute">
+            <summary>
+            Indicates if a field can be used to create facets.
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.ServiceLibrary.Search.SearchIndexAttribute">
+            <summary>
+            Acts as a base class for Azure Search metadata attributes.
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.ServiceLibrary.Search.FilterableAttribute">
+            <summary>
+            Indicates if a field can be used in the $filter attribute.
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.ServiceLibrary.Search.IDocumentsOperationsExtensions">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Search.IDocumentsOperationsExtensions.DeleteBatchAsync``1(Microsoft.Azure.Search.IDocumentsOperations,System.Linq.Expressions.Expression{System.Func{``0,System.String}},System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            
+            </summary>
+            <typeparam name="TIndex"></typeparam>
+            <param name="docOperations"></param>
+            <param name="keySelector"></param>
+            <param name="documentsToDelete"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Ns.Orp.ServiceLibrary.Search.IgnoreAttribute">
+            <summary>
+            Indicates if a field is not part of the index.
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.ServiceLibrary.Search.IIndexOperationsExtensions">
+            <summary>
+            Extensions methods for the IIndexOperations interface.
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Search.IIndexOperationsExtensions.CreateAsync``1(Microsoft.Azure.Search.IIndexesOperations)">
+            <summary>
+            Creates an Index with the specified index type.
+            </summary>
+            <typeparam name="TIndex">The type specifying the index.</typeparam>
+            <param name="indexOperations">The IIndexOperations used to create the index.</param>
+            <returns>An Index object containing the result of the action.</returns>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Search.IIndexOperationsExtensions.CreateAsync``1(Microsoft.Azure.Search.IIndexesOperations,System.String)">
+            <summary>
+            Creates an Index with the specified index type.
+            </summary>
+            <typeparam name="TIndex">The type specifying the index.</typeparam>
+            <param name="indexOperations">The IIndexOperations used to create the index.</param>
+            <param name="indexName">The name of the index, if null the class name will be used without the Index part.</param>
+            <returns>An Index object containing the result of the action.</returns>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Search.IIndexOperationsExtensions.CreateOrUpdateAsync``1(Microsoft.Azure.Search.IIndexesOperations)">
+            <summary>
+            Creates a new index if not exists or updates an existing index based on the specified type.
+            </summary>
+            <typeparam name="TIndex">The type specifying the index.</typeparam>
+            <param name="indexOperations">The IIndexOperations used to create the index.</param>
+            <returns>An Index object containing the result of the action.</returns>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Search.IIndexOperationsExtensions.CreateOrUpdateAsync``1(Microsoft.Azure.Search.IIndexesOperations,System.String)">
+            <summary>
+            Creates a new index if not exists or updates an existing index based on the specified type.
+            </summary>
+            <typeparam name="TIndex">The type specifying the index.</typeparam>
+            <param name="indexOperations">The IIndexOperations used to create the index.</param>
+            <param name="indexName">The name of the index, if null the class name will be used without the Index part.</param>
+            <returns>An Index object containing the result of the action.</returns>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Search.IIndexOperationsExtensions.CreateIfNotExistsAsync``1(Microsoft.Azure.Search.IIndexesOperations)">
+            <summary>
+            Creates a new index if not exists based on the specified type.
+            </summary>
+            <typeparam name="TIndex">The type specifying the index.</typeparam>
+            <param name="indexOperations">The IIndexOperations used to create the index.</param>
+            <returns>An Index object containing the result of the action.</returns>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Search.IIndexOperationsExtensions.CreateIfNotExistsAsync``1(Microsoft.Azure.Search.IIndexesOperations,System.String)">
+            <summary>
+            Creates a new index if not exists based on the specified type.
+            </summary>
+            <typeparam name="TIndex">The type specifying the index.</typeparam>
+            <param name="indexOperations">The IIndexOperations used to create the index.</param>
+            <param name="indexName">The name of the index, if null the class name will be used without the Index part.</param>
+            <returns>An Index object containing the result of the action.</returns>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Search.IIndexOperationsExtensions.GetFieldName(System.Reflection.MemberInfo)">
+            <summary>
+            
+            </summary>
+            <param name="prop"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Search.IIndexOperationsExtensions.GetIndexName(System.Type)">
+            <summary>
+            Gets the name of the index.
+            </summary>
+            <param name="type">The index type.</param>
+            <returns>The name of the index.</returns>
+        </member>
+        <member name="T:Ns.Orp.ServiceLibrary.Search.IndexNameAttribute">
+            <summary>
+            Specifies the name of the index.
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Search.IndexNameAttribute.#ctor(System.String)">
+            <summary>
+            Creates an instance of the IndexNameAttribute class with the specified index name.
+            </summary>
+            <param name="name">The name of the index.</param>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Search.IndexNameAttribute.ValidateName(System.String)">
+            <summary>
+            Validates the name, if not valid an ArgumentException will be thrown.
+            </summary>
+            <param name="name">The name of the index.</param>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Search.IndexNameAttribute.IsValidName(System.String)">
+            <summary>
+            Validates the name.
+            The name must start with a letter and contain only lowercase letters, digits or dashes.
+            </summary>
+            <param name="name">The name of the index.</param>
+            <returns><code>true</code> if the name is valid else <code>false</code>.</returns>
+        </member>
+        <member name="P:Ns.Orp.ServiceLibrary.Search.IndexNameAttribute.Name">
+            <summary>
+            The name of the index.
+            The name must start with a letter and contain only lowercase letters, digits or dashes.
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.ServiceLibrary.Search.KeyAttribute">
+            <summary>
+            Indicates if a field is used as the key of the index.
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.ServiceLibrary.Search.RetrievableAttribute">
+            <summary>
+            Indicates if a field is retrieved in search results.
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.ServiceLibrary.Search.SearchableAttribute">
+            <summary>
+            Indicates if a string field can be used in a full text search.
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.ServiceLibrary.Search.SearchHelpers">
+            <summary>
+            Contains helper methods.
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Search.SearchHelpers.GetSearchIndexClientFactory``1(System.String,System.String)">
+            <summary>
+            Creates a method that creates an IndexClient on demand.
+            </summary>
+            <typeparam name="TIndex">The type of the index.</typeparam>
+            <param name="searchConnectionString">The connection string.</param>
+            <param name="indexName">The name of the index.</param>
+            <returns>A factory method that creates an Index client for the specified index and connection string.</returns>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Search.SearchHelpers.GetSearchIndexClientFactory``1(System.String)">
+            <summary>
+            Creates a method that creates an IndexClient on demand.
+            </summary>
+            <typeparam name="TIndex">The type of the index.</typeparam>
+            <param name="searchConnectionString">The connection string.</param>
+            <returns>A factory method that creates an Index client for the specified index and connection string.</returns>
+        </member>
+        <member name="T:Ns.Orp.ServiceLibrary.Search.SearchServiceAccount">
+            <summary>
+            Acts as a wrapper around Azure Search account info like name and key.
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Search.SearchServiceAccount.CreateClient">
+            <summary>
+            Returns a new instance of the SearchServiceClient class.
+            </summary>
+            <returns>a new SearchServiceClient instance.</returns>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Search.SearchServiceAccount.Parse(System.String)">
+            <summary>
+            Parses a connection string into an instance of the SearchServiceAccount class.
+            </summary>
+            <param name="connectionString">The connection string in the format: Name=[search account name];Key=[access key]</param>
+            <returns>An instance of the SearchServiceAccount class.</returns>
+        </member>
+        <member name="P:Ns.Orp.ServiceLibrary.Search.SearchServiceAccount.Name">
+            <summary>
+            The name of the Azure Search account.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.ServiceLibrary.Search.SearchServiceAccount.Key">
+            <summary>
+            The access key for the Azure Search account.
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.ServiceLibrary.Search.SortableAttribute">
+            <summary>
+            Indicates if a field can be used to sort on.
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.ServiceLibrary.Storage.GenericEntity`1">
+            <summary>
+            Implements the ITableEntity interface. Acts as a generic Entity that stores and retrieves an object
+            of type TEntity. Derived classes must override the Configure() method and use this method to specify
+            the partition key(s), row key(s) and promoted properties. The promoted properties are property of the TEntity
+            that will be stored in a seperate column. The complete instance of TEntity is stored as JSON in the '_value' column.
+            </summary>
+            <typeparam name="TEntity">The type that will be stored.</typeparam>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Storage.GenericEntity`1.#ctor(Newtonsoft.Json.JsonSerializerSettings)">
+            <summary>
+            Creates a new instance with a default instance of TEntity.
+            TEntity must have a public default parameterless constructor.
+            </summary>
+            <param name="serializerSettings">The JSON serializer settings used to serialize the entity.</param>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Storage.GenericEntity`1.#ctor(`0,Newtonsoft.Json.JsonSerializerSettings)">
+            <summary>
+            Creates a new instance with the provided instance of TEntity.
+            </summary>
+            <param name="entity">The object to store.</param>
+            <param name="serializerSettings">The JSON serializer settings used to serialize the entity.</param>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Storage.GenericEntity`1.Configure">
+            <summary>
+            Use this method to specify the partion key(s), row key(s) and promoted properties.
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Storage.GenericEntity`1.SetRowKeys(System.Func{`0,System.String}[])">
+            <summary>
+            Specifies which properties of TEntity are used as row key(s).
+            </summary>
+            <param name="rowKeys">One or more accessors used as row key(s)</param>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Storage.GenericEntity`1.SetPartitionKeys(System.Func{`0,System.String}[])">
+            <summary>
+            Specifies which properties of TEntity are used as the partion key(s).
+            </summary>
+            <param name="partitionKeys">One or more accessors used as partition key(s).</param>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Storage.GenericEntity`1.SetPromotedProperties(System.Linq.Expressions.Expression{System.Func{`0,System.Object}}[])">
+            <summary>
+            Specifies which properties of TEntity are used as promoted properties.
+            Each promoted property will be stored in a separate column.
+            </summary>
+            <param name="promotedProperties">One or more property accessor expressions used as promoted properties.</param>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Storage.GenericEntity`1.ReadEntity(System.Collections.Generic.IDictionary{System.String,Microsoft.WindowsAzure.Storage.Table.EntityProperty},Microsoft.WindowsAzure.Storage.OperationContext)">
+             <summary>
+             Populates the entity's properties from the Microsoft.WindowsAzure.Storage.Table.EntityProperty
+             data values in the properties dictionary.
+             </summary>
+             <param name="properties">The dictionary of string property names to Microsoft.WindowsAzure.Storage.Table.EntityProperty
+             data values to deserialize and store in this table entity instance.</param>
+             <param name="operationContext">An Microsoft.WindowsAzure.Storage.OperationContext object used to track the
+            execution of the operation.</param>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Storage.GenericEntity`1.WriteEntity(Microsoft.WindowsAzure.Storage.OperationContext)">
+            <summary>
+            Serializes the Dictionary of property names mapped to EntityProperty data
+            values from the entity instance.
+            </summary>
+            <param name="operationContext">An Microsoft.WindowsAzure.Storage.OperationContext object used to track the
+            execution of the operation.</param>
+            <returns>A dictionary of property names to Microsoft.WindowsAzure.Storage.Table.EntityProperty
+            data typed values created by serializing this table entity instance.</returns>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Storage.GenericEntity`1.CreateRowKey">
+            <summary>
+            Gets the key a row is retrieved with
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Ns.Orp.ServiceLibrary.Storage.GenericEntity`1.Entity">
+            <summary>
+            The entity instance that is wrapped by this GenericEntity.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.ServiceLibrary.Storage.GenericEntity`1.ETag">
+            <summary>
+            Gets or sets the entity's current ETag. Set this value to '*' in order to
+            blindly overwrite an entity as part of an update operation.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.ServiceLibrary.Storage.GenericEntity`1.PartitionKey">
+            <summary>
+            Gets the entity's partition key.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.ServiceLibrary.Storage.GenericEntity`1.RowKey">
+            <summary>
+            Gets the entity's row key.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.ServiceLibrary.Storage.GenericEntity`1.Timestamp">
+            <summary>
+            Gets or sets the entity's timestamp.
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.ServiceLibrary.Storage.TableStorageContext">
+            <summary>
+            Classes derived from TableStorageContext provide properties for each table.
+            The TableStorageContext will automatically populate these properties. 
+            The name of the property acts as the name of the storage table.
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Storage.TableStorageContext.#ctor(System.String)">
+            <summary>
+            Creates an instance of the TableStorageContext class using the specified Azure Storage Account connection string.
+            </summary>
+            <param name="connectionString">The connection string of the Azure Storage Account to use.</param>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Storage.TableStorageContext.Dispose">
+            <summary>
+            Disposes the object.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.ServiceLibrary.Storage.TableStorageContext.CloudTableClient">
+            <summary>
+            The underlying ClodTableClient used to access the tables.
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.ServiceLibrary.Storage.TableStorageSet`2">
+            <summary>
+            TableStorageSet
+            Enables you to connect to table storage. And tries to serialize and deserialize in type T
+            </summary>
+            <typeparam name="T">Entity expected to storage</typeparam>
+            <typeparam name="TEntity">Entity wrapping T for table storage</typeparam>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Storage.TableStorageSet`2.#ctor(Ns.Orp.ServiceLibrary.Storage.TableStorageContext,System.String)">
+            <summary>
+            Initializes TableStorageSEt
+            </summary>
+            <param name="tableStorageContext">TableStorageContext</param>
+            <param name="tableName">TableStorageName to use</param>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Storage.TableStorageSet`2.InsertAsync(`0)">
+            <summary>
+            Inserts T into tableStorage
+            </summary>
+            <param name="item">Item to insert</param>
+            <returns>Task to execute async</returns>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Storage.TableStorageSet`2.InsertOrReplaceAsync(`0)">
+            <summary>
+            Inserts or Replaces T into tableStorage
+            </summary>
+            <param name="item">Item to insert</param>
+            <returns>Task to execute async</returns>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Storage.TableStorageSet`2.InsertOrReplaceAsync(`1)">
+            <summary>
+            Inserts or Replaces T into tableStorage
+            </summary>
+            <param name="item">Item to insert</param>
+            <returns>Task to execute async</returns>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Storage.TableStorageSet`2.DeleteAsync(`1)">
+            <summary>
+            Deletes T into tableStorage
+            </summary>
+            <param name="item">Item to delete</param>
+            <returns>Task to execute async</returns>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Storage.TableStorageSet`2.DeleteAllItemsAsync">
+            <summary>
+            Deletes all items into tableStorage
+            </summary>
+            <returns>Task to execute async</returns>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Storage.TableStorageSet`2.GetAsync(System.String,System.String)">
+            <summary>
+            Gets item T async
+            </summary>
+            <param name="partitionKey">Partition key that T must have</param>
+            <param name="rowKey">Row key key that T must have</param>
+            <returns>Task to execute async</returns>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Storage.TableStorageSet`2.GetByRowKeyAsync(System.String)">
+            <summary>
+            Gets item T async
+            </summary>
+            <param name="rowKey">Row key key that T must have</param>
+            <returns>Task to execute async</returns>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Storage.TableStorageSet`2.GetEntityByRowKeyAsync(System.String)">
+            <summary>
+            Gets item T async
+            </summary>
+            <param name="rowKey">Row key key that T must have</param>
+            <returns>Task to execute async</returns>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Storage.TableStorageSet`2.GetByFilterAsync(System.Linq.Expressions.Expression{System.Func{`1,System.Boolean}})">
+            <summary>
+            Returns all entities filtered by the filter
+            </summary>
+            <param name="filter">Filters the entities</param>
+            <returns>Resulting set</returns>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Storage.TableStorageSet`2.GetEntityByFilterAsync(System.Linq.Expressions.Expression{System.Func{`1,System.Boolean}})">
+            <summary>
+            Returns all entities filtered by the filter
+            </summary>
+            <param name="filter">Filters the entities</param>
+            <returns>Resulting set</returns>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Storage.TableStorageSet`2.GetEntityAsync(System.String,System.String)">
+            <summary>
+            Gets item T async
+            </summary>
+            <param name="partitionKey">Partition key that T must have</param>
+            <param name="rowKey">Row key key that T must have</param>
+            <returns>Task to execute async</returns>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Storage.TableStorageSet`2.GetAsync">
+            <summary>
+            Gets all T items from tablestorage
+            </summary>
+            <returns>Task to execute async</returns>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Storage.TableStorageSet`2.GetAsync(System.String)">
+            <summary>
+            Gets all T items from tablestorage
+            </summary>
+            <param name="filter">Filter to use in the query</param>
+            <returns>Task to execute async</returns>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Storage.TableStorageSet`2.GetEntityAsync">
+            <summary>
+            Gets all T items from table storage
+            </summary>
+            <returns>Task to execute async</returns>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Storage.TableStorageSet`2.GetEntityAsync(System.String)">
+            <summary>
+            Gets all T items from table storage
+            </summary>
+            <param name="filter">Filter to use in the query</param>
+            <returns>Task to execute async</returns>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Storage.TableStorageSet`2.GenerateFilterCondition(System.String,System.String,System.String)">
+            <summary>
+            Generates a property filter condition string for the string value.
+            </summary>
+            <param name="propertyName">A string containing the name of the property to compare.</param>
+            <param name="operation">A string containing the comparison operator to use.</param>
+            <param name="value">A string containing the value to compare with the property.</param>
+            <returns>A string containing the formatted filter condition.</returns>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Storage.TableStorageSet`2.GenerateFilterCondition(System.String,System.String,System.Boolean)">
+            <summary>
+            Generates a property filter condition string for the bool value.
+            </summary>
+            <param name="propertyName">A string containing the name of the property to compare.</param>
+            <param name="operation">A string containing the comparison operator to use.</param>
+            <param name="value">A string containing the value to compare with the property.</param>
+            <returns>A string containing the formatted filter condition.</returns>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Storage.TableStorageSet`2.GenerateFilterCondition(System.String,System.String,System.Int32)">
+            <summary>
+            Generates a property filter condition string for the int value.
+            </summary>
+            <param name="propertyName">A string containing the name of the property to compare.</param>
+            <param name="operation">A string containing the comparison operator to use.</param>
+            <param name="value">A string containing the value to compare with the property.</param>
+            <returns>A string containing the formatted filter condition.</returns>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Storage.TableStorageSet`2.CombineFilters(System.String,System.String,System.String)">
+            <summary>
+            Combines to filters
+            </summary>
+            <param name="filterA">filter a</param>
+            <param name="operation">filter operator</param>
+            <param name="filterB">filter b</param>
+            <returns>combined filter</returns>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Storage.TableStorageSet`2.ExecuteAsync(`1,System.Func{Microsoft.WindowsAzure.Storage.Table.ITableEntity,Microsoft.WindowsAzure.Storage.Table.TableOperation})">
+            <summary>
+            
+            </summary>
+            <param name="entity"></param>
+            <param name="operationFunc"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Storage.TableStorageSet`2.CreateEntity(`0)">
+            <summary>
+            Creates an Generic entity of the 
+            </summary>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Storage.TableStorageSet`2.CreateEntityWithoutContext(`0)">
+            <summary>
+            Creates an Generic entity of the 
+            </summary>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Storage.TableStorageSet`2.ExecuteBatchAsync(Microsoft.WindowsAzure.Storage.Table.TableBatchOperation)">
+            <summary>
+            Executes the batch asynchronous.
+            </summary>
+            <param name="batchOperation">The batch operation.</param>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Storage.TableStorageSet`2.PerformTableBatchOperationByPartitionKey(System.Collections.Generic.IEnumerable{Microsoft.WindowsAzure.Storage.Table.ITableEntity},Microsoft.WindowsAzure.Storage.Table.TableOperationType)">
+            <summary>
+            Performs the table batch operation by partition key.
+            </summary>
+            <param name="entities">The entities.</param>
+            <param name="operationType">Type of the operation.</param>
+            <returns></returns>
+            <exception cref="T:System.NotSupportedException">Retrieve operations are not supported</exception>
+            <exception cref="T:System.ArgumentOutOfRangeException">operationType</exception>
+        </member>
+        <member name="P:Ns.Orp.ServiceLibrary.Storage.TableStorageSet`2.TableName">
+            <summary>
+            TableName
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.ServiceLibrary.Storage.TableStorageSet`2.Context">
+            <summary>
+            TableStorageContext
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.ServiceLibrary.Topics.BaseTopicMessageProcessor`1">
+            <summary>
+            A base implementation for a ITopicMessageProcessor.
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.ServiceLibrary.Topics.ITopicMessageProcessor">
+            <summary>
+            Implemented by classes that process Service bus topic messages.
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Topics.ITopicMessageProcessor.ProcessMessageAsync(Microsoft.ServiceBus.Messaging.BrokeredMessage)">
+            <summary>
+            Processes a service bus BrokeredMessage object.
+            </summary>
+            <param name="message">The message to process.</param>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Topics.BaseTopicMessageProcessor`1.#ctor(System.String,System.String)">
+            <summary>
+            Creates an instance of the BaseTopicMessageProcessor.
+            </summary>
+            <param name="topicName">The name of the topic. Used for logging purposes.</param>
+            <param name="subscriptionName">The name of the subscription. Used for logging purposes.</param>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Topics.BaseTopicMessageProcessor`1.Finalize">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Topics.BaseTopicMessageProcessor`1.ProcessMessageAsync(Microsoft.ServiceBus.Messaging.BrokeredMessage)">
+            <summary>
+            Processes a service bus message.
+            </summary>
+            <param name="message">The message to process.</param>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Topics.BaseTopicMessageProcessor`1.ProcessMessageAsync(`0)">
+            <summary>
+            Processes a message.
+            </summary>
+            <param name="message">The message to process.</param>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Topics.BaseTopicMessageProcessor`1.Dispose">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Topics.BaseTopicMessageProcessor`1.Dispose(System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="disposing"></param>
+        </member>
+        <member name="T:Ns.Orp.ServiceLibrary.Topics.BrokeredMessageWrapper`1">
+            <summary>
+            BrokeredMessageWrapper 
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Topics.BrokeredMessageWrapper`1.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the BrokeredMessageWrapper class.
+            </summary>
+            <param name="loggingReference">The logging reference.</param>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Topics.BrokeredMessageWrapper`1.#ctor(Microsoft.ServiceBus.Messaging.BrokeredMessage,System.String)">
+            <summary>
+            Initializes a new instance of the BrokeredMessageWrapper class.
+            </summary>
+            <param name="message">The message.</param>
+            <param name="loggingReference">The logging reference, reference string to use for logging purposes.</param>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Topics.BrokeredMessageWrapper`1.RenewLockAsync">
+            <summary>
+            Renews the lock asynchronous.
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Topics.BrokeredMessageWrapper`1.WaitForMessageAccessibilityAsync">
+            <summary>
+            Waits for message to be accessible asynchronous.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Topics.BrokeredMessageWrapper`1.Dispose">
+            <summary>
+            Disposes the object.
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Topics.BrokeredMessageWrapper`1.Dispose(System.Boolean)">
+            <summary>
+            Disposes the object.
+            </summary>
+            <param name="disposing"><code>true</code> if the method is called from the Dispose method, <code>false</code> if called from the destructor.</param>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Topics.BrokeredMessageWrapper`1.StopRenewing">
+            <summary>
+            Stops the renewing.
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Topics.BrokeredMessageWrapper`1.Release">
+            <summary>
+            Releases this instance.
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Topics.BrokeredMessageWrapper`1.TraceInformation(System.String,System.Object[])">
+            <summary>
+            Onderstaande trace ging vaak fout in een (lokal) build. Apart getrokken.
+            Omdat het handig is bij debuggen alles erin gelaten maar wel uit gezet. Als het nodig is kan het dus worden gebruikt.
+            </summary>
+            <param name="format"></param>
+            <param name="args"></param>
+        </member>
+        <member name="P:Ns.Orp.ServiceLibrary.Topics.BrokeredMessageWrapper`1.Message">
+            <summary>
+            Gets or sets the message.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.ServiceLibrary.Topics.BrokeredMessageWrapper`1.MessageLock">
+            <summary>
+            Gets or sets the message lock.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.ServiceLibrary.Topics.BrokeredMessageWrapper`1.ObjectToProcess">
+            <summary>
+            Gets or sets the survey to process.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.ServiceLibrary.Topics.BrokeredMessageWrapper`1.RenewalTimer">
+            <summary>
+            Gets or sets the renewal timer.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.ServiceLibrary.Topics.BrokeredMessageWrapper`1.RenewalInterval">
+            <summary>
+            Gets or sets the renewal interval.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.ServiceLibrary.Topics.BrokeredMessageWrapper`1.LockTimeout">
+            <summary>
+            Gets or sets the lock timeout.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.ServiceLibrary.Topics.BrokeredMessageWrapper`1.LoggingReference">
+            <summary>
+            Gets the logging reference.
+            </summary>
+            <value>
+            The logging reference.
+            </value>
+        </member>
+        <member name="T:Ns.Orp.ServiceLibrary.Topics.ServiceBusHelper">
+            <summary>
+            Contains helper methods for Azure Service bus.
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.ServiceLibrary.Topics.ServiceBusHelper.EnsureConfigured(System.String,System.String,System.String,System.TimeSpan)">
+            <summary>
+            
+            </summary>
+            <param name="connectionString"></param>
+            <param name="topicName"></param>
+            <param name="subscriptionName"></param>
+            <param name="defaultMessageTimeToLive"></param>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,2529 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Ns.Orp.Treinrit.Implementation</name>
+    </assembly>
+    <members>
+        <member name="T:Ns.Orp.Treinrit.Implementation.ArnuAgent">
+            <summary>
+            ArnuManager
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Implementation.IArnuAgent">
+            <summary>
+            IArnuManager
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.IArnuAgent.RetrieveRitinformatieAsync(System.String,System.DateTimeOffset,System.String)">
+            <summary>
+            Retrieves rit informatie.
+            </summary>
+            <param name="treinnummer">Treinnummer.</param>
+            <param name="dateOfTreinrit">Datum van de treinrit</param>
+            <param name="vervoersmaatschappij">vervoersmaatschappij</param>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.ArnuAgent.#ctor(System.String,System.String)">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.ArnuAgent.#ctor(Ns.Orp.Treinrit.Implementation.Proxies.Arnu.JourneyPlannerSoap)">
+            <summary>
+            Constructor that enables testing
+            </summary>
+            <param name="arnuClient">Agent for testing</param>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.ArnuAgent.RetrieveRitinformatieAsync(System.String,System.DateTimeOffset,System.String)">
+            <summary>
+            Retrieves rit informatie.
+            </summary>
+            <param name="treinnummer">Treinnummer for which to get realtime info.</param>
+            <param name="dateOfTreinrit">Datum van de treinrit</param>
+            <param name="vervoersmaatschappij">vervoersmaatschappij</param>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.ArnuAgent.CreateGetServiceInfoIn(System.String,System.DateTimeOffset,System.String)">
+            <summary>
+            Creates the get service information in.
+            </summary>
+            <param name="treinnummer">The treinnummer.</param>
+            <param name="dateOfTreinrit">Datum van de treinrit</param>
+            <param name="vervoersmaatschappij">vervoersmaatschappij</param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.ArnuAgent.Finalize">
+            <summary>
+            Destuctor, implemented to disposing correctly
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.ArnuAgent.Dispose">
+            <summary>
+            Disposes the object.
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Implementation.DienstAgent">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Implementation.IDienstAgent">
+            <summary>
+            IDienstAgent, responsible for communication with dienst back end
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.IDienstAgent.OpvragenDienstAsync(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="medewerker"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.IDienstAgent.InDienstMeldenAsync(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="medewerker"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.IDienstAgent.UitDienstMeldenAsync(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="medewerker"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.IDienstAgent.SelecteerDienstAsync(System.Int32,Ns.Orp.Dienst.Model.Functie,System.String,System.Int32,System.DateTimeOffset)">
+            <summary>
+            Selecteer een Dienst
+            </summary>
+            <param name="medewerker"></param>
+            <param name="functie"></param>
+            <param name="standplaats"></param>
+            <param name="dienstnummer"></param>
+            <param name="datumDienst"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.IDienstAgent.VerwijderDienst(System.Int32)">
+            <summary>
+            Verwijdert de dienst voor medewerker <paramref name="medewerker" />
+            </summary>
+            <param name="medewerker">The medewerker.</param>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.IDienstAgent.OpvragenActueleActiviteitContextAsync(System.Int32)">
+            <summary>
+            Haalt de actuele trein context op
+            </summary>
+            <param name="medewerker">Het personeelsnummer van de gebruiker.</param>
+            <returns>ActueleTreinritContext</returns>
+            <remarks>
+            Pius niet beschikbaar -> mits locale dienst aanwezig daarmee verder
+            Geen dienst -> Melding
+            Medewerker niet in dienst -> Melding
+            </remarks>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.IDienstAgent.CreateOrpDienstEntityAsync(System.Int32,Ns.Orp.Dienst.Model.CreateOrpDienstRequest)">
+            <summary>
+            
+            </summary>
+            <param name="personeelsnummer"></param>
+            <param name="treinritActiviteit"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.IDienstAgent.GetLokaleDienstVoorMedewerkerAsync(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="medewerker"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.IDienstAgent.GetPersoneelsnummerForDienstContainingTreinnummerAsync(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="treinnummer"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.DienstAgent.#ctor(System.Uri,Ns.Orp.Web.Client.ITokenResolver)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ns.Orp.Treinrit.Implementation.DienstAgent"/> class.
+            </summary>
+            <param name="dienstUri">The dienst back end URI.</param>
+            <param name="tokenResolver">A token resolver to resolve authentication tokens.</param>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.DienstAgent.#ctor(System.Uri,Ns.Orp.Web.Client.IWebClient,Ns.Orp.Web.Client.ITokenResolver,Newtonsoft.Json.JsonSerializerSettings)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ns.Orp.Treinrit.Implementation.DienstAgent"/> class.
+            </summary>
+            <param name="dienstUri">The dienst back end location.</param>
+            <param name="client">The http client to use for sending requests</param>
+            <param name="tokenResolver">A token resolver to resolve authentication tokens.</param>
+            <param name="serializerSettings">The serializer settings to use.</param>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.DienstAgent.OpvragenDienstAsync(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="medewerker"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.DienstAgent.InDienstMeldenAsync(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="medewerker"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.DienstAgent.UitDienstMeldenAsync(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="medewerker"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.DienstAgent.SelecteerDienstAsync(System.Int32,Ns.Orp.Dienst.Model.Functie,System.String,System.Int32,System.DateTimeOffset)">
+            <summary>
+            
+            </summary>
+            <param name="medewerker"></param>
+            <param name="functie"></param>
+            <param name="standplaats"></param>
+            <param name="dienstnummer"></param>
+            <param name="datumDienst"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.DienstAgent.VerwijderDienst(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="medewerker"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.DienstAgent.OpvragenActueleActiviteitContextAsync(System.Int32)">
+            <summary>
+            Haalt de actuele trein context op
+            </summary>
+            <param name="medewerker">Het personeelsnummer van de gebruiker.</param>
+            <returns>ActueleTreinritContext</returns>
+            <remarks>
+            Pius niet beschikbaar -> mits locale dienst aanwezig daarmee verder
+            Geen dienst -> Melding
+            Medewerker niet in dienst -> Melding
+            </remarks>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.DienstAgent.CreateOrpDienstEntityAsync(System.Int32,Ns.Orp.Dienst.Model.CreateOrpDienstRequest)">
+            <summary>
+            
+            </summary>
+            <param name="personeelsnummer"></param>
+            <param name="treinritActiviteit"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.DienstAgent.GetLokaleDienstVoorMedewerkerAsync(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="medewerker"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.DienstAgent.GetPersoneelsnummerForDienstContainingTreinnummerAsync(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="treinnummer"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Implementation.PintAgent">
+            <summary>
+            Agent for interaction with Pint service (Planning in tienden van minuten)
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Implementation.IPintAgent">
+            <summary>
+            Agent for Pint data
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.IPintAgent.RetrievePintAsync">
+            <summary>
+            Retrieves Pint
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.PintAgent.#ctor(System.String,Ns.Orp.Web.Client.IWebClient)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ns.Orp.Treinrit.Implementation.PintAgent"/> class.
+            </summary>
+            <param name="pintServiceAddress">The pint service address.</param>
+            <param name="client">HttpClient to use for requests</param>
+            <exception cref="T:System.ArgumentNullException">address</exception>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.PintAgent.#ctor(System.String,System.String)">
+            <summary>
+            Constructor that enables testing.
+            </summary>
+            <param name="address">The primary server address to use.</param>
+            <param name="from">The system that initiates the call.</param>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.PintAgent.RetrievePintAsync">
+            <summary>
+            Retrieves the pint informatie
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.PintAgent.Finalize">
+            <summary>
+            Destructor, implemented to dispose correctly.
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.PintAgent.Dispose">
+            <summary>
+            Disposes the object.
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Implementation.PintCsvReader">
+            <summary>
+            Parses pint informatie from a CSV file.
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.PintCsvReader.ReadAsync(System.IO.Stream,System.DateTime)">
+            <summary>
+            Reads the specified stream.
+            </summary>
+            <param name="stream">The stream.</param>
+            <param name="lastModified">Last modified.</param>
+            <returns></returns>
+        </member>
+        <member name="F:Ns.Orp.Treinrit.Implementation.PintCsvReader.FieldIndex.TreinSerie">
+            <summary>
+            Treinnummer field index
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Treinrit.Implementation.PintCsvReader.FieldIndex.Richting">
+            <summary>
+            Richting field index
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Treinrit.Implementation.PintCsvReader.FieldIndex.Halfuur">
+            <summary>
+            Halfuur field index
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Treinrit.Implementation.PintCsvReader.FieldIndex.Dienstregelpunt">
+            <summary>
+            Dienstregelpunt field index
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Treinrit.Implementation.PintCsvReader.FieldIndex.Actie">
+            <summary>
+            Actie field index
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Treinrit.Implementation.PintCsvReader.FieldIndex.AankomtMinuten">
+            <summary>
+            Aankomst minuten field index
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Treinrit.Implementation.PintCsvReader.FieldIndex.AankomstSeconden">
+            <summary>
+            Aankomst seconden field index
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Treinrit.Implementation.PintCsvReader.FieldIndex.VertrekMinuten">
+            <summary>
+            Vetrek minuten field index
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Treinrit.Implementation.PintCsvReader.FieldIndex.VertrekSeconden">
+            <summary>
+            Vetrek seconden field index
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Treinrit.Implementation.PintCsvReader.FieldIndex.KaleReistijdMinuten">
+            <summary>
+            Kale reistijd minuten field index
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Treinrit.Implementation.PintCsvReader.FieldIndex.KaleReistijdSeconden">
+            <summary>
+            Kale reistijd seconden field index
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Treinrit.Implementation.PintCsvReader.FieldIndex.RijtijdSpelingMinuten">
+            <summary>
+            Rijtijd speling minuten field index
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Treinrit.Implementation.PintCsvReader.FieldIndex.RijtijdSpelingSeconden">
+            <summary>
+            Rijtijd speling seconden field index
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Treinrit.Implementation.PintCsvReader.FieldIndex.HalteerTijdMinuten">
+            <summary>
+            Halteer tijd minuten field index
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Treinrit.Implementation.PintCsvReader.FieldIndex.HalteerTijdSeconden">
+            <summary>
+            Halteer tijd seconden field index
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Implementation.PintInformatie">
+            <summary>
+            Representatie van de "Planning in tienden van minuten" informatie.
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.PintInformatie.ToDintInformatie(Ns.Orp.Treinrit.Model.Treinstop)">
+            <summary>
+            Copies the current object to a DintInformatie object
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.PintInformatie.ToString">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.PintInformatie.Treinserie">
+            <summary>
+            Trein serie waarop Pint-informatie van toepassing is.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.PintInformatie.Richting">
+            <summary>
+            Richting waarvoor de Pint-informatie geldt.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.PintInformatie.Dienstregelpunt">
+            <summary>
+            Treinstop waarvoor deze pint informatie geldt.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.PintInformatie.PintAankomsttijdMinuten">
+            <summary>
+            Minuten aankomst tijd volgens Pint.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.PintInformatie.PintAankomsttijdSeconden">
+            <summary>
+            Seconden aankomst tijd volgens Pint.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.PintInformatie.PintVertrektijdMinuten">
+            <summary>
+            Minuten vertrek tijd volgens Pint.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.PintInformatie.PintVertrektijdSeconden">
+            <summary>
+            Seconden vertrek tijd volgens Pint.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.PintInformatie.KaleRijtijdMinuten">
+            <summary>
+            Minuten kale rijtijd.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.PintInformatie.KaleRijtijdSeconden">
+            <summary>
+            Seconden kale rijtijd.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.PintInformatie.RijtijdspelingMinuten">
+            <summary>
+            Minuten rijtijd speling.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.PintInformatie.RijtijdspelingSeconden">
+            <summary>
+            Seconden rijtijd speling.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.PintInformatie.HalteertijdMinuten">
+            <summary>
+            Minuten halteer tijd.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.PintInformatie.HalteertijdSeconden">
+            <summary>
+            Seconden halteer tijd.
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Implementation.EtiCsvReader">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.EtiCsvReader.ReadAsync(System.IO.Stream,System.DateTime)">
+            <summary>
+            Reads the specified stream.
+            </summary>
+            <param name="stream">The stream.</param>
+            <param name="lastModified">Last modified.</param>
+            <returns></returns>
+        </member>
+        <member name="F:Ns.Orp.Treinrit.Implementation.EtiCsvReader.FieldIndex.Treinnummer">
+            <summary>
+            Treinnummer field index
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Treinrit.Implementation.EtiCsvReader.FieldIndex.VptStationscode">
+            <summary>
+            VPT stationscode index
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Treinrit.Implementation.EtiCsvReader.FieldIndex.Dag">
+            <summary>
+            Dag field index
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Treinrit.Implementation.EtiCsvReader.FieldIndex.Ma">
+            <summary>
+            Maandag field index
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Treinrit.Implementation.EtiCsvReader.FieldIndex.Di">
+            <summary>
+            Dinsdag field index
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Treinrit.Implementation.EtiCsvReader.FieldIndex.Wo">
+            <summary>
+            Woensdag field index
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Treinrit.Implementation.EtiCsvReader.FieldIndex.Do">
+            <summary>
+            Donderdag field index
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Treinrit.Implementation.EtiCsvReader.FieldIndex.Vr">
+            <summary>
+            Vrijdag field index
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Treinrit.Implementation.EtiCsvReader.FieldIndex.Za">
+            <summary>
+            Zaterdag field index
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Treinrit.Implementation.EtiCsvReader.FieldIndex.Zo">
+            <summary>
+            Zondag field index
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Treinrit.Implementation.EtiCsvReader.FieldIndex.Reden">
+            <summary>
+            Reden field index
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Implementation.WtsCsvReader">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.WtsCsvReader.ReadAsync(System.IO.Stream,System.DateTime)">
+            <summary>
+            Reads the specified stream.
+            </summary>
+            <param name="stream">The stream.</param>
+            <param name="lastModified">Last modified.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.WtsCsvReader.GetAantal(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="textToParse"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Ns.Orp.Treinrit.Implementation.WtsCsvReader.FieldIndex.Station">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Treinrit.Implementation.WtsCsvReader.FieldIndex.Perron">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Treinrit.Implementation.WtsCsvReader.FieldIndex.Richting">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Treinrit.Implementation.WtsCsvReader.FieldIndex.Vlicht">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Treinrit.Implementation.WtsCsvReader.FieldIndex.Boog">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Treinrit.Implementation.WtsCsvReader.FieldIndex.Medewerkerkast">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Treinrit.Implementation.WtsCsvReader.FieldIndex.Opmerking">
+            <summary>
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Implementation.Constants">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Treinrit.Implementation.Constants.NsCompanyCode">
+            <summary>
+            The ns company code
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Treinrit.Implementation.Constants.ArnuBindingName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Implementation.DienstController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Implementation.IDienstController">
+            <summary>
+            Contains method to interact with the dienst service.
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.IDienstController.OpvragenDienstAsync(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="medewerker"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.IDienstController.InDienstMeldenAsync(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="medewerker"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.IDienstController.UitDienstMeldenAsync(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="medewerker"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.IDienstController.SelecteerDienstAsync(System.Int32,Ns.Orp.Dienst.Model.Functie,System.String,System.Int32,System.DateTimeOffset)">
+            <summary>
+            Selecteer een Dienst
+            </summary>
+            <param name="medewerker"></param>
+            <param name="functie"></param>
+            <param name="standplaats"></param>
+            <param name="dienstnummer"></param>
+            <param name="datumDienst"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.IDienstController.VerwijderDienst(System.Int32)">
+            <summary>
+            Verwijdert de dienst voor medewerker <paramref name="medewerker" />
+            </summary>
+            <param name="medewerker">The medewerker.</param>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.IDienstController.OpvragenActueleActiviteitContextAsync(System.Int32)">
+            <summary>
+            Haalt de actuele trein context op
+            </summary>
+            <param name="medewerker">Het personeelsnummer van de gebruiker.</param>
+            <returns>ActueleTreinritContext</returns>
+            <remarks>
+            Pius niet beschikbaar -> mits locale dienst aanwezig daarmee verder
+            Geen dienst -> Melding
+            Medewerker niet in dienst -> Melding
+            </remarks>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.IDienstController.CreateOrpDienstEntityAsync(System.Int32,System.String,System.DateTimeOffset,Ns.Orp.Dienst.Model.Locatie,System.DateTimeOffset,Ns.Orp.Dienst.Model.Locatie)">
+            <summary>
+            
+            </summary>
+            <param name="medewerker"></param>
+            <param name="treinnummer"></param>
+            <param name="begintijd"></param>
+            <param name="beginlocatie"></param>
+            <param name="eindtijd"></param>
+            <param name="eindlocatie"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.IDienstController.GetLokaleDienstVoorMedewerkerAsync(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="medewerker"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.IDienstController.GetPersoneelsnummerForDienstContainingTreinnummerAsync(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="treinnummer"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.DienstController.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.DienstController.#ctor(Ns.Orp.Treinrit.Implementation.IDienstAgent)">
+            <summary>
+            
+            </summary>
+            <param name="dienstAgent"></param>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.DienstController.OpvragenDienstAsync(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="medewerker"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.DienstController.InDienstMeldenAsync(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="medewerker"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.DienstController.UitDienstMeldenAsync(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="medewerker"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.DienstController.SelecteerDienstAsync(System.Int32,Ns.Orp.Dienst.Model.Functie,System.String,System.Int32,System.DateTimeOffset)">
+            <summary>
+            Selecteer een Dienst
+            </summary>
+            <param name="medewerker"></param>
+            <param name="functie"></param>
+            <param name="standplaats"></param>
+            <param name="dienstnummer"></param>
+            <param name="datumDienst"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.DienstController.VerwijderDienst(System.Int32)">
+            <summary>
+            Verwijdert de dienst voor medewerker <paramref name="medewerker" />
+            </summary>
+            <param name="medewerker">The medewerker.</param>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.DienstController.OpvragenActueleActiviteitContextAsync(System.Int32)">
+            <summary>
+            Haalt de actuele trein context op
+            </summary>
+            <param name="medewerker">Het personeelsnummer van de gebruiker.</param>
+            <returns>ActueleTreinritContext</returns>
+            <remarks>
+            Pius niet beschikbaar -> mits locale dienst aanwezig daarmee verder
+            Geen dienst -> Melding
+            Medewerker niet in dienst -> Melding
+            </remarks>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.DienstController.CreateOrpDienstEntityAsync(System.Int32,System.String,System.DateTimeOffset,Ns.Orp.Dienst.Model.Locatie,System.DateTimeOffset,Ns.Orp.Dienst.Model.Locatie)">
+            <summary>
+            
+            </summary>
+            <param name="medewerker"></param>
+            <param name="treinnummer"></param>
+            <param name="begintijd"></param>
+            <param name="beginlocatie"></param>
+            <param name="eindtijd"></param>
+            <param name="eindlocatie"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.DienstController.GetLokaleDienstVoorMedewerkerAsync(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="medewerker"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.DienstController.GetPersoneelsnummerForDienstContainingTreinnummerAsync(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="treinnummer"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Implementation.ITreinritController">
+            <summary>
+            ITreinritController
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.ITreinritController.GetAsync(System.Int32)">
+            <summary>
+            Retrieves treinrit details for the user
+            </summary>
+            <param name="personeelsnummer">Het personeelsnummer van de gebruiker.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.ITreinritController.OphalenTreinritAsync(System.Int32,System.String,System.DateTimeOffset,System.String)">
+            <summary>
+            Retrieves a treinrit, stores it as a dienst for the user if exists and returns the TreinritContext
+            </summary>
+            <param name="personeelsnummer">Het personeelsnummer van de gebruiker.</param>
+            <param name="treinnummer">treinnummer searched for</param>
+            <param name="datum">Datum of the treinrit</param>
+            <param name="vervoersmaatschappij">Maatschappij</param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.ITreinritController.OphalenTreinritstopslijstAsync(System.String,System.DateTimeOffset,System.String,System.Int32,System.Nullable{System.DateTimeOffset})">
+            <summary>
+            Retrieves the Treinritstopslijst
+            </summary>
+            <param name="treinnummer">treinnummer searched for</param>
+            <param name="datum">Datum of the treinrit</param>
+            <param name="vervoersmaatschappij">Maatschappij</param>
+            <param name="personeelsnummer">Het personeelsnummer van de gebruiker.</param>
+            <param name="dienstMoment">Dienst moment to validate on, if null no validation is done</param>
+            <returns>Only the treinritStops</returns>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.ITreinritController.ValidateTreinritAsync(System.Int32,System.String,System.DateTimeOffset)">
+            <summary>
+            Validates if the given Treinrit is within the current Dienst
+            </summary>
+            <param name="personeelsnummer">Het personeelsnummer van de gebruiker.</param>
+            <param name="treinnummer">treinnummer searched for</param>
+            <param name="dienstMoment">Dienst moment to validate on</param>
+            <returns>Weather the Treinrit is in the current Dienst</returns>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.ITreinritController.SendNotificationForTreinritAsync(Ns.Orp.Treinrit.Model.Treinrit)">
+            <summary>
+            Send notifications for all personel that has a Dienst and have the specified Treinrit in their Dienst.
+            </summary>
+            <param name="treinrit">The treinrit.</param>
+            <returns>Task for async</returns>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Implementation.TreinritController">
+            <summary>
+            Controller class to manage the treinrit resource
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.TreinritController.#ctor(Ns.Orp.Logging.ITelemetry)">
+            <summary>
+            Initializes a new instance of <see cref="T:Ns.Orp.Treinrit.Implementation.TreinritController"/>
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.TreinritController.#ctor(Ns.Orp.Treinrit.Implementation.ITreinritmanager,Ns.Orp.Treinrit.Implementation.IDienstController,Ns.Orp.Treinrit.Implementation.ITreinritNotificatieTopicManager,Ns.Orp.Logging.ITelemetry)">
+            <summary>
+            Initializes a instance of <see cref="T:Ns.Orp.Treinrit.Implementation.TreinritController"/>
+            </summary>
+            <param name="treinritmanager">The treinrit manager.</param>
+            <param name="dienstController">The dienst controller.</param>
+            <param name="treinritNotificatieTopicManager">The notificationhub manager.</param>
+            <param name="telemetry">The telemetry agent to use.</param>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.TreinritController.GetAsync(System.Int32)">
+            <summary>
+            Retrieves treinrit details for the logged on user
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.TreinritController.OphalenTreinritAsync(System.Int32,System.String,System.DateTimeOffset,System.String)">
+            <summary>
+            Retrieves a treinrit, stores it as a dienst for the user if exists and returns the TreinritContext
+            </summary>
+            <param name="personeelsnummer">Het personeelsnummer van de gebruiker.</param>
+            <param name="treinnummer">treinnummer searched for</param>
+            <param name="datum">Datum of the treinrit</param>
+            <param name="vervoersmaatschappij">Maatschappij</param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.TreinritController.OphalenTreinritstopslijstAsync(System.String,System.DateTimeOffset,System.String,System.Int32,System.Nullable{System.DateTimeOffset})">
+            <summary>
+            Retrieves the Treinritstopslijst and gives back only the names
+            </summary>
+            <param name="treinnummer">treinnummer searched for</param>
+            <param name="datum">Datum of the treinrit</param>
+            <param name="vervoersmaatschappij">Maatschappij</param>
+            <param name="personeelsnummer">Het personeelsnummer van de gebruiker.</param>
+            <param name="dienstMoment">Dienst moment to validate on, if null no validation is done</param>
+            <returns>Only the treinritStops</returns>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.TreinritController.ValidateTreinritAsync(System.Int32,System.String,System.DateTimeOffset)">
+            <summary>
+            Validates if the given Treinrit is within the current Dienst
+            </summary>
+            <param name="personeelsnummer">Het personeelsnummer van de gebruiker.</param>
+            <param name="treinnummer">treinnummer searched for</param>
+            <param name="dienstMoment">Dienst moment to validate on</param>
+            <returns>Weather the Treinrit is in the current Dienst</returns>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.TreinritController.SendNotificationForTreinritAsync(Ns.Orp.Treinrit.Model.Treinrit)">
+            <summary>
+            Send notifications for all personel that has a Dienst and have the specified Treinrit in their Dienst.
+            </summary>
+            <param name="treinrit">The treinrit.</param>
+            <returns>Task for async</returns>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.TreinritController.Dispose">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.TreinritController.Dispose(System.Boolean)">
+            <summary>
+            Releases unmanaged and - optionally - managed resources.
+            </summary>
+            <param name="disposing"><c>true</c> to release both managed and unmanaged resources; <c>false</c> to release only unmanaged resources.</param>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Implementation.Extensions.IFormattableExtensions">
+            <summary>
+            IFormattable Extensions
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.Extensions.IFormattableExtensions.ToString``1(System.Nullable{``0},System.IFormatProvider)">
+            <summary>
+            Converts this nullable structure.
+            </summary>
+            <typeparam name="T">IFormattable</typeparam>
+            <param name="instance">Instance</param>
+            <param name="format">Format</param>
+            <returns>Null when <c>T</c> is null</returns>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Implementation.AgentFactory">
+            <summary>
+            Creates default instances of agents.
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.AgentFactory.CreateArnuAgent">
+            <summary>
+            Creates an instance of the IArnuAgent
+            </summary>
+            <returns>An instance of the IBijsturingAgent</returns>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.AgentFactory.CreateEtiAgent(System.String)">
+            <summary>
+            Creates an implementing instance for IEtiAgent
+            </summary>
+            <param name="from">The system that initiates the call.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.AgentFactory.CreateWtsAgent(System.String)">
+            <summary>
+            Creates an implementing instance for IWtsAgent.
+            </summary>
+            <param name="from">The system that initiates the call.</param>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.AgentFactory.CreatePintAgent(System.String)">
+            <summary>
+            Creates an implementing instance for IPintAgent.
+            </summary>
+            <param name="from">The system that initiates the call.</param>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.AgentFactory.CreateDienstAgent(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="clientId"></param>
+            <param name="clientSecret"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Implementation.ControllerFactory">
+            <summary>
+            Creates default instance of controllers.
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.ControllerFactory.CreateTreinritController(Ns.Orp.Logging.ITelemetry)">
+            <summary>
+            Creates the treinrit controller.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.ControllerFactory.CreateDienstController">
+            <summary>
+            Creates the dienst controller.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Implementation.ManagerFactory">
+            <summary>
+            Creates default instances of Managers.
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.ManagerFactory.CreateTreinritmanager">
+            <summary>
+            Creates an instance that implements  <see cref="T:Ns.Orp.Treinrit.Implementation.ITreinritmanager"/>.
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.ManagerFactory.CreateWtsManager">
+            <summary>
+            Creates an instance that implements  <see cref="T:Ns.Orp.Treinrit.Implementation.IWtsManager"/>.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.ManagerFactory.CreateEtiManager">
+            <summary>
+            Creates an instance that implements  <see cref="T:Ns.Orp.Treinrit.Implementation.IEtiManager"/>.
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.ManagerFactory.CreatePintManager">
+            <summary>
+            Creates an instance that implements  <see cref="T:Ns.Orp.Treinrit.Implementation.IPintManager"/>.
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Implementation.TopicFactory">
+            <summary>
+            Creates default topic managers.
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.TopicFactory.CreateTreinritNotificatieTopicManager">
+            <summary>
+            Creates an instance of the ITreinritNotificatieTopicManager.
+            </summary>
+            <returns>An instance of the ITreinritNotificatieTopicManager interface.</returns>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.TopicFactory.CreateTreinritTopicManager">
+            <summary>
+            Creates an instance of the ITreinritTopicManager.
+            </summary>
+            <returns>An instance of the ITreinritTopicManager interface.</returns>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Implementation.WebClientFactory">
+            <summary>
+            Factory for WebClient
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.WebClientFactory.CreateWebClient(System.String,System.String)">
+            <summary>
+            Creates an instance of the WebClient
+            </summary>
+            <param name="from">The system the call is orginating.</param>
+            <param name="to">The system to receive the call.</param>
+            <returns>An instance of the WebClient</returns>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Implementation.TreinritStatementEvents">
+            <summary>
+            Treinrit Statement Events
+            </summary>    
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Implementation.TreinritStatementEventSource">
+            <summary>
+            This class contains Semantic logging operations.
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.TreinritStatementEventSource.GetTreinritStart(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="personeelsnummer"></param>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.TreinritStatementEventSource.GetTreinritStop(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="personeelsnummer"></param>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.TreinritStatementEventSource.OphalenTreinritStart(System.Int32,System.String,System.DateTimeOffset,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="personeelsnummer"></param>
+            <param name="treinnummer"></param>
+            <param name="datum"></param>
+            <param name="vervoersmaatschappij"></param>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.TreinritStatementEventSource.OphalenTreinritStop(System.Int32,System.String,System.DateTimeOffset,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="personeelsnummer"></param>
+            <param name="treinnummer"></param>
+            <param name="datum"></param>
+            <param name="vervoersmaatschappij"></param>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.TreinritStatementEventSource.OphalenTreinritstopslijstStart(System.Int32,System.String,System.DateTimeOffset,System.String,System.Nullable{System.DateTimeOffset})">
+            <summary>
+            
+            </summary>
+            <param name="personeelsnummer"></param>
+            <param name="treinnummer"></param>
+            <param name="datum"></param>
+            <param name="vervoersmaatschappij"></param>
+            <param name="dienstMoment"></param>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.TreinritStatementEventSource.OphalenTreinritstopslijstStop(System.Int32,System.String,System.DateTimeOffset,System.String,System.Nullable{System.DateTimeOffset})">
+            <summary>
+            
+            </summary>
+            <param name="personeelsnummer"></param>
+            <param name="treinnummer"></param>
+            <param name="datum"></param>
+            <param name="vervoersmaatschappij"></param>
+            <param name="dienstMoment"></param>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.TreinritStatementEventSource.ValidateTreinritStart(System.Int32,System.String,System.DateTimeOffset)">
+            <summary>
+            
+            </summary>
+            <param name="personeelsnummer"></param>
+            <param name="treinnummer"></param>
+            <param name="dienstMoment"></param>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.TreinritStatementEventSource.ValidateTreinritStop(System.Int32,System.String,System.DateTimeOffset)">
+            <summary>
+            
+            </summary>
+            <param name="personeelsnummer"></param>
+            <param name="treinnummer"></param>
+            <param name="dienstMoment"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.TreinritStatementEventSource.Log">
+            <summary>
+            The singleton instance.
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Implementation.BaseRedisCacheManager">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.BaseRedisCacheManager.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ns.Orp.Treinrit.Implementation.WtsManager"/> class.
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.BaseRedisCacheManager.#ctor(StackExchange.Redis.IDatabase)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ns.Orp.Treinrit.Implementation.WtsManager"/> class.
+            </summary>
+            <param name="database"></param>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.BaseRedisCacheManager.GetStringWithRetry(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.BaseRedisCacheManager.Finalize">
+            <summary>
+            Destructor, implemented to disposing correctly
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.BaseRedisCacheManager.Dispose">
+            <summary>
+            Disposes the object.
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.BaseRedisCacheManager.Dispose(System.Boolean)">
+            <summary>
+            Releases unmanaged and - optionally - managed resources.
+            </summary>
+            <param name="disposing"><c>true</c> to release both managed and unmanaged resources; <c>false</c> to release only unmanaged resources.</param>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.BaseRedisCacheManager.SerializerSettings">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.BaseRedisCacheManager.Cache">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Implementation.PintManager">
+            <summary>
+            PintManager
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Implementation.IPintManager">
+            <summary>
+            IPintManager
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.IPintManager.ImportFromFtpAsync">
+            <summary>
+            Imports from FTP.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.IPintManager.FindByTreinnummerAsync(System.String)">
+            <summary>
+            Finds PintInformatie by treinnummer
+            </summary>
+            <param name="treinnummer"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.PintManager.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ns.Orp.Treinrit.Implementation.PintManager"/> class.
+            </summary>
+            <param name="from">The system that initiates the call.</param>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.PintManager.#ctor(Ns.Orp.Treinrit.Implementation.IPintAgent,StackExchange.Redis.IDatabase)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ns.Orp.Treinrit.Implementation.PintManager"/> class.
+            </summary>
+            <param name="pintAgent">The pint agent to use.</param>
+            <param name="database"></param>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.PintManager.ImportFromFtpAsync">
+            <summary>
+            Imports from FTP.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.PintManager.ClearPintCache">
+            <summary>
+            Clears the Pint from the cache.
+            Mainly used for unit test purposes (when running multiple instances you never know which one is cleared)
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.PintManager.FindByTreinnummerAsync(System.String)">
+            <summary>
+            Finds PintInformatie by treinnummer
+            </summary>
+            <param name="treinnummer"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.PintManager.Dispose(System.Boolean)">
+            <summary>
+            Releases unmanaged and - optionally - managed resources.
+            </summary>
+            <param name="disposing"><c>true</c> to release both managed and unmanaged resources; <c>false</c> to release only unmanaged resources.</param>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Implementation.EtiManager">
+            <summary>
+            EtiManager
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Implementation.IEtiManager">
+            <summary>
+            IEtiManager
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.IEtiManager.ImportFromFtpAsync">
+            <summary>
+            Imports from FTP.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.IEtiManager.FindByTreinnummer(System.Int32)">
+            <summary>
+            Finds ExtraTreinInformatie by treinnummer.
+            </summary>
+            <param name="treinnummer">The treinnummer.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.EtiManager.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ns.Orp.Treinrit.Implementation.EtiManager"/> class.
+            </summary>
+            <param name="from">The system that initiates the call.</param>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.EtiManager.#ctor(Ns.Orp.Treinrit.Implementation.IEtiAgent)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ns.Orp.Treinrit.Implementation.EtiManager"/> class.
+            </summary>
+            <param name="etiAgent">The eti agent to use.</param>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.EtiManager.ImportFromFtpAsync">
+            <summary>
+            Imports from FTP.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.EtiManager.ClearEtiCache">
+            <summary>
+            Clears the eti from the cache.
+            Mainly used for unit test purposes (when running multiple instances you never know which one is cleared)
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.EtiManager.FindByTreinnummer(System.Int32)">
+            <summary>
+            Finds ExtraTreinInformatie by treinnummer.
+            </summary>
+            <param name="treinnummer">The treinnummer query for.</param>
+            <returns>ExtraTreinInformatie applicable for the specified <paramref name="treinnummer"/></returns>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.EtiManager.Dispose(System.Boolean)">
+            <summary>
+            Releases unmanaged and - optionally - managed resources.
+            </summary>
+            <param name="disposing"><c>true</c> to release both managed and unmanaged resources; <c>false</c> to release only unmanaged resources.</param>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Implementation.ITreinritmanager">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.ITreinritmanager.GetTreinritAsync(System.String,System.DateTimeOffset,System.String,System.String)">
+            <summary>
+            Gets the treinrit .
+            </summary>
+            <param name="treinnummer">The treinnummer.</param>
+            <param name="activiteitStartDateTime">The start datetime of the treinritactiviteit.</param>
+            <param name="stationsafkorting">Stationsafkorting to validate for availability in the treinrit</param>
+            <param name="vervoersmaatschappij">The vervoersmaatschappij.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.ITreinritmanager.GetTreinritAsync(System.String,System.DateTimeOffset,System.String)">
+            <summary>
+            Gets the treinrit .
+            </summary>
+            <param name="treinnummer">The treinnummer.</param>
+            <param name="dateOfTreinrit">Datum van de treinrit</param>
+            <param name="vervoersmaatschappij">The vervoersmaatschappij.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.ITreinritmanager.EnrichTreinrit(Ns.Orp.Treinrit.Model.Treinrit)">
+            <summary>
+            Enriches the treinrit and saves it
+            </summary>
+            <param name="treinrit">Treinrit to enricht</param>
+            <returns>The enriched treinrit</returns>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Implementation.IWtsManager">
+            <summary>
+            IWtsManager
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.IWtsManager.ImportFromFtpAsync">
+            <summary>
+            Imports from FTP.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.IWtsManager.FindByStationsAsync(System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            Finds Werkzaamheden by station code.
+            </summary>
+            <param name="stationCodes">station codes for which to lookup werkzaamheden</param>
+            <returns>Wts applicable for the specified <paramref name="stationCodes"/></returns>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Implementation.RedisCache">
+            <summary>
+            Class for getting the reference to the redis cache
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.RedisCache.Connection">
+            <summary>
+            CacheConnection
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Implementation.Treinritmanager">
+            <summary>
+            Knows how to retrieve treinrit info
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.Treinritmanager.#ctor(Ns.Orp.Treinrit.Implementation.IArnuAgent,Ns.Orp.Treinrit.Implementation.IEtiManager,Ns.Orp.Treinrit.Implementation.IWtsManager,Ns.Orp.Treinrit.Implementation.IPintManager)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ns.Orp.Treinrit.Implementation.Treinritmanager"/> class.
+            </summary>
+            <param name="arnuAgent">The arnu agent.</param>
+            <param name="etiManager">etiManager to use for manipulating ExtraTreinInformatie</param>
+            <param name="wtsManager">wtsManager to use for manipulating wts</param>
+            <param name="pintManager">pintManager to use for manipulating PintInformatie</param>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.Treinritmanager.GetTreinritAsync(System.String,System.DateTimeOffset,System.String,System.String)">
+            <summary>
+            Gets the treinrit.
+            </summary>
+            <param name="treinnummer">The treinnummer.</param>
+            <param name="activiteitStartDateTime">The start datetime of the activiteit.</param>
+            <param name="stationsafkorting">The stationsafkorting.</param>
+            <param name="vervoersmaatschappij">The vervoersmaatschappij.</param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentNullException">treinnummer</exception>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.Treinritmanager.GetTreinritAsync(System.String,System.DateTimeOffset,System.String)">
+            <summary>
+            Gets the treinrit .
+            </summary>
+            <param name="treinnummer">The treinnummer.</param>
+            <param name="dateOfTreinrit">Datum van de treinrit</param>
+            <param name="vervoersmaatschappij">The vervoersmaatschappij.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.Treinritmanager.EnrichTreinrit(Ns.Orp.Treinrit.Model.Treinrit)">
+            <summary>
+            Enriches the treinrit and saves it  
+            </summary>
+            <param name="treinrit">Treinrit to enrich</param>
+            <returns>The enriched treinrit</returns>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.Treinritmanager.EnrichWithExtraTreinInformatie(Ns.Orp.Treinrit.Model.Treinrit)">
+            <summary>
+            Enriches the with extra trein informatie.
+            </summary>
+            <param name="treinrit">The treinrit.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.Treinritmanager.EnrichWithWts(Ns.Orp.Treinrit.Model.Treinrit)">
+            <summary>
+            Enriches the with wts.
+            </summary>
+            <param name="treinrit">The treinrit.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.Treinritmanager.EnrichWithPintInformatie(Ns.Orp.Treinrit.Model.Treinrit)">
+            <summary>
+            Enriches the with wts.
+            </summary>
+            <param name="treinrit">The treinrit.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.Treinritmanager.Finalize">
+            <summary>
+            Destuctor, implemented to disposing correctly
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.Treinritmanager.Dispose">
+            <summary>
+            Disposes the object.
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Implementation.WtsManager">
+            <summary>
+            WtsManager
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.WtsManager.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ns.Orp.Treinrit.Implementation.WtsManager"/> class.
+            </summary>
+            <param name="from">The system that initiates the call.</param>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.WtsManager.#ctor(Ns.Orp.Treinrit.Implementation.IWtsAgent,StackExchange.Redis.IDatabase)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ns.Orp.Treinrit.Implementation.WtsManager"/> class.
+            </summary>
+            <param name="wtsAgent">The wts agent to use.</param>
+            <param name="database"></param>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.WtsManager.ImportFromFtpAsync">
+            <summary>
+            Imports from FTP.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.WtsManager.ClearWtsCache">
+            <summary>
+            Clears the wts from the cache.
+            Mainly used for unit test purposes (when running multiple instances you never know which one is cleared)
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.WtsManager.FindByStationsAsync(System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            Finds Werkzaamheden by station code.
+            </summary>
+            <param name="stationCodes">station codes for which to lookup werkzaamheden</param>
+            <returns>Wts applicable for the specified <paramref name="stationCodes"/></returns>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.WtsManager.Dispose(System.Boolean)">
+            <summary>
+            Releases unmanaged and - optionally - managed resources.
+            </summary>
+            <param name="disposing"><c>true</c> to release both managed and unmanaged resources; <c>false</c> to release only unmanaged resources.</param>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Implementation.TreinritMapper">
+            <summary>
+            Mapping class to help mapping  <see cref="T:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ServiceInfoServiceType"/> to <see cref="N:Ns.Orp.Treinrit"/>
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.TreinritMapper.MapToLocal(Ns.Orp.Treinrit.Implementation.Proxies.Arnu.IServiceInfoService,System.Nullable{System.DateTimeOffset})">
+            <summary>
+            Does the actual mapping of <see cref="T:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ServiceInfoServiceType"/> to <see cref="N:Ns.Orp.Treinrit"/>
+            </summary>
+            <param name="serviceInfo">The service information.</param>
+            <param name="datumOfRit"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.TreinritMapper.MapToLocal(Ns.Orp.Treinrit.Implementation.Proxies.Arnu.IServiceInfoService[],System.String,System.Nullable{System.DateTimeOffset})">
+            <summary>
+            Does the actual mapping of <see cref="T:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ServiceInfoServiceType"/> to <see cref="N:Ns.Orp.Treinrit"/>
+            </summary>
+            <param name="serviceInfoList">The service information.</param>
+            <param name="verwachtTreinnummer">Het verwachte treinnummer</param>
+            <param name="datumOfRit"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.TreinritMapper.MapToLocal(Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ServiceInfoKind)">
+            <summary>
+            Maps ServiceInfoKind to TreinritType
+            </summary>
+            <param name="serviceInfoKind">Item to map</param>
+            <returns>Mapped item</returns>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.TreinritMapper.MapToLocal(Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ServiceInfoStopKind)">
+            <summary>
+            Maps ServiceInfoStopKind to DienstregelpuntWijziging
+            </summary>
+            <param name="stopType">Type of the stop.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.IServiceInfoService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.IServiceInfoService.CompanyCode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.IServiceInfoService.ServiceCode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.IServiceInfoService.TransportModeCode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.IServiceInfoService.StopList">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.IServiceInfoService.ServiceType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ServiceInfoServiceJitType">
+            <summary>
+            ServiceInfoServiceJitType
+            </summary>
+            <remarks>
+            Extension for the interface
+            </remarks>
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ServiceInfoServiceJitType.Id">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ServiceInfoServiceJitType.DateModified">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ServiceInfoServiceJitType.SourceCodeLastChange">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ServiceInfoServiceJitType.SeqString">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ServiceInfoServiceJitType.CompanyCode">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ServiceInfoServiceJitType.ServiceCode">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ServiceInfoServiceJitType.TransportModeCode">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ServiceInfoServiceJitType.StopList">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ServiceInfoServiceJitType.ServiceType">
+            <remarks/>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ServiceInfoServiceType">
+            <summary>
+            ServiceInfoServiceType
+            </summary>
+            <remarks>
+            Extension for the interface
+            </remarks>
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ServiceInfoServiceType.CompanyCode">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ServiceInfoServiceType.ServiceCode">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ServiceInfoServiceType.TransportModeCode">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ServiceInfoServiceType.StopList">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ServiceInfoServiceType.ServiceType">
+            <remarks/>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Implementation.EtiAgent">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Implementation.IEtiAgent">
+            <summary>
+            IEtiAgent
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.IEtiAgent.RetrieveExtraTreinInformatieAsync">
+            <summary>
+            Retrieves the extra trein informatie.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.EtiAgent.#ctor(System.String,Ns.Orp.Web.Client.IWebClient)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ns.Orp.Treinrit.Implementation.EtiAgent"/> class.
+            </summary>
+            <param name="etiServiceAddress">The eti service address.</param>
+            <param name="client">HttpClient to use for requests</param>
+            <exception cref="T:System.ArgumentNullException">address</exception>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.EtiAgent.#ctor(System.String,System.String)">
+            <summary>
+            Constructor that enables testing
+            </summary>
+            <param name="address">The primary server address to use.</param>
+            <param name="from">The system that initiates the call</param>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.EtiAgent.RetrieveExtraTreinInformatieAsync">
+            <summary>
+            Retrieves the extra trein informatie.
+            </summary>
+            <returns></returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.EtiAgent.Finalize">
+            <summary>
+            Destructor, implemented to dispose correctly
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.EtiAgent.Dispose">
+            <summary>
+            Disposes the object.
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Implementation.SearchType">
+            <summary>
+            SearchType
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Treinrit.Implementation.SearchType.Realtime">
+            <summary>
+            Realtime
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Implementation.IWtsAgent">
+            <summary>
+            Agent for Wts data
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.IWtsAgent.RetrieveWtsAsync">
+            <summary>
+            Retrieves WTS
+            </summary>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Implementation.WtsAgent">
+            <summary>
+            Agent for interaction with Wts Service (Werkzaamheden Treinpersoneel Stations)
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.WtsAgent.#ctor(System.String,Ns.Orp.Web.Client.IWebClient)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ns.Orp.Treinrit.Implementation.WtsAgent"/> class.
+            </summary>
+            <param name="address">The primary server address to use.</param>
+            <param name="client">HttpClient to use for requests</param>
+            <exception cref="T:System.ArgumentNullException">address</exception>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.WtsAgent.#ctor(System.String,System.String)">
+            <summary>
+            Constructor that enables testing
+            </summary>
+            <param name="address">The primary server address to use.</param>
+            <param name="from">The system that initiates the call</param>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.WtsAgent.RetrieveWtsAsync">
+            <summary>
+            Retrieves WTS
+            </summary>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.WtsAgent.Finalize">
+            <summary>
+            Destructor, implemented to dispose correctly
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.WtsAgent.Dispose">
+            <summary>
+            Disposes the object.
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Implementation.Resources.Messages">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Resources.Messages.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Resources.Messages.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Resources.Messages.BekendheidCsvReader_CreateAndValidateIndex_Geen_header_gevonden">
+            <summary>
+              Looks up a localized string similar to Geen header gevonden.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Resources.Messages.BekendheidCsvReader_CreateAndValidateIndex_Header_is_niet_valide_">
+            <summary>
+              Looks up a localized string similar to Header is niet valide..
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Resources.Messages.CodeOnbekend">
+            <summary>
+              Looks up a localized string similar to Code onbekend - {0}.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Resources.Messages.ContactenFailed">
+            <summary>
+              Looks up a localized string similar to Kon geen contactgegevens ophalen.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Resources.Messages.EtiFailed">
+            <summary>
+              Looks up a localized string similar to Kon geen eti gegevens ophalen.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Resources.Messages.FoutBijOpvragenTreinritInformatie">
+            <summary>
+              Looks up a localized string similar to Er is een fout opgetreden bij het opvragen van treinritinformatie bij ARNU van het type {0}.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Resources.Messages.GeenActiviteitenBeschikbaar">
+            <summary>
+              Looks up a localized string similar to Geen activiteiten beschikbaar voor dienst {0} en personeelsnummer {1}.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Resources.Messages.GeenDienst">
+            <summary>
+              Looks up a localized string similar to Geen dienst gevonden voor {0} &apos;{1}&apos;.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Resources.Messages.GeenDienstGevondenVoorGebruiker">
+            <summary>
+              Looks up a localized string similar to Er kon geen dienst gevonden worden voor gebruiker {0}..
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Resources.Messages.GeenPersoneelsnummer">
+            <summary>
+              Looks up a localized string similar to Het personeelsnummer kon niet worden bepaald..
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Resources.Messages.IAMExpired">
+            <summary>
+              Looks up a localized string similar to Ontvangen IAM is verlopen of nog niet geldig.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Resources.Messages.IAMFailed">
+            <summary>
+              Looks up a localized string similar to Kon geen IAM gegevens ophalen.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Resources.Messages.IAMInvalidData">
+            <summary>
+              Looks up a localized string similar to Ontvangen IAM bevat onjuiste gegevens.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Resources.Messages.InvalidDienstDatum">
+            <summary>
+              Looks up a localized string similar to De dienstdatum mag niet in het verleden liggen..
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Resources.Messages.InvalidVragenlijstontvanger">
+            <summary>
+              Looks up a localized string similar to De destination &apos;{0}&apos; zoals gespecificeerd in de metadata van de vragenlijst &apos;{1}&apos; v{2}.{3} kon niet worden herkend als een bekende destination.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Resources.Messages.MaterieelagendaFailed">
+            <summary>
+              Looks up a localized string similar to Kon geen materieelagenda ophalen.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Resources.Messages.MaterieelbekendheidCsvReader_ReadAsync_Incorrecte_data">
+            <summary>
+              Looks up a localized string similar to Het .csv bestand voor materieelbekendheid bevat incorrecte data.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Resources.Messages.MaterieelbekendheidImportFailed">
+            <summary>
+              Looks up a localized string similar to Kon geen materieelbekendheidgegevens ophalen.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Resources.Messages.MaterieelcodesFailed">
+            <summary>
+              Looks up a localized string similar to Kon geen materieelcodes ophalen.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Resources.Messages.MetadataNotFound">
+            <summary>
+              Looks up a localized string similar to Metadata met key &apos;{0}&apos; kon niet worden gevonden.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Resources.Messages.PintFailed">
+            <summary>
+              Looks up a localized string similar to Kon geen pint informatie ophalen.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Resources.Messages.PiusDienstBeschikbaar">
+            <summary>
+              Looks up a localized string similar to Er is een PIUS dienst beschikbaar voor personeelsnummer {0}.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Resources.Messages.RetrieveRelevanteBerichtenFailed">
+            <summary>
+              Looks up a localized string similar to Kon geen relevante berichte ophalen. Fout opgetreden bij communicatie met de Berichten BackEnd.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Resources.Messages.SurveysWithDifferentTemplateIdsFound">
+            <summary>
+              Looks up a localized string similar to Invalid survey(s) found, different templateIds are  found.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Resources.Messages.SurveysWithoutTemplateIdMetadataFound">
+            <summary>
+              Looks up a localized string similar to Invalid survey(s) found, TemplateId not available in metadata.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Resources.Messages.Traject">
+            <summary>
+              Looks up a localized string similar to Van {0} tot {1}.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Resources.Messages.VragenlijstFailed">
+            <summary>
+              Looks up a localized string similar to Kon geen vragenlijsten ophalen.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Resources.Messages.WegbekendheidCsvReader_ReadAsync_Incorrecte_data">
+            <summary>
+              Looks up a localized string similar to Het .csv bestand voor wegbekendheid bevat incorrecte data.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Resources.Messages.WtsFailed">
+            <summary>
+              Looks up a localized string similar to Kon geen wts gegevens ophalen.
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.GetSeviceInfoIn">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.GetSeviceInfoIn.ServiceInput">
+            <remarks/>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ServiceInputType">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ServiceInputType.CompanyCode">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ServiceInputType.ServiceCode">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ServiceInputType.DateTime">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ServiceInputType.CallerId">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ServiceInputType.SearchType">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ServiceInputType.SearchTypeSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ServiceInputType.SearchOccurrenceType">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ServiceInputType.SearchOccurrenceTypeSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ServiceInputType.ReturnRequest">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ServiceInputType.ReturnRequestSpecified">
+            <remarks/>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.DateTimeType">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.DateTimeType.MatchDate">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.DateTimeType.MatchDateSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.DateTimeType.MatchTime">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.DateTimeType.MatchTimeSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.DateTimeType.SearchDateType">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.DateTimeType.SearchDateTypeSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.DateTimeType.Value">
+            <remarks/>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.SearchDateTypeKind">
+            <remarks/>
+        </member>
+        <member name="F:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.SearchDateTypeKind.CALENDAR">
+            <remarks/>
+        </member>
+        <member name="F:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.SearchDateTypeKind.TIMETABLE">
+            <remarks/>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.RtiServicesSummaryOutputType">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.RtiServicesSummaryOutputType.MsgId">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.RtiServicesSummaryOutputType.RtiServiceSummary">
+            <remarks/>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.RtiServicesSummaryOutputTypeRtiServiceSummary">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.RtiServicesSummaryOutputTypeRtiServiceSummary.Id">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.RtiServicesSummaryOutputTypeRtiServiceSummary.ServiceCode">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.RtiServicesSummaryOutputTypeRtiServiceSummary.CompanyCode">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.RtiServicesSummaryOutputTypeRtiServiceSummary.ServiceStartDate">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.RtiServicesSummaryOutputTypeRtiServiceSummary.TransportModeCode">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.RtiServicesSummaryOutputTypeRtiServiceSummary.DateModified">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.RtiServicesSummaryOutputTypeRtiServiceSummary.RtiServiceType">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.RtiServicesSummaryOutputTypeRtiServiceSummary.SourceCode">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.RtiServicesSummaryOutputTypeRtiServiceSummary.FirstStop">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.RtiServicesSummaryOutputTypeRtiServiceSummary.LastStop">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.RtiServicesSummaryOutputTypeRtiServiceSummary.CurrentStop">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.RtiServicesSummaryOutputTypeRtiServiceSummary.DelayedMinutes">
+            <remarks/>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ServiceInfoKind">
+            <remarks/>
+        </member>
+        <member name="F:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ServiceInfoKind.NormalService">
+            <remarks/>
+        </member>
+        <member name="F:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ServiceInfoKind.NewService">
+            <remarks/>
+        </member>
+        <member name="F:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ServiceInfoKind.CancelledService">
+            <remarks/>
+        </member>
+        <member name="F:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ServiceInfoKind.DivertedService">
+            <remarks/>
+        </member>
+        <member name="F:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ServiceInfoKind.ExtendedService">
+            <remarks/>
+        </member>
+        <member name="F:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ServiceInfoKind.ScheduleChangedService">
+            <remarks/>
+        </member>
+        <member name="F:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ServiceInfoKind.SplitService">
+            <remarks/>
+        </member>
+        <member name="F:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ServiceInfoKind.RemovedService">
+            <remarks/>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.RtiServicesSummaryInputType">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.RtiServicesSummaryInputType.CallerId">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.RtiServicesSummaryInputType.MsgId">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.RtiServicesSummaryInputType.CompanyCode">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.RtiServicesSummaryInputType.RtiServiceType">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.RtiServicesSummaryInputType.RtiServiceTypeSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.RtiServicesSummaryInputType.SourceCode">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.RtiServicesSummaryInputType.TransportModeCode">
+            <remarks/>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.PlatformInfoReturn">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.PlatformInfoReturn.Code">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.PlatformInfoReturn.Description">
+            <remarks/>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ReturnValueKind">
+            <remarks/>
+        </member>
+        <member name="F:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ReturnValueKind.ReturnOK">
+            <remarks/>
+        </member>
+        <member name="F:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ReturnValueKind.ReturnErrorResend">
+            <remarks/>
+        </member>
+        <member name="F:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ReturnValueKind.ReturnErrorDoNotResend">
+            <remarks/>
+        </member>
+        <member name="F:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ReturnValueKind.ReturnRestart">
+            <remarks/>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.PlatformInfoStopType">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.PlatformInfoStopType.StopCode">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.PlatformInfoStopType.ArrivalPlatform">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.PlatformInfoStopType.DeparturePlatform">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.PlatformInfoStopType.Departure">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.PlatformInfoStopType.DepartureSpecified">
+            <remarks/>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.PlatformInfoType">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.PlatformInfoType.CompanyCode">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.PlatformInfoType.ServiceCode">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.PlatformInfoType.StopList">
+            <remarks/>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.PlatFormInfoList">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.PlatFormInfoList.PlatformInfo">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.PlatFormInfoList.Initial">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.PlatFormInfoList.InitialSpecified">
+            <remarks/>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ServiceInfoReturn">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ServiceInfoReturn.Code">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ServiceInfoReturn.Description">
+            <remarks/>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.RtiMonitorInputType">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.RtiMonitorInputType.CallerId">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.RtiMonitorInputType.MsgId">
+            <remarks/>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ServiceInfoStopType">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ServiceInfoStopType.StopCode">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ServiceInfoStopType.StopServiceCode">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ServiceInfoStopType.Arrival">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ServiceInfoStopType.ArrivalSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ServiceInfoStopType.ArrivalTimeDelay">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ServiceInfoStopType.Departure">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ServiceInfoStopType.DepartureSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ServiceInfoStopType.DepartureTimeDelay">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ServiceInfoStopType.ArrivalPlatform">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ServiceInfoStopType.ActualArrivalPlatform">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ServiceInfoStopType.DeparturePlatform">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ServiceInfoStopType.ActualDeparturePlatform">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ServiceInfoStopType.StopType">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ServiceInfoStopType.StopTypeSpecified">
+            <remarks/>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ServiceInfoStopKind">
+            <remarks/>
+        </member>
+        <member name="F:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ServiceInfoStopKind.CancelledStop">
+            <remarks/>
+        </member>
+        <member name="F:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ServiceInfoStopKind.DivertedStop">
+            <remarks/>
+        </member>
+        <member name="F:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ServiceInfoStopKind.SplitStop">
+            <remarks/>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ServiceInfoServiceJitList">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ServiceInfoServiceJitList.ServiceInfo">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ServiceInfoServiceJitList.Initial">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ServiceInfoServiceJitList.InitialSpecified">
+            <remarks/>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ServiceInputJitType">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ServiceInputJitType.CompanyCode">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ServiceInputJitType.ServiceCode">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ServiceInputJitType.DateTime">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ServiceInputJitType.CallerId">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ServiceInputJitType.SearchType">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ServiceInputJitType.SearchTypeSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ServiceInputJitType.SearchOccurrenceType">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ServiceInputJitType.SearchOccurrenceTypeSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ServiceInputJitType.ReturnRequest">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ServiceInputJitType.ReturnRequestSpecified">
+            <remarks/>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.SearchTypeKind">
+            <remarks/>
+        </member>
+        <member name="F:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.SearchTypeKind.STATIC">
+            <remarks/>
+        </member>
+        <member name="F:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.SearchTypeKind.REALTIME">
+            <remarks/>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.SearchOccurrenceTypeKind">
+            <remarks/>
+        </member>
+        <member name="F:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.SearchOccurrenceTypeKind.SINGLE">
+            <remarks/>
+        </member>
+        <member name="F:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.SearchOccurrenceTypeKind.ALL">
+            <remarks/>
+        </member>
+        <member name="F:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.SearchOccurrenceTypeKind.ALLSEPARATE">
+            <remarks/>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ServiceInfoServiceList">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ServiceInfoServiceList.ServiceInfo">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ServiceInfoServiceList.Initial">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.ServiceInfoServiceList.InitialSpecified">
+            <remarks/>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.GetServiceInfoOut">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.GetServiceInfoOut.ServiceInfoList">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.GetServiceInfoOut.ServiceInput">
+            <remarks/>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.GetServiceInfoJitIn">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.GetServiceInfoJitIn.ServiceInput">
+            <remarks/>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.GetServiceInfoJitOut">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.GetServiceInfoJitOut.ServiceInfoList">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.GetServiceInfoJitOut.ServiceInput">
+            <remarks/>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.GetRtiMonitorIn">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.GetRtiMonitorIn.RtiMonitorInput">
+            <remarks/>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.GetRtiMonitorOut">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.GetRtiMonitorOut.ServiceInfoList">
+            <remarks/>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.PutServiceInfoIn">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.PutServiceInfoIn.ServiceInfoList">
+            <remarks/>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.PutServiceInfoOut">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.PutServiceInfoOut.ReturnValue">
+            <remarks/>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.PutPlatformInfoIn">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.PutPlatformInfoIn.PlatformInfoList">
+            <remarks/>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.PutPlatformInfoOut">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.PutPlatformInfoOut.ReturnValue">
+            <remarks/>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.GetRtiServicesSummaryIn">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.GetRtiServicesSummaryIn.RtiServicesSummaryInput">
+            <remarks/>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.GetRtiServicesSummaryOut">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.GetRtiServicesSummaryOut.RtiServicesSummaryOutput">
+            <remarks/>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Implementation.Proxies.Arnu.GetRtiServicesSummaryOutRtiServicesSummaryOutput">
+            <remarks/>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Implementation.Settings">
+            <summary>
+            Settings class
+            Each property name maps to a setting in the configuration manager
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.Settings.GetValue(System.String)">
+            <summary>
+            Gets a setting from the config file.
+            </summary>
+            <param name="name">The name of the setting.</param>
+            <returns>The value of the setting.</returns>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Settings.Version">
+            <summary>
+            The version of the release, should be in the form of rXX. No minor versions, only major.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Settings.ServiceBusConnectionString">
+            <summary>
+            ServiceBusConnectionString
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Settings.StorageConnectionString">
+            <summary>
+            StorageConnectionString
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Settings.SearchConnectionString">
+            <summary>
+            SearchConnectionString
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Settings.StatementLogTableName">
+            <summary>
+            LogTableName
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Settings.MessageLogTableName">
+            <summary>
+            LogTableName
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Settings.LogInstanceName">
+            <summary>
+            LogInstanceName
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Settings.AppInsightsInstrumentationKey">
+            <summary>
+            Application Insights Instrumentation Key
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Settings.AppInsightsEnvironmentTag">
+            <summary>
+            Application Insights Environment Tag
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Settings.AppInsightsEnabled">
+            <summary>
+            Application Insights enabled
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Settings.MonitoringLogTopicName">
+            <summary>
+            The name of the Topic where Monitoring events will be delivered.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Settings.LoggingTopicName">
+            <summary>
+            The name of the Topic where logging events will be delivered.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Settings.AadSpoorplazaTenant">
+            <summary>
+            The SpoorPlaza AAD Tenant
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Settings.AadDienstAppId">
+            <summary>
+            The id of the dienst audience
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Settings.AadTreinritAppId">
+            <summary>
+            The id of the treinrit audience
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Settings.CacheConnectionString">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Settings.ArnuEndpointAddress">
+            <summary>
+            ArnuEndpointAddress
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Settings.EtiEndpointAddress">
+            <summary>
+            Returns the primary EtiEndpointAddress
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Settings.WtsEndpointAddress">
+            <summary>
+            WtsEndpointAddress
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Settings.PintEndpointAddress">
+            <summary>
+            PintEndpointAddress
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Settings.TopicSubscriptionName">
+            <summary>
+            TopicSubscriptionName
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Settings.TopicMessageTimeToLive">
+            <summary>
+            TopicMessageTimeToLive
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Settings.DienstAddress">
+            <summary>
+            Gets the dienst back end address.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Settings.AadSpoorplazaAuthority">
+            <summary>
+            The Spoorplaza AAD authority url
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Settings.AadTreinritClientId">
+            <summary>
+            The client id of the Treinrit service in AAD. Used to call authenticated services.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Settings.AadTreinritClientSecret">
+            <summary>
+            The client secret of the Treinrit service in AAD. Used to call authenticated services.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Settings.EtiImportSchedule">
+            <summary>
+            The CRON schedule for the ETI import job.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Settings.WtsImportSchedule">
+            <summary>
+            The CRON schedule for the WTS import job.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Treinrit.Implementation.Settings.PintImportSchedule">
+            <summary>
+            The CRON schedule for the Pint import job.
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Implementation.ITreinritNotificatieTopicManager">
+            <summary>
+            Notificaties voor Treinrit.
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.ITreinritNotificatieTopicManager.SendAsync(Ns.Orp.Treinrit.Model.TreinritNotificatie)">
+            <summary>
+            Sends a new message to the topic.
+            </summary>
+            <param name="body">The message to send</param>
+            <returns>A Task. This method is attended to run asynchronously.</returns>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Implementation.ITreinritTopicManager">
+            <summary>
+            Contains all methods to send a message on the Dienst top a topic.
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.ITreinritTopicManager.SendAsync(Ns.Orp.Treinrit.Model.Treinrit)">
+            <summary>
+            Sends a new message to the topic.
+            </summary>
+            <param name="body">The message to send</param>
+            <returns>A Task. This method is attended to run asynchronously.</returns>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Implementation.TreinritNotificatieTopicManager">
+            <summary>
+            Sends a DienstNotificatie to a topic.
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.TreinritNotificatieTopicManager.#ctor(System.String,System.String,System.TimeSpan)">
+            <summary>
+            Creates an new instance.
+            </summary>
+            <param name="serviceBusConnectionString">The connection string to the Azure Service Bus.</param>
+            <param name="subscriptionName">The name of the subscription.</param>
+            <param name="defaultMessageTimeToLive">The default time to live.</param>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Implementation.TreinritTopicManager">
+            <summary>
+            Implementation of the TreinritTopicManager.
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.TreinritTopicManager.#ctor(System.String,System.String,System.TimeSpan)">
+            <summary>
+            Creates an new instance.
+            </summary>
+            <param name="serviceBusConnectionString">The connection string to the Azure Service Bus.</param>
+            <param name="subscriptionName">The name of the subscription.</param>
+            <param name="defaultMessageTimeToLive">The default time to live.</param>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.TreinritTopicManager.Dispose(System.Boolean)">
+            <summary>
+            disposes this object
+            </summary>
+            <param name="disposing">if disposing or not</param>
+        </member>
+        <member name="T:Ns.Orp.Treinrit.Implementation.TreinritTopicMessageProcessor">
+            <summary>
+            Processes Treinrit messages.
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Treinrit.Implementation.TreinritTopicMessageProcessor.TreinritTopicName">
+            <summary>
+            The topic name.
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.TreinritTopicMessageProcessor.#ctor(System.String,Ns.Orp.Treinrit.Implementation.ITreinritController)">
+            <summary>
+            
+            </summary>
+            <param name="subscriptionName"></param>
+            <param name="treinritController"></param>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.TreinritTopicMessageProcessor.ProcessMessageAsync(Ns.Orp.Treinrit.Model.Treinrit)">
+            <summary>
+            
+            </summary>
+            <param name="message"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Treinrit.Implementation.TreinritTopicMessageProcessor.Dispose(System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="disposing"></param>
+        </member>
+    </members>
+</doc>

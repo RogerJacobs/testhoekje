@@ -1,0 +1,1 @@
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><ns8:lookupDienstkaartResponse xsi:nil="true" xmlns:ns8="http://www.ns.nl/dienstkaart/ws/dienstkaart" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></ns8:lookupDienstkaartResponse></s:Body></s:Envelope>

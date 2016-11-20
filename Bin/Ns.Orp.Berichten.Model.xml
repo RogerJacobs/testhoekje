@@ -1,0 +1,208 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Ns.Orp.Berichten.Model</name>
+    </assembly>
+    <members>
+        <member name="T:Ns.Orp.Berichten.Model.Bericht">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Berichten.Model.Bericht.Key">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Berichten.Model.Bericht.Identifier">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Berichten.Model.Bericht.Hash">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Berichten.Model.Bericht.Category">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Berichten.Model.Bericht.Prioriteit">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Berichten.Model.Bericht.OorsprongDatumTijd">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Berichten.Model.Bericht.GeldigheidStartDatumTijd">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Berichten.Model.Bericht.GeldigheidEindDatumTijd">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Berichten.Model.Bericht.Kopregel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Berichten.Model.Bericht.Body">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Berichten.Model.Bericht.Verplicht">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Berichten.Model.Bericht.Bevestigen">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Berichten.Model.Bericht.Notification">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Berichten.Model.Bericht.FunctieDoelgroepen">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Berichten.Model.BerichtCategory">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Berichten.Model.BerichtCategory.HandboekenUpdates">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Berichten.Model.BerichtCategory.ManagementBerichten">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Berichten.Model.BerichtCategory.Informatieberichten">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Berichten.Model.BerichtDto">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Berichten.Model.BerichtDto.Gelezen">
+            <summary>
+            Indicator whether Bericht is read or not
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Berichten.Model.BerichtDto.Bevestigd">
+            <summary>
+            Indicator whether Bericht is confirmed or not
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Berichten.Model.BerichtFilterCriteria">
+            <summary>
+            Filter criteria to use for berichten retrieval 
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Berichten.Model.BerichtFilterCriteria.Peildatum">
+            <summary>
+            Gets or sets a value for the Peildatum to filter on
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Berichten.Model.BerichtFilterCriteria.Gelezen">
+            <summary>
+            Gets or sets a value for the gelezen status to filter.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Berichten.Model.BerichtFilterCriteria.Bevestigd">
+            <summary>
+            Gets or sets a value for the Bevestigd status to filter.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Berichten.Model.BerichtFilterCriteria.Bevestigen">
+            <summary>
+            Gets or sets a value for the Bevestigen field to filter.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Berichten.Model.BerichtFilterCriteria.Verplicht">
+            <summary>
+            Gets or sets a value for the Verplicht field to filter.
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Berichten.Model.BerichtPrioriteit">
+            <summary>
+            BerichtPrioriteit
+            </summary>
+            <remarks>
+            Lower value means higher priority, where 1 has the highest priority.
+            </remarks>
+        </member>
+        <member name="F:Ns.Orp.Berichten.Model.BerichtPrioriteit.Unspecified">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Berichten.Model.BerichtPrioriteit.Critical">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Berichten.Model.BerichtPrioriteit.High">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Berichten.Model.BerichtPrioriteit.Medium">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Berichten.Model.BerichtPrioriteit.Low">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Berichten.Model.RelevanteBerichten">
+            <summary>
+            Contains relevant berichten for a particular employee
+            </summary>
+            <seealso cref="T:System.Collections.ObjectModel.Collection`1"/>
+        </member>
+        <member name="M:Ns.Orp.Berichten.Model.RelevanteBerichten.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ns.Orp.Berichten.Model.RelevanteBerichten"/> class.
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Berichten.Model.RelevanteBerichten.#ctor(System.Collections.Generic.IList{Ns.Orp.Berichten.Model.BerichtDto})">
+            <summary>
+            
+            </summary>
+            <param name="berichten"></param>
+        </member>
+        <member name="P:Ns.Orp.Berichten.Model.RelevanteBerichten.Items">
+            <summary>
+            Gets or sets the items.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Berichten.Model.RelevanteBerichten.AangemaaktDateTime">
+            <summary>
+            De datum en tijd wanneer de berichten zijn opgehaald
+            </summary>
+        </member>
+    </members>
+</doc>

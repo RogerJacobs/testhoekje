@@ -1,0 +1,926 @@
+﻿Verk;Oms;Land;Fecode;RdcX;RdcY;Type;Straal1;Straal2;Straal3;Vanaf;VanafIAM;Positie;Knoop
+abr;Brug o/d Arne;;;003390;039137;1;0;0;0;0;0;7;0
+ac;Abcoude;NL;047;012731;047623;8;0;2;2;2;2;6;0
+adh;Leeuwarden Achter d Hoven;NL;406;018401;057931;6;0;2;2;2;0;7;0
+aeg;Erasmusgracht aansl.;;;011767;048827;5;0;0;2;3;3;5;0
+ah;Arnhem;NL;071;019031;044412;8;3;3;3;1;1;2;1
+ahb;Arnhem Berg;;;018831;044431;4;0;0;0;0;0;0;0
+ahbf;Aachen Hbf;D;8015345;021077;031985;9;0;2;2;0;2;8;0
+ahbo;Arnhem Berg opstel.;;;018926;044434;2;0;0;0;0;0;2;0
+ahbz;Arnhem Burgers' Zoo;;488;019033;044664;2;0;0;0;0;0;2;0
+ahg;Arnhem goed.;;;019301;044270;2;0;0;0;0;0;0;0
+ahom;Arnhem Openluchtmuseum;;442;019058;044694;2;0;0;0;0;0;2;0
+ahp;Arnhem Velperpoort;NL;072;019163;044416;6;0;2;2;2;2;7;0
+ahpd;Arnhem Papendal;NL;085;018383;044683;8;0;0;0;0;0;0;0
+ahpr;Arnhem Presikhaaf;NL;075;019318;044448;6;0;2;2;2;2;2;0
+ahwa;Arnhem West aansl.;;;018792;044417;4;0;0;0;0;0;0;0
+ahz;Arnhem Zuid;NL;227;018694;044103;6;0;2;2;2;2;4;0
+akl;Arkel;NL;068;012785;043157;6;0;2;2;2;2;1;0
+akm;Akkrum;NL;049;018557;056241;8;0;2;2;2;2;3;0
+alm;Almere Centrum;NL;080;014349;048748;8;0;2;2;2;2;2;1
+almb;Almere Buiten;NL;081;014756;048960;6;0;2;2;2;2;1;0
+almbo;Almere Oostvaarders;;;014867;049124;0;0;2;0;0;2;2;0
+almm;Almere Muziekwijk;NL;082;014172;048673;6;0;2;2;2;2;4;0
+almmo;Almere Muziekwijk overloopw.;;;014102;048615;3;0;0;0;0;0;4;0
+almo;Almere Oostvaarders;NL;226;014906;049058;8;0;2;2;2;2;8;0
+almp;Almere Parkwijk;NL;104;014537;048771;6;0;2;2;2;2;8;0
+alms;Almere Strand;NL;083;013880;048396;7;0;0;0;0;0;0;0
+ama;Amersfoort aansl.;;;015559;046455;5;0;0;2;3;3;4;0
+amf;Amersfoort;NL;055;015418;046284;11;2;2;2;2;2;5;1
+amfga;Amersfoort goed. aansl.;;;015334;046283;5;0;0;0;0;0;3;0
+amfpon;Amersfoort racc. Pon;;;015772;045754;2;0;2;2;0;2;8;0
+amfs;Amersfoort Schothorst;NL;054;015612;046519;8;0;2;2;2;2;1;0
+amfv;Amersfoort Vlasakkers;;;015254;046237;2;0;0;0;0;0;0;0
+amfva;Amersfoort Vlasakkers aansl.;;;015292;046262;5;0;0;0;0;0;1;0
+aml;Almelo;NL;051;024149;048616;8;0;2;2;2;2;3;1
+amlbp;Almelo racc. Bedrijvenpark NW Twente;;;024065;048692;2;0;0;0;0;0;0;0
+ampo;Almere Poort;;450;013987;048506;6;0;2;2;2;0;4;0
+amr;Alkmaar;NL;050;011123;051693;8;2;2;2;2;2;4;1
+amri;Almelo de Riet;NL;520;024224;048457;6;0;2;2;2;2;6;0
+amrn;Alkmaar Noord;NL;052;011281;051756;6;0;2;2;2;2;1;0
+ana;Anna Paulowna;NL;065;011624;054240;8;0;2;2;2;2;4;0
+apd;Apeldoorn;NL;066;019468;046901;8;2;3;3;2;2;2;1
+apda;Apeldoorn aansl.;;;019576;046917;4;0;0;2;3;3;1;0
+apdm;Apeldoorn De Maten;NL;233;019784;046827;6;0;2;2;2;2;6;0
+apdo;Apeldoorn Osseveld;NL;229;019757;046992;6;0;2;2;2;0;2;0
+apdvam;Apeldoorn racc. VAM;;;019443;046455;2;0;0;0;0;0;0;0
+apg;Appingedam;NL;067;025330;059423;8;0;2;2;2;2;7;0
+apn;Alphen a/d Rijn;NL;053;010498;045986;8;0;2;2;2;2;3;1
+arn;Arnemuiden;NL;069;003575;039170;6;0;2;2;2;2;2;0
+asa;Amsterdam Amstel;NL;057;012300;048435;6;0;2;2;2;2;4;0
+asb;Amsterdam Bijlmer ArenA;NL;074;012499;048059;8;0;2;2;2;2;6;0
+asd;Amsterdam Centraal;NL;058;012186;048802;11;3;3;3;1;1;3;1
+asdar;Amsterdam Stadion;NL;999;012445;048160;6;0;0;2;3;3;5;0
+asdl;Amsterdam Lelylaan;NL;079;011729;048570;8;0;2;2;2;2;4;0
+asdm;Amsterdam Muiderpoort;NL;060;012393;048602;8;0;2;2;2;2;4;0
+asdma;Amsterdam Muiderpoort aansl.;;;012392;048637;5;0;0;2;3;3;4;0
+asdmw;Amsterdam Muiderpoort West;;;012412;048625;4;0;0;0;0;0;5;0
+asdta;Amsterdam Transformatorweg aansl.;;;011920;048981;5;0;0;2;3;3;3;0
+asdz;Amsterdam Zuid;NL;061;011980;048356;8;0;2;2;2;2;6;0
+ashd;Amsterdam Holendrecht;NL;231;012577;047919;6;0;2;2;2;0;6;0
+asn;Assen;NL;073;023448;055678;8;0;2;2;2;2;4;0
+asra;Amsterdam Riekerpolder aansl.;;;011722;048356;5;0;0;2;3;3;1;0
+ass;Amsterdam Sloterdijk;NL;059;011751;048918;8;2;2;2;2;2;8;0
+assp;Amsterdam Science Park;;235;012526;048504;8;0;2;2;2;0;3;0
+aswplm;Amsterdam Lijnwerkplaats Midden;;;011970;049047;2;0;0;0;0;0;0;0
+aswpln;Amsterdam Lijnwerkplaats Noord;;;011907;049074;5;0;0;0;0;0;0;0
+aswplz;Amsterdam Lijnwerkplaats Zuid;;;012031;049003;2;0;0;0;0;0;0;0
+at;Acht;;;015790;038697;2;0;0;2;3;3;4;0
+atn;Aalten;NL;045;023697;043769;8;0;2;2;2;2;7;0
+atw;Antwerpen-Centraal;B;8821006;009551;037602;8;1;2;2;2;2;4;1
+atwd;Antwerpen Dam;B;8821030;009532;037662;0;0;0;0;0;0;5;0
+atwg;Antwerpen Groenendaal;;;010630;038145;0;0;2;2;2;0;8;0
+atwlb;Antwerpen Luchtbal;;8821063;009521;037677;0;0;0;0;0;0;5;0
+atwo;Antwerpen Oost;;;009551;037629;0;0;0;0;0;0;5;0
+atwsp;Antwerpen Schijnpoort;B;8824067;009542;037646;0;0;0;0;0;0;5;0
+avat;Amersfoort Vathorst;NL;228;015769;046656;8;0;2;2;2;2;1;0
+aw;Aachen West;D;8015199;021022;031998;0;0;0;0;0;0;3;0
+awhv;Amsterdam Westhaven;;;011788;049097;2;0;0;0;0;0;3;0
+awhva;Asd. Westhaven aansl.;;;011831;049062;5;0;0;2;0;3;5;0
+awhvw;Amsterdam Westhaven West;;;011686;049167;2;0;0;2;0;3;3;0
+awp;Antwerpen;;;009551;037596;0;0;0;0;0;0;6;0
+awpd;Antwerpen Dam;;;009523;037661;0;0;0;0;0;0;4;0
+awplb;Antwerpen Luchtbal;;;009512;037677;0;0;0;0;0;0;4;0
+awpo;Antwerpen Oost;;;009541;037629;0;0;0;0;0;0;4;0
+awps;Antwerpen Schijnpoort;;;009532;037646;0;0;0;0;0;0;4;0
+axa;Axel aansl.;;;004755;036734;5;0;0;0;0;0;0;0
+az;Rotterdam aansl. ZHES;;;009137;043940;5;0;0;0;0;0;0;0
+b.gde;Vert. Garde=Dieu;;;017128;029609;0;0;0;0;0;0;0;0
+bd;Breda;NL;131;011288;040083;8;2;2;2;2;2;7;1
+bda;Breda aansl.;;;011059;040068;5;0;0;2;3;3;8;0
+bebe;Beekse Bergen;;562;013600;039247;2;0;0;0;0;0;2;0
+bde;Bunde;NL;140;017957;032307;8;0;2;2;2;2;4;0
+bdg;Bodegraven;NL;121;011103;045501;8;0;2;2;2;2;3;0
+bdl;Budel;;;016774;036205;2;0;0;0;2;0;7;0
+bdlg;Budel grens;;;016555;036195;9;0;2;2;0;2;2;0
+bdm;Bedum;NL;094;023530;059180;8;0;2;2;2;2;8;0
+bdpb;Breda Prinsenbeek;NL;132;010884;040210;6;0;2;2;2;2;3;0
+berch;Antwerpen-Berchem;B;8821121;009578;037575;8;0;2;2;2;2;6;0
+bet;Best;NL;112;015560;038980;6;0;2;2;2;2;4;0
+beth;Best;NL;;015530;038919;0;0;0;0;0;0;0;0
+beto;Best overloopw.;;;015345;039340;4;0;0;0;0;0;4;0
+bf;Baflo;NL;089;023034;059775;8;0;2;2;2;2;4;0
+bgk;Beugen kruispunt;;;019060;041120;4;0;0;2;3;3;4;0
+bgn;Bergen op Zoom;NL;108;007914;039016;8;0;2;2;2;2;8;1
+bgnphm;Bergen op Zoom racc. Philip Morris;;;007978;039050;5;0;2;2;0;3;1;0
+bh;Bad Bentheim;D;8021156;026967;048142;8;0;2;2;2;2;2;1
+bha;Beatrixhaven aansl. (Maastricht);;;017832;032027;4;0;0;2;3;3;8;0
+bhdv;Boven-Hardinxveld;;236;011905;042710;6;0;2;2;2;0;7;0
+bhg;Bentheim grens;;485;026769;048140;9;0;0;0;0;0;7;0
+bhv;Bilthoven;NL;114;014237;046019;8;0;2;2;2;2;7;0
+bk;Beek-Elsloo;NL;096;018303;032868;8;0;2;2;2;2;4;0
+bkd;Amfersfoort Bokkeduinen;;;015294;046288;2;0;0;0;0;0;0;0
+bkda;Amfersfoort Bokkeduinen aansl.;;;015325;046278;5;0;0;0;0;0;7;0
+bkf;Bovenkarspel Flora;NL;230;014607;052321;6;0;2;2;2;2;2;0
+bkg;Bovenkarspel-Grootebroek;NL;127;014478;052309;8;0;2;2;2;2;1;0
+bkh;Binckhorst (Den Haag );;;008328;045434;4;0;0;0;0;0;0;0
+bkl;Breukelen;NL;133;012778;046464;8;0;2;2;2;2;4;0
+bkla;Breukelen aansl.;;;012791;046401;5;0;0;2;3;3;4;0
+bkp;Blauwkapel;;;013818;045837;5;0;0;2;3;3;8;0
+bl;Beilen;NL;100;023137;054146;8;0;2;2;2;2;4;0
+bll;Bloemendaal;NL;118;010331;049099;6;0;2;2;2;2;5;0
+blls;Bloemendaal Strand;NL;123;009700;049070;8;0;0;0;0;0;0;0
+bln;Blauwkapel Noord;;;013821;045876;4;0;0;0;0;3;1;0
+blo;Blauwkapel Oost;;;013842;045846;4;0;0;2;0;3;5;0
+bloa;Blauwkapel Oost aansl.;;;013848;045852;5;0;0;0;0;0;1;0
+blw;Blauwkapel West;;;013798;045833;4;0;0;0;0;3;1;0
+blz;Blauwkapel Zuid;;;013813;045771;4;0;0;2;0;3;8;0
+bmbr;Baanhoekbrug o/d Beneden-Merwede - bij Sliedrecht;;;011050;042590;1;0;0;0;0;0;1;0
+bmn;Brummen;NL;136;020708;045615;6;0;2;2;2;2;5;0
+bmr;Boxmeer;NL;128;019320;040629;8;0;2;2;2;2;4;0
+bn;Borne;NL;124;024792;047981;6;0;2;2;2;2;6;0
+bnc;Barneveld Centrum;NL;091;016888;046135;8;0;2;2;2;2;4;0
+bnk;Bunnik;NL;141;014184;045279;6;0;2;2;2;2;2;0
+bnn;Barneveld Noord;NL;092;016945;046367;6;0;2;2;2;2;5;0
+bnva;Barneveld aansl.;;;016916;046379;5;0;0;2;3;3;2;0
+bnz;Barneveld Zuid;;115;016971;046006;6;0;2;2;2;0;5;0
+bobr;Boornbrug - bij Akkrum;;;018502;056400;1;0;0;0;0;0;4;0
+bol;Brug o/h Kanaal Alkmaar-Kolhorn - bij Broek op Langedijk;;;011534;051928;1;0;0;0;0;0;1;0
+bon;Born;;;018434;033888;2;0;2;2;0;2;4;0
+bot;Botlek;;;007900;043174;2;0;2;2;0;2;7;0
+botbr;Botlekbrug;;;008016;043013;1;0;0;0;0;0;0;0
+botth;Botlek racc.Theemsweg;;;007826;043510;2;0;0;0;0;0;0;0
+bottha;Botlek Theemsweg aansl.;;;007730;043344;5;0;0;3;0;3;3;0
+bp;Buitenpost;NL;139;020558;058578;8;0;2;2;2;2;2;0
+br;Blerick;NL;117;020845;037622;8;0;2;2;2;2;4;0
+brd;Barendrecht;NL;090;009741;043003;6;0;2;2;2;2;3;0
+brda;Barendrecht aansl.;;;009473;043176;5;0;0;2;0;3;5;0
+brdl;Brug o/h Deel - tussen Akkrum en Heerenveen;;;018692;055817;1;0;0;0;0;0;5;0
+brdv;Barendrecht Vork;;;009398;043176;5;0;0;2;0;3;7;0
+bressx;Bressoux;B;8843901;017374;029864;8;0;2;2;0;2;5;0
+brn;Baarn;NL;086;014779;046893;8;0;2;2;2;2;3;0
+brna;Baarn aansl.;;;014884;046776;5;0;0;2;3;3;3;0
+brusc;Brussel-Centraal;B;8813003;010405;034272;8;0;2;2;2;2;4;0
+brusn;Brussel-Noord;B;8812005;010352;034550;8;0;2;2;2;2;4;0
+brusz;Brussel-Zuid/Midi;B;8814001;010435;033965;8;0;2;2;2;1;4;1
+bsd;Beesd;NL;097;014182;043456;8;0;2;2;2;2;2;0
+bsk;Boskoop;NL;125;010419;045452;8;0;2;2;2;2;5;0
+bsmz;Bussum Zuid;NL;145;013970;047531;6;0;2;2;2;2;5;0
+btd;Boterdiep;;;023802;059300;1;0;0;0;0;0;8;0
+btl;Boxtel;NL;129;015022;039961;8;0;2;2;2;2;6;0
+bunde;Bünde;D;8021173;028162;058005;9;0;0;0;0;0;0;0
+bv;Beverwijk;NL;113;010530;049913;8;0;2;2;2;2;5;0
+bvhc;Beverwijk Hoogovens Centraal;;;010256;050078;2;0;2;2;0;2;4;0
+bvhca;Beverwijk Hoogovens Centraal aansl.;;;010378;049975;5;0;0;2;0;3;6;0
+bzl;Kapelle-Biezelinge;NL;354;005566;038891;6;0;2;2;2;2;6;0
+conduct;Conducteur;NL;500;0;00;0;0;0;0;0;0;0;0
+cas;Castricum;NL;151;010562;050666;6;0;2;2;2;2;4;0
+cher;Cheratte;;;017416;029933;4;0;0;0;0;3;5;0
+ck;Cuijk;NL;155;018862;041547;8;0;2;2;2;2;4;0
+cki;Cuijk ind. terr.;;;018811;041833;5;0;0;0;0;0;4;0
+cl;Culemborg;NL;154;014395;043985;8;0;2;2;2;2;5;0
+clb;Calandbrug;;;007500;043539;1;0;0;2;0;3;3;0
+cmb;Centraal Magazijn Bovenbouw;;;014046;047374;2;0;0;0;0;0;0;0
+co;Coevorden;NL;153;024621;052034;8;0;2;2;2;2;4;0
+coa;Coevorden aansl.;;;024640;051903;5;0;0;0;0;0;5;0
+cog;Coevorden grens;;;024718;051864;9;0;0;0;0;0;0;0
+cosb;Coevorder Stadsgracht;;;024634;051961;1;0;0;0;0;0;5;0
+cps;Capelle Schollevaar;NL;147;009955;044090;6;0;2;2;2;2;7;0
+cra;Crailoo;;;014008;047370;2;0;0;2;0;3;5;0
+crao;Crailoo aansl. Oost;;;014024;047297;5;0;0;0;0;0;4;0
+craw;Crailoo aansl. West;;;013993;047439;5;0;0;0;0;0;4;0
+cup;Valburg Cup Aansl.;;;018632;043400;5;0;2;2;0;2;6;0
+cvm;Chevremont;NL;152;020234;032092;6;0;2;2;2;2;5;0
+da;Daarlerveen;NL;164;023583;049540;6;0;2;2;2;2;5;0
+db;Driebergen-Zeist;NL;182;014624;045300;8;0;2;2;2;2;2;0
+ddm;De Diem overloopw.;;;012708;048362;3;0;0;0;0;0;3;0
+ddn;Delden;NL;169;024568;047551;8;0;2;2;2;2;2;0
+ddnser;Delden racc. Servo;;;024435;047507;4;0;0;0;0;0;7;0
+ddr;Dordrecht;NL;180;010535;042454;8;2;3;3;2;2;2;1
+ddri;Dordrecht ind. terr. De Staart;;;011038;042482;5;0;0;0;0;0;5;0
+ddrs;Dordrecht Stadspolders;NL;186;010913;042385;6;0;2;2;2;2;8;0
+ddrsa;Dordrecht Stadspolders aansl.;;;010728;042417;5;0;0;0;0;0;0;0
+ddv;Dedemsvaart;;;021169;051148;3;0;0;2;3;3;5;0
+ddzd;Dordrecht Zuid;NL;181;010561;042263;6;0;2;2;2;2;5;0
+dei;Deinum;NL;168;017833;057819;6;0;2;2;2;2;2;0
+dgok;Dijksgracht Kattenburg overloopw. (Amsterdam);;;012332;048764;4;0;0;0;0;0;5;0
+dgr;Dijksgracht (Amsterdam);;;012253;048778;2;0;0;0;0;0;0;0
+dgro;Dijksgracht Oostzijde (Amsterdam);;;012407;048703;4;0;0;0;0;0;5;0
+dgrw;Dijksgracht Westzijde (Amsterdam);;;012217;048780;5;0;0;0;0;0;6;0
+dh;Dalheim (D);;;020965;035163;9;0;0;0;0;0;5;0
+dhs;Delfshavense Schie, brug o/d - bij Schiedam;;;008988;043762;1;0;0;0;0;0;0;0
+dhsa;Delfshaven Schiebrug aansl.;;;009024;043769;5;0;0;0;0;0;0;0
+did;Didam;NL;174;020626;043872;8;0;2;2;2;2;2;0
+dl;Dalfsen;NL;167;021415;050149;8;0;2;2;2;2;2;0
+dld;Den Dolder;NL;179;014503;046135;8;0;2;2;2;2;8;0
+dln;Dalen;NL;161;024795;052418;6;0;2;2;2;2;4;0
+dmn;Diemen;NL;165;012643;048422;8;0;2;2;2;2;6;0
+dmnz;Diemen Zuid;NL;163;012558;048258;8;0;2;2;2;2;8;0
+dmp;Driemanspolder;NL;;009262;045158;6;0;0;0;0;0;0;0
+dn;Deurne;NL;172;018275;038535;8;0;2;2;2;2;2;1
+dr;Dieren;NL;176;020413;045098;8;0;2;2;2;2;5;0
+drh;Driehuis;NL;183;010412;049527;6;0;2;2;2;2;5;0
+drokpz;Dronten - Kampen Zuid;;;018345;050510;0;0;2;2;2;0;2;0
+dron;Dronten;;198;017617;050513;6;0;2;2;2;0;7;0
+drp;Dronryp;NL;192;017153;057684;8;0;2;2;2;2;2;0
+drst;Y.Driehoekstraat;;;009509;037692;4;0;0;0;0;0;5;0
+dt;Delft;NL;170;008420;044694;8;0;2;2;2;2;6;0
+dta;Delft aansl.;;;008328;044869;5;0;0;0;0;0;6;0
+dtc;Doetinchem;NL;177;021822;044122;8;0;2;2;2;2;2;1
+dtch;Doetinchem De Huet;NL;184;021503;044156;6;0;2;2;2;2;2;0
+dtwa;Zoetermeer Delftsewallen;NL;99975;009320;045175;6;0;0;0;0;0;0;0
+dtz;Delft Zuid;NL;166;008472;044523;6;0;2;2;2;2;6;0
+duisb;Duisburg Hbf;D;8010316;024805;038180;8;0;2;2;0;2;5;1
+dv;Deventer;NL;173;020785;047461;8;2;2;2;2;2;3;1
+dvaw;Duivendrecht aansluiting west;;;012314;048183;5;0;0;0;0;0;6;0
+dvaz;Duivendrecht aansl. Zuid;;;012449;048149;5;0;0;2;0;3;8;0
+dvc;Deventer Colmschate;NL;185;021070;047388;6;0;2;2;2;2;8;0
+dvd;Duivendrecht;NL;194;012427;048185;8;2;2;2;2;2;6;0
+dvge;Deventer goed. empl.;;;020878;047371;2;0;0;2;0;3;7;0
+dvgea;Deventer goed. empl. aansl.;;;020901;047472;4;0;0;2;0;3;3;0
+dvn;Duiven;NL;193;019812;043957;6;0;2;2;2;2;6;0
+dvnk;De Vink;NL;188;009129;046252;6;0;2;2;2;2;1;0
+dvno;Duiven Overloop;;;019829;043667;4;0;2;2;0;2;2;0
+dwb;Dubbele Wierickebrug - tussen Woerden en Gouda;;;011562;045413;1;0;0;0;0;0;2;0
+dwe;De westereen;;745;019840;058475;6;0;2;2;0;2;2;0
+dz;Delfzijl;NL;171;025734;059521;8;0;2;2;2;2;5;0
+dzw;Delfzijl West;NL;175;025633;059500;6;0;2;2;2;2;2;0
+ebtwa;Elst Betuwelijn aansl.;;;018731;043432;5;0;0;2;0;3;4;0
+ec;Echt;NL;195;018962;034671;6;0;2;2;2;2;4;0
+ech;Echteld Overloop;;;014766;042998;4;0;2;2;0;2;8;0
+ed;Ede-Wageningen;NL;200;017459;044883;8;2;2;2;2;2;7;1
+edc;Ede Centrum;NL;201;017425;045057;6;0;2;2;2;2;4;0
+edn;Eijsden;NL;219;017775;030919;8;0;2;2;2;2;5;0
+edng;Eijsden grens;;;017730;030777;9;0;0;0;0;0;4;0
+eem;Eemshaven;;;024983;060988;2;0;0;0;0;0;5;0
+efd;Eefde;;;021544;046489;5;0;0;0;0;0;2;0
+eft;Efteling;;671;013137;040839;5;0;0;0;0;0;2;0
+egh;Eygelshoven;NL;338;020131;032245;6;0;2;2;2;2;6;0
+eghm;Eygelshoven Markt;NL;234;020237;032312;6;0;2;2;2;0;3;0
+ehai;Eindhoven Airport;;205;015524;038535;8;0;2;2;0;0;4;0
+ehb;Eindhoven Beukenlaan;NL;196;015950;038458;8;0;0;0;0;0;0;0
+ehs;Eindhoven Strijp-S;;196;015983;038462;8;0;2;2;0;2;3;0
+ehst;Eindhoven Stadion;NL;998;016021;038391;8;0;2;2;2;2;4;0
+ehv;Eindhoven;NL;206;016085;038371;8;3;3;3;1;1;7;1
+ehvwpl;Eindhoven werkplaats;;;016131;038375;2;0;0;0;0;0;0;0
+ekz;Enkhuizen;NL;210;014836;052357;10;3;3;3;1;1;5;0
+el;Elten (D);;;020815;043377;2;0;0;0;0;0;3;0
+em;Emmerich;D;8010288;020899;043300;8;0;2;2;2;2;6;0
+emg;Emmerich grens;;748;020795;043395;9;0;0;0;0;0;6;0
+eml;Ermelo;NL;216;017055;047930;6;0;2;2;2;2;8;0
+emn;Emmen;NL;208;025708;053472;8;3;3;3;1;1;2;0
+emnakz;Emmen Akzo aansl.;;;025674;053263;4;0;0;0;0;0;0;0
+emnz;Emmen Zuid;NL;407;025666;053138;6;0;2;2;2;2;5;0
+erp;Europoort;;;007287;043670;2;0;0;3;0;3;3;0
+erpw;Europoort West;;;006979;043950;4;0;0;2;0;3;5;0
+es;Enschede;NL;212;025769;047148;8;0;2;2;2;2;6;0
+esd;Enschede Drienerlo;NL;221;025315;047217;6;0;0;0;0;0;0;0
+ese;Enschede De Eschmarke;NL;217;026037;047197;6;0;2;2;2;2;6;0
+esin;Elk station in Nederland;;001;013580;049683;8;0;0;0;0;0;8;0
+esk;Enschede Kennispark;;221;025412;047316;6;0;2;2;0;2;6;0
+esn;Essen (Belgie);B;8821402;008996;038610;8;0;0;2;2;3;4;0
+est;Elst;NL;207;018722;043632;6;0;2;2;2;2;5;0
+esta;Elst aansl.;;;018729;043453;4;0;0;2;3;3;5;0
+etn;Etten-Leur;NL;218;010298;039871;6;0;2;2;2;2;7;0
+etni;Etten=Leur gem. ind. terr.;;;010073;039795;4;0;2;2;0;3;8;0
+fbnl;Brussel Nat. Luchthaven;;8819406;010491;034640;8;0;2;2;2;0;5;0
+fdp;Duffel;;8822210;009739;037146;8;0;2;2;3;0;4;0
+fhs;Hasselt;;8831005;014465;029410;8;0;2;2;0;0;4;0
+fki;Kontich;;8821311;009685;037296;8;0;2;2;3;0;4;0
+fn;Franeker;NL;232;016580;057734;8;0;2;2;2;2;2;0
+fnzd;Antwerpen-Zuid;;8821196;009516;037574;8;0;2;2;2;0;4;0
+fo;Feijenoord (Rotterdam);;;009430;043428;2;0;0;2;0;3;4;0
+frmnt;Froidmont;;;017340;029800;4;0;0;2;0;3;5;0
+fsz;Zelzate (B);;;004409;035845;2;0;0;0;0;0;0;0
+fvs;Visé;B;8846201;017698;030661;8;0;2;2;2;2;4;0
+fvsg;Visé grens;;220;017726;030768;9;0;0;0;0;0;8;0
+fwa;Sint-Katelijne-Waver;;8822228;009790;036984;8;0;2;2;3;0;4;0
+fwd;Feanwalden;;638;019523;058336;8;0;2;2;0;2;2;0
+g;Gronau Westf;D;8021128;026642;046985;6;0;2;2;2;2;7;0
+gbg;Gramsbergen;NL;259;024226;051443;8;0;2;2;2;2;4;0
+gbr;Glanerbrug;NL;262;026377;047144;6;0;2;2;2;2;6;0
+gd;Gouda;NL;258;010826;044786;8;2;2;2;2;2;2;1
+gdg;Gouda Goverwelle;NL;257;011077;044757;8;0;2;2;2;2;7;0
+gdk;Geerdijk;NL;239;023512;049925;6;0;2;2;2;2;5;0
+gdm;Geldermalsen;NL;244;014700;043272;8;2;2;2;2;2;6;1
+gdma;Geldermalsen aansl.;;;014680;043390;5;0;0;0;0;0;5;0
+gdr;Gaanderen;NL;241;021970;043950;6;0;2;2;2;0;3;0
+gerp;Groningen Europapark;NL;238;023461;058083;6;0;2;2;2;2;3;0
+ghbr;Grote Heycopbrug    ;;;012800;046589;1;0;0;3;0;3;4;0
+gk;Grijpskerk;NL;267;021653;058588;6;0;2;2;2;2;2;0
+gka;Grijpskerk aansl.;;;021960;058588;5;0;0;0;0;0;7;0
+gln;Geleen Oost;NL;246;018705;033096;6;0;2;2;2;2;5;0
+gmd;Mortsel-Deurnesteenweg;;8821154;009604;037503;8;0;2;2;3;0;4;0
+gmog;Mortsel-Oude God;;8821238;009641;037415;8;0;2;2;3;0;4;0
+gn;Groningen;NL;263;023360;058112;8;3;2;2;1;1;6;1
+gnbr;Geinbrug - bij Abcoude;;;012658;047767;1;0;0;0;0;0;5;0
+gnd;Hardinxveld-Giessendam;NL;295;011695;042702;8;0;2;2;2;2;2;0
+gndo;Giessendam Overloop;;;011668;042965;4;0;2;2;0;2;2;0
+gnl;Groningen Losplaats;;;023593;057975;2;0;0;2;3;3;3;0
+gnn;Groningen Noord;NL;264;023305;058323;8;0;2;2;2;2;5;0
+go;Goor;NL;254;023692;047199;8;0;2;2;2;2;2;0
+gp;Geldrop;NL;245;016639;038122;8;0;2;2;2;2;6;0
+gpda;Gaasperdammerweg aansl. (Amsterdam);;;012770;048334;5;0;0;2;3;3;3;0
+gr;Gorinchem;NL;256;012607;042731;8;0;2;2;2;2;1;1
+grbr;Grote Draaibrug o/d Oude Maas - bij Dordrecht;;;010437;042492;1;0;0;0;0;0;7;0
+gro;Gorinchem Overloop;;;012460;042998;4;0;2;2;0;2;2;0
+grs;Greuns, brug o/d - bij Leeuwarden;;;018452;057944;1;0;0;0;0;0;0;0
+grvn;Griendtsveen overloopw.;;;019197;038374;4;0;0;2;3;3;2;0
+gs;Goes;NL;253;005109;039096;8;0;2;2;2;2;7;0
+gv;Den Haag HS;NL;280;008196;045400;8;0;2;2;2;2;8;1
+gvc;Den Haag Centraal;NL;282;008224;045516;8;3;2;2;1;1;4;1
+gvm;Den Haag Mariahoeve;NL;278;008505;045613;8;0;2;2;2;2;5;0
+gvmw;Den Haag Moerwijk;NL;279;008101;045237;6;0;2;2;2;2;4;0
+gw;Grou-Jirnsum;NL;266;018415;056711;8;0;2;2;2;2;3;0
+gwb;Gouwebrug - bij Alphen a/d Rijn;;;010584;045880;1;0;0;0;0;0;5;0
+gwbr;Gouwebrug - bij Gouda;;;010669;044811;1;0;0;0;0;0;0;0
+gwt;Galgewater, brug o/h - bij Leiden;;;009277;046390;1;0;0;0;0;0;5;0
+gz;Gilze-Rijen;NL;251;012291;039958;8;0;2;2;2;2;2;0
+gzve;Gilze=Rijen racc. Vijf Eiken;;;012033;040223;2;0;0;0;0;0;0;0
+gzvea;Gilze=Rijen racc. Vijf Eiken aansl.;;;012149;039997;5;0;0;0;0;0;0;0
+ha;'s Heer Arendskerke;;;004569;039130;4;0;0;0;0;0;7;0
+had;Heemstede-Aerdenhout;NL;302;010183;048600;6;0;2;2;2;2;4;0
+han;Haanrade;;;020267;032255;5;0;0;0;0;0;2;0
+hang;Haanrade grens;;;020349;032193;9;0;0;0;0;0;4;0
+hangr;Haanrade grens;;;020335;032202;9;0;0;0;0;0;3;0
+har;De Haar aansl.;;;016115;045148;5;0;0;0;0;0;2;0
+harw;Harwich International;GB;7069020;006620;044365;9;0;2;2;2;2;1;0
+hb;Hoensbroek;NL;326;019317;032409;6;0;2;2;2;2;3;0
+hbzm;Hardinxveld Blauwe Zoom;;438;011522;042702;6;0;2;2;2;0;7;0
+hd;Harderwijk;NL;294;017093;048336;8;0;2;2;2;2;8;0
+hdb;Hardenberg;NL;293;023899;051013;6;0;2;2;2;2;4;0
+hde;'t Harde;NL;388;018937;049138;8;0;2;2;2;2;8;0
+hdg;Hurdegaryp;NL;292;019154;058154;8;0;2;2;2;2;2;0
+hdl;Hedel;;;014715;041723;3;0;0;2;3;3;5;0
+hdp;Hoendiep, brug o/h - bij Groningen;;;022600;058347;1;0;0;0;0;0;7;0
+hdr;Den Helder;NL;311;011294;055240;10;3;3;3;1;1;4;0
+hdrz;Den Helder Zuid;NL;303;011313;054968;8;0;2;2;2;2;4;0
+hea;Herfte aansl.;;;020618;050243;5;0;0;2;3;3;1;0
+hfd;Hoofddorp;NL;332;010807;047858;8;0;2;2;2;2;1;0
+hfde;Hoofddorp empl.;;;010589;047592;2;0;0;0;0;0;0;0
+hfdea;Hoofddorp empl. aansl.;;;010597;047650;5;0;0;0;0;0;0;0
+hfdm;Hoofddorp Middenspoor;;;010727;047796;4;0;0;0;0;0;5;0
+hfdo;Hoofddorp opstel.;;;010664;047620;2;0;0;0;0;0;0;0
+hg;Haarlem goed.;;;010242;048791;2;0;0;0;0;0;0;0
+hgbr;Hoogeveense Vaartbrug - bij Meppel;;;020985;052338;1;0;0;0;0;0;0;0
+hgl;Hengelo;NL;316;025105;047579;8;3;3;3;1;1;2;1
+hglg;Hengelo Gezondheidspark;;433;024847;047570;6;0;2;2;2;0;7;0
+hglo;Hengelo Oost;NL;312;025277;047658;6;0;2;2;2;2;8;0
+hgv;Hoogeveen;NL;330;022827;052793;8;0;2;2;2;2;1;0
+hgwbr;Hoge Gouwebrug - bij Gouda;;;010667;044796;1;0;0;0;0;0;0;0
+hgz;Hoogezand-Sappemeer;NL;331;024749;057571;6;0;2;2;2;2;2;0
+hil;Hillegom;NL;329;009894;047970;6;0;2;2;2;2;4;0
+hk;Heemskerk;NL;317;010735;050094;6;0;2;2;2;2;5;0
+hkb;Herkenbosch;;;020348;035343;2;0;0;0;0;0;5;0
+hks;Hoogkarspel;NL;334;014121;052259;8;0;2;2;2;2;1;0
+hlba;Hillegersberg aansl.;;;009185;043951;5;0;0;0;0;0;0;0
+hld;Hoek van Holland Haven;NL;325;006851;044370;8;2;2;2;2;2;6;0
+hlds;Hoek van Holland Strand;NL;342;006789;044444;10;0;2;2;2;2;3;0
+hlg;Harlingen;NL;296;015749;057599;8;0;2;2;2;2;8;0
+hlga;Harlingen aansl.;;;015702;057606;4;0;0;0;0;0;0;0
+hlge;Harlingen goed. empl.;;;015684;057602;2;0;0;0;0;0;0;0
+hlgh;Harlingen Haven;NL;298;015650;057644;8;0;2;2;2;2;4;0
+hlm;Haarlem;NL;285;010402;048916;8;2;2;2;2;2;3;1
+hlmkr;Haarlemkruis;;;010296;048922;4;0;0;2;3;3;3;0
+hlms;Haarlem Spaarnwoude;NL;270;010477;048908;6;0;2;2;2;2;8;0
+hlmvam;Haarlem racc. VAM;;;010420;048914;2;0;0;0;0;0;3;0
+hlmwph;Haarlem Werkplaats;;;010422;048909;2;0;0;0;0;0;0;0
+hln;Haelen;;;019439;035998;4;0;0;2;3;3;2;0
+hlo;Heiloo;NL;309;010851;051275;6;0;2;2;2;2;1;0
+hm;Helmond;NL;313;017407;038741;8;0;2;2;2;2;2;0
+hmbh;Helmond Brouwhuis;NL;299;017670;038693;6;0;2;2;2;2;3;0
+hmbv;Helmond Brandevoort;NL;242;017017;038603;6;0;2;2;2;2;1;0
+hmh;Helmond 't Hout;NL;300;017193;038655;6;0;2;2;2;2;8;0
+hmla;Harmelen aansl.;;;012547;045752;5;0;0;2;3;3;4;0
+hmlba;Harmelen_Breukelen aansl.;;;012597;045828;5;0;0;0;0;0;1;0
+hmlva;Harmelen_Vleuten aansl;;;012611;045765;5;0;0;0;0;0;0;0
+hmn;Hemmen-Dodewaard;NL;315;017468;043713;6;0;2;2;2;2;2;0
+hmt;Hamont (B);;;016426;036175;9;0;0;0;0;0;1;0
+hmta;Hemtunnel aansl.;;;011611;049356;4;0;0;2;3;3;5;0
+hn;Hoorn;NL;337;013248;051757;8;0;2;2;2;2;2;1
+hna;Hoorn aansl.;;;013179;051751;5;0;0;0;0;0;8;0
+hnk;Hoorn Kersenboogerd;NL;336;013510;051906;8;0;2;2;2;2;1;0
+hnko;Hoorn Kersenboogerd opstel.;;;013504;052012;2;0;0;0;0;0;0;0
+hno;Heino;NL;310;021168;049357;8;0;2;2;2;2;3;0
+hnp;Hindeloopen;NL;323;015738;055110;6;0;2;2;2;2;8;0
+hon;Holten;NL;328;022558;047786;6;0;2;2;2;2;8;0
+hor;Hollandsche Rading;NL;327;014079;046566;6;0;2;2;2;2;4;0
+hr;Heerenveen;NL;305;019037;055296;8;0;2;2;2;2;3;0
+hrl;Heerlen;NL;307;019645;032242;8;3;3;3;1;1;2;1
+hrla;Heerlen aansl.;;;019504;032306;5;0;0;2;3;3;2;0
+hrlk;Heerlen De Kissel;NL;409;019786;032250;6;0;2;2;2;0;7;0
+hrlw;Heerlen Woonboulevard;;404;019433;032294;6;0;2;2;2;0;4;0
+hrm;Harinxmakanaal, brug o/h van - tussen Leeuwarden en Dronrijp/Mantgum;;;017964;057820;1;0;0;0;0;0;0;0
+hrmk;Harinxmakanaal, brug o/h van - tussen Leeuwarden en Grouw=Irnsum;;;018117;057693;1;0;0;0;0;0;0;0
+hrn;Haren;NL;297;023728;057718;6;0;2;2;2;2;4;0
+hrna;Haren aansl.;;;023743;057703;5;0;0;0;0;0;0;0
+hrp;Houtrakpolder (Amsterdam);;;011237;049187;2;0;0;0;0;0;0;0
+hrpa;Houtrakpolder aansl.(Amsterdam);;;011530;049011;5;0;0;0;0;0;5;0
+hrt;Horst-Sevenum;NL;339;020052;038225;8;0;2;2;2;2;2;0
+hry;Heerenveen IJsstadion;NL;301;019243;054997;7;0;2;2;2;2;3;0
+hsbda;HSL Breda aansluiting;;;010907;039867;0;0;2;2;2;0;4;0
+hsbdg;HSL Breda grens;;;011002;038936;0;0;2;2;2;0;4;0
+hsbdgo;HSL Breda grens overloopwissels;;;010975;039252;0;0;2;2;2;0;4;0
+hsbrdo;HSL Barendrecht overloopwissels;;;009640;042932;0;0;2;2;2;0;4;0
+hsghtn;Groen hart tunnel noord;;;009865;045627;0;0;2;2;2;0;5;0
+hsghtz;Groen hart tunnel zuid;;;009707;045267;0;0;2;2;2;0;5;0
+hshfdo;Hoofddorp Overloop Wissels;;;010582;047616;4;0;2;2;2;0;5;0
+hshmdo;Hoogmade overloop wissels;;;009926;046533;4;0;2;2;2;0;5;0
+hsrtdt;Rotterdam tunnel;;;008995;043914;0;0;2;2;2;0;5;0
+hsrtdv;Rotterdam viaduct;;;009625;045110;0;0;2;2;2;0;5;0
+hstdk;HSL Dordtse Kil;;;009655;042342;0;0;2;2;2;0;4;0
+hstom;HSL Tunnel Oude Maas;;;009610;042687;0;0;2;2;2;0;4;0
+hsvbw;Viaduct Bleiswijk;;;009437;044712;0;0;2;2;2;0;5;0
+hsvhd;HSL Viaduct Hollandsch Diep;;;010195;041660;0;0;2;2;2;0;4;0
+hszha;HSL Zevenbergschen Hoek aansl.;;;010598;040710;0;0;2;2;2;0;4;0
+ht;'s-Hertogenbosch;NL;319;014852;041132;8;3;3;3;1;1;4;1
+htba;Hattemerbroek aansluiting;;;019997;050016;5;0;0;0;0;0;0;0
+htda;'s-Hertogenbosch Diezebrug aansl.;;;014893;041265;5;0;0;2;3;3;3;0
+htn;Houten;NL;340;013985;044978;6;0;2;2;2;2;4;0
+htnc;Houten Castellum;NL;335;014032;044868;6;0;2;2;2;0;5;0
+hto;'s-Hertogenbosch Oost;NL;320;014986;041245;6;0;2;2;2;2;2;0
+hvbr;Havenbrug - bij Maassluis;;;007628;043740;1;0;0;0;0;0;0;0
+hvl;Hoevelaken;;490;015986;046425;8;0;2;2;2;0;8;0
+hvs;Hilversum;NL;322;014101;047086;11;2;2;2;2;2;4;1
+hvsm;Hilversum Media Park;NL;324;014044;047224;6;0;2;2;2;2;5;0
+hvsp;Hilversum Sportpark;NL;570;014132;046982;6;0;2;2;2;2;8;0
+hvvb;Hoogeveense Vaartbrug;;;025309;052550;1;0;0;0;0;0;0;0
+hw;Halfweg;;;011232;048865;4;0;0;0;0;0;0;0
+hwd;Heerhugowaard;NL;306;011690;052049;11;0;2;2;2;2;1;0
+hwzb;Halfweg-Zwanenburg;;400;011173;048873;8;0;2;2;2;0;7;0
+hz;Herzogenrath;D;8015190;020556;032106;8;0;2;2;2;2;3;0
+hze;Heeze;NL;308;016733;037822;6;0;2;2;2;2;4;0
+hzg;Herzogenrath grens;;358;020408;032139;9;0;0;0;0;0;7;0
+hzl;Hooge Zwaluwe;;;011177;041129;2;0;2;2;0;2;5;0
+ihr;Ihrhove;D;8021089;028489;057915;8;0;0;0;0;0;8;0
+ijbrzl;IJsselbrug Zwolle;;;020119;050060;1;0;0;2;3;3;5;0
+ijbww;IJsselbrugaansl. Westervoort Westzijde;;;019331;044372;4;0;0;2;3;3;3;0
+ijbz;IJsselbrug Zutphen;;;020964;046196;1;0;0;2;3;3;7;0
+ijbza;IJsselbrug Zutphen aansl.;;;020912;046173;5;0;0;0;0;0;4;0
+ijm;IJmuiden;NL;724;010055;049685;8;0;0;0;0;0;0;0
+ijmc;IJmuiden Casembrootstraat;NL;;010125;049657;6;0;0;0;0;0;0;0
+ijsm;IJsselmonde;;;009560;043346;2;0;2;2;0;2;4;0
+ijsma;IJsselmonde aansl.;;;009533;043268;5;0;0;2;0;3;5;0
+ijt;IJlst;NL;722;017022;055862;6;0;2;2;2;2;8;0
+kap;Kapellen (B);B;;009151;038330;8;0;0;0;0;0;5;0
+kbd;Krabbendijke;NL;367;006667;038351;6;0;2;2;2;2;6;0
+kbk;Klarenbeek;NL;361;020262;046574;8;0;2;2;2;2;6;0
+kbw;Koog Bloemwijk;NL;363;011544;049699;6;0;2;2;2;2;4;0
+kfh;Kijfhoek;;;010135;042563;2;0;2;2;0;2;6;0
+kfhan;Kijfhoek aansl noord;;;010103;042717;5;0;0;2;0;3;3;0
+kfhaz;Kijfhoek aansl. Zuid;;;010268;042607;5;0;0;2;0;3;5;0
+kg;Koekange;;;021971;052460;3;0;0;2;3;3;8;0
+kgs;Koegras, brug o/h Noordhollands kanaal;;;011417;054586;1;0;0;0;0;0;4;0
+klp;Veenendaal-De Klomp;NL;637;016779;045087;6;0;2;2;2;2;2;0
+km14.0;kilometer 14;;;013870;040202;0;0;0;3;0;3;1;0
+kma;Krommenie-Assendelft;NL;368;011252;050093;6;0;2;2;2;2;6;0
+kmr;Klimmen-Ransdaal;NL;362;019045;031976;6;0;2;2;2;2;8;0
+kmw;Koudum-Molkwerum;NL;366;015655;054618;6;0;2;2;2;2;5;0
+kn;Kaldenkirchen;D;8015131;021301;037225;8;0;2;2;2;2;7;0
+kohl;Kohlscheid;D;8015195;020831;032037;9;0;2;2;0;2;7;0
+koln;Köln Hbf;D;8015458;025015;031530;8;1;2;2;0;1;8;1
+kpn;Kampen;NL;353;019120;050823;8;1;2;2;2;2;4;0
+kpnz;Kampen Zuid;;360;019026;050506;6;0;2;2;2;0;3;0
+kpnzoo;Kampen Zuid Overloopwissels Oost;;;019155;050441;4;0;2;2;2;0;3;0
+kpnzow;Kampen Zuid Overloopwissels West;;;018878;050508;4;0;2;2;2;0;2;0
+kpzhtb;Kampen Zuid - Hattemerbroek Aansluiting;;;019567;050234;0;0;2;2;2;0;3;0
+kr;Klifrak, brug o/h - bij Workum;;;016047;055484;1;0;0;0;0;0;0;0
+krag;Kragge;;;007744;039265;2;0;0;0;0;0;0;0
+kraga;Kragge aansl.;;;008256;039159;5;0;0;0;0;0;8;0
+krd;Kerkrade Centrum;NL;355;020218;031923;8;0;2;2;2;2;5;1
+krg;Kruiningen-Yerseke;NL;370;006120;038713;8;0;2;2;2;2;6;0
+krw;Kerkrade West;NL;573;019967;031818;8;0;0;0;0;0;0;0
+ktch;Kontich;B;;009691;037297;8;0;0;0;0;0;5;0
+ktr;Kesteren;NL;359;016847;043814;8;0;2;2;2;2;2;0
+kv;Keverdijk;;;013407;047909;4;0;0;0;0;0;6;0
+kw;Kropswolde;NL;369;024425;057587;6;0;2;2;2;2;2;0
+kwda;Katwolde aansl.;;;020169;050306;5;0;0;0;0;0;3;0
+kzd;Koog-Zaandijk;NL;364;011544;049801;6;0;2;2;2;2;4;0
+laa;Den Haag Laan v NOI;NL;380;008340;045503;8;0;2;2;2;2;2;0
+lak;Lunetten aansl. kruispunt;;;013791;045384;5;0;0;2;3;3;3;0
+lar;Laarwald (D);;;024775;051701;9;0;0;0;0;0;0;0
+lc;Lochem;NL;399;022613;046475;8;0;2;2;2;2;2;0
+ld;Leiden goed.;;;009293;046308;2;0;0;0;0;0;7;0
+ldd;Leidschendam Werkplaats;;;008743;045324;5;0;2;2;0;2;2;0
+ldl;Leiden Lammenschans;NL;384;009375;046242;6;0;2;2;2;2;3;0
+ldm;Leerdam;NL;386;013478;043406;8;0;2;2;2;2;2;0
+ldv;Leidschendam-Voorburg;;393;008614;045474;6;0;0;0;0;0;0;0
+ldva;Leidschendam=Voorburg aansl.;;;008777;045277;5;0;0;0;0;0;0;0
+ledn;Leiden Centraal;NL;390;009304;046461;8;2;2;2;2;2;1;1
+leer;Leer (Ostfriesland);D;8021091;028676;058400;8;0;2;2;2;2;4;0
+lek;Lekbrug aansl.;;;014295;044147;4;0;0;0;0;0;4;0
+ley;Zoetermeer De Leyens;NL;99976;009381;045410;6;0;0;0;0;0;0;0
+lg;Landgraaf;NL;548;019947;032314;8;0;2;2;2;2;2;0
+lhs;Herstal;;8841608;017192;029922;8;0;2;2;0;0;2;0
+lin;Linne aansl.;;;019464;035226;5;0;0;0;0;0;0;0
+lis;Lisse;NL;000;009695;047677;7;0;0;2;0;3;4;0
+lls;Lelystad Centrum;NL;394;016079;050227;8;3;3;3;1;1;5;1
+llso;Lelystad opstel.;;;016289;050772;2;0;2;0;0;2;3;0
+llsoa;Lelystad Opstelterrein Aansluiting;;;016256;050732;5;0;2;2;2;0;8;0
+llsow;Lelystad overloopw.;;;016209;050669;3;0;2;2;0;2;4;0
+llsstb;Lelystad - Swifterbant;;;016608;050679;0;0;2;2;2;0;2;0
+llsz;Lelystad Zuid;NL;;016049;049990;7;0;0;0;0;0;0;0
+llszo;Lelystad Zuid overloopw.;;;015699;049623;3;0;0;0;0;0;0;0
+ln;Lunetten;;;013814;045325;2;0;0;0;0;0;4;0
+lng;Linne Grinderij;;;019441;035241;2;0;0;0;0;0;0;0
+lnk;Mechelen-Nekkerspoel;;8822343;009823;036878;8;0;2;2;3;0;4;0
+lnp;Neerpelt (B);;;016153;035807;9;0;2;2;0;2;4;0
+lp;Loppersum;NL;403;024561;059507;8;0;2;2;2;2;7;0
+lpe;Liempde;B;;015193;039681;4;0;0;2;3;3;4;0
+lr;Laren=Almen;;;022017;046494;4;0;0;2;3;3;2;0
+ltm;Lottum;;;020530;038619;2;0;0;2;3;3;4;0
+ltn;Lunteren;NL;405;017121;045524;8;0;2;2;2;2;4;0
+ltv;Lichtenvoorde-Groenlo;NL;395;023794;044780;8;0;2;2;2;2;3;0
+luik;Liège-Guillemins;B;8841004;017080;029547;8;0;2;2;0;1;8;0
+lut;Geleen-Lutterade;NL;248;018576;033185;8;0;2;2;2;2;1;0
+luta;Lutterade aansl.;;;018582;033208;4;0;0;0;0;0;0;0
+lutdsm;Lutterade racc. DSM;;;018436;033124;2;0;0;0;0;0;0;0
+lw;Leeuwarden;NL;387;018211;057895;11;3;3;3;1;1;2;1
+lwc;Leeuwarden Camminghaburen;NL;389;018514;057962;6;0;2;2;2;2;2;0
+lwd;Lewedorp;;;004000;039155;5;0;2;2;2;0;7;0
+lwsks;Leeuwarden racc. Schenkenschans;;;018072;057857;5;0;0;2;3;3;1;0
+mabr;Markbrug - tussen Zevenbergen en Oudenbosch;;;009772;040205;1;0;0;0;0;0;1;0
+madu;Madurodam;;663;008037;045728;2;0;0;0;0;0;2;0
+mas;Maarssen;NL;419;013080;046086;8;0;2;2;2;2;4;0
+mbga;Muiderberg aansl.;;;013368;048017;5;0;0;0;0;0;5;0
+mbh;Maasbrug - bij Hedel;;;014729;041642;1;0;0;0;0;0;0;0
+mbrvo;Maasbrug Ravenstein Oostzijde;;;017384;042391;1;0;0;2;0;3;1;0
+mbrvw;Maasbrug Ravenstein Westzijde;;;017443;042413;1;0;0;2;0;3;8;0
+mbt;Maasbracht;;;019305;035071;4;0;0;0;0;0;5;0
+mbtwan;Meteren Betuweroute aansluiting Noord;;;014681;043067;5;0;0;0;0;0;4;0
+mbtwaz;Meteren Betuweroute aansluiting Zuid;;;014616;042953;5;0;0;0;0;0;4;0
+mcgb;Mönchengladbach Hbf;D;8015165;022307;035825;8;0;2;2;2;2;7;0
+mda;Moordrecht aansl.;;;010574;044746;5;0;0;2;3;3;8;0
+mdaz;Moordrecht aansl. Zuid;;;010422;044699;4;0;0;0;0;0;0;0
+mdb;Middelburg;NL;436;003218;039106;8;0;2;2;2;2;1;0
+mdbz;Moerdijkbrug Zuid aansl.;;;010367;041467;5;0;0;0;0;0;5;0
+mdk;Moerdijk;;;010165;041053;2;0;2;2;0;2;4;0
+mdo;Moordrecht overloopw.;;;010441;044565;4;0;0;2;3;3;8;0
+mdsa;Muiderstraatwegweg aansl.;;;012659;048343;5;0;0;1;0;3;8;0
+mech;Mechelen;B;8822004;009880;036695;8;0;2;2;2;2;4;1
+mes;Meerssen;NL;434;018062;032150;6;0;2;2;2;2;7;0
+mg;Mantgum;NL;427;017683;057165;8;0;2;2;2;2;8;0
+mho;Hove;;8821337;009667;037350;8;0;2;2;3;0;4;0
+mk;Markelo;;;023222;046908;4;0;0;2;3;3;1;0
+mkbr;Merwedekanaalbrug - bij Arkel;;;013113;043294;1;0;0;0;0;0;2;0
+mlo;Meerlo=Tienraij;NL;;020199;039038;4;0;0;2;3;3;4;0
+mmlh;Mook Molenhoek;NL;446;018912;042044;6;0;2;2;2;3;5;0
+mp;Meppel;NL;435;020974;052295;8;0;2;2;2;2;4;1
+mpa;Meppel aansl.;;;021000;052403;5;0;0;2;3;3;4;0
+mrb;Mariënberg;NL;428;023545;050303;8;0;2;2;2;2;5;1
+mrg;Maarn goed. empl.;;;014989;045288;2;0;0;0;0;0;2;0
+mrn;Maarn;NL;417;015386;045288;6;0;2;2;2;3;2;0
+mss;Maassluis;NL;422;007699;043704;8;0;2;2;2;2;3;1
+msw;Maassluis West;NL;421;007577;043809;6;0;2;2;2;2;3;0
+mt;Maastricht;NL;424;017745;031883;8;3;3;3;1;1;4;1
+mt gr;Ned/Bel grens;;;017751;030774;9;0;0;0;0;0;5;0
+mth;Martenshoek;NL;430;024549;057578;6;0;2;2;2;2;2;0
+mtn;Maastricht Noord;;449;017824;032016;8;0;2;2;2;2;4;0
+mtr;Maastricht Randwyck;NL;426;017825;031657;8;0;2;2;2;2;5;0
+mttrix;Maastricht racc. Beatrixhaven;;;017792;032043;2;0;0;0;0;0;0;0
+mtwpl;Maastricht Lijnwerkplaats;;;017735;031889;2;0;0;0;0;0;0;0
+mvt;Maasvlakte;;;006762;044134;2;0;2;2;0;2;4;0
+mvta;Maasvlakte aansl.;;;006752;043985;5;0;0;2;0;3;6;0
+mvtw;Maasvlakte West;;;006490;043929;2;0;0;0;0;0;0;0
+mz;Maarheeze;NL;432;017185;036867;6;0;2;2;2;3;4;0
+mzn;Y.Muizen;;;009967;036702;0;0;0;2;0;3;5;0
+n/d gr;Ned./Duitse grens;;;021085;037325;9;0;0;0;0;0;3;0
+na;Nieuw Amsterdam;NL;454;025371;052656;8;0;2;2;2;2;4;0
+naa;Nieuw Amsterdam aansl.;;;025097;052533;5;0;0;2;3;3;1;0
+ndb;Naarden-Bussum;NL;452;013931;047704;8;0;2;2;2;2;6;0
+ngsf;Nederlandse Gist Fabriek - bij Delft;;;008422;044782;2;0;0;0;0;0;0;0
+ngsfa;Nederlandse Gist Fabriek aansl. - bij Delft;;;008399;044762;5;0;0;2;0;0;5;0
+nh;Nuth;NL;467;019054;032570;8;0;2;2;2;2;3;0
+nhk;Noordhollands kanaal, brug o/h - bij Purmerend;;;012552;050167;1;0;0;0;0;0;4;0
+nhkbr;Noordhollands kanaal, brug o/h - bij Alkmaar;;;011209;051715;1;0;0;0;0;0;8;0
+nkk;Nijkerk;NL;469;016230;047049;8;0;2;2;2;2;8;0
+nm;Nijmegen;NL;470;018707;042841;8;3;3;3;1;1;5;1
+nmd;Nijmegen Dukenburg;NL;475;018292;042621;6;0;2;2;2;2;2;0
+nmgo;Nijmegen Goffert;;477;018504;042662;6;0;2;2;2;0;0;0
+nmh;Nijmegen Heyendaal;NL;468;018820;042652;6;0;2;2;2;2;5;0
+nml;Nijmegen Lent;NL;451;018748;042998;6;0;2;2;2;2;5;0
+nnvbr;Nauernasche vaartbrug - bij Krommenie=Assendelft;;;011349;050062;1;0;0;2;0;3;7;0
+ns;Nunspeet;NL;466;018205;048711;8;0;2;2;2;2;8;0
+nscg;Nieuweschans grens;;;027733;057950;9;0;0;0;0;0;0;0
+nsch;Bad Nieuweschans;NL;457;027620;057911;8;0;2;2;2;2;1;1
+nspl;Noordelijke splitsing (Haarlem);;;010312;049011;4;0;0;2;3;3;5;0
+nvbro;Nieuwe Veerbrug overloopw.;;;010749;040535;3;0;0;0;0;0;5;0
+nvd;Nijverdal;NL;472;022882;048698;8;0;2;2;2;2;2;0
+nvp;Nieuw Vennep;NL;460;010433;047485;6;0;2;2;2;2;1;0
+nwh;Noordwijkerhout;;;009470;047346;5;0;0;2;0;3;4;0
+nwk;Nieuwerkerk a/d IJssel;NL;455;010204;044214;6;0;2;2;2;2;8;0
+nwki;Nieuwerkerk IVO;;;010287;044326;3;0;0;0;0;0;0;0
+nwl;Schiedam Nieuwland;NL;563;008587;043757;6;0;2;2;2;2;2;0
+nws;Nieuwersluis=Loenen;;;012877;047356;4;0;0;2;0;3;5;0
+nwtbr;Nieuwe Weteringbrug - bij Nieuwersluis=Loenen;;;012901;047155;1;0;0;2;0;3;5;0
+o;Oss;NL;495;016494;041966;8;0;2;2;2;2;2;0
+obd;Obdam;NL;480;012247;052139;8;0;2;2;2;2;3;0
+oberh;Oberhausen Hbf;D;8010263;024805;038930;8;0;2;2;2;2;5;0
+obpa;Overbrakerpolder aansl.;;;011887;048918;4;0;0;2;3;3;2;0
+odb;Oudenbosch;NL;498;009582;040024;8;0;2;2;2;2;1;0
+odo;Oudewater overloopw.;;;011436;044786;3;0;0;0;0;0;0;0
+ods;Oosterdoksdoorvaart;;;012200;048790;1;0;0;0;0;0;4;0
+odw;Oudewater wachtspoor;;;011272;044759;4;0;0;0;0;0;0;0
+odz;Oldenzaal;NL;483;026046;048092;8;0;2;2;2;2;2;1
+odz gr;Oldenzaal Grens;;;026728;048111;9;0;0;0;0;0;7;0
+odzg;Oldenzaal grens;;;026737;048138;9;0;0;0;0;0;1;0
+oelz;Oss racc. Elzenburg;;;016633;041980;5;0;0;0;0;0;0;0
+ohze;Oud Heeze;;;016767;037734;4;0;0;2;3;3;4;0
+oij;Oude IJssel, brug o/d - bij Doetinchem;;;021564;044155;1;0;0;0;0;0;7;0
+olv;Onze Lieve Vrouwe t. Nood;NL;997;010760;051111;7;0;2;2;2;2;4;0
+omn;Ommen;NL;487;022482;050297;8;0;2;2;2;2;2;0
+on;Onnen;;;023813;057524;2;0;0;2;0;3;5;0
+onn;Onnen Noord;;;023764;057635;4;0;0;2;3;3;4;0
+onz;Onnen Zuid;;;023831;057384;5;0;0;0;0;0;5;0
+op;Opheusden;NL;494;017217;043757;6;0;2;2;2;2;2;0
+opo;Opheusden Overloop;;;017173;043313;4;0;2;2;0;2;7;0
+ost;Olst;NL;486;020455;048334;8;0;2;2;2;2;4;0
+ot;Oisterwijk;NL;482;014155;039927;8;0;2;2;2;2;7;0
+otb;Oosterbeek;NL;489;018616;044522;6;0;2;2;2;2;2;0
+otw;Oosterhout Weststad;;;011775;040912;2;0;0;0;0;0;0;0
+ovn;Overveen;NL;501;010196;048948;6;0;2;2;2;2;1;0
+ow;Oss West;NL;496;016325;041889;6;0;2;2;2;2;2;0
+ozbm;Oud Zaltbommel;;;014672;042244;2;0;2;2;2;2;5;0
+pmk;Prinses Margrietkanaal, brug o/h - bij Grouw=Irnsum;;;018426;056642;1;0;0;0;0;0;5;0
+pmo;Purmerend Overwhere;NL;506;012657;050274;8;0;2;2;2;2;1;0
+pmr;Purmerend;NL;508;012562;050182;6;0;2;2;2;2;5;0
+pmw;Purmerend Weidevenne;NL;499;012434;050109;6;0;2;2;2;0;8;0
+pnk;Pijnacker;NL;;008980;044827;6;0;0;0;0;0;0;0
+ppd;Papendrecht overloop;;;010581;042852;4;0;2;2;0;2;2;0
+ps;Pernis;;;008279;043220;2;0;0;2;0;3;7;0
+psa;Pernis Aansl. RSC;;;008417;043247;5;0;0;3;0;3;2;0
+pt;Putten;NL;509;016790;047529;8;0;2;2;2;2;8;0
+rai;Amsterdam RAI;NL;056;012112;048335;8;0;2;2;2;2;7;0
+rat;Raalte;NL;513;021563;048957;8;0;2;2;2;2;3;0
+rb;Rilland-Bath;NL;521;006964;038227;8;0;2;2;2;2;7;0
+rd;Roodeschool;NL;525;024615;060454;8;0;2;2;2;2;5;0
+rda;Roodeschool aansl.;;;024581;060407;4;0;0;0;0;0;7;0
+rdp;Reitdiep, brug o/h - bij Groningen;;;023208;058234;1;0;0;0;0;0;1;0
+rdr;Berkel en Rodenrijs;NL;;009125;044349;6;0;0;0;0;0;0;0
+rdwa;Radarweg aansl.;;;011647;048924;5;0;0;2;3;3;4;0
+rh;Rheden;NL;519;019919;044701;6;0;2;2;2;2;8;0
+rhn;Rhenen;NL;517;016813;044115;6;0;2;2;2;2;5;0
+rl;Ruurlo;NL;537;022780;045530;8;0;2;2;2;2;3;0
+rlb;Rotterdam Lombardijen;NL;542;009588;043284;8;0;2;2;2;2;5;0
+rm;Roermond;NL;523;019743;035615;8;2;2;2;2;2;4;1
+rmo;Rotterdam Rechter Maasoever;;;009051;043566;2;0;2;2;0;2;5;0
+rmoa;Rotterdam Rechter Maasoever aansl.;;;008950;043759;5;0;0;0;0;0;0;0
+rmsolv;Roermond racc. Solvay Chemy;;;019432;035278;2;0;0;3;0;3;4;0
+rs;Rosmalen;NL;524;015371;041402;6;0;2;2;2;2;2;0
+rsa;Ressen aansl.;;;018736;043405;5;0;0;2;3;3;5;0
+rsc1;RSC Oost;;;009092;043338;0;0;0;3;0;3;3;0
+rsc2;RSC West;;;008759;043362;0;0;0;3;0;3;1;0
+rscw;Rail Service Center Waalhaven;;;008949;043191;2;0;0;0;0;0;0;0
+rscwa;Rail Service Center Waalhaven aansl.;;;008443;043233;5;0;0;0;0;0;0;0
+rsd;Roosendaal;NL;526;009059;039498;8;3;3;3;1;1;1;1
+rsd gr;Roosendaal grens;;;008941;038729;9;0;0;0;0;0;4;0
+rsdg;Roosendaal grens;;527;008978;038718;9;0;0;0;0;0;5;0
+rsdphi;Roosendaal racc. Philips;;;009239;039576;4;0;2;2;0;3;8;0
+rskbl;Rijn-Schiekanaalbrug Leiden;;;009537;046148;1;0;0;0;0;0;3;0
+rskbv;Rijn-Schiekanaalbrug Voorburg;;;008687;045391;1;0;0;0;0;0;0;0
+rsl;Rensel, brug o/d - tussen Winschoten en Nieuweschans;;;027066;057617;1;0;0;0;0;0;7;0
+rsn;Rijssen;NL;538;023221;048104;8;0;3;3;2;2;8;0
+rsw;Rijswijk;NL;505;008170;045067;6;0;2;2;2;2;6;0
+rta;Rotterdam Alexander;NL;507;009758;044066;6;0;2;2;2;2;7;0
+rtb;Rotterdam Blaak;NL;529;009304;043726;6;0;2;2;3;3;6;0
+rtbw;Rotterdam Bergweg;NL;;009192;043935;6;0;0;0;0;0;0;0
+rtd;Rotterdam Centraal;NL;530;009186;043777;8;3;3;3;1;1;6;1
+rth;Rotterdam Hofplein;NL;;009256;043793;6;0;0;0;0;0;0;0
+rtkw;Rotterdam Kleiweg;NL;;009155;044008;8;0;0;0;0;0;0;0
+rtkwa;Rotterdam Kleiweg aansl.;;;009179;043962;5;0;0;0;0;0;0;0
+rtn;Rotterdam Noord;NL;531;009259;043967;6;0;2;2;2;2;8;0
+rtng;Rotterdam Noord goed.;;;009464;044003;2;0;0;0;0;0;0;0
+rtngo;Rotterdam Noord goed. Oost;;;009572;044024;4;0;0;0;0;0;0;0
+rtngw;Rotterdam Noord goed. West;;;009367;043988;4;0;0;0;0;0;0;0
+rtst;Rotterdam Stadion;NL;534;009530;043429;8;0;2;2;3;3;5;0
+rtwp;Rotterdam Wilgenplas;NL;;009134;044181;6;0;0;0;0;0;0;0
+rtz;Rotterdam Zuid;NL;533;009466;043529;6;0;2;2;2;2;5;0
+rv;Reuver;NL;518;020329;036620;8;0;2;2;2;2;4;0
+rvbr;Ringvaartbrug - bij Sassenheim;;;009753;047068;1;0;2;0;2;2;1;0
+rvs;Ravenstein;NL;515;017226;042295;6;0;2;2;2;2;2;0
+sb;Schoonebeek;;;025788;052237;2;0;2;2;0;2;5;0
+sbk;Spaubeek;NL;572;018752;032829;6;0;2;2;2;2;6;0
+schb;Schaarbeek;B;;010330;034616;8;0;0;0;0;0;4;0
+sche;Scheveningen;;680;007894;045840;2;0;0;0;0;0;2;0
+scn;Y.Schijn;;;009482;037718;0;0;0;0;0;0;4;0
+sd;Soestdijk;NL;569;014903;046626;6;0;2;2;2;2;4;0
+sda;Scheemda;NL;551;026152;057647;8;0;2;2;2;2;2;0
+sdm;Schiedam Centrum;NL;553;008762;043748;8;0;2;2;2;2;7;0
+sdn;Soestduinen;NL;;014891;046190;7;0;0;0;0;0;7;0
+sdt;Sliedrecht;NL;565;011302;042697;8;0;2;2;2;2;2;0
+sdtb;Sliedrecht Baanhoek;;497;011080;042672;6;0;2;2;2;0;1;0
+sgbr;Singelgrachtbrug;;;012089;048864;1;0;0;0;0;0;0;0
+sgl;Houthem-St Gerlach;NL;341;018382;032048;6;0;2;2;2;2;7;0
+sgn;Schagen;NL;549;011575;053329;8;0;2;2;2;2;4;0
+sgra;Singelgracht aansl.;;;011989;048915;5;0;0;2;3;3;3;0
+shb;Suurhoffbrug o/h Hartelkanaal;;;006851;043935;1;0;0;2;0;3;7;0
+shl;Schiphol Airport;NL;561;011236;048037;8;2;2;2;2;2;1;1
+sk;Sneek;NL;566;017270;056068;8;0;2;2;2;2;8;1
+skbr;Schinkelbrug - bij Amsterdam Zuid;;;011853;048346;1;0;0;0;0;0;7;0
+sknd;Sneek Noord;NL;574;017343;056148;6;0;2;2;2;2;5;0
+sloe;Sloehaven empl.;;;004047;038631;2;0;2;2;0;2;7;0
+slua;Sluiskil aansl.;;;004612;036791;2;0;0;0;0;0;5;0
+sludow;Sluiskil racc. Dow Chemical;;;004342;037456;6;0;0;0;0;0;0;0
+sm;Swalmen;NL;583;020004;036083;8;0;2;2;2;2;4;0
+smvrt;Smildervaart, brug o/d;;;020918;052820;1;0;0;0;0;0;5;0
+smz;Swalmen zuid;;;019999;036077;5;0;0;0;0;0;0;0
+sn;Schinnen;NL;554;018935;032780;6;0;2;2;2;2;3;0
+sog;Schin op Geul;NL;555;018910;031858;6;0;2;2;2;2;7;0
+spa;Snippeling aansl.;;;021022;047408;5;0;0;2;3;3;2;0
+spb;Springbiel (D);;;026775;048140;9;0;0;0;0;0;2;0
+spbr;Spaarnebrug - bij Haarlem;;;010410;048915;1;0;0;0;0;0;0;0
+spm;Sappemeer Oost;NL;545;024918;057564;6;0;2;2;2;2;7;0
+sptn;Santpoort Noord;NL;543;010369;049424;8;0;2;2;2;2;5;0
+sptz;Santpoort Zuid;NL;544;010357;049265;6;0;2;2;2;2;5;0
+srn;Susteren;NL;582;018834;034135;8;0;2;2;2;2;4;0
+ssh;Sassenheim;;603;009655;046947;6;0;2;2;2;2;8;0
+st;Soest;NL;567;014974;046492;8;0;2;2;2;2;5;0
+stb;Swifterbant, goederenwachtsporen;;;017023;050690;2;0;2;2;2;2;2;0
+stbdro;Swifterbant - Dronten;;;017325;050605;0;0;2;2;2;0;2;0
+std;Sittard;NL;564;018816;033517;8;2;2;2;2;2;5;1
+stm;Stedum;NL;576;024165;059408;8;0;2;2;2;2;7;0
+stmb;Y.Sint Mariaburg;;;009493;037718;0;0;0;0;0;0;5;0
+sto;Stroe;;;018277;046729;2;0;0;0;0;0;2;0
+sts;Stiens;;;018104;058402;2;0;0;0;0;0;0;0
+stv;Stavoren;NL;575;015326;054443;6;0;2;2;2;2;4;0
+stz;Soest Zuid;NL;571;014928;046425;6;0;2;2;2;2;4;0
+svg;Sas van Gent;;;004398;036253;2;0;2;2;0;2;5;0
+svgg;Sas van Gent grens;;;004383;035911;9;0;0;0;0;0;0;0
+swd;Sauwerd;NL;547;023189;059011;8;0;2;2;2;2;4;0
+swk;Steenwijk;NL;578;020428;053400;8;0;2;2;2;2;3;0
+tb;Tilburg;NL;597;013396;039688;8;0;2;2;2;2;7;1
+tba;Tilburg aansl.;;;013565;039717;5;0;0;2;3;3;8;0
+tbg;Terborg;NL;592;022223;043758;8;0;2;2;2;2;7;0
+tbge;Tilburg goed. empl.;;;013252;039719;2;0;0;0;0;0;7;0
+tbi;Tilburg ind. terr.;;;013654;039846;2;0;0;2;0;3;1;0
+tbr;Tilburg Reeshof;NL;598;012695;039855;6;0;2;2;2;2;2;0
+tbu;Tilburg Universiteit;NL;594;013177;039739;8;0;2;2;2;2;2;0
+tg;Tegelen;NL;591;020718;037197;8;0;2;2;2;2;4;0
+tgra;Tongelre aansl.;;;016340;038399;5;0;0;2;0;3;2;0
+tl;Tiel;NL;596;015746;043348;8;0;2;2;2;2;2;1
+tla;Tiel aansl. ind. terr.;;;015962;043496;5;0;0;0;0;0;0;0
+tli;Tiel ind. terr.;;;015918;043531;2;0;0;0;0;0;0;0
+tnz;Terneuzen;;798;004610;037264;2;0;2;2;0;2;5;0
+tnzz;Terneuzen Zuidzijde (racc.);;;004734;036878;2;0;0;0;0;0;5;0
+tpsw;Tiel Passewaaij;NL;600;015600;043240;6;0;2;2;2;0;8;0
+twl;Twello;NL;599;020417;047277;6;0;2;2;2;0;2;0
+uhm;Uithuizermeeden;NL;618;024363;060388;8;0;2;2;2;2;2;0
+uhz;Uithuizen;NL;617;024065;060335;6;0;2;2;2;2;2;0
+ust;Usquert;NL;619;023629;060233;8;0;2;2;2;2;2;0
+ut;Utrecht Centraal;NL;621;013598;045582;11;3;3;3;1;1;6;1
+utctw;Utrecht Carthesiusweg;;;013339;045743;2;0;0;0;0;0;0;0
+utdd;Utrecht Daalsedijk;;;013505;045796;2;0;0;0;0;0;0;0
+utg;Uitgeest;NL;615;010858;050394;8;0;2;2;2;2;4;1
+utge;Utrecht goed. empl.;;;013573;045534;2;0;0;0;0;0;0;0
+utl;Utrecht Lunetten;NL;623;013828;045306;6;0;2;2;2;2;4;0
+utlr;Utrecht Leidsche Rijn;;607;013319;045673;6;0;2;2;2;0;7;0
+utm;Utrecht Maliebaan;NL;624;013744;045549;6;0;2;2;2;2;5;0
+utma;Utrecht aansl. Maarssen;;;013403;045777;5;0;0;0;0;0;0;0
+utn;Utrecht Noord;;;013346;045724;2;0;0;0;0;0;5;0
+uto;Utrecht Overvecht;NL;620;013693;045796;8;0;2;2;2;2;1;0
+utoa;Utrecht Overvecht aansl.;;;013592;045739;5;0;0;0;0;3;1;0
+utt;Utrecht Terwijde;NL;614;013069;045706;6;0;2;2;2;2;7;0
+utva;Utrecht aansl. goed. empl.;;;013664;045470;5;0;0;0;0;0;3;0
+utwa;Utrecht-Woerden aansl.;;;013333;045672;5;0;0;2;0;3;2;0
+utwao;Utrecht-Woerden aansl. Oost;;;013401;045664;5;0;0;0;0;0;7;0
+utwaw;Utrecht-Woerden aansl. West;;;013267;045679;4;0;0;0;0;0;6;0
+utzl;Utrecht Zuilen;NL;613;013357;045822;6;0;2;2;2;2;4;0
+va;Velperbroek aansl.;;;019268;044414;5;0;0;2;3;3;1;0
+vam;VAM-terrein Wijster;;;023091;053385;2;0;0;0;0;0;0;0
+vama;VAM aansl. - bij Wijster;;;022941;053198;5;0;0;2;3;3;4;0
+vb;Voorburg;NL;658;008453;045358;6;0;2;2;2;2;7;0
+vben;Y Val Benoit;;;017102;029577;0;0;0;0;0;0;0;0
+vbl;Voorburg t Loo;NL;660;008493;045535;6;0;0;0;0;0;0;0
+vd;Vorden;NL;661;021873;045806;8;0;2;2;2;2;3;0
+vdg;Vlaardingen Centrum;NL;650;008321;043548;8;0;2;2;2;2;7;0
+vdgbr;Vlaardingenbrug;;;008366;043577;1;0;0;0;0;0;0;0
+vdl;Voerendaal;NL;656;019316;032201;6;0;2;2;2;2;8;0
+vdm;Veendam;;636;025570;057027;8;0;2;2;2;2;5;0
+vdo;Vlaardingen Oost;NL;649;008439;043622;6;0;2;2;2;2;1;0
+vdpg;Vlodrop grens;;;020829;035161;9;0;2;0;0;0;5;0
+vdw;Vlaardingen West;NL;642;008116;043557;6;0;2;2;2;2;6;0
+veg;Veghel;;;016635;040441;2;0;0;0;0;0;0;0
+veghi;Veghel Haven ind. terr.;;;015957;040217;2;0;0;0;0;0;0;0
+vem;Voorst-Empe;NL;668;020624;046361;6;0;2;2;2;0;6;0
+vg;Vught;NL;667;014840;040743;6;0;2;2;2;2;5;0
+vga;Vught aansl.;;;014836;040793;5;0;0;2;3;3;5;0
+vgz;Vogelenzang=Bennebroek;NL;;010072;048223;7;0;0;0;0;0;4;0
+vh;Voorhout;NL;655;009330;047110;6;0;2;2;2;2;4;0
+vhn;Veghel Haven;;;016265;040248;2;0;0;0;0;0;0;0
+vhp;Vroomshoop;NL;666;023536;049718;8;0;2;2;2;2;5;0
+viers;Viersen;D;8015122;021880;036927;8;0;2;2;2;2;5;0
+vij;Velsen=IJmuiden Oost;NL;;010201;049636;6;0;0;0;0;0;0;0
+vk;Valkenburg;NL;632;018637;032003;8;0;2;2;2;2;7;0
+vkbr;Vinkbrug o/d Rijn - bij Leiden;;;009177;046314;1;0;0;0;0;0;0;0
+vl;Venlo;NL;644;020956;037540;8;3;3;3;1;1;3;1
+vlb;Vierlingsbeek;NL;647;019722;040051;8;0;2;2;2;2;4;0
+vlgr;Venlo grens;;645;021085;037325;9;0;0;0;0;0;6;0
+vlk;Vlakebrug o/h Kanaal door Zuid-Beveland;;;005830;038793;1;0;0;0;0;0;2;0
+vlvrd;Vilvoorde;B;;010298;034734;8;0;0;0;0;0;5;0
+vndc;Veenendaal Centrum;NL;627;016611;044799;8;0;2;2;2;2;5;0
+vndw;Veenendaal West;NL;628;016491;044887;6;0;2;2;2;2;4;0
+vp;Velp;NL;640;019578;044532;6;0;2;2;2;2;1;0
+vrk;Vork;;;018565;043525;4;0;0;2;3;3;2;0
+vry;Venray;NL;646;019852;039321;8;0;2;2;2;2;4;0
+vs;Vlissingen;NL;652;003047;038549;10;3;3;3;1;1;4;0
+vspa;Venserpolder aansl.;;;012457;048196;5;0;0;0;0;0;5;0
+vss;Vlissingen Souburg;NL;653;003050;038758;6;0;2;2;2;2;4;0
+vst;Voorschoten;NL;659;008975;046029;6;0;2;2;2;2;1;0
+vsv;Varsseveld;NL;635;022870;043931;8;0;2;2;2;2;2;0
+vtbr;Vechtbrug - bij Weesp;;;013276;047966;1;0;0;0;0;0;7;0
+vtn;Vleuten;NL;651;012923;045728;8;0;2;2;2;2;2;0
+vvl;Hoogkerk=Vierverlaten;;;022876;058159;4;0;0;0;0;0;7;0
+vwd;Veenwouden;NL;638;019525;058266;8;0;0;0;0;0;0;0
+vz;Vriezenveen;NL;664;023759;049111;8;0;2;2;2;2;5;0
+vzw;Velsen Zeeweg;NL;;010248;049573;6;0;0;0;0;0;0;0
+wad;Waddinxveen;NL;675;010439;045093;8;0;2;2;2;2;5;0
+wadn;Waddinxveen Noord;NL;674;010430;045214;6;0;2;2;2;2;5;0
+wc;Wijchen;NL;710;017859;042478;6;0;2;2;2;2;2;0
+wd;Woerden;NL;702;012112;045531;8;0;2;2;2;2;1;0
+wda;Woerden aansl.;;;012018;045436;5;0;0;0;0;0;1;0
+wdba;Woerden-Bodegraven aansl.;;;012076;045387;5;0;0;0;0;0;0;0
+wdn;Wierden;NL;691;023631;048656;8;0;2;2;2;2;2;0
+wdo;Woerden Overloop;;;011953;045302;4;0;0;0;0;0;0;0
+wdvb;Wildervankkanaalbrug;;;025785;057609;1;0;0;0;0;0;7;0
+wf;Wolfheze;NL;704;018283;044643;8;0;2;2;2;2;2;0
+wfm;Warffum;NL;679;023348;060108;8;0;2;2;2;2;1;0
+wgm;Watergraafsmeer;;;012520;048519;4;0;0;2;0;3;3;0
+wgmo;Watergraafsmeer Oost aansl.;;;012694;048395;5;0;0;0;0;0;3;0
+wgmoa;Watergr. Oost aansl.;;;012677;048421;5;0;0;3;0;3;3;0
+wgmrba;Watergraafsmeer ringbaan aansl.;;;012694;048374;4;0;0;0;0;0;0;0
+wgmw;Watergraafsmeer West aansl.;;;012460;048586;5;0;0;2;0;3;5;0
+wh;Wijhe;NL;711;020638;048950;6;0;2;2;2;2;4;0
+wha;Waterhuizen aansl.;;;023878;057845;5;0;0;2;0;3;3;0
+whe;Where, brug o/d - bij Purmerend;;;012596;050218;1;0;0;0;0;0;0;0
+whz;Waalhaven Zuid;;;009073;043199;2;0;0;0;0;0;7;0
+whza;Waalhaven Zuid aansl.;;;009271;043184;5;0;0;2;0;3;7;0
+wijb;Wantijbrug - bij Dordrecht;;;011023;042457;1;0;0;0;0;0;1;0
+wiltn;Willemstunnel Noord;NL;;009241;043753;4;0;0;0;0;0;5;0
+wiltz;Willemstunnel Zuid;NL;;009362;043653;4;0;0;0;0;0;0;0
+wk;Workum;NL;706;015963;055394;8;0;2;2;2;2;8;0
+wl;Wehl;NL;686;021181;044131;8;0;2;2;2;2;2;0
+wld;Willemsdorp;;;010301;041665;3;0;0;0;0;0;5;0
+wm;Wormerveer;NL;707;011465;050032;8;0;2;2;2;2;3;0
+wmb;Wijmertsbrug - tussen IJlst en Workum;;;016228;055681;1;0;0;0;0;0;0;0
+wnn;Wadenoijen;;;015289;043109;4;0;0;0;0;0;2;0
+wp;Weesp;NL;685;013160;048049;11;0;2;2;2;2;2;1
+wr;Weener;D;8021239;028268;057915;8;0;2;2;2;2;2;0
+wrg;Weener grens;;;027670;057912;9;0;0;0;0;0;3;0
+ws;Winschoten;NL;696;026527;057374;8;0;2;2;2;2;7;1
+wsm;Winsum;NL;697;023048;059426;8;0;2;2;2;2;4;0
+wspl;Rotterdam Westelijke Splitsing;;;009084;043771;4;0;0;2;3;3;7;0
+wt;Weert;NL;684;017715;036221;8;0;2;2;2;2;7;1
+wtv;Westervoort;;688;019382;044330;6;0;2;2;2;0;5;0
+wv;Wolvega;NL;705;019656;054382;8;0;2;2;2;2;3;0
+wvd;Westerveld;NL;;010347;049459;6;0;0;0;0;0;0;0
+ww;Winterswijk;NL;698;024627;044302;8;3;2;2;1;1;5;0
+wwab;Westerwoldse Aa-brug;;;027666;057935;1;0;0;0;0;0;0;0
+www;Winterswijk West;NL;700;024223;044562;6;0;0;2;3;3;3;0
+wz;Wezep;NL;690;019677;049639;6;0;2;2;2;2;8;0
+xa;;;;012992;051695;0;0;0;0;0;0;0;0
+xy;;;;007915;038585;0;0;0;0;0;0;0;0
+y. dfl;Y.Duffel;;;009743;037149;0;0;0;0;0;0;5;0
+y. krb;Y.Krijgsbaan;;;009603;037521;0;0;0;0;0;0;5;0
+y. mch;Y.Machelen;;;010315;034670;0;0;0;0;0;0;4;0
+y. otb;Y.Otterbeek;;;009874;036744;0;0;0;0;0;0;5;0
+y. wd;Y.Weerde;;;009901;036617;0;0;0;0;0;0;4;0
+y.ka.w;Y.St. Katel.-Waver;;;009794;036986;0;0;0;0;0;0;5;0
+y.ltw;Y.Lierse Steenweg;;;009610;037504;0;0;0;0;0;0;5;0
+y.prh;Y.Prinsenhoek;;;009944;036665;0;0;0;0;0;0;5;0
+y.zgrh;Y.Zuid Groenenhoek;;;009593;037552;0;0;0;0;0;0;5;0
+ypb;Den Haag Ypenburg;NL;379;008782;045214;8;0;2;2;2;2;7;0
+za;Zetten-Andelst;NL;734;017809;043685;6;0;2;2;2;2;2;0
+zb;Zuidbroek;NL;742;025409;057578;8;0;2;2;2;2;2;0
+zbm;Zaltbommel;NL;732;014651;042363;6;0;2;2;2;2;4;0
+zcw;Zoetermeer Centrum West;NL;739;009298;045286;8;0;0;0;0;0;0;0
+zd;Zaandam;NL;731;011597;049471;11;0;2;2;2;2;4;1
+zdb;Zaanbrug;;;011601;049649;1;0;0;0;0;0;7;0
+zdk;Zaandam Kogerveld;NL;728;011650;049670;8;0;2;2;2;2;8;0
+zh;Zuidhorn;NL;743;022309;058510;8;0;2;2;2;2;2;0
+zha;Zevenbergschenhoek aansl.;;;010704;040639;5;0;0;0;0;0;5;0
+zl;Zwolle;NL;747;020272;050220;11;3;3;3;1;1;2;1
+zlge;Zwolle goed. empl.;;;020300;050165;2;0;0;0;0;0;0;0
+zlgea;Zwolle goed. empl. aansl.;;;020385;050152;4;0;0;0;0;0;0;0
+zlkatw;Zwolle racc. Katwolde;;;020181;050359;2;0;0;0;0;0;0;0
+zlptt;Zwolle PTT;;;020231;050237;2;0;0;0;0;0;3;0
+zlptta;Zwolle PTT aansl.;;;020211;050231;4;0;0;0;0;0;4;0
+zlr;Zwolle rang. terr.;;;020220;050227;2;0;0;0;0;0;0;0
+zlra;Zwolle rang. terr. aansl.;;;020193;050208;4;0;0;0;0;0;8;0
+zlw;Lage Zwaluwe;NL;382;010499;041145;8;0;2;2;2;2;5;0
+zp;Zutphen;NL;744;021025;046214;8;2;2;2;2;2;8;1
+zpge;Zutphen goed. empl.;;;021042;046335;2;0;0;0;0;0;0;0
+zpgea;Zutphen goed. empl. aansl.;;;021135;046348;4;0;0;0;0;0;5;0
+zpta;Zutphen Twentekanaal aansl.;;;021170;046415;5;0;0;0;0;0;1;0
+zsh;Zoetermeerring Stadhuis;NL;;009362;045290;6;0;0;0;0;0;0;0
+zspl;Zuidelijke splitsing (Haarlem);;;010260;048821;4;0;0;2;3;3;4;0
+ztm;Zoetermeer;NL;741;009259;045143;8;0;2;2;2;2;6;0
+ztmb;Zoetermeerring Buytenwegh;NL;;009270;045356;6;0;0;0;0;0;0;0
+ztmd;Zoetermeerring Dorp;NL;;009355;045213;6;0;0;0;0;0;0;0
+ztml;Zoetermeerring Leidsewallen;NL;;009487;045375;6;0;0;0;0;0;0;0
+ztmm;Zoetermeerring Meerzicht;NL;;009206;045223;6;0;0;0;0;0;0;0
+ztmo;Zoetermeer Oost;NL;740;009373;045126;8;0;2;2;2;2;3;0
+ztmp;Zoetermeerring Palenstein;NL;;009456;045274;6;0;0;0;0;0;0;0
+ztms;Zoetermeerring Seghwaert;NL;;009515;045308;6;0;0;0;0;0;0;0
+ztmv;Zoetermeerring Voorweg;NL;;009217;045309;6;0;0;0;0;0;0;0
+ztwo;Zoeterwoude Oost;;;010016;045981;4;0;0;0;0;0;3;0
+ztww;Zoeterwoude West;;;009725;046054;4;0;0;0;0;0;3;0
+zv;Zevenaar;NL;735;020211;043752;8;0;2;2;2;2;2;1
+zv gr;Zevenaar grens;;;020756;043450;9;0;0;0;0;0;3;0
+zvb;Zevenbergen;NL;737;010121;040609;6;0;2;2;2;2;1;0
+zvbi;Zevenbergen inhaalsp.;;;009972;040381;4;0;0;0;0;0;1;0
+zvg;Zevenaar grens;;;020747;043437;9;0;0;2;3;3;6;0
+zvo;Zevenaar Oost;;;020265;043720;3;0;2;2;0;2;7;0
+zvt;Zandvoort aan Zee;NL;733;009669;048784;10;0;2;2;2;2;4;0
+zwd;Zwijndrecht;NL;752;010354;042545;8;0;2;2;2;2;6;0
+zwvbr;Zuidwillemsvaart brug;;;017291;038694;1;0;0;0;0;0;1;0
+zww;Zwaagwesteinde;NL;745;019840;058355;6;0;0;0;0;0;0;0

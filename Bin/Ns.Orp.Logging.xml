@@ -1,0 +1,1147 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Ns.Orp.Logging</name>
+    </assembly>
+    <members>
+        <member name="T:Ns.Orp.Logging.EventSourceWithContext">
+            <summary>
+            Acts as a base class for logging events with CausalityId
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Logging.EventSourceWithContext.CausalityContextProviderType">
+            <summary>
+            The CausalityProvider type used to store the CausalityContext.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Logging.EventSourceWithContext.ContextProvider">
+            <summary>
+            Context
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Logging.EventSourceWithContext.WriteEventWithContext(System.Int32,System.Object[])">
+            <summary>
+            Write an event and uses the causality id as related activity id if available.
+            </summary>
+            <param name="eventId"></param>
+            <param name="args"></param>
+        </member>
+        <member name="T:Ns.Orp.Logging.DateTimeExtensions">
+            <summary>
+            DateTimeExtensions
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Logging.DateTimeExtensions.ToUnixTimestamp(System.DateTime)">
+            <summary>
+            Creates a unix timestamp from a DateTime.
+            </summary>
+            <param name="date">The date.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Logging.DateTimeExtensions.ToUnixTimestamp(System.DateTimeOffset)">
+            <summary>
+            Creates a unix timestamp from a DateTimeOffset.
+            </summary>
+            <param name="date">The date.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Ns.Orp.Logging.StringExtensions">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Logging.StringExtensions.CleanupForLogging(System.String)">
+            <summary>
+            Cleans up the message for the logging
+            Removes the HTTP Authorization line
+            </summary>
+            <param name="message">Message to clean</param>
+            <returns>Cleaned message</returns>
+        </member>
+        <member name="T:Ns.Orp.Logging.Http.HttpContextCausalityContextProvider">
+            <summary>
+            Stores the current CausalityContext int the HttpContext.Items.
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Logging.Http.HttpContextCausalityContextProvider.#ctor(System.Func{System.Web.HttpContextBase})">
+            <summary>
+            Creates an new instance with the specified contextProvider method.
+            </summary>
+            <param name="httpContextProvider">A method that returns the HttpContext.</param>
+        </member>
+        <member name="M:Ns.Orp.Logging.Http.HttpContextCausalityContextProvider.#ctor">
+            <summary>
+            Create a new instance using HttpContext.Current
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Logging.Http.HttpContextCausalityContextProvider.Context">
+            <summary>
+            Gets or sets the current CausalityContext.
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Logging.Http.HttpContextCausalityContextProvider.NewContext">
+            <summary>
+            Creates a new CausalityContext
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Ns.Orp.Logging.Http.LoggingModule">
+            <summary>
+            Logs generic http requests if the response code indicates a failure (>=400)
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Logging.Http.LoggingModule.Finalize">
+            <summary>
+            Destructor calls Dispose(false).
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Logging.Http.LoggingModule.Dispose">
+            <summary>
+            Disposes resources. Not used.
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Logging.Http.LoggingModule.Init(System.Web.HttpApplication)">
+            <summary>
+            Initializes the module.
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:Ns.Orp.Logging.Http.LoggingModule.OnBeginRequest(System.Web.HttpContextBase)">
+            <summary>
+            
+            </summary>
+            <param name="httpContext"></param>
+        </member>
+        <member name="M:Ns.Orp.Logging.Http.LoggingModule.OnEndRequest(System.Web.HttpContextBase)">
+            <summary>
+            
+            </summary>
+            <param name="httpContext"></param>
+        </member>
+        <member name="M:Ns.Orp.Logging.Http.LoggingModule.IsValidRoute(System.Web.Routing.RouteBase)">
+            <summary>
+            
+            </summary>
+            <param name="route"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Logging.Http.LoggingModule.Dispose(System.Boolean)">
+            <summary>
+            Disposes resources.
+            </summary>
+            <param name="disposing"></param>
+        </member>
+        <member name="T:Ns.Orp.Logging.Http.RequestScopeCausalityContextProvider">
+            <summary>
+            Stores the CausalityContext in the Logical CallContext which ensures that the CausalityContext is available
+            over thread boundaries.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Logging.Http.RequestScopeCausalityContextProvider.Context">
+            <summary>
+            Retrieves and stores the CausalityContext in the Logical CallContext.
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Logging.Http.RequestScopeCausalityContextProvider.NewContext">
+            <summary>
+            Creates a new Instance of the LogicalThreadCausalityContext.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Logging.Http.RequestScopeCausalityContextProvider.TryParse(System.String,Ns.Orp.Logging.ICausalityContext@)">
+            <summary>
+            Tries to parse a serialized context
+            </summary>
+            <param name="serializedContext">Context serialized as a string</param>
+            <param name="causalityContext">var that will contain the context if successful</param>
+            <returns>If parsing succeeded</returns>
+        </member>
+        <member name="T:Ns.Orp.Logging.LogExtensions">
+            <summary>
+            LogExtensions
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Logging.LogExtensions.WebApiFailure(Ns.Orp.Logging.StatementEventSource,System.Exception)">
+            <summary>
+            Log a web api failure to the StatementEventSource
+            </summary>
+            <param name="source">Source to log to</param>
+            <param name="exception">Exception to log</param>
+        </member>
+        <member name="T:Ns.Orp.Logging.Keywords">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Logging.Keywords.WebApi">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Logging.Keywords.Worker">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Logging.Keywords.Queue">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Logging.Keywords.Table">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Logging.Keywords.Diagnostic">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Logging.Keywords.Notification">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Logging.Keywords.Job">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Logging.Keywords.Config">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Logging.Keywords.Monitoring">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Logging.LoggingHandler">
+            <summary>
+            Logging handler for message logging
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Logging.LoggingHandler.#ctor(System.String,Ns.Orp.Logging.ICausalityContextProvider)">
+            <summary>
+            Initializes the handler
+            </summary>
+            <param name="caller">Caller name to identify the message</param>
+            <param name="causalityContextProvider">The CausalityContext provider.</param>
+        </member>
+        <member name="M:Ns.Orp.Logging.LoggingHandler.#ctor(System.String,Ns.Orp.Logging.ICausalityContextProvider,System.Net.Http.HttpMessageHandler)">
+            <summary>
+            Initializes the handler
+            </summary>
+            <param name="caller">Caller name to identify the message</param>
+            <param name="causalityContextProvider">The causality context provider.</param>
+            <param name="innerHandler">For base handler</param>
+        </member>
+        <member name="M:Ns.Orp.Logging.LoggingHandler.LogMessage(System.Text.StringBuilder,System.Net.Http.HttpRequestMessage,System.Guid,System.String,System.String,System.String,System.Int32,System.String,Ns.Orp.Logging.Core.CompletionResult,Ns.Orp.Logging.Core.MessageType)">
+            <summary>
+            Logs the message using the MessageEventSource.
+            </summary>
+            <param name="stringBuilder"></param>
+            <param name="request"></param>
+            <param name="callId"></param>
+            <param name="causalityId"></param>
+            <param name="from"></param>
+            <param name="to"></param>
+            <param name="personeelsnummer"></param>
+            <param name="action"></param>
+            <param name="completionResult"></param>
+            <param name="messageType"></param>
+        </member>
+        <member name="T:Ns.Orp.Logging.MessageEventSource">
+            <summary>
+            This class contains Semantic logging operations.
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Logging.MessageEventSource._Log">
+            <summary>
+            The singleton instance
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Logging.MessageEventSource.Log">
+            <summary>
+            The singleton instance.
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Logging.MessageEventSource.LogMessage(System.Guid,System.String,System.String,System.String,Ns.Orp.Logging.Core.CompletionResult,Ns.Orp.Logging.Core.MessageType,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="relatedActivityId"></param>
+            <param name="from"></param>
+            <param name="to"></param>
+            <param name="action"></param>
+            <param name="completionResult"></param>
+            <param name="messageType"></param>
+            <param name="message"></param>
+        </member>
+        <member name="M:Ns.Orp.Logging.MessageEventSource.LogMessage(System.Guid,System.Guid,System.String,System.String,System.String,Ns.Orp.Logging.Core.CompletionResult,Ns.Orp.Logging.Core.MessageType,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="relatedActivityId"></param>
+            <param name="callId"></param>
+            <param name="from"></param>
+            <param name="to"></param>
+            <param name="action"></param>
+            <param name="completionResult"></param>
+            <param name="messageType"></param>
+            <param name="message"></param>
+        </member>
+        <member name="M:Ns.Orp.Logging.MessageEventSource.LogMessage(System.Guid,System.Guid,System.String,System.String,System.String,System.String,Ns.Orp.Logging.Core.CompletionResult,Ns.Orp.Logging.Core.MessageType,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="relatedActivityId"></param>
+            <param name="callId"></param>
+            <param name="from"></param>
+            <param name="to"></param>
+            <param name="action"></param>
+            <param name="route"></param>
+            <param name="completionResult"></param>
+            <param name="messageType"></param>
+            <param name="message"></param>
+        </member>
+        <member name="M:Ns.Orp.Logging.MessageEventSource.LogMessageForWebApi(System.Guid,System.String,System.String,System.String,Ns.Orp.Logging.Core.CompletionResult,Ns.Orp.Logging.Core.MessageType,System.String,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="relatedActivityId"></param>
+            <param name="from"></param>
+            <param name="to"></param>
+            <param name="personeelsnummer"></param>
+            <param name="action"></param>
+            <param name="completionResult"></param>
+            <param name="messageType"></param>
+            <param name="message"></param>
+        </member>
+        <member name="M:Ns.Orp.Logging.MessageEventSource.LogMessageForWebApi(System.Guid,System.Guid,System.String,System.String,System.String,Ns.Orp.Logging.Core.CompletionResult,Ns.Orp.Logging.Core.MessageType,System.String,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="relatedActivityId"></param>
+            <param name="callId"></param>
+            <param name="from"></param>
+            <param name="to"></param>
+            <param name="personeelsnummer"></param>
+            <param name="action"></param>
+            <param name="completionResult"></param>
+            <param name="messageType"></param>
+            <param name="message"></param>
+        </member>
+        <member name="M:Ns.Orp.Logging.MessageEventSource.LogMessageForWebApi(System.Guid,System.Guid,System.String,System.String,System.String,System.String,Ns.Orp.Logging.Core.CompletionResult,Ns.Orp.Logging.Core.MessageType,System.String,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="relatedActivityId"></param>
+            <param name="callId"></param>
+            <param name="from"></param>
+            <param name="to"></param>
+            <param name="personeelsnummer"></param>
+            <param name="action"></param>
+            <param name="route"></param>
+            <param name="completionResult"></param>
+            <param name="messageType"></param>
+            <param name="message"></param>
+        </member>
+        <member name="T:Ns.Orp.Logging.MonitoringActions">
+            <summary>
+            Actions used in keten monitoring
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Logging.MonitoringActions.AzureStart">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Logging.MonitoringActions.AzureValideer">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Logging.MonitoringActions.AzureVerwerk">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Logging.MonitoringActions.AzureNieuweData">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Logging.MonitoringActions.AzureEinde">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Logging.MonitoringActions.Pius">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Logging.MonitoringActions.PiusStatus">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Logging.MonitoringActions.PiusInDienst">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Logging.MonitoringActions.PiusUitDienst">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Logging.MonitoringActions.AzureValideerDienst">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Logging.MonitoringActions.Adk">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Logging.MonitoringActions.AzureValideerActiviteiten">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Logging.MonitoringActions.Maximo">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Logging.MonitoringActions.Ftp">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Logging.MonitoringActions.Topic">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Logging.MonitoringErrorMessages">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Logging.MonitoringErrorMessages.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Logging.MonitoringErrorMessages.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Logging.MonitoringErrorMessages.ActiviteitenNietSluitend">
+            <summary>
+              Looks up a localized string similar to Activiteiten niet sluitend.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Logging.MonitoringErrorMessages.AzurePIUSinconsistentie">
+            <summary>
+              Looks up a localized string similar to Azure PIUS inconsistentie.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Logging.MonitoringErrorMessages.DienstNietGevonden">
+            <summary>
+              Looks up a localized string similar to Dienst niet gevonden.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Logging.MonitoringErrorMessages.FoutiefBestand">
+            <summary>
+              Looks up a localized string similar to Foutief bestand.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Logging.MonitoringErrorMessages.GeenActiviteiten">
+            <summary>
+              Looks up a localized string similar to Geen activiteiten.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Logging.MonitoringErrorMessages.GeenBestand">
+            <summary>
+              Looks up a localized string similar to Geen bestand.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Logging.MonitoringErrorMessages.GeenConnectiviteit">
+            <summary>
+              Looks up a localized string similar to Geen connectiviteit.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Logging.MonitoringErrorMessages.GeenConnectiviteitControles">
+            <summary>
+              Looks up a localized string similar to Geen connectiviteit controles.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Logging.MonitoringErrorMessages.GeenConnectiviteitMeldingen">
+            <summary>
+              Looks up a localized string similar to Geen connectiviteit meldingen.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Logging.MonitoringErrorMessages.GeenData">
+            <summary>
+              Looks up a localized string similar to GeenData.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Logging.MonitoringErrorMessages.GeenDienst">
+            <summary>
+              Looks up a localized string similar to Geen dienst.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Logging.MonitoringErrorMessages.GeenLokaleDienst">
+            <summary>
+              Looks up a localized string similar to Geen lokale dienst.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Logging.MonitoringErrorMessages.MaterieelagendaLeeg">
+            <summary>
+              Looks up a localized string similar to Materieelagenda leeg.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Logging.MonitoringErrorMessages.NietSluitend">
+            <summary>
+              Looks up a localized string similar to Niet sluitend.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Logging.MonitoringErrorMessages.UitDienstVoorEindeDiensttijd">
+            <summary>
+              Looks up a localized string similar to Uit dienst voor einde diensttijd.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Logging.MonitoringErrorMessages.VoortijdigUitDienst">
+            <summary>
+              Looks up a localized string similar to Voortijdig uit dienst.
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Logging.MonitoringEventSource">
+            <summary>
+            This class contains logging methods specifically for monitoring events used by NS "Keten monitoring".
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Logging.MonitoringEventSource.NoContextProviderValue">
+            <summary>
+            NoContextProviderValue
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Logging.MonitoringEventSource.NoContextValue">
+            <summary>
+            NoContextValue
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Logging.MonitoringEventSource.NotInContextValue">
+            <summary>
+            NotInContextValue
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Logging.MonitoringEventSource._Log">
+            <summary>
+            The singleton instance
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Logging.MonitoringEventSource.Log">
+            <summary>
+            The singleton instance.
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Logging.MonitoringEventSource.MonitorEvent(System.String,Ns.Orp.Logging.MonitoringResult)">
+            <summary>
+            Monitors an event
+            </summary>
+            <param name="action">aanduiding van de actie die uitgevoerd wordt binnen het event</param>
+            <param name="result">success/failure status van event</param>
+        </member>
+        <member name="M:Ns.Orp.Logging.MonitoringEventSource.MonitorEvent(System.String,System.String,Ns.Orp.Logging.MonitoringResult)">
+            <summary>
+            Monitors an event
+            </summary>
+            <param name="kmCode">Ketenmonitoring code</param>
+            <param name="action">aanduiding van de actie die uitgevoerd wordt binnen het event</param>
+            <param name="result">success/failure status van event</param>
+        </member>
+        <member name="M:Ns.Orp.Logging.MonitoringEventSource.MonitorEvent(System.String,Ns.Orp.Logging.MonitoringResult,System.String)">
+            <summary>
+            Monitors an event
+            </summary>
+            <param name="action">aanduiding van de actie die uitgevoerd wordt binnen het event</param>
+            <param name="result">success/failure status van event</param>
+            <param name="errorCode">ruimte voor 1 event specifieke foutaanduiding</param>
+        </member>
+        <member name="M:Ns.Orp.Logging.MonitoringEventSource.MonitorEvent(System.String,Ns.Orp.Logging.MonitoringResult,System.String,System.String)">
+            <summary>
+            Monitors an event
+            </summary>
+            <param name="action">aanduiding van de actie die uitgevoerd wordt binnen het event</param>
+            <param name="result">success/failure status van event</param>
+            <param name="errorCode">ruimte voor 1 event specifieke foutaanduiding</param>
+            <param name="kmCode">Ketenmonitoring code</param>
+        </member>
+        <member name="M:Ns.Orp.Logging.MonitoringEventSource.MonitorEvent(System.String,System.String,System.String,Ns.Orp.Logging.MonitoringResult,System.String)">
+            <summary>
+            Logs event for keten monitoring
+            </summary>
+            <param name="api">aanduiding van api call die uitgevoerd wordt en waaruit het event voorkomt</param>
+            <param name="userId">personeelsnummer voor aanroep van app api of een of andere systeemid voor een scheduler aanroep of andere interne aanroep</param>
+            <param name="action">aanduiding van de actie die     uitgevoerd wordt binnen het event</param>
+            <param name="result">success/failure status van event (“ok”, “nok”, “warn”)</param>
+            <param name="errorCode">ruimte voor 1 event specifieke foutaanduiding (Zie detailspecificatie beneden)</param>
+        </member>
+        <member name="M:Ns.Orp.Logging.MonitoringEventSource.MonitorEvent(System.String,System.String,System.String,Ns.Orp.Logging.MonitoringResult,System.String,System.String)">
+            <summary>
+            Logs event for keten monitoring
+            </summary>
+            <param name="api">aanduiding van api call die uitgevoerd wordt en waaruit het event voorkomt</param>
+            <param name="userId">personeelsnummer voor aanroep van app api of een of andere systeemid voor een scheduler aanroep of andere interne aanroep</param>
+            <param name="action">aanduiding van de actie die     uitgevoerd wordt binnen het event</param>
+            <param name="result">success/failure status van event (“ok”, “nok”, “warn”)</param>
+            <param name="errorCode">ruimte voor 1 event specifieke foutaanduiding (Zie detailspecificatie beneden)</param>
+            <param name="kmCode">Ketenmonitoring code</param>
+        </member>
+        <member name="T:Ns.Orp.Logging.MonitoringResult">
+            <summary>
+            Indicates the result of the monitoring event
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Logging.MonitoringResult.Start">
+            <summary>
+            Event was successful.
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Logging.MonitoringResult.Success">
+            <summary>
+            Event was successful.
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Logging.MonitoringResult.Warning">
+            <summary>
+            Event did not fail but has functional issues.
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Logging.MonitoringResult.Failure">
+            <summary>
+            Event failed.
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Logging.ServiceModel.LogMessage">
+            <summary>
+            Contains all information passed to the LogAction.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Logging.ServiceModel.LogMessage.CausalityContext">
+            <summary>
+            The current CausalityContext.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Logging.ServiceModel.LogMessage.MessageType">
+            <summary>
+            The type of the message.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Logging.ServiceModel.LogMessage.Message">
+            <summary>
+            The message
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Logging.ServiceModel.LogMessage.From">
+            <summary>
+            The from system
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Logging.ServiceModel.LogMessage.To">
+            <summary>
+            The to system
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Logging.ServiceModel.LogMessage.CallId">
+            <summary>
+            An unique Id correlating a request and response.
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Logging.ServiceModel.State">
+            <summary>
+            State returned from BeforeSendRequest to correlate request and response.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Logging.ServiceModel.State.Context">
+            <summary>
+            The CausalityContext
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Logging.ServiceModel.State.Id">
+            <summary>
+            An unique id to correlate request and response.
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Logging.ServiceModel.State.Equals(System.Object)">
+            <summary>
+            Compares the Id properties of this and the other object.
+            </summary>
+            <param name="obj">The other State struct to compare the Id with.</param>
+            <returns><code>true</code> if they have the same <see cref="P:Ns.Orp.Logging.ServiceModel.State.Id"/> otherwise <code>false</code>.</returns>
+        </member>
+        <member name="M:Ns.Orp.Logging.ServiceModel.State.GetHashCode">
+            <summary>
+            Returns the hash code from the <see cref="P:Ns.Orp.Logging.ServiceModel.State.Id"/> property.
+            </summary>
+            <returns>The hash code from the <see cref="P:Ns.Orp.Logging.ServiceModel.State.Id"/> property</returns>
+        </member>
+        <member name="M:Ns.Orp.Logging.ServiceModel.State.op_Equality(Ns.Orp.Logging.ServiceModel.State,Ns.Orp.Logging.ServiceModel.State)">
+            <summary>
+            Compares the two State structs by their Id property for equality.
+            </summary>
+            <param name="l"></param>
+            <param name="r"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Logging.ServiceModel.State.op_Inequality(Ns.Orp.Logging.ServiceModel.State,Ns.Orp.Logging.ServiceModel.State)">
+            <summary>
+            Compares the two state structs by their Id property for inequality.
+            </summary>
+            <param name="l"></param>
+            <param name="r"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Ns.Orp.Logging.ServiceModel.CausalityContextHeader">
+            <summary>
+            A SOAP header containing the CausalityContext.
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Logging.ServiceModel.CausalityContextHeader.#ctor(Ns.Orp.Logging.ICausalityContext,Ns.Orp.Logging.ICausalityContextProvider)">
+            <summary>
+            Creates a new instance of the CausalityContextHeader with the specified ICausalityContext.
+            </summary>
+            <param name="causalityContext"></param>
+            <param name="causalityContextProvider"></param>
+        </member>
+        <member name="M:Ns.Orp.Logging.ServiceModel.CausalityContextHeader.OnWriteHeaderContents(System.Xml.XmlDictionaryWriter,System.ServiceModel.Channels.MessageVersion)">
+            <summary>
+            Serializes the CausalityContext as string value.
+            </summary>
+            <param name="writer">The writer to write to.</param>
+            <param name="messageVersion">Not used.</param>
+        </member>
+        <member name="P:Ns.Orp.Logging.ServiceModel.CausalityContextHeader.Name">
+            <summary>
+            The name of the header.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Logging.ServiceModel.CausalityContextHeader.Namespace">
+            <summary>
+            The namespace of the header.
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Logging.ServiceModel.CausalityContextHeader.ReadHeader(System.ServiceModel.Channels.Message,Ns.Orp.Logging.ICausalityContextProvider)">
+            <summary>
+            Gets the ICausalityContext from the specified message using the specified provider.
+            </summary>
+            <param name="message">The message containing the CausalityContextHeader.</param>
+            <param name="causalityContextProvider">The CausalityContextProvider used to parse the header.</param>
+            <returns>An instance of the ICausalityCotnext.</returns>
+        </member>
+        <member name="T:Ns.Orp.Logging.ServiceModel.CausalityLoggingBehavior">
+            <summary>
+            Adds MessageInspectors that log messages with causality and optionally adds message headers.
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Logging.ServiceModel.CausalityLoggingBehavior.#ctor(Ns.Orp.Logging.ServiceModel.ServiceModelLoggingConfiguration,Ns.Orp.Logging.ICausalityContextProvider,System.Action{Ns.Orp.Logging.ServiceModel.LogMessage})">
+            <summary>
+            Creates a new instance with the specified configuration.
+            </summary>
+            <param name="configuration">The configuration for the CausalityLoggingBehavior.</param>
+            <param name="causalityContextProvider">Provides the causality context</param>
+            <param name="logAction">Action that is performed to log</param>
+        </member>
+        <member name="M:Ns.Orp.Logging.ServiceModel.CausalityLoggingBehavior.AddBindingParameters(System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Channels.BindingParameterCollection)">
+            <summary>
+            Not used.
+            </summary>
+            <param name="endpoint"></param>
+            <param name="bindingParameters"></param>
+        </member>
+        <member name="M:Ns.Orp.Logging.ServiceModel.CausalityLoggingBehavior.ApplyClientBehavior(System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Dispatcher.ClientRuntime)">
+            <summary>
+            Adds the LoggingClientMessageInspector.
+            </summary>
+            <param name="endpoint">The endpoint.</param>
+            <param name="clientRuntime">The client runtime to add the LoggingClientMessageInspector to.</param>
+        </member>
+        <member name="M:Ns.Orp.Logging.ServiceModel.CausalityLoggingBehavior.ApplyDispatchBehavior(System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Dispatcher.EndpointDispatcher)">
+            <summary>
+            Adds the LoggingDispatchMessageInspector.
+            </summary>
+            <param name="endpoint">The endpoint.</param>
+            <param name="endpointDispatcher">The endpoint dispatcher to add the LoggingDispatchMessageInspector to.</param>
+        </member>
+        <member name="M:Ns.Orp.Logging.ServiceModel.CausalityLoggingBehavior.Validate(System.ServiceModel.Description.ServiceEndpoint)">
+            <summary>
+            Not used.
+            </summary>
+            <param name="endpoint">The endpoint.</param>
+        </member>
+        <member name="T:Ns.Orp.Logging.ServiceModel.CausalityLoggingBehaviorExtensionElement">
+            <summary>
+            Instantiates a new instance of the CausalityLoggingBehavior with the specified configuration.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Logging.ServiceModel.CausalityLoggingBehaviorExtensionElement.HeaderType">
+            <summary>
+            Specifies which header will be added when a request is send.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Logging.ServiceModel.CausalityLoggingBehaviorExtensionElement.From">
+            <summary>
+            Specifies the system that is called.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Logging.ServiceModel.CausalityLoggingBehaviorExtensionElement.To">
+            <summary>
+            Specifies the system that is called.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Logging.ServiceModel.CausalityLoggingBehaviorExtensionElement.CausalityContextProviderType">
+            <summary>
+            Specifies the system that is called.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Logging.ServiceModel.CausalityLoggingBehaviorExtensionElement.BehaviorType">
+            <summary>
+            Returns the CausalityLoggingBehavior
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Logging.ServiceModel.CausalityLoggingBehaviorExtensionElement.CreateBehavior">
+            <summary>
+            Creates a new instance if the CausalityLoggingBehavior
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Ns.Orp.Logging.ServiceModel.HeaderType">
+            <summary>
+            Specifies the type of header added by the CausalityLogging behavior.
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Logging.ServiceModel.HeaderType.None">
+            <summary>
+            No headers will be added.
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Logging.ServiceModel.HeaderType.Http">
+            <summary>
+            A HTTP heade is added.
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Logging.ServiceModel.HeaderType.Soap">
+            <summary>
+            A SOAP header is added.
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Logging.ServiceModel.HeaderType.HttpAndSoap">
+            <summary>
+            Both HTTP and SOAP headers are added.
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Logging.ServiceModel.LoggingClientMessageInspector">
+            <summary>
+            This class is used to log request and response messages in a WCF Client using ETW.
+            It can also add the CausalityContext to a SOAP header or a HTTP header.
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Logging.ServiceModel.LoggingClientMessageInspector.#ctor(Ns.Orp.Logging.ICausalityContextProvider,System.Action{Ns.Orp.Logging.ServiceModel.LogMessage},Ns.Orp.Logging.ServiceModel.ServiceModelLoggingConfiguration)">
+            <summary>
+            Creates a new instance of the LoggingClientMessageInspector using the CausalityContext provider to retrieve the CausalityContext.
+            </summary>
+            <param name="causalityContextProvider">A CausalityContext provider used to get the current CausalityContext.</param>
+            <param name="logAction">The action called when a message must be logged.</param>
+            <param name="configuration">The configuration of the CausalityLoggingBehavior.</param>
+        </member>
+        <member name="M:Ns.Orp.Logging.ServiceModel.LoggingClientMessageInspector.AfterReceiveReply(System.ServiceModel.Channels.Message@,System.Object)">
+            <summary>
+            Logs the response message using ETW
+            </summary>
+            <param name="reply">The response message.</param>
+            <param name="correlationState">The CausalityContext.</param>
+        </member>
+        <member name="M:Ns.Orp.Logging.ServiceModel.LoggingClientMessageInspector.BeforeSendRequest(System.ServiceModel.Channels.Message@,System.ServiceModel.IClientChannel)">
+            <summary>
+            Logs the request message using ETW and optionally adds the CausalityContext to a SOAP header or HTTP header.
+            </summary>
+            <param name="request">The request message.</param>
+            <param name="channel">The client channel used to send the request.</param>
+            <returns>The CausalityContext and optional OperationContextScope</returns>
+        </member>
+        <member name="T:Ns.Orp.Logging.ServiceModel.LoggingDispatchMessageInspector">
+            <summary>
+            This class is used to log request and response messages in a WCF Client using ETW.
+            It can also add the CausalityContext to a SOAP header or a HTTP header.
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Logging.ServiceModel.LoggingDispatchMessageInspector.#ctor(Ns.Orp.Logging.ICausalityContextProvider,System.Action{Ns.Orp.Logging.ServiceModel.LogMessage},Ns.Orp.Logging.ServiceModel.ServiceModelLoggingConfiguration)">
+            <summary>
+            Creates a new instance of the LoggingClientMessageInspector using the CausalityContext provider to retrieve the CausalityContext.
+            </summary>
+            <param name="causalityContextProvider">A CausalityContext provider used to get the current CausalityContext.</param>
+            <param name="logAction">The action called when a message must be logged.</param>
+            <param name="configuration">The configuration of the CausalityLoggingBehavior.</param>
+        </member>
+        <member name="M:Ns.Orp.Logging.ServiceModel.LoggingDispatchMessageInspector.AfterReceiveRequest(System.ServiceModel.Channels.Message@,System.ServiceModel.IClientChannel,System.ServiceModel.InstanceContext)">
+            <summary>
+            Logs the request message using ETW and optionally adds the CausalityContext to a SOAP header or HTTP header.
+            </summary>
+            <param name="request">The request message.</param>
+            <param name="channel">The client channel used to send the request.</param>
+            <param name="instanceContext">instanceContext</param>
+            <returns>The CausalityContext and optional OperationContextScope</returns>
+        </member>
+        <member name="M:Ns.Orp.Logging.ServiceModel.LoggingDispatchMessageInspector.BeforeSendReply(System.ServiceModel.Channels.Message@,System.Object)">
+            <summary>
+            Logs the response message using ETW
+            </summary>
+            <param name="reply">The response message.</param>
+            <param name="correlationState">The CausalityContext.</param>
+        </member>
+        <member name="T:Ns.Orp.Logging.ServiceModel.MessageExtensions">
+            <summary>
+            Contains extensions of the Message class.
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Logging.ServiceModel.MessageExtensions.ReadAsString(System.ServiceModel.Channels.Message)">
+            <summary>
+            Reads the entire message and returns it as a string.
+            </summary>
+            <param name="message">The message to read.</param>
+            <returns>A string represtation of the message.</returns>
+        </member>
+        <member name="T:Ns.Orp.Logging.ServiceModel.ServiceModelLoggingConfiguration">
+            <summary>
+            Contains configuration used for the CausalityLogging behavior extension.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Logging.ServiceModel.ServiceModelLoggingConfiguration.HeaderType">
+            <summary>
+            Specifies if Headers are added to the outgoing request.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Logging.ServiceModel.ServiceModelLoggingConfiguration.From">
+            <summary>
+            Specifies the name of the system that is called.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Logging.ServiceModel.ServiceModelLoggingConfiguration.To">
+            <summary>
+            Specifies the name of the system that is called.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Logging.ServiceModel.ServiceModelLoggingConfiguration.CausalityContextProviderType">
+            <summary>
+            Specifies the type name of the ICausalityContextProvider interface.
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Logging.StatementEventSource">
+            <summary>
+            This class contains Semantic logging operations.
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Logging.StatementEventSource._Log">
+            <summary>
+            The singleton instance
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Logging.StatementEventSource.Log">
+            <summary>
+            The singleton instance.
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Logging.StatementEventSource.QueueBodyMessage(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="queuePath"></param>
+            <param name="message"></param>
+        </member>
+        <member name="M:Ns.Orp.Logging.StatementEventSource.DeadLetteredMessage(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="queuePath"></param>
+            <param name="message"></param>
+        </member>
+        <member name="M:Ns.Orp.Logging.StatementEventSource.Failure(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="exceptionMessage"></param>
+            <param name="source"></param>
+        </member>
+        <member name="M:Ns.Orp.Logging.StatementEventSource.SendNotificationBody(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="tag"></param>
+            <param name="notificationBody"></param>
+        </member>
+        <member name="M:Ns.Orp.Logging.StatementEventSource.LogNotificationOutcomeDetails(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="notificationOutcomeDetails"></param>
+        </member>
+        <member name="M:Ns.Orp.Logging.StatementEventSource.SubscriptionMessageReceivedStart(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="topicPath"></param>
+            <param name="subscriptionPath"></param>
+        </member>
+        <member name="M:Ns.Orp.Logging.StatementEventSource.SubscriptionMessageReceivedStop(System.String,System.String,System.Int64)">
+            <summary>
+            
+            </summary>
+            <param name="topicPath"></param>
+            <param name="subscriptionPath"></param>
+            <param name="elapsedMilliseconds">elapsedMilliseconds</param>
+        </member>
+        <member name="M:Ns.Orp.Logging.StatementEventSource.TopicMessageSendStart(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="topicPath"></param>
+        </member>
+        <member name="M:Ns.Orp.Logging.StatementEventSource.ListenSubscriptionStop(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="topicPath"></param>
+            <param name="subscriptionPath"></param>
+        </member>
+        <member name="M:Ns.Orp.Logging.StatementEventSource.ListenSubscriptionStart(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="topicPath"></param>
+            <param name="subscriptionPath"></param>
+        </member>
+        <member name="M:Ns.Orp.Logging.StatementEventSource.TopicMessageSendStop(System.String,System.Int64)">
+            <summary>
+            
+            </summary>
+            <param name="topicPath"></param>
+            <param name="elapsedMilliseconds"></param>
+        </member>
+        <member name="M:Ns.Orp.Logging.StatementEventSource.ValidateIdentityStart">
+            <summary>
+            ValidateIdentityStart
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Logging.StatementEventSource.ValidateIdentityStop">
+            <summary>
+            ValidateIdentityStop
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Logging.StatementEventSource.ValidateIdentityToken">
+            <summary>
+            ValidateIdentityToken
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Logging.StatementEventSource.ValidateIdentityProfile">
+            <summary>
+            ValidateIdentityProfile
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Logging.StatementEventSource.DocumentDbRequestCharge(System.String,System.Double)">
+            <summary>
+            
+            </summary>
+            <param name="caller"></param>
+            <param name="requestCharge"></param>
+        </member>
+        <member name="M:Ns.Orp.Logging.StatementEventSource.DocumentDbRetry(System.Int32,System.Double)">
+            <summary>
+            
+            </summary>
+            <param name="retryCount"></param>
+            <param name="retryAfter"></param>
+        </member>
+        <member name="M:Ns.Orp.Logging.StatementEventSource.ReportJobProgress(System.String,System.String)">
+            <summary>
+            Log JobProgressInfo
+            </summary>
+            <param name="jobName"></param>
+            <param name="text"></param>
+        </member>
+        <member name="T:Ns.Orp.Logging.Tasks">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Logging.Tasks.ApiCall">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Logging.Tasks.BackOfficeCall">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Logging.Tasks.QueueMessage">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Logging.Tasks.TableAction">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Logging.Tasks.SendNotification">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Logging.Tasks.Listen">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Logging.Tasks.LogFailure">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Logging.Tasks.JobTrigger">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Logging.Tasks.DocumentDb">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Logging.Tasks.Monitoring">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Logging.Tasks.JobProgress">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Logging.Tasks.LogNotificationOutcomeDetails">
+            <summary>
+            
+            </summary>
+        </member>
+    </members>
+</doc>

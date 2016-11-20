@@ -1,0 +1,2993 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Ns.Orp.Dienst.Implementation</name>
+    </assembly>
+    <members>
+        <member name="T:Ns.Orp.Dienst.Implementation.AdkAgent">
+            <summary>
+            Implements the IAdkAgent.
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.IAdkAgent">
+            <summary>
+            Specifies all methods of the Dienstkaart service using Model types.
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.IAdkAgent.BepalenDienstkaartDienstActiviteitenActiviteitDetailsEnTreinAsync(Ns.Orp.Dienst.Model.Dienst)">
+            <summary>
+            Bepaald de activiteiten en de planfase
+            </summary>
+            <param name="dienst"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.IAdkAgent.BepalenDienstkaartAsync(Ns.Orp.Dienst.Model.Functie,System.String,System.Int32,System.DateTimeOffset)">
+            <summary>
+            Bepalen van een dienstkaart op basis van de geselecteerde data
+            </summary>
+            <param name="functie"></param>
+            <param name="standplaats"></param>
+            <param name="dienstnummer"></param>
+            <param name="datumDienst"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.AdkAgent.#ctor(System.String,System.String)">
+            <summary>
+            Constructor 
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.AdkAgent.BepalenDienstkaartDienstActiviteitenActiviteitDetailsEnTreinAsync(Ns.Orp.Dienst.Model.Dienst)">
+            <summary>
+            
+            </summary>
+            <param name="dienst"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.AdkAgent.BepalenDienstkaartAsync(Ns.Orp.Dienst.Model.Functie,System.String,System.Int32,System.DateTimeOffset)">
+            <summary>
+            Bepalen van een dienstkaart op basis van de geselecteerde data
+            </summary>
+            <param name="functie"></param>
+            <param name="standplaats"></param>
+            <param name="dienstnummer"></param>
+            <param name="datumDienst"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.AdkAgent.Finalize">
+            <summary>
+            Destructor, implemented to disposing correctly
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.AdkAgent.Dispose">
+            <summary>
+            Disposes the object.
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.DgwAgent">
+            <summary>
+            Service agent voor Dgw.
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.IDgwAgent">
+            <summary>
+            Specifies all methods of the Dgw service.
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.IDgwAgent.BijsturingReactie(System.Int32,System.Int32,System.DateTimeOffset,System.Boolean)">
+            <summary>
+            Registreerd een reactie op een bijsturing.
+            </summary>
+            <param name="personeelsnummer">Personeelsnummer van de medewerker.</param>
+            <param name="dienstnummer">Nummer van de dienst.</param>
+            <param name="tijdstempelBijsturing">Datum tijd waarop de bijsturing is gemeld.</param>
+            <param name="accepteren">Geeft aan of de bijsturing is geaccepteerd of afgewezen.</param>
+            <returns>Geeft terug of de bijsturing reactie succesvol geregistreerd is.</returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DgwAgent.#ctor(System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ns.Orp.Dienst.Implementation.DgwAgent"/> class.
+            </summary>
+            <param name="configName">Name of the agent in configuration.</param>
+            <param name="address">Address to connect to.</param>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DgwAgent.#ctor(Ns.Orp.Dienst.Implementation.Proxies.Dgw.BijsturingReactie.BijsturingReactiePortTypeSOAP)">
+            <summary>
+            Constructor that enables testing.
+            </summary>
+            <param name="dgwProxy"></param>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DgwAgent.BijsturingReactie(System.Int32,System.Int32,System.DateTimeOffset,System.Boolean)">
+            <summary>
+            Registreert een reactie op een bijsturing in DGW.
+            </summary>
+            <param name="personeelsnummer">Personeelsnummer van de medewerker.</param>
+            <param name="dienstnummer">Nummer van de dienst die is bijgestuurd.</param>
+            <param name="tijdstempelBijsturing">Datum en tijd waarop de bijsturing is gemeld.</param>
+            <param name="accepteren">Geeft aan of de bijsturing is geaccepteerd of afgewezen.</param>
+            <returns>Geeft terug of de reactie succesvol verwerkt is in DGW.</returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DgwAgent.Finalize">
+            <summary>
+            Destructor, implemented to dispose correctly.
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DgwAgent.Dispose">
+            <summary>
+            Disposes the object.
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.DisysAgent">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.IDisysAgent">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.IDisysAgent.GetDonderdagseweekAsync(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="personeelsnummer"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DisysAgent.#ctor(System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ns.Orp.Dienst.Implementation.DisysAgent"/> class.
+            </summary>
+            <param name="configName">Name of the configuration.</param>
+            <param name="address">The address.</param>
+            <exception cref="T:System.ArgumentNullException">configName  or  address</exception>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DisysAgent.#ctor(Ns.Orp.Shared.Proxies.Disys.DN_HI505PortType)">
+            <summary>
+            Constructor that enables testing
+            </summary>
+            <param name="disysProxy"></param>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DisysAgent.GetDonderdagseweekAsync(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="personeelsnummer"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DisysAgent.Finalize">
+            <summary>
+            Destructor, implemented to dispose correctly
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DisysAgent.Dispose">
+            <summary>
+            Disposes the object.
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.IPiusAgent">
+            <summary>
+            Interface voor dienst acties via PIUS
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.IPiusAgent.BepaalPiusStatusInzetEnBerichtenAsync(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="medewerker"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.IPiusAgent.MeldInDienstAsync(System.Int32,Ns.Orp.Dienst.Model.Dienst)">
+            <summary>
+            
+            </summary>
+            <param name="medewerker"></param>
+            <param name="lokaleDienst"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.IPiusAgent.MeldUitDienstAsync(System.Int32,Ns.Orp.Dienst.Model.Dienst)">
+            <summary>
+            
+            </summary>
+            <param name="medewerker"></param>
+            <param name="lokaleDienst"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.PiusAgent">
+            <summary>
+            Agent class voor communicatie met PIUS
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Dienst.Implementation.PiusAgent.SourceName">
+            <summary>
+            Name of the backend system that this manager manages
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.PiusAgent.#ctor(System.String,System.String)">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.PiusAgent.#ctor(Ns.Orp.Dienst.Implementation.Proxies.Pius.DienstRailpocketEndpoint)">
+            <summary>
+            Constructor that enables testing
+            </summary>
+            <param name="piusAgent">Agent for testing</param>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.PiusAgent.BepaalPiusStatusInzetEnBerichtenAsync(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="medewerker"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.PiusAgent.MeldInDienstAsync(System.Int32,Ns.Orp.Dienst.Model.Dienst)">
+            <summary>
+            Meldt een medewerker in dienst
+            </summary>
+            <param name="medewerker">Personeelsnummer van de gebruiker.</param>
+            <param name="lokaleDienst">Dienst om in dienst te melden</param>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.PiusAgent.MeldUitDienstAsync(System.Int32,Ns.Orp.Dienst.Model.Dienst)">
+            <summary>
+            
+            </summary>
+            <param name="medewerker"></param>
+            <param name="lokaleDienst"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.PiusAgent.Finalize">
+            <summary>
+            Destuctor, implemented to disposing correctly
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.PiusAgent.Dispose">
+            <summary>
+            Disposes the object.
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Dienst.Implementation.Constants.PiusBindingName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Dienst.Implementation.Constants.DienstkaartBindingName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Dienst.Implementation.Constants.DisysBindingName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Dienst.Implementation.Constants.DgwBindingName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.BijsturingController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.IBijsturingController">
+            <summary>
+            IBijsturingController
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.IBijsturingController.ProcessBijsturingNotification(Ns.Orp.Dienst.Model.BijsturingNotificatie)">
+            <summary>
+            Handles the proces for the bijsturing notification
+            </summary>
+            <param name="bijsturingNotificatie"></param>
+            <returns>Bijsturing telefoonnummer</returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.IBijsturingController.OpvragenBijsturingAsync(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="medewerker"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.IBijsturingController.BijsturingBeantwoordenAsync(System.Int32,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="medewerker"></param>
+            <param name="accepteren"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.IBijsturingController.StoreBijsturingTelefoonnummersAsync(System.Collections.Generic.IEnumerable{Ns.Orp.Dienst.Model.BijsturingNummer})">
+            <summary>
+            Store bijsturing telefoonnummers
+            </summary>
+            <param name="nummers">bijsturing telefoonnummers</param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.BijsturingController.#ctor">
+            <summary>
+            Creates a new instance of the DienstController class.  
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.BijsturingController.#ctor(Ns.Orp.Dienst.Implementation.IBijsturingManager,Ns.Orp.Dienst.Implementation.IDienstManager,Ns.Orp.Dienst.Implementation.IDienstController,Ns.Orp.Dienst.Implementation.IDienstNotificatieTopicManager,Ns.Orp.Dienst.Implementation.IAdkAgent,Ns.Orp.Dienst.Implementation.IDgwAgent)">
+            <summary>
+            Test ctor
+            </summary>
+            <param name="bijsturingManager"></param>
+            <param name="dienstManager"></param>
+            <param name="dienstController"></param>
+            <param name="dienstNotificatieTopicManager"></param>
+            <param name="adkAgent"></param>
+            <param name="dgwAgent"></param>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.BijsturingController.ProcessBijsturingNotification(Ns.Orp.Dienst.Model.BijsturingNotificatie)">
+            <summary>
+            Proceses the bijsturing notification.
+            </summary>
+            <param name="bijsturingNotificatie"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.BijsturingController.OpvragenBijsturingAsync(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="medewerker"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.BijsturingController.BijsturingBeantwoordenAsync(System.Int32,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="medewerker"></param>
+            <param name="accepteren"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.BijsturingController.StoreBijsturingTelefoonnummersAsync(System.Collections.Generic.IEnumerable{Ns.Orp.Dienst.Model.BijsturingNummer})">
+            <summary>
+            Store bijsturing telefoonnummers
+            </summary>
+            <param name="nummers">bijsturing telefoonnummers</param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.BijsturingController.Dispose">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.BijsturingController.Dispose(System.Boolean)">
+            <summary>
+            Releases unmanaged and - optionally - managed resources.
+            </summary>
+            <param name="disposing"><c>true</c> to release both managed and unmanaged resources; <c>false</c> to release only unmanaged resources.</param>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.DienstController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.IDienstController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.IDienstController.OpvragenDienstAsync(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="medewerker"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.IDienstController.InDienstMeldenAsync(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="medewerker"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.IDienstController.UitDienstMeldenAsync(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="medewerker"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.IDienstController.OpvragenActueleActiviteitContextAsync(System.Int32)">
+            <summary>
+            Haalt de actuele trein context op
+            </summary>
+            <param name="medewerker">Het personeelsnummer van de gebruiker.</param>
+            <returns>ActueleTreinritContext</returns>
+            <remarks>
+            Pius niet beschikbaar -> mits locale dienst aanwezig daarmee verder
+            Geen dienst -> Melding
+            Medewerker niet in dienst -> Melding
+            </remarks>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.IDienstController.SelecteerDienstAsync(System.Int32,Ns.Orp.Dienst.Model.Functie,System.String,System.Int32,System.DateTimeOffset)">
+            <summary>
+            Selecteer een Dienst
+            </summary>
+            <param name="medewerker"></param>
+            <param name="functie"></param>
+            <param name="standplaats"></param>
+            <param name="dienstnummer"></param>
+            <param name="datumDienst"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.IDienstController.VerwerkTelefonischeBijsturing(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="medewerker"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.IDienstController.VerwijderDienst(System.Int32)">
+            <summary>
+            Verwijdert de dienst voor medewerker <paramref name="medewerker" />
+            </summary>
+            <param name="medewerker">The medewerker.</param>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.IDienstController.CreateOrpDienstEntityAsync(System.Int32,System.String,System.DateTimeOffset,Ns.Orp.Dienst.Model.Locatie,System.DateTimeOffset,Ns.Orp.Dienst.Model.Locatie)">
+            <summary>
+             Creates an orp dienst based on the input parameters
+             </summary>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.IDienstController.GetLokaleDienstVoorMedewerkerAsync(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="personeelsnummer"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.IDienstController.GetPersoneelsnummerForDienstContainingTreinnummerAsync(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="treinnummer"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DienstController.#ctor(Ns.Orp.Logging.ITelemetry)">
+            <summary>
+            Creates a new instance of the DienstController class.  
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DienstController.#ctor">
+            <summary>
+            Creates a new instance of the DienstController class.  
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DienstController.#ctor(Ns.Orp.Dienst.Implementation.IPiusAgent,Ns.Orp.Dienst.Implementation.IDienstManager,Ns.Orp.Dienst.Implementation.IDienstNotificatieTopicManager,Ns.Orp.Logging.ITelemetry)">
+            <summary>
+            Test ctor
+            </summary>
+            <param name="piusAgent">The Pius agent to use</param>
+            <param name="dienstManager"></param>
+            <param name="dienstNotificatieTopicManager"></param>
+            <param name="telemetry"></param>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DienstController.VerwijderDienst(System.Int32)">
+            <summary>
+            Verwijdert the orp dienst
+            </summary>
+            <param name="medewerker">The medewerker.</param>
+            <returns></returns>
+            <exception cref="T:Ns.Orp.ServiceLibrary.Shared.FunctionalException">Er is een dienst gevonden die niet van het soort ORP is, deze is niet verwijderd.</exception>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DienstController.OpvragenDienstAsync(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="medewerker"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DienstController.InDienstMeldenAsync(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="medewerker"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DienstController.UitDienstMeldenAsync(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="medewerker"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DienstController.OpvragenActueleActiviteitContextAsync(System.Int32)">
+            <summary>
+            Haalt de actuele activiteit context op
+            </summary>
+            <param name="medewerker">Personeelsnummer van de gebruiker.</param>
+            <returns>ActiviteitContext</returns>
+            <remarks>
+            Pius niet beschikbaar -> mits locale dienst aanwezig daarmee verder
+            Geen dienst -> Melding
+            Medewerker niet in dienst -> Melding
+            </remarks>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DienstController.CreateOrpDienstEntityAsync(System.Int32,System.String,System.DateTimeOffset,Ns.Orp.Dienst.Model.Locatie,System.DateTimeOffset,Ns.Orp.Dienst.Model.Locatie)">
+            <summary>
+             Creates an orp dienst based on the input parameters
+             </summary>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DienstController.SelecteerDienstAsync(System.Int32,Ns.Orp.Dienst.Model.Functie,System.String,System.Int32,System.DateTimeOffset)">
+            <summary>
+            Selecteer een Dienst
+            </summary>
+            <param name="medewerker"></param>
+            <param name="functie"></param>
+            <param name="standplaats"></param>
+            <param name="dienstnummer"></param>
+            <param name="datumDienst"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DienstController.VerwerkTelefonischeBijsturing(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="medewerker"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DienstController.GetLokaleDienstVoorMedewerkerAsync(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="personeelsnummer"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DienstController.GetPersoneelsnummerForDienstContainingTreinnummerAsync(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="treinnummer"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DienstController.Finalize">
+            <summary>
+            Destuctor, implemented to disposing correctly
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DienstController.Dispose">
+            <summary>
+            Disposes the object.
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.Data.BijsturingRepository">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.Data.GenericRepository`1">
+            <summary>
+            
+            </summary>
+            <typeparam name="TEntity"></typeparam>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.Data.GenericRepository`1.#ctor(System.Data.Entity.DbContext)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.Data.GenericRepository`1.GetByIdAsync(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.Data.GenericRepository`1.Add(`0)">
+            <summary>
+            
+            </summary>
+            <param name="entity"></param>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.Data.GenericRepository`1.Update(`0)">
+            <summary>
+            
+            </summary>
+            <param name="entity"></param>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.Data.GenericRepository`1.Delete(`0)">
+            <summary>
+            
+            </summary>
+            <param name="entity"></param>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.Data.GenericRepository`1.DeleteAsync(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.Data.GenericRepository`1.Detach(`0)">
+            <summary>
+            
+            </summary>
+            <param name="entity"></param>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Data.GenericRepository`1.DbSet">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Data.GenericRepository`1.Context">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.Data.IBijsturingRepository">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.Data.IBijsturingRepository.StoreBijsturingTelefoonnummersAsync(System.Collections.Generic.IEnumerable{Ns.Orp.Dienst.Model.BijsturingNummer})">
+            <summary>
+            
+            </summary>
+            <param name="bijsturingNummers"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.Data.IBijsturingRepository.GetBijsturingTelefoonnummerAsync(Ns.Orp.Dienst.Model.Functie,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="functie"></param>
+            <param name="standplaats"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.Data.BijsturingRepository.#ctor(Ns.Orp.Dienst.Implementation.Data.DienstContext)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.Data.BijsturingRepository.StoreBijsturingTelefoonnummersAsync(System.Collections.Generic.IEnumerable{Ns.Orp.Dienst.Model.BijsturingNummer})">
+            <summary>
+            
+            </summary>
+            <param name="bijsturingNummers"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.Data.BijsturingRepository.GetBijsturingTelefoonnummerAsync(Ns.Orp.Dienst.Model.Functie,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="functie"></param>
+            <param name="standplaats"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.Data.DbDonderdagseweekConfiguration">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Dienst.Implementation.Data.DbDonderdagseweekConfiguration.TableName">
+            <summary>
+            The table name
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.Data.DbDonderdagseweekConfiguration.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ns.Orp.Dienst.Implementation.Data.DbDonderdagseweekConfiguration"/> class.
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.Data.DbDonderdagseweek">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Data.DbDonderdagseweek.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Data.DbDonderdagseweek.Personeelsnummer">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Data.DbDonderdagseweek.OntvangstDatum">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Data.DbDonderdagseweek.Donderdagseweek">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Data.DbDonderdagseweek.Value">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.Data.DonderdagseweekRepository">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.Data.IDonderdagseweekRepository">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.Data.IDonderdagseweekRepository.GetEntityByPersoneelsnummerAsync(System.Int32)">
+            <summary>
+            Gets the donderdagseweek
+            </summary>
+            <param name="personeelsnummer"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.Data.IDonderdagseweekRepository.CleanupDonderdagseweek(System.TimeSpan)">
+            <summary>
+            Removes donderdagseweek when all days in it are in the past
+            </summary>
+            <param name="timeToPreserve"/>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.Data.IDonderdagseweekRepository.InsertOrReplaceAsync(System.Int32,System.Collections.Generic.IEnumerable{Ns.Orp.Dienst.Model.Donderdagseweek})">
+            <summary>
+            
+            </summary>
+            <param name="personeelsnummer"></param>
+            <param name="donderdagseweken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.Data.IDonderdagseweekRepository.VerwijderDonderdagseweekAsync(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="medewerker"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.Data.DonderdagseweekRepository.#ctor(Ns.Orp.Dienst.Implementation.Data.DienstContext)">
+            <summary>
+            
+            </summary>
+            <param name="dienstContext"></param>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.Data.DonderdagseweekRepository.GetEntityByPersoneelsnummerAsync(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="personeelsnummer"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.Data.DonderdagseweekRepository.InsertOrReplaceAsync(System.Int32,System.Collections.Generic.IEnumerable{Ns.Orp.Dienst.Model.Donderdagseweek})">
+            <summary>
+            
+            </summary>
+            <param name="personeelsnummer"></param>
+            <param name="donderdagseweken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.Data.DonderdagseweekRepository.VerwijderDonderdagseweekAsync(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="medewerker"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.Data.DonderdagseweekRepository.CleanupDonderdagseweek(System.TimeSpan)">
+            <summary>
+            
+            </summary>
+            <param name="timeToPreserve"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.Data.DbDienst">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Data.DbDienst.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Data.DbDienst.Personeelsnummer">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Data.DbDienst.Eindtijd">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Data.DbDienst.Activiteiten">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Data.DbDienst.Dienst">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Data.DbDienst.Value">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.Data.DbDienstConfiguration">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Dienst.Implementation.Data.DbDienstConfiguration.TableName">
+            <summary>
+            The table name
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.Data.DbDienstConfiguration.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ns.Orp.Dienst.Implementation.Data.DbDienstConfiguration"/> class.
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.Data.DbTreinActiviteit">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Data.DbTreinActiviteit.Treinnummer">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Data.DbTreinActiviteit.DienstId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.Data.DbTreinritActiviteitConfiguration">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Dienst.Implementation.Data.DbTreinritActiviteitConfiguration.TableName">
+            <summary>
+            The table name
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.Data.DbTreinritActiviteitConfiguration.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ns.Orp.Dienst.Implementation.Data.DbTreinritActiviteitConfiguration"/> class.
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.Data.DienstContext">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.Data.DienstContext.#ctor(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="nameOrConnectionString"></param>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.Data.DienstContext.OnModelCreating(System.Data.Entity.DbModelBuilder)">
+            <summary>
+            
+            </summary>
+            <param name="modelBuilder"></param>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Data.DienstContext.Diensten">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Data.DienstContext.BijsturingNummers">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Data.DienstContext.Donderdagseweken">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.Data.DienstRepository">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.Data.IDienstRepository">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.Data.IDienstRepository.GetLokaleDienstVoorMedewerkerAsync(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="medewerker"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.Data.IDienstRepository.OpslaanLokaleDienstAsync(Ns.Orp.Dienst.Model.Dienst)">
+            <summary>
+            
+            </summary>
+            <param name="lokaleDienst"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.Data.IDienstRepository.VerwijderLokaleDienstAsync(Ns.Orp.Dienst.Model.Dienst)">
+            <summary>
+            
+            </summary>
+            <param name="lokaleDienst"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.Data.IDienstRepository.GetPersoneelsnummerForDienstContainingTreinnummerAsync(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="treinnummer"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.Data.IDienstRepository.GetDienstIdWhereEindtijdSmallerThenAsync(System.DateTimeOffset)">
+            <summary>
+            
+            </summary>
+            <param name="now"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.Data.IDienstRepository.DeleteDienstenAsync(System.Collections.Generic.IEnumerable{System.Int32})">
+            <summary>
+            
+            </summary>
+            <param name="ids"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.Data.DienstRepository.#ctor(Ns.Orp.Dienst.Implementation.Data.DienstContext)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.Data.DienstRepository.GetLokaleDienstVoorMedewerkerAsync(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="medewerker"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.Data.DienstRepository.OpslaanLokaleDienstAsync(Ns.Orp.Dienst.Model.Dienst)">
+            <summary>
+            
+            </summary>
+            <param name="lokaleDienst"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.Data.DienstRepository.VerwijderLokaleDienstAsync(Ns.Orp.Dienst.Model.Dienst)">
+            <summary>
+            
+            </summary>
+            <param name="lokaleDienst"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.Data.DienstRepository.GetPersoneelsnummerForDienstContainingTreinnummerAsync(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="treinnummer"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.Data.DienstRepository.GetDienstIdWhereEindtijdSmallerThenAsync(System.DateTimeOffset)">
+            <summary>
+            
+            </summary>
+            <param name="now"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.Data.DienstRepository.DeleteDienstenAsync(System.Collections.Generic.IEnumerable{System.Int32})">
+            <summary>
+            
+            </summary>
+            <param name="ids"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.Data.DienstUnitOfWork">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.Data.IDienstUnitOfWork">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.Data.IDienstUnitOfWork.SaveChangesAsync">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Data.IDienstUnitOfWork.Dienst">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Data.IDienstUnitOfWork.Bijsturing">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Data.IDienstUnitOfWork.Donderdagseweek">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.Data.DienstUnitOfWork.#ctor(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="nameOrConnectionString"></param>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.Data.DienstUnitOfWork.Finalize">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.Data.DienstUnitOfWork.SaveChangesAsync">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.Data.DienstUnitOfWork.Dispose">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Data.DienstUnitOfWork.Dienst">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Data.DienstUnitOfWork.Bijsturing">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Data.DienstUnitOfWork.Donderdagseweek">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.UnitOfWorkFactory">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.UnitOfWorkFactory.CreateDienstUnitOfWork">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.TopicFactory">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.TopicFactory.CreateDonderdagsewekenTopicManager">
+            <summary>
+            Creates an instance of the IDonderdagsewekenTopicManager.
+            </summary>
+            <returns>An instance of the IDonderdagsewekenTopicManager interface.</returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.TopicFactory.CreateDienstNotificatieTopicManager">
+            <summary>
+            Creates an instance of the IDienstNotificatieTopicManager.
+            </summary>
+            <returns>An instance of the IDienstNotificatieTopicManager interface.</returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.TopicFactory.CreateBijsturingNotificatieTopicManager">
+            <summary>
+            Creates an instance of the IBijsturingNotificatieTopicManager.
+            </summary>
+            <returns>An instance of the IBijsturingNotificatieTopicManager interface.</returns>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.DienstStatementEventSource">
+            <summary>
+            This class contains Semantic logging operations.
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DienstStatementEventSource.OpvragenDienstStart(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="personeelsnummer"></param>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DienstStatementEventSource.OpvragenDienstStop(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="personeelsnummer"></param>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DienstStatementEventSource.SelecterenDienstStart(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="personeelsnummer"></param>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DienstStatementEventSource.SelecterenDienstStop(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="personeelsnummer"></param>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DienstStatementEventSource.VerwerkTelefonischeBijsturingStart(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="personeelsnummer"></param>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DienstStatementEventSource.VerwerkTelefonischeBijsturingStop(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="personeelsnummer"></param>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DienstStatementEventSource.InDienstMeldenStart(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="personeelsnummer"></param>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DienstStatementEventSource.InDienstMeldenStop(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="personeelsnummer"></param>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DienstStatementEventSource.UitDienstMeldenStart(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="personeelsnummer"></param>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DienstStatementEventSource.UitDienstMeldenStop(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="personeelsnummer"></param>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DienstStatementEventSource.DonderdagseweekStart(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="personeelsnummer"></param>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DienstStatementEventSource.DonderdagseweekStop(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="personeelsnummer"></param>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DienstStatementEventSource.VerwijderDienstkaartStart(System.Int32)">
+            <summary>
+            Logs VerwijderDienstkaartStart event
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DienstStatementEventSource.VerwijderDienstkaartStop(System.Int32)">
+            <summary>
+            Logs VerwijderDienstkaartStop event
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DienstStatementEventSource.GetBijsturingStart(System.Int32)">
+            <summary>
+            Log event GetBijsturingStart
+            </summary>
+            <param name="personeelsnummer"></param>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DienstStatementEventSource.GetBijsturingStop(System.Int32)">
+            <summary>
+            Log event GetBijsturingStop
+            </summary>
+            <param name="personeelsnummer"></param>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DienstStatementEventSource.BijsturingBeantwoordenStart(System.Int32,System.Boolean)">
+            <summary>
+            Log event BijsturingBeantwoordenStart
+            </summary>
+            <param name="personeelsnummer"></param>
+            <param name="accepteren"></param>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DienstStatementEventSource.BijsturingBeantwoordenStop(System.Int32,System.Boolean)">
+            <summary>
+            Log event BijsturingBeantwoordenStop
+            </summary>
+            <param name="personeelsnummer"></param>
+            <param name="accepteren"></param>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DienstStatementEventSource.ProcessBijsturingNotificationGeenLocaleDienst">
+            <summary>
+            Log event ProcessBijsturingNotificationGeenLocaleDienst
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DienstStatementEventSource.OpvragenActueleActiviteitContextStart(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="personeelsnummer"></param>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DienstStatementEventSource.OpvragenActueleActiviteitContextStop(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="personeelsnummer"></param>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DienstStatementEventSource.CreateOrpDienstEntityStart(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="personeelsnummer"></param>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DienstStatementEventSource.CreateOrpDienstEntityStop(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="personeelsnummer"></param>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DienstStatementEventSource.GetDonderdagseweekCleanupStart">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DienstStatementEventSource.GetDonderdagseweekCleanupStop">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DienstStatementEventSource.GetLokaleDienstVoorMedewerkerStart(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="personeelsnummer"></param>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DienstStatementEventSource.GetLokaleDienstVoorMedewerkerStop(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="personeelsnummer"></param>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DienstStatementEventSource.GetPersoneelsnummerForDienstContainingTreinnummerStart(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="treinnummer"></param>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DienstStatementEventSource.GetPersoneelsnummerForDienstContainingTreinnummerStop(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="treinnummer"></param>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DienstStatementEventSource.StoreBijsturingTelefoonnummersStart">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DienstStatementEventSource.StoreBijsturingTelefoonnummersStop">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.DienstStatementEventSource.Log">
+            <summary>
+            The singleton instance.
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.AgentFactory.CreatePiusAgent">
+            <summary>
+            Creates an instance of the IPiusAgent.
+            </summary>
+            <returns>An instance of the IPiusAgent interface.</returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.AgentFactory.CreateDienstkaartAgent">
+            <summary>
+            Creates an instance of the IAdkAgent
+            </summary>
+            <returns>An instance of the IAdkAgent</returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.AgentFactory.CreateDisysAgent">
+            <summary>
+            Creates an implementing instance for IDisysAgent.
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.AgentFactory.CreateDgwAgent">
+            <summary>
+            Creates an implementing instance for IDgwAgent.
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.ControllerFactory">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.ControllerFactory.CreateDienstController(Ns.Orp.Logging.ITelemetry)">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.ControllerFactory.CreateDienstController">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.ControllerFactory.CreateBijsturingController">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.ManagerFactory">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.ManagerFactory.CreateDienstManager">
+            <summary>
+            Creates an instance of the IDienstManager.
+            </summary>
+            <returns>An instance of the IDienstManager interface.</returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.ManagerFactory.CreateBijsturingManager">
+            <summary>
+            Creates an instance of the IBijsturingManager.
+            </summary>
+            <returns>An instance of the IBijsturingManager interface.</returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.ManagerFactory.CreateDonderdagseweekManager">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.BijsturingManager">
+            <summary>
+            Manager responsible for retrieving the correct number of bijsturing
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.IBijsturingManager">
+            <summary>
+            Manager responsible for retrieving the correct number of bijsturing
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.IBijsturingManager.StoreBijsturingTelefoonnummersAsync(System.Collections.Generic.IEnumerable{Ns.Orp.Dienst.Model.BijsturingNummer})">
+            <summary>
+            Stores the list of Bijsturingsnummers
+            </summary>
+            <param name="bijsturing"></param>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.IBijsturingManager.GetBijsturingTelefoonnummerAsync(Ns.Orp.Dienst.Model.Dienst)">
+            <summary>
+            Retrieves the bijsturing number
+            </summary>
+            <param name="dienst">de dienst waarvoor het nummer moet worden bepaald</param>
+            <returns>Bijsturing telefoonnummer</returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.BijsturingManager.#ctor(Ns.Orp.Dienst.Implementation.Data.IDienstUnitOfWork)">
+            <summary>
+            Creates an instance of the BijsturingManager
+            </summary>
+            <param name="unitOfWork"></param>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.BijsturingManager.StoreBijsturingTelefoonnummersAsync(System.Collections.Generic.IEnumerable{Ns.Orp.Dienst.Model.BijsturingNummer})">
+            <summary>
+            Stores the list of Bijsturingsnummers
+            </summary>
+            <param name="bijsturing"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.BijsturingManager.GetBijsturingTelefoonnummerAsync(Ns.Orp.Dienst.Model.Dienst)">
+            <summary>
+            Retrieves the bijsturing number
+            </summary>
+            <param name="dienst">de dienst waarvoor het nummer moet worden bepaald</param>
+            <returns>Bijsturing telefoonnummer</returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.BijsturingManager.Finalize">
+            <summary>
+            Destuctor, implemented to disposing correctly
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.BijsturingManager.Dispose">
+            <summary>
+            Disposes the object.
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.DonderdagseweekManager">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.IDonderdagseweekManager">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.IDonderdagseweekManager.GetDonderdagseweekAsync(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="personeelsnummer"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.IDonderdagseweekManager.CleanupDonderdagseweken(System.TimeSpan)">
+            <summary>
+            Cleans up all the donderdagseweken of which all the days are in the past.
+            </summary>
+            <param name="timeToPreserve"/>
+            <returns>Task for async</returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.IDonderdagseweekManager.SaveDonderdagseweekAndNotify(System.Collections.Generic.IEnumerable{Ns.Orp.Dienst.Model.Donderdagseweek})">
+            <summary>
+            Saves the donderdagse weken and send a push notification.
+            </summary>
+            <param name="donderdagseweken">The donderdagse weken to save.</param>
+            <returns>Task for async.</returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DonderdagseweekManager.#ctor(Ns.Orp.Dienst.Implementation.Data.IDienstUnitOfWork,Ns.Orp.Dienst.Implementation.IDienstNotificatieTopicManager)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ns.Orp.Dienst.Implementation.DonderdagseweekManager"/> class.
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DonderdagseweekManager.#ctor(Ns.Orp.Dienst.Implementation.IDisysAgent,Ns.Orp.Dienst.Implementation.Data.IDienstUnitOfWork,Ns.Orp.Dienst.Implementation.IDienstNotificatieTopicManager)">
+            <summary>
+            Test constructor
+            </summary>
+            <param name="agent"></param>
+            <param name="dienstUnitOfWork"></param>
+            <param name="dienstNotificatieTopicManager"></param>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DonderdagseweekManager.GetDonderdagseweekAsync(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="personeelsnummer"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DonderdagseweekManager.CleanupDonderdagseweken(System.TimeSpan)">
+            <summary>
+            Cleans up all the donderdagseweken of which all the days are in the past.
+            </summary>
+            <param name="timeToPreserve"/>
+            <returns>Task for async</returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DonderdagseweekManager.SaveDonderdagseweekAndNotify(System.Collections.Generic.IEnumerable{Ns.Orp.Dienst.Model.Donderdagseweek})">
+            <summary>
+            Saves the donderdagse weken and send a push notification.
+            </summary>
+            <param name="donderdagseweken">The donderdagse weken to save.</param>
+            <returns>Task for async.</returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DonderdagseweekManager.Finalize">
+            <summary>
+            Destuctor, implemented to disposing correctly
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DonderdagseweekManager.Dispose">
+            <summary>
+            Disposes the object.
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.AdkMapper">
+            <summary>
+            Definieert vertalingen tussen service schema's en het interne model. 
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.AdkMapper.DienstkaartDienstToAdkInformatie(Ns.Orp.Dienst.Implementation.Proxies.Dienstkaart.DienstkaartDienst)">
+            <summary>
+            
+            </summary>
+            <param name="source"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.AdkMapper.CreateActiviteit``1(System.String,System.String,System.DateTimeOffset,System.DateTimeOffset)">
+            <summary>
+            
+            </summary>
+            <typeparam name="TActiviteitType"></typeparam>
+            <param name="vertreklocatie"></param>
+            <param name="aankomstlocatie"></param>
+            <param name="begintijd"></param>
+            <param name="eindtijd"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.BijsturingNotificatieMapper">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.BijsturingNotificatieMapper.MapToLocal(Ns.Orp.Dienst.Implementation.Proxies.Dgw.BijsturingType)">
+            <summary>
+            
+            </summary>
+            <param name="bijsturingType"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.DienstManager">
+            <summary>
+            Implements the IDienstManager interface
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.IDienstManager">
+            <summary>
+            Specifies all methods of the Dienstkaart service using Model types.
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.IDienstManager.CreateOrpDienstEntityAsync(System.Int32,System.String,System.DateTimeOffset,Ns.Orp.Dienst.Model.Locatie,System.DateTimeOffset,Ns.Orp.Dienst.Model.Locatie)">
+            <summary>
+             Creates an orp dienst based on the input parameters
+             </summary>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.IDienstManager.GetPersoneelsnummerForDienstContainingTreinnummerAsync(System.String)">
+            <summary>
+            Gets all relavent diensten for a treinrit
+            </summary>
+            <param name="treinnummer">The treinnummer of the treinrit to check on</param>
+            <returns>A list of diensten contain the treinrit</returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.IDienstManager.CleanupDienstenAsync(System.TimeSpan)">
+            <summary>
+            Cleans up all the diensten where the endtime + the preservetime are past
+            </summary>
+            <param name="preserveTime"></param>
+            <returns>Task for async</returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.IDienstManager.GetLokaleDienstVoorMedewerkerAsync(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="medewerker"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.IDienstManager.BijwerkenLokaleDienst(Ns.Orp.Dienst.Model.Dienst,Ns.Orp.Dienst.Model.PiusInformatie)">
+            <summary>
+            
+            </summary>
+            <param name="lokaleDienst"></param>
+            <param name="piusInformatie"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.IDienstManager.ActualiseerLokaleDienstAsync(System.Int32,Ns.Orp.Dienst.Model.Dienst,Ns.Orp.Dienst.Model.PiusInformatie)">
+            <summary>
+            
+            </summary>
+            <param name="medewerker"></param>
+            <param name="lokaleDienst"></param>
+            <param name="piusInformatie"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.IDienstManager.CreeerLokaleDienst(Ns.Orp.Dienst.Model.PiusInformatie)">
+            <summary>
+            
+            </summary>
+            <param name="piusInformatie"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.IDienstManager.CompleterenDienstAsync(System.Int32,Ns.Orp.Dienst.Model.Dienst)">
+            <summary>
+            
+            </summary>
+            <param name="medewerker"></param>
+            <param name="lokaleDienst"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.IDienstManager.VerwijderLokaleDienstAsync(Ns.Orp.Dienst.Model.Dienst)">
+            <summary>
+            
+            </summary>
+            <param name="lokaleDienst"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.IDienstManager.BijwerkenLokaleDienstMetUitDienstAsync(Ns.Orp.Dienst.Model.Dienst)">
+            <summary>
+            
+            </summary>
+            <param name="lokaleDienst"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.IDienstManager.BijwerkenLokaleDienstMetHerkomstEnCreeerActiviteitenBinnenLokaleDienst(Ns.Orp.Dienst.Model.Dienst,Ns.Orp.Dienst.Model.AdkInformatie)">
+            <summary>
+            
+            </summary>
+            <param name="lokaleDienst"></param>
+            <param name="adkInformatie"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.IDienstManager.ActiviteitenOvernemenEnMaakSluitend(System.Collections.Generic.ICollection{Ns.Orp.Dienst.Model.Activiteit},Ns.Orp.Dienst.Model.Dienst,Ns.Orp.Dienst.Model.AdkInformatie)">
+            <summary>
+            
+            </summary>
+            <param name="activiteitenToCompliment"></param>
+            <param name="lokaleDienst"></param>
+            <param name="adkInformatie"></param>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.IDienstManager.OpslaanLokaleDienst(Ns.Orp.Dienst.Model.Dienst)">
+            <summary>
+            
+            </summary>
+            <param name="lokaleDienst"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.IDienstManager.SelecteerDienstAsync(System.Int32,Ns.Orp.Dienst.Model.Functie,System.String,System.Int32,System.DateTimeOffset)">
+            <summary>
+            
+            </summary>
+            <param name="medewerker"></param>
+            <param name="functie"></param>
+            <param name="standplaats"></param>
+            <param name="dienstnummer"></param>
+            <param name="datumDienst"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.IDienstManager.ActualiseerDienstkaartje(System.Int32,Ns.Orp.Dienst.Model.Dienst,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="medewerker"></param>
+            <param name="lokaleDienst"></param>
+            <param name="nieuweDienst"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DienstManager.#ctor">
+            <summary>
+            Creates a new instance of the DienstkaartManager class.  
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DienstManager.#ctor(Ns.Orp.Dienst.Implementation.Data.IDienstUnitOfWork,Ns.Orp.Dienst.Implementation.IBijsturingManager,Ns.Orp.Dienst.Implementation.IAdkAgent,Ns.Orp.Dienst.Implementation.IDienstNotificatieTopicManager)">
+            <summary>
+            Test ctor
+            </summary>
+            <param name="dienstUnitOfWork"></param>
+            <param name="bijsturingManager"></param>
+            <param name="dienstkaartAgent">The dienstkaart agent</param>
+            <param name="dienstNotificatieTopicManager"></param>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DienstManager.GetLokaleDienstVoorMedewerkerAsync(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="medewerker"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DienstManager.GetPersoneelsnummerForDienstContainingTreinnummerAsync(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="treinnummer"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DienstManager.VerwijderLokaleDienstAsync(Ns.Orp.Dienst.Model.Dienst)">
+            <summary>
+            
+            </summary>
+            <param name="lokaleDienst"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DienstManager.CreeerLokaleDienst(Ns.Orp.Dienst.Model.PiusInformatie)">
+            <summary>
+            
+            </summary>
+            <param name="piusInformatie"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DienstManager.CompleterenDienstAsync(System.Int32,Ns.Orp.Dienst.Model.Dienst)">
+            <summary>
+            
+            </summary>
+            <param name="medewerker"></param>
+            <param name="lokaleDienst"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DienstManager.BijwerkenLokaleDienstMetHerkomstEnCreeerActiviteitenBinnenLokaleDienst(Ns.Orp.Dienst.Model.Dienst,Ns.Orp.Dienst.Model.AdkInformatie)">
+            <summary>
+            
+            </summary>
+            <param name="lokaleDienst"></param>
+            <param name="adkInformatie"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DienstManager.ActiviteitenOvernemenEnMaakSluitend(System.Collections.Generic.ICollection{Ns.Orp.Dienst.Model.Activiteit},Ns.Orp.Dienst.Model.Dienst,Ns.Orp.Dienst.Model.AdkInformatie)">
+            <summary>
+            
+            </summary>
+            <param name="activiteitenToCompliment"></param>
+            <param name="lokaleDienst"></param>
+            <param name="adkInformatie"></param>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DienstManager.ActualiseerLokaleDienstAsync(System.Int32,Ns.Orp.Dienst.Model.Dienst,Ns.Orp.Dienst.Model.PiusInformatie)">
+            <summary>
+            
+            </summary>
+            <param name="medewerker"></param>
+            <param name="lokaleDienst"></param>
+            <param name="piusInformatie"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DienstManager.ActualiseerDienstkaartje(System.Int32,Ns.Orp.Dienst.Model.Dienst,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="medewerker"></param>
+            <param name="lokaleDienst"></param>
+            <param name="nieuweDienst"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DienstManager.BijwerkenLokaleDienst(Ns.Orp.Dienst.Model.Dienst,Ns.Orp.Dienst.Model.PiusInformatie)">
+            <summary>
+            
+            </summary>
+            <param name="lokaleDienst"></param>
+            <param name="piusInformatie"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DienstManager.BijwerkenLokaleDienstMetUitDienstAsync(Ns.Orp.Dienst.Model.Dienst)">
+            <summary>
+            
+            </summary>
+            <param name="lokaleDienst"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DienstManager.OpslaanLokaleDienst(Ns.Orp.Dienst.Model.Dienst)">
+            <summary>
+            
+            </summary>
+            <param name="lokaleDienst"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DienstManager.SelecteerDienstAsync(System.Int32,Ns.Orp.Dienst.Model.Functie,System.String,System.Int32,System.DateTimeOffset)">
+            <summary>
+            
+            </summary>
+            <param name="medewerker"></param>
+            <param name="functie"></param>
+            <param name="standplaats"></param>
+            <param name="dienstnummer"></param>
+            <param name="datumDienst"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DienstManager.CreateOrpDienstEntityAsync(System.Int32,System.String,System.DateTimeOffset,Ns.Orp.Dienst.Model.Locatie,System.DateTimeOffset,Ns.Orp.Dienst.Model.Locatie)">
+            <summary>
+            Creates an orp dienst based on the input parameters
+            </summary>
+            <param name="personeelsnummer">Personeelsnummer van de gebruiker.</param>
+            <param name="treinnummer">treinnummer van de activiteit</param>
+            <param name="begintijd">Begintijd</param>
+            <param name="beginlocatie">Beginlocatie van de activiteit</param>
+            <param name="eindtijd">Eindtijd van de activiteit</param>
+            <param name="eindlocatie">Eindlocatie van de activiteit</param>
+            <exception cref="T:System.ArgumentNullException">treinrit</exception>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DienstManager.CleanupDienstenAsync(System.TimeSpan)">
+            <summary>
+            Cleans up all the diensten where the endtime + the preservetime are past
+            </summary>
+            <param name="preserveTime"></param>
+            <returns>Task for async</returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DienstManager.Finalize">
+            <summary>
+            Destuctor, implemented to disposing correctly
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DienstManager.Dispose">
+            <summary>
+            Disposes the object.
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.Codering">
+            <summary>
+            General class for several codering values
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Dienst.Implementation.Codering.NietTreinritActiviteiten">
+            <summary>
+            NietTreinritActiviteiten
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.DienstMapper">
+            <summary>
+            Maps Pius dienst to local model Dienst
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DienstMapper.MapPiusInformatieToDienst(Ns.Orp.Dienst.Model.PiusInformatie)">
+            <summary>
+            Maps service Dienst to local Dienst
+            </summary>
+            <param name="piusInformatie">Informatie from pius</param>
+            <returns>Local dienst format</returns>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.DonderdagseweekMapper">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DonderdagseweekMapper.MapToLocal(Ns.Orp.Shared.Proxies.Disys.DonderdagseWeekType)">
+            <summary>
+            
+            </summary>
+            <param name="donderdagseweekInput"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DonderdagseweekMapper.MapToLocal(Ns.Orp.Shared.Proxies.Disys.DonderdagseWeekType,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="donderdagseweekInput"></param>
+            <param name="personeelsnummer">Overwrite the return value from Disys with own personeelsnummer</param>
+            <returns></returns>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.PiusInformatieMapper">
+            <summary>
+            Maps Pius dienst to local model Dienst
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.PiusInformatieMapper.StatusResponseToPiusInformatie(System.Int32,Ns.Orp.Dienst.Implementation.Proxies.Pius.statusResponse)">
+            <summary>
+            
+            </summary>
+            <param name="medewerker"></param>
+            <param name="response"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.PiusInformatieMapper.SignInResponseToPiusInformatie(System.Int32,Ns.Orp.Dienst.Implementation.Proxies.Pius.signInResponse)">
+            <summary>
+            
+            </summary>
+            <param name="medewerker"></param>
+            <param name="response"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.PiusInformatieMapper.SignOutResponseToPiusInformatie(System.Int32,Ns.Orp.Dienst.Implementation.Proxies.Pius.signOutResponse)">
+            <summary>
+            
+            </summary>
+            <param name="medewerker"></param>
+            <param name="response"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Ns.Orp.Shared.Proxies.BijsturingAcknowledgement.bijsturingAcknowledgement">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Shared.Proxies.BijsturingAcknowledgement.bijsturingAcknowledgement.dienstNummer">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Shared.Proxies.BijsturingAcknowledgement.bijsturingAcknowledgement.uitvoering">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Shared.Proxies.BijsturingAcknowledgement.bijsturingAcknowledgement.standplaatsCode">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Shared.Proxies.BijsturingAcknowledgement.bijsturingAcknowledgement.functieCode">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Shared.Proxies.BijsturingAcknowledgement.bijsturingAcknowledgement.dienstkaartOpgevraagdTijd">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Shared.Proxies.BijsturingAcknowledgement.bijsturingAcknowledgement.personeelsnummer">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Shared.Proxies.BijsturingAcknowledgement.bijsturingAcknowledgement.actie">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Shared.Proxies.BijsturingAcknowledgement.bijsturingAcknowledgement.timestamp">
+            <remarks/>
+        </member>
+        <member name="T:Ns.Orp.Shared.Proxies.BijsturingAcknowledgement.Functiecode">
+            <remarks/>
+        </member>
+        <member name="F:Ns.Orp.Shared.Proxies.BijsturingAcknowledgement.Functiecode.C">
+            <remarks/>
+        </member>
+        <member name="F:Ns.Orp.Shared.Proxies.BijsturingAcknowledgement.Functiecode.M">
+            <remarks/>
+        </member>
+        <member name="T:Ns.Orp.Shared.Proxies.BijsturingAcknowledgement.Actie">
+            <remarks/>
+        </member>
+        <member name="F:Ns.Orp.Shared.Proxies.BijsturingAcknowledgement.Actie.geaccepteerd">
+            <remarks/>
+        </member>
+        <member name="F:Ns.Orp.Shared.Proxies.BijsturingAcknowledgement.Actie.afgewezen">
+            <remarks/>
+        </member>
+        <member name="T:Ns.Orp.Shared.Proxies.BijsturingNotification.notificatieBijsturing">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Shared.Proxies.BijsturingNotification.notificatieBijsturing.dienstNummer">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Shared.Proxies.BijsturingNotification.notificatieBijsturing.uitvoering">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Shared.Proxies.BijsturingNotification.notificatieBijsturing.standplaatsCode">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Shared.Proxies.BijsturingNotification.notificatieBijsturing.functieCode">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Shared.Proxies.BijsturingNotification.notificatieBijsturing.personeelsnummer">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Shared.Proxies.BijsturingNotification.notificatieBijsturing.timestamp">
+            <remarks/>
+        </member>
+        <member name="T:Ns.Orp.Shared.Proxies.BijsturingNotification.Functiecode">
+            <remarks/>
+        </member>
+        <member name="F:Ns.Orp.Shared.Proxies.BijsturingNotification.Functiecode.C">
+            <remarks/>
+        </member>
+        <member name="F:Ns.Orp.Shared.Proxies.BijsturingNotification.Functiecode.M">
+            <remarks/>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.Resources.FileResource">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Resources.FileResource.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Resources.FileResource.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Resources.FileResource.AfkortingenStationsnamen">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Resources.FileResource.BijsturingResponse">
+             <summary>
+               Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+            &lt;xsd:schema attributeFormDefault=&quot;unqualified&quot;
+              elementFormDefault=&quot;qualified&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;
+              xmlns=&quot;http://www.ns.nl/dienstkaart/bijsturing&quot;
+              targetNamespace=&quot;http://www.ns.nl/dienstkaart/bijsturing&quot; version=&quot;0.1&quot;&gt;
+              
+              &lt;xsd:element name=&quot;bijsturingAcknowledgement&quot;&gt;
+                &lt;xsd:complexType&gt;
+                  &lt;xsd:sequence&gt;
+                    &lt;xsd:element type=&quot;Dienstnummer&quot; name=&quot;dienstNummer&quot; /&gt;
+                    &lt;xsd:element type=&quot;xsd:date&quot; name=&quot;uitvoering&quot; [rest of string was truncated]&quot;;.
+             </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Resources.FileResource.NotificatieBijsturing">
+             <summary>
+               Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+            &lt;xsd:schema attributeFormDefault=&quot;unqualified&quot;
+            	elementFormDefault=&quot;qualified&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;
+            	xmlns=&quot;http://www.ns.nl/dienstkaart/bijsturing&quot;
+            	targetNamespace=&quot;http://www.ns.nl/dienstkaart/bijsturing&quot; version=&quot;0.1&quot;&gt;
+            
+            	&lt;xsd:annotation&gt;
+            		&lt;xsd:documentation&gt;&lt;/xsd:documentation&gt;
+            	&lt;/xsd:annotation&gt;
+            
+            	&lt;xsd:element name=&quot;notificatieBijsturing&quot;&gt;
+            		&lt;xsd:complexType&gt;
+            			&lt;xsd:annotation&gt;
+            				&lt;xsd:documentation&gt;De informatie relevant vo [rest of string was truncated]&quot;;.
+             </summary>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.Resources.Messages">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Resources.Messages.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Resources.Messages.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Resources.Messages.BekendheidCsvReader_CreateAndValidateIndex_Geen_header_gevonden">
+            <summary>
+              Looks up a localized string similar to Geen header gevonden.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Resources.Messages.BekendheidCsvReader_CreateAndValidateIndex_Header_is_niet_valide_">
+            <summary>
+              Looks up a localized string similar to Header is niet valide..
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Resources.Messages.BijsturingBeantwoordGeenActiviteiten">
+            <summary>
+              Looks up a localized string similar to De bijgestuurde activiteiten konden niet bijgewerkt worden. Probeer te verversen..
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Resources.Messages.BijsturingsAntwoordNietAfgeleverd">
+            <summary>
+              Looks up a localized string similar to Het bijsturingsantwoord kon niet worden afgeleverd.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Resources.Messages.CodeOnbekend">
+            <summary>
+              Looks up a localized string similar to Code onbekend - {0}.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Resources.Messages.ContactenFailed">
+            <summary>
+              Looks up a localized string similar to Kon geen contactgegevens ophalen.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Resources.Messages.DienstIsNietBijgestuurd">
+            <summary>
+              Looks up a localized string similar to De lokale dienst voor personeelsnummer {0} is niet bijgestuurd.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Resources.Messages.EtiFailed">
+            <summary>
+              Looks up a localized string similar to Kon geen eti gegevens ophalen.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Resources.Messages.FoutBijOpvragenTreinritInformatie">
+            <summary>
+              Looks up a localized string similar to Er is een fout opgetreden bij het opvragen van treinritinformatie bij ARNU van het type {0}.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Resources.Messages.GeenActiviteitenBeschikbaar">
+            <summary>
+              Looks up a localized string similar to Geen activiteiten beschikbaar voor dienst {0} en personeelsnummer {1}.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Resources.Messages.GeenDienst">
+            <summary>
+              Looks up a localized string similar to Geen dienst gevonden voor {0} &apos;{1}&apos;.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Resources.Messages.GeenDienstGevondenVoorGebruiker">
+            <summary>
+              Looks up a localized string similar to Er kon geen dienst gevonden worden voor gebruiker {0}..
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Resources.Messages.GeenLokaleDienst">
+            <summary>
+              Looks up a localized string similar to Er is geen lokale dienst gevonden voor personeelsnummer {0}.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Resources.Messages.GeenPersoneelsnummer">
+            <summary>
+              Looks up a localized string similar to Het personeelsnummer kon niet worden bepaald..
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Resources.Messages.InvalidDienstDatum">
+            <summary>
+              Looks up a localized string similar to De dienstdatum mag niet in het verleden liggen..
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Resources.Messages.InvalidVragenlijstontvanger">
+            <summary>
+              Looks up a localized string similar to De destination &apos;{0}&apos; zoals gespecificeerd in de metadata van de vragenlijst &apos;{1}&apos; v{2}.{3} kon niet worden herkend als een bekende destination.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Resources.Messages.MaterieelagendaFailed">
+            <summary>
+              Looks up a localized string similar to Kon geen materieelagenda ophalen.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Resources.Messages.MaterieelbekendheidCsvReader_ReadAsync_Incorrecte_data">
+            <summary>
+              Looks up a localized string similar to Het .csv bestand voor materieelbekendheid bevat incorrecte data.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Resources.Messages.MaterieelbekendheidImportFailed">
+            <summary>
+              Looks up a localized string similar to Kon geen materieelbekendheidgegevens ophalen.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Resources.Messages.MaterieelcodesFailed">
+            <summary>
+              Looks up a localized string similar to Kon geen materieelcodes ophalen.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Resources.Messages.MetadataNotFound">
+            <summary>
+              Looks up a localized string similar to Metadata met key &apos;{0}&apos; kon niet worden gevonden.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Resources.Messages.PiusDienstBeschikbaar">
+            <summary>
+              Looks up a localized string similar to Er is een PIUS dienst beschikbaar voor personeelsnummer {0}.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Resources.Messages.RetrieveRelevanteBerichtenFailed">
+            <summary>
+              Looks up a localized string similar to Kon geen relevante berichte ophalen. Fout opgetreden bij communicatie met de Berichten BackEnd.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Resources.Messages.SurveysWithDifferentTemplateIdsFound">
+            <summary>
+              Looks up a localized string similar to Invalid survey(s) found, different templateIds are  found.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Resources.Messages.SurveysWithoutTemplateIdMetadataFound">
+            <summary>
+              Looks up a localized string similar to Invalid survey(s) found, TemplateId not available in metadata.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Resources.Messages.Traject">
+            <summary>
+              Looks up a localized string similar to Van {0} tot {1}.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Resources.Messages.VragenlijstFailed">
+            <summary>
+              Looks up a localized string similar to Kon geen vragenlijsten ophalen.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Resources.Messages.WegbekendheidCsvReader_ReadAsync_Incorrecte_data">
+            <summary>
+              Looks up a localized string similar to Het .csv bestand voor wegbekendheid bevat incorrecte data.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Resources.Messages.WtsFailed">
+            <summary>
+              Looks up a localized string similar to Kon geen wts gegevens ophalen.
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.Proxies.Dgw.BijsturingReactie.traceType">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Dgw.BijsturingReactie.traceType.msgId">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Dgw.BijsturingReactie.traceType.sequenceId">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Dgw.BijsturingReactie.traceType.userId">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Dgw.BijsturingReactie.traceType.OTAP">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Dgw.BijsturingReactie.traceType.from">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Dgw.BijsturingReactie.traceType.to">
+            <remarks/>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.Proxies.Dgw.BijsturingReactie.OTAPType">
+            <remarks/>
+        </member>
+        <member name="F:Ns.Orp.Dienst.Implementation.Proxies.Dgw.BijsturingReactie.OTAPType.O">
+            <remarks/>
+        </member>
+        <member name="F:Ns.Orp.Dienst.Implementation.Proxies.Dgw.BijsturingReactie.OTAPType.T">
+            <remarks/>
+        </member>
+        <member name="F:Ns.Orp.Dienst.Implementation.Proxies.Dgw.BijsturingReactie.OTAPType.A">
+            <remarks/>
+        </member>
+        <member name="F:Ns.Orp.Dienst.Implementation.Proxies.Dgw.BijsturingReactie.OTAPType.P">
+            <remarks/>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.Proxies.Dgw.BijsturingReactie.BijsturingReactieUitType">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Dgw.BijsturingReactie.BijsturingReactieUitType.status">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Dgw.BijsturingReactie.BijsturingReactieUitType.verwerkt">
+            <remarks/>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.Proxies.Dgw.BijsturingReactie.BijsturingReactieUitTypeStatus">
+            <remarks/>
+        </member>
+        <member name="F:Ns.Orp.Dienst.Implementation.Proxies.Dgw.BijsturingReactie.BijsturingReactieUitTypeStatus.onbekend">
+            <remarks/>
+        </member>
+        <member name="F:Ns.Orp.Dienst.Implementation.Proxies.Dgw.BijsturingReactie.BijsturingReactieUitTypeStatus.vervallen">
+            <remarks/>
+        </member>
+        <member name="F:Ns.Orp.Dienst.Implementation.Proxies.Dgw.BijsturingReactie.BijsturingReactieUitTypeStatus.geaccepteerd">
+            <remarks/>
+        </member>
+        <member name="F:Ns.Orp.Dienst.Implementation.Proxies.Dgw.BijsturingReactie.BijsturingReactieUitTypeStatus.afgewezen">
+            <remarks/>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.Proxies.Dgw.BijsturingReactie.BijsturingType">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Dgw.BijsturingReactie.BijsturingType.personeelsnummer">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Dgw.BijsturingReactie.BijsturingType.dienstnummer">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Dgw.BijsturingReactie.BijsturingType.tijdstempel">
+            <remarks/>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.Proxies.Dgw.BijsturingReactie.BijsturingReactieType">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Dgw.BijsturingReactie.BijsturingReactieType.bijsturing">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Dgw.BijsturingReactie.BijsturingReactieType.geaccepteerd">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Dgw.BijsturingReactie.BijsturingReactieType.reactiemoment">
+            <remarks/>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.Settings">
+            <summary>
+            Settings class
+            Each property name maps to a setting in the configuration manager
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.Settings.GetValue(System.String)">
+            <summary>
+            Gets a setting from the config file.
+            </summary>
+            <param name="name">The name of the setting.</param>
+            <returns>The value of the setting.</returns>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Settings.Version">
+            <summary>
+            The version of the release, should be in the form of rXX. No minor versions, only major.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Settings.ServiceBusConnectionString">
+            <summary>
+            ServiceBusConnectionString
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Settings.StorageConnectionString">
+            <summary>
+            StorageConnectionString
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Settings.SearchConnectionString">
+            <summary>
+            SearchConnectionString
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Settings.DocumentDbConnectionString">
+            <summary>
+            Gets the connection string to connect with the document db
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Settings.StatementLogTableName">
+            <summary>
+            LogTableName
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Settings.MessageLogTableName">
+            <summary>
+            LogTableName
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Settings.LogInstanceName">
+            <summary>
+            LogInstanceName
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Settings.AppInsightsInstrumentationKey">
+            <summary>
+            Application Insights Instrumentation Key
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Settings.AppInsightsEnvironmentTag">
+            <summary>
+            Application Insights Environment Tag
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Settings.AppInsightsEnabled">
+            <summary>
+            Application Insights enabled
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Settings.MonitoringLogTopicName">
+            <summary>
+            The name of the Topic where Monitoring events will be delivered.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Settings.LoggingTopicName">
+            <summary>
+            The name of the Topic where logging events will be delivered.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Settings.AadSpoorplazaTenant">
+            <summary>
+            The SpoorPlaza AAD Tenant
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Settings.AadDienstAppId">
+            <summary>
+            The id of the dienst audience
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Settings.PiusEndpointAddress">
+            <summary>
+            PiusEndpointAddress
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Settings.DienstkaartEndpointAddress">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Settings.TopicSubscriptionName">
+            <summary>
+            TopicSubscriptionName
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Settings.TopicMessageTimeToLive">
+            <summary>
+            TopicMessageTimeToLive
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Settings.JobDienstCleanupPreserveTime">
+            <summary>
+            Gets the preserve time for diensten
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Settings.DienstCleanupSchedule">
+            <summary>
+            The CRON schedule for the dienst cleanup job.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Settings.DisysEndpointAddress">
+            <summary>
+            DisysEndpointAddress
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Settings.DgwEndpointAddress">
+            <summary>
+            DgwEndpointAddress
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Settings.JobDonderdagseweekCleanupPreserveTime">
+            <summary>
+            Gets the preserve time for donderdagseweek
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Settings.DonderdagseweekCleanupSchedule">
+            <summary>
+            The CRON schedule for the donderdagseweek cleanup job.
+            </summary>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Settings.DienstSqlConnectionString">
+            <summary>
+            The SQL Connection string to the Dienst database.
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.Proxies.Dienstkaart.Key">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Dienstkaart.Key.nummer">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Dienstkaart.Key.uitvoering">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Dienstkaart.Key.code">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Dienstkaart.Key.functiecode">
+            <remarks/>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.Proxies.Dienstkaart.Functiecode">
+            <remarks/>
+        </member>
+        <member name="F:Ns.Orp.Dienst.Implementation.Proxies.Dienstkaart.Functiecode.C">
+            <remarks/>
+        </member>
+        <member name="F:Ns.Orp.Dienst.Implementation.Proxies.Dienstkaart.Functiecode.M">
+            <remarks/>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.Proxies.Dienstkaart.PresentKey">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Dienstkaart.PresentKey.nummer">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Dienstkaart.PresentKey.code">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Dienstkaart.PresentKey.functiecode">
+            <remarks/>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.Proxies.Dienstkaart.DienstkaartStandplaats">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Dienstkaart.DienstkaartStandplaats.id">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Dienstkaart.DienstkaartStandplaats.naam">
+            <remarks/>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.Proxies.Dienstkaart.DienstkaartDetail">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Dienstkaart.DienstkaartDetail.regelpuntcode">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Dienstkaart.DienstkaartDetail.vertrek">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Dienstkaart.DienstkaartDetail.soort">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Dienstkaart.DienstkaartDetail.adviessnelheid">
+            <remarks/>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.Proxies.Dienstkaart.Key3">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Dienstkaart.Key3.nummer">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Dienstkaart.Key3.datum">
+            <remarks/>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.Proxies.Dienstkaart.DienstkaartActiviteit">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Dienstkaart.DienstkaartActiviteit.soort">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Dienstkaart.DienstkaartActiviteit.trein">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Dienstkaart.DienstkaartActiviteit.vertrek">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Dienstkaart.DienstkaartActiviteit.aankomst">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Dienstkaart.DienstkaartActiviteit.regelpuntVertrek">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Dienstkaart.DienstkaartActiviteit.regelpuntAankomst">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Dienstkaart.DienstkaartActiviteit.detail">
+            <remarks/>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.Proxies.Dienstkaart.DienstkaartActiviteitTrein">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Dienstkaart.DienstkaartActiviteitTrein.id">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Dienstkaart.DienstkaartActiviteitTrein.materieelcode">
+            <remarks/>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.Proxies.Dienstkaart.DienstkaartDienst">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Dienstkaart.DienstkaartDienst.id">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Dienstkaart.DienstkaartDienst.Any">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Dienstkaart.DienstkaartDienst.begin">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Dienstkaart.DienstkaartDienst.eind">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Dienstkaart.DienstkaartDienst.planfase">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Dienstkaart.DienstkaartDienst.activiteit">
+            <remarks/>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.Proxies.Dienstkaart.Dienstkaart">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Dienstkaart.Dienstkaart.dienst">
+            <remarks/>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.Proxies.Dienstkaart.InflowDienstkaart">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Dienstkaart.InflowDienstkaart.bronsysteem">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Dienstkaart.InflowDienstkaart.creatieExtern">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Dienstkaart.InflowDienstkaart.personeelsnummer">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Dienstkaart.InflowDienstkaart.postindeling">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Dienstkaart.InflowDienstkaart.standplaats">
+            <remarks/>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.Proxies.Dienstkaart.Bronsysteem">
+            <remarks/>
+        </member>
+        <member name="F:Ns.Orp.Dienst.Implementation.Proxies.Dienstkaart.Bronsysteem.VPT">
+            <remarks/>
+        </member>
+        <member name="F:Ns.Orp.Dienst.Implementation.Proxies.Dienstkaart.Bronsysteem.VKL">
+            <remarks/>
+        </member>
+        <member name="F:Ns.Orp.Dienst.Implementation.Proxies.Dienstkaart.Bronsysteem.VKLADK">
+            <remarks/>
+        </member>
+        <member name="F:Ns.Orp.Dienst.Implementation.Proxies.Dienstkaart.Bronsysteem.NSESB">
+            <remarks/>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.Proxies.Dienstkaart.Key1">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Dienstkaart.Key1.volgnummer">
+            <remarks/>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.Proxies.Dienstkaart.Key2">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Dienstkaart.Key2.regelpuntcode">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Dienstkaart.Key2.volgnummer1">
+            <remarks/>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.Proxies.Pius.PiusException">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Pius.PiusException.errorCategory">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Pius.PiusException.errorCategorySpecified">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Pius.PiusException.errorCode">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Pius.PiusException.errorCodeSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Pius.PiusException.message">
+            <remarks/>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.Proxies.Pius.errorCategory">
+            <remarks/>
+        </member>
+        <member name="F:Ns.Orp.Dienst.Implementation.Proxies.Pius.errorCategory.GENERIC">
+            <remarks/>
+        </member>
+        <member name="F:Ns.Orp.Dienst.Implementation.Proxies.Pius.errorCategory.VALIDATION">
+            <remarks/>
+        </member>
+        <member name="F:Ns.Orp.Dienst.Implementation.Proxies.Pius.errorCategory.DATABASE">
+            <remarks/>
+        </member>
+        <member name="F:Ns.Orp.Dienst.Implementation.Proxies.Pius.errorCategory.SECURITY">
+            <remarks/>
+        </member>
+        <member name="F:Ns.Orp.Dienst.Implementation.Proxies.Pius.errorCategory.BUSINESS_RULES">
+            <remarks/>
+        </member>
+        <member name="F:Ns.Orp.Dienst.Implementation.Proxies.Pius.errorCategory.INUITDIENST_MELDEN">
+            <remarks/>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.Proxies.Pius.errorCode">
+            <remarks/>
+        </member>
+        <member name="F:Ns.Orp.Dienst.Implementation.Proxies.Pius.errorCode.GENERIC">
+            <remarks/>
+        </member>
+        <member name="F:Ns.Orp.Dienst.Implementation.Proxies.Pius.errorCode.ENTITY_UNAVAILABLE">
+            <remarks/>
+        </member>
+        <member name="F:Ns.Orp.Dienst.Implementation.Proxies.Pius.errorCode.ENTITY_UNIQUE">
+            <remarks/>
+        </member>
+        <member name="F:Ns.Orp.Dienst.Implementation.Proxies.Pius.errorCode.ENTITY_CONSTRAINT">
+            <remarks/>
+        </member>
+        <member name="F:Ns.Orp.Dienst.Implementation.Proxies.Pius.errorCode.SECURITY_DOMAIN">
+            <remarks/>
+        </member>
+        <member name="F:Ns.Orp.Dienst.Implementation.Proxies.Pius.errorCode.INZET_BLOKKED">
+            <remarks/>
+        </member>
+        <member name="F:Ns.Orp.Dienst.Implementation.Proxies.Pius.errorCode.GEBRUIKER_AUTHENTICATION">
+            <remarks/>
+        </member>
+        <member name="F:Ns.Orp.Dienst.Implementation.Proxies.Pius.errorCode.PERSOON_AUTHENTICATION">
+            <remarks/>
+        </member>
+        <member name="F:Ns.Orp.Dienst.Implementation.Proxies.Pius.errorCode.INUITDIENST_FAILED">
+            <remarks/>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.Proxies.Pius.InzetView">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Pius.InzetView.standplaats">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Pius.InzetView.dienst">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Pius.InzetView.aanvang">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Pius.InzetView.aanvangSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Pius.InzetView.eind">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Pius.InzetView.eindSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Pius.InzetView.dienstnummer">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Pius.InzetView.dienstnummerSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Pius.InzetView.inzetfunctie">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Pius.InzetView.inzetsleutelVirtueel">
+            <remarks/>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.Proxies.Pius.InzetFunctie">
+            <remarks/>
+        </member>
+        <member name="F:Ns.Orp.Dienst.Implementation.Proxies.Pius.InzetFunctie.C">
+            <remarks/>
+        </member>
+        <member name="F:Ns.Orp.Dienst.Implementation.Proxies.Pius.InzetFunctie.M">
+            <remarks/>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.Proxies.Pius.DienststatusView">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Pius.DienststatusView.inzet">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Pius.DienststatusView.actie">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Pius.DienststatusView.actieSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Pius.DienststatusView.bericht">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Pius.DienststatusView.dienststatus">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Pius.DienststatusView.dienstkaartjestandplaats">
+            <remarks/>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.Proxies.Pius.DienstActie">
+            <remarks/>
+        </member>
+        <member name="F:Ns.Orp.Dienst.Implementation.Proxies.Pius.DienstActie.MELD_INDIENST">
+            <remarks/>
+        </member>
+        <member name="F:Ns.Orp.Dienst.Implementation.Proxies.Pius.DienstActie.MELD_UITDIENST">
+            <remarks/>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.Proxies.Pius.PersoneelDienstStatus">
+            <remarks/>
+        </member>
+        <member name="F:Ns.Orp.Dienst.Implementation.Proxies.Pius.PersoneelDienstStatus.INDIENST">
+            <remarks/>
+        </member>
+        <member name="F:Ns.Orp.Dienst.Implementation.Proxies.Pius.PersoneelDienstStatus.UITDIENST">
+            <remarks/>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.Proxies.Pius.loginParameters">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Pius.loginParameters.personeelsNmr">
+            <remarks/>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.Proxies.Pius.meldDienstParameters">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Pius.meldDienstParameters.standplaatsCode">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Pius.meldDienstParameters.inzetId">
+            <remarks/>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.Proxies.Pius.toonStatusParameters">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Pius.toonStatusParameters.standplaatsCode">
+            <remarks/>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.Proxies.Pius.meldIndienstRespons">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Pius.meldIndienstRespons.status">
+            <remarks/>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.Proxies.Pius.meldUitdienstRespons">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Pius.meldUitdienstRespons.status">
+            <remarks/>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.Proxies.Pius.toonStatusRespons">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Pius.toonStatusRespons.status">
+            <remarks/>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.Proxies.Dgw.traceType">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Dgw.traceType.msgId">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Dgw.traceType.sequenceId">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Dgw.traceType.userId">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Dgw.traceType.OTAP">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Dgw.traceType.from">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Dgw.traceType.to">
+            <remarks/>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.Proxies.Dgw.OTAPType">
+            <remarks/>
+        </member>
+        <member name="F:Ns.Orp.Dienst.Implementation.Proxies.Dgw.OTAPType.O">
+            <remarks/>
+        </member>
+        <member name="F:Ns.Orp.Dienst.Implementation.Proxies.Dgw.OTAPType.T">
+            <remarks/>
+        </member>
+        <member name="F:Ns.Orp.Dienst.Implementation.Proxies.Dgw.OTAPType.A">
+            <remarks/>
+        </member>
+        <member name="F:Ns.Orp.Dienst.Implementation.Proxies.Dgw.OTAPType.P">
+            <remarks/>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.Proxies.Dgw.BijsturingType">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Dgw.BijsturingType.personeelsnummer">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Dgw.BijsturingType.dienstnummer">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Dienst.Implementation.Proxies.Dgw.BijsturingType.tijdstempel">
+            <remarks/>
+        </member>
+        <member name="T:Ns.Orp.Shared.Proxies.Disys.DonderdagseWeekType">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Shared.Proxies.Disys.DonderdagseWeekType.AanmaakTijd">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Shared.Proxies.Disys.DonderdagseWeekType.Wijzigingsdatum">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Shared.Proxies.Disys.DonderdagseWeekType.WijzigingsdatumSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Shared.Proxies.Disys.DonderdagseWeekType.Volgnummer">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Shared.Proxies.Disys.DonderdagseWeekType.Persoon">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Shared.Proxies.Disys.DonderdagseWeekType.Dienst">
+            <remarks/>
+        </member>
+        <member name="T:Ns.Orp.Shared.Proxies.Disys.DonderdagseWeekTypePersoon">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Shared.Proxies.Disys.DonderdagseWeekTypePersoon.Persnr">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Shared.Proxies.Disys.DonderdagseWeekTypePersoon.Naam">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Shared.Proxies.Disys.DonderdagseWeekTypePersoon.Functie_PER">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Shared.Proxies.Disys.DonderdagseWeekTypePersoon.Standplaats_PER">
+            <remarks/>
+        </member>
+        <member name="T:Ns.Orp.Shared.Proxies.Disys.DonderdagseWeekTypeDienst">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Shared.Proxies.Disys.DonderdagseWeekTypeDienst.Datum">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Shared.Proxies.Disys.DonderdagseWeekTypeDienst.Standplaats">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Shared.Proxies.Disys.DonderdagseWeekTypeDienst.DienstNummer">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Shared.Proxies.Disys.DonderdagseWeekTypeDienst.DienstOmschrijving">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Shared.Proxies.Disys.DonderdagseWeekTypeDienst.Functie">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Shared.Proxies.Disys.DonderdagseWeekTypeDienst.AanvangDienst">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Shared.Proxies.Disys.DonderdagseWeekTypeDienst.EindeDienst">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Shared.Proxies.Disys.DonderdagseWeekTypeDienst.Pauze1">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Shared.Proxies.Disys.DonderdagseWeekTypeDienst.Pauze2">
+            <remarks/>
+        </member>
+        <member name="T:Ns.Orp.Shared.Proxies.Disys.putDonderdagseWeekRequest">
+            <remarks/>
+        </member>
+        <member name="P:Ns.Orp.Shared.Proxies.Disys.putDonderdagseWeekRequest.DonderdagseWeek">
+            <remarks/>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.BijsturingNotificatieTopicManager">
+            <summary>
+            DonderdagsewekenTopicManager
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.IBijsturingNotificatieTopicManager">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.IBijsturingNotificatieTopicManager.SendAsync(Ns.Orp.Dienst.Model.BijsturingNotificatie)">
+            <summary>
+            Sends a new message to the topic.
+            </summary>
+            <param name="body">The message to send</param>
+            <returns>A Task. This method is attended to run asynchronously.</returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.BijsturingNotificatieTopicManager.#ctor(System.String,System.String,System.TimeSpan)">
+            <summary>
+            Creates an new instance.
+            </summary>
+            <param name="serviceBusConnectionString">The connection string to the Azure Service Bus.</param>
+            <param name="subscriptionName">The name of the subscription.</param>
+            <param name="defaultMessageTimeToLive">The default time to live.</param>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.BijsturingNotificationsTopicMessageProcessor">
+            <summary>
+            Processes notifications for bijsturing messages.
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Dienst.Implementation.BijsturingNotificationsTopicMessageProcessor.TopicName">
+            <summary>
+            The topic name.
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.BijsturingNotificationsTopicMessageProcessor.#ctor(System.String,Ns.Orp.Dienst.Implementation.IBijsturingController)">
+            <summary>
+            Creates an instance of the BijsturingNotificationsTopicMessageProcessor.
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.BijsturingNotificationsTopicMessageProcessor.ProcessMessageAsync(Ns.Orp.Dienst.Model.BijsturingNotificatie)">
+            <summary>
+            
+            </summary>
+            <param name="message"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.BijsturingNotificationsTopicMessageProcessor.Dispose(System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="disposing"></param>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.DienstNotificatieTopicManager">
+            <summary>
+            Sends a DienstNotificatie to a topic.
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.IDienstNotificatieTopicManager">
+            <summary>
+            Notificaties voor Dienst.
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.IDienstNotificatieTopicManager.SendAsync(Ns.Orp.Dienst.Model.DienstNotificatie)">
+            <summary>
+            Sends a new message to the topic.
+            </summary>
+            <param name="body">The message to send</param>
+            <returns>A Task. This method is attended to run asynchronously.</returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DienstNotificatieTopicManager.#ctor(System.String,System.String,System.TimeSpan)">
+            <summary>
+            Creates an new instance.
+            </summary>
+            <param name="serviceBusConnectionString">The connection string to the Azure Service Bus.</param>
+            <param name="subscriptionName">The name of the subscription.</param>
+            <param name="defaultMessageTimeToLive">The default time to live.</param>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.DonderdagsewekenTopicManager">
+            <summary>
+            DonderdagsewekenTopicManager
+            </summary>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.IDonderdagsewekenTopicManager">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.IDonderdagsewekenTopicManager.SendAsync(System.Collections.Generic.IEnumerable{Ns.Orp.Dienst.Model.Donderdagseweek})">
+            <summary>
+            Sends a new message to the topic.
+            </summary>
+            <param name="body">The message to send</param>
+            <returns>A Task. This method is attended to run asynchronously.</returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DonderdagsewekenTopicManager.#ctor(System.String,System.String,System.TimeSpan)">
+            <summary>
+            Creates an new instance.
+            </summary>
+            <param name="serviceBusConnectionString">The connection string to the Azure Service Bus.</param>
+            <param name="subscriptionName">The name of the subscription.</param>
+            <param name="defaultMessageTimeToLive">The default time to live.</param>
+        </member>
+        <member name="T:Ns.Orp.Dienst.Implementation.DonderdagsewekenTopicMessageProcessor">
+            <summary>
+            Processes donderdagseweek messages.
+            </summary>
+        </member>
+        <member name="F:Ns.Orp.Dienst.Implementation.DonderdagsewekenTopicMessageProcessor.TopicName">
+            <summary>
+            The topic name.
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DonderdagsewekenTopicMessageProcessor.#ctor(System.String,Ns.Orp.Dienst.Implementation.IDonderdagseweekManager)">
+            <summary>
+            Creates an instance of the DonderdagsewekenTopicMessageProcessor.
+            </summary>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DonderdagsewekenTopicMessageProcessor.ProcessMessageAsync(System.Collections.Generic.IEnumerable{Ns.Orp.Dienst.Model.Donderdagseweek})">
+            <summary>
+            
+            </summary>
+            <param name="message"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ns.Orp.Dienst.Implementation.DonderdagsewekenTopicMessageProcessor.Dispose(System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="disposing"></param>
+        </member>
+    </members>
+</doc>
